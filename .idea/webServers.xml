@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a7cf73db-b5f4-4294-8744-f17d759ac794" name="1blu" url="http://30630.webhosting15.1blu.de">
+        <fileTransfer host="30630.webhosting15.1blu.de" port="21" rootFolder="/www/test">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
