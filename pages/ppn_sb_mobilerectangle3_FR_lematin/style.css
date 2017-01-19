@@ -1,0 +1,112 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
+.ppn_sb_mobilerectangle3_FR_lematin {
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+.ppn_sb_mobilerectangle3_FR_lematin .ppninnerbox {
+    height: 580px;
+    width: 300px;
+    margin: 10px 0;
+    background: white;
+}
+.ppn_sb_mobilerectangle3_FR_lematin .singlebox {
+    width: 300px;
+    height: 193px;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #333;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_mobilerectangle3_FR_lematin .singlebox:last-child {
+    border-bottom: 1px solid #333;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_mobilerectangle3_FR_lematin .title {
+    position: relative;
+    width: 280px;
+    max-height: 22px;
+    overflow: hidden;
+    margin: 0px 10px;
+    font: 800 17px/20px 'Open Sans', sans-serif;
+    text-align: left;
+    border: none;
+}
+.ppn_sb_mobilerectangle3_FR_lematin .title a:link, .ppn_sb_mobilerectangle3_FR_lematin .title a:visited, .ppn_sb_mobilerectangle3_FR_lematin .title a:active, .ppn_sb_mobilerectangle3_FR_lematin .title a:hover {
+    color: #E65A31;
+    text-decoration: none;
+}
+.ppn_sb_mobilerectangle3_FR_lematin .title a:hover {
+    color: #E65A31;
+    text-decoration: none;
+}
+.ppn_sb_mobilerectangle3_FR_lematin .text {
+    position: relative;
+    width: 280px;
+    max-height: 38px;
+    overflow: hidden;
+    margin: 1px 10px;
+    font: 400 13px/18px 'Open Sans', sans-serif;
+    text-align: left;
+    border: none;
+}
+.ppn_sb_mobilerectangle3_FR_lematin .text a:link, .ppn_sb_mobilerectangle3_FR_lematin .text a:visited, .ppn_sb_mobilerectangle3_FR_lematin .text a:hover, .ppn_sb_mobilerectangle3_FR_lematin .text a:active {
+    color: #333;
+    text-decoration: none;
+}
+.ppn_sb_mobilerectangle3_FR_lematin .text a:hover {
+    color: #E65A31;
+    text-decoration: none;
+}
+.ppn_sb_mobilerectangle3_FR_lematin .url {
+    position: relative;
+    width: 265px;
+    max-height: 18px;
+    overflow: hidden;
+    font: 800 12px/18px 'Open Sans', sans-serif;
+    text-align: left;
+    border: none;
+    margin: 0 10px;
+}
+.ppn_sb_mobilerectangle3_FR_lematin .url a, .ppn_sb_mobilerectangle3_FR_lematin .url a:link, .ppn_sb_mobilerectangle3_FR_lematin .url a:visited, .ppn_sb_mobilerectangle3_FR_lematin .url a:hover, .ppn_sb_mobilerectangle3_FR_lematin .url a:active {
+    color: #E65A31;
+    text-decoration: none;
+}
+.ppn_sb_mobilerectangle3_FR_lematin .url a:hover {
+    color: #E65A31;
+    text-decoration: none;
+}
+.ppn_sb_mobilerectangle3_FR_lematin .adimage {
+    position: relative;
+    float: left;
+    border-width: 0;
+    width: 175px;
+    height: 96px;
+    margin: 10px 10px 8px 10px;
+}
+.ppn_sb_mobilerectangle3_FR_lematin .ppncaption {
+    display: none;
+}
+.ppn_sb_mobilerectangle3_FR_lematin .tnlogo {
+    position: absolute; bottom:15px; right:0; max-width:100px; height:15px;
+}
+.ppn_sb_mobilerectangle3_FR_lematin .tnlogo > a{
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgb(230, 90, 49);
+    padding: 3px 3px 2px 3px;
+    font: 700 8px/8px 'Open Sans', sans-serif;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}

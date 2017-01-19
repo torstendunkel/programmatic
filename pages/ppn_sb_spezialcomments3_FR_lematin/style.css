@@ -1,0 +1,97 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
+.ppn_sb_spezialcomments3_FR_lematin {
+    width: 640px;
+    height: 150px;
+    overflow: hidden;
+    background: white;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 1px solid rgb(51,51,51);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_spezialcomments3_FR_lematin .ppninnerbox {
+}
+.ppn_sb_spezialcomments3_FR_lematin .singlebox {
+    width: 213px;
+    height: 150px;
+    position: relative;
+    float: left;
+}
+.ppn_sb_spezialcomments3_FR_lematin .title {
+    cursor: pointer;
+    color : rgb(51, 51, 51);
+    font: 800 12px/12px 'Open Sans', sans-serif;
+    text-align: left;
+}
+.ppn_sb_spezialcomments3_FR_lematin .title a:link, .ppn_sb_spezialcomments3_FR_lematin .title a:visited, .ppn_sb_spezialcomments3_FR_lematin .title a:active {
+    color : rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_spezialcomments3_FR_lematin .title a:hover {
+    color : rgb(230, 90, 49);
+    text-decoration: none;
+}
+.ppn_sb_spezialcomments3_FR_lematin .text {
+    cursor: pointer;
+    width: 210px;
+    overflow: hidden;
+    font: 400 10px/12px 'Open Sans', sans-serif;
+    padding-top: 4px;
+}
+.ppn_sb_spezialcomments3_FR_lematin .text a:link, .ppn_sb_spezialcomments3_FR_lematin .text a:visited, .ppn_sb_spezialcomments3_FR_lematin .text a:hover, .ppn_sb_spezialcomments3_FR_lematin .text a:active {
+    color : rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_spezialcomments3_FR_lematin .text a:hover {
+    color : rgb(230, 90, 49);
+    text-decoration: none;
+}
+.ppn_sb_spezialcomments3_FR_lematin .url {
+    cursor: pointer;
+    margin-top: 3px;
+    padding-left: 15px;
+    background: url("http://media.das.tamedia.ch/images/ppnlematin-mehr.gif")left center no-repeat;
+    background-position: left center;
+    background-size: 10px;
+    font: 700 10px/12px  'Open Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+}
+.ppn_sb_spezialcomments3_FR_lematin .url a, .ppn_sb_spezialcomments3_FR_lematin .url a:link, .ppn_sb_spezialcomments3_FR_lematin .url a:visited, .ppn_sb_spezialcomments3_FR_lematin .url a:hover, .ppn_sb_spezialcomments3_FR_lematin .url a:active {
+    color : rgb(230, 90, 49);
+    text-decoration: none;
+}
+.ppn_sb_spezialcomments3_FR_lematin .url a:hover {
+    text-decoration: none;
+}
+.ppn_sb_spezialcomments3_FR_lematin .adimage {
+    border-width: 0;
+    float: left;
+}
+.ppn_sb_spezialcomments3_FR_lematin img.adimage {
+    width: 152px;
+    height: 85px;
+    margin-bottom:6px;
+    margin-right: 60px;
+}
+.ppn_sb_spezialcomments3_FR_lematin .ppncaption {
+    display: none;
+}
+.ppn_sb_spezialcomments3_FR_lematin .tnlogo {
+    position: absolute; bottom:1px; right:0; max-width:100px; height:15px;
+}
+.ppn_sb_spezialcomments3_FR_lematin .tnlogo > a{
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgb(230, 90, 49);
+    padding: 2px 3px;
+    font: 700 8px/8px 'Open Sans', sans-serif;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
