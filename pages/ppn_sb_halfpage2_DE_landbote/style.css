@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+.ppn_sb_halfpage2_DE_landbote {
+  width: 300px;
+  height: 600px;
+  overflow: hidden;
+  background: white;
+  color: black;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  border: none;
+}
+.ppn_sb_halfpage2_DE_landbote .ppninnerbox {
+  width: 300px;
+  height: 600px;
+  border: none;
+  overflow: hidden;
+	border-bottom: 1px solid #0073b7;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ppn_sb_halfpage2_DE_landbote .singlebox {
+  width: 300px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  border: none;
+}
+.ppn_sb_halfpage2_DE_landbote .title {
+	margin: 169px 0px 10px 0px;
+	max-height: 35px;
+  overflow: hidden;
+  border: none;
+  padding: 5px 5px 0 5px;
+  font: 700 18px/28px 'Merriweather', serif;
+  font-style: normal;
+  text-transform: none;
+  text-decoration: none;
+  text-align: left;
+  color: #0073b7;
+	border-top: 1px solid #0073b7;
+	border-bottom: 1px solid #0073b7;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ppn_sb_halfpage2_DE_landbote .title a:link,
+.ppn_sb_halfpage2_DE_landbote .title a:visited,
+.ppn_sb_halfpage2_DE_landbote .title a:active,
+.ppn_sb_halfpage2_DE_landbote .title a:hover{
+	text-decoration: none;
+  color: #0073b7;
+}
+.ppn_sb_halfpage2_DE_landbote .title a:hover{
+	text-decoration: none;
+  color: black;
+}
+.ppn_sb_halfpage2_DE_landbote .text {
+	margin: 0px 10px 0px 10px;
+  max-height: 80px;
+  overflow: hidden;
+  font: 400 14px/20px 'Merriweather', serif;
+  text-decoration: none;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+}
+.ppn_sb_halfpage2_DE_landbote .text a:link,
+.ppn_sb_halfpage2_DE_landbote .text a:visited,
+.ppn_sb_halfpage2_DE_landbote .text a:hover,
+.ppn_sb_halfpage2_DE_landbote .text a:active,
+.ppn_sb_halfpage2_DE_landbote .text a:hover  {
+  text-decoration: none;
+  color: black;
+}
+.ppn_sb_halfpage2_DE_landbote .url > a,
+.ppn_sb_halfpage2_DE_landbote .url > a:link,
+.ppn_sb_halfpage2_DE_landbote .url > a:visited,
+.ppn_sb_halfpage2_DE_landbote .url > a:hover,
+.ppn_sb_halfpage2_DE_landbote .url > a:active,
+.ppn_sb_halfpage2_DE_landbote .url > a:hover {
+	font: 700 14px/20px 'Merriweather', serif;
+  text-transform: none;
+  text-decoration: none;
+  text-align: left;
+  text-decoration: none;
+  color: #0073b7;
+  display: inline-block;
+  padding: 0;
+}
+.ppn_sb_halfpage2_DE_landbote .url > a:hover{
+  color: black;
+}
+.ppn_sb_halfpage2_DE_landbote .adimage {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-width: 0;
+  width: 300px;
+  height: 169px;
+}
+.ppn_sb_halfpage2_DE_landbote .ppncaption {
+  display: none;
+}
+.ppn_sb_halfpage2_DE_landbote .tnlogo > a{
+	border: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: #0073b7;
+	padding: 3px 4px;
+	font: 700 10px/10px 'Merriweather', serif;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+.ppn_sb_halfpage2_DE_landbote .tnlogo{
+    position: absolute; bottom:0; right:0; max-width:100px; height:15px;
+}
