@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+.ppn_sb_leaderboard2_FR_ghi {
+  width: 728px;
+  height: 90px;
+  overflow: hidden;
+  background: #FAFAFA;
+  font-family: 'Open Sans', sans-serif;
+  color: #494747;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+}
+.ppn_sb_leaderboard2_FR_ghi .ppninnerbox {
+  width: 718px;
+  height: 80px;
+  margin: 5px;
+  border: none;
+  overflow: hidden;
+}
+.ppn_sb_leaderboard2_FR_ghi .singlebox {
+  width: 359px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  border: none;
+}
+.ppn_sb_leaderboard2_FR_ghi .title {
+  font: 700 13px/18px 'Open Sans', sans-serif;
+  margin: 5px 5px 0px 155px;
+  max-height: 18px;
+  overflow: hidden;
+  border: none;
+  padding: 0px;
+}
+.ppn_sb_leaderboard2_FR_ghi .title a:link,
+.ppn_sb_leaderboard2_FR_ghi .title a:visited,
+.ppn_sb_leaderboard2_FR_ghi .title a:active{
+  font: 700 13px/18px 'Open Sans', sans-serif;
+  text-align: left;
+  border: none;
+  color: #599428;
+  text-decoration: none;
+}
+.ppn_sb_leaderboard2_FR_ghi .title a:hover {
+  text-decoration: underline;
+}
+.ppn_sb_leaderboard2_FR_ghi .text {
+  font: 400 11px/15px 'Open Sans', sans-serif;
+  margin: 4px 5px 0px 155px;
+  max-height: 45px;
+  overflow: hidden;
+}
+.ppn_sb_leaderboard2_FR_ghi .text a:link, .ppn_sb_leaderboard2_FR_ghi .text a:visited, .ppn_sb_leaderboard2_FR_ghi .text a:hover, .ppn_sb_leaderboard2_FR_ghi .text a:active, .ppn_sb_leaderboard2_FR_ghi .text a:hover  {
+  font: 400 11px/15px 'Open Sans', sans-serif;
+  text-transform: none;
+  text-align: left;
+  border: none;
+  color: #494747;
+  text-decoration: none;
+}
+.ppn_sb_leaderboard2_FR_ghi .text span.url, .ppn_sb_leaderboard2_FR_ghi .url a, .ppn_sb_leaderboard2_FR_ghi .url a:link, .ppn_sb_leaderboard2_FR_ghi .url a:visited, .ppn_sb_leaderboard2_FR_ghi .url a:hover, .ppn_sb_leaderboard2_FR_ghi .url a:active, .ppn_sb_leaderboard2_FR_ghi .url a:hover {
+  font: 700 11px/15px 'Open Sans', sans-serif;
+  display: inline-block;
+  color: #C84D1B;
+  text-decoration: none;
+}
+.ppn_sb_leaderboard2_FR_ghi .url a .white {
+  font: 400 10px/10px 'Open Sans', sans-serif;
+  color: white;
+  background-color: #C84D1B;
+  border-radius: 15px;
+  padding: 0px 4px 0px 4px;
+}
+.ppn_sb_leaderboard2_FR_ghi .adimage {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-width: 0;
+  width: 144px;
+  height: 80px;
+}
+.ppn_sb_leaderboard2_FR_ghi .ppncaption {
+  display: none;
+}
+.ppn_sb_leaderboard2_FR_ghi .tnlogo > a{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: #D1D1D1;
+	padding: 2px 4px 3px 4px;
+	font: 700 10px/10px 'Open Sans', sans-serif;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+.ppn_sb_leaderboard2_FR_ghi .tnlogo{
+    position: absolute; bottom:0; right:0; max-width:100px; height:15px;
+}

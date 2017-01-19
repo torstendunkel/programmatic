@@ -1,0 +1,109 @@
+.ppn_sb_rectangle2_DE_doodle {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  background: #fafafa;
+  position: relative;
+  cursor: pointer;
+  border-top: 1px solid #0066dd;
+  border-bottom: 1px solid #0066dd;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.ppn_sb_rectangle2_DE_doodle .ppninnerbox {
+  width: 300px;
+  height: 248px;
+  overflow: hidden;
+}
+.ppn_sb_rectangle2_DE_doodle .singlebox {
+	background: #fafafa;
+  width: 300px;
+  height: 124px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  border: none;
+}
+.ppn_sb_rectangle2_DE_doodle .singlebox:first-child {
+  border-bottom: 1px solid #0066dd;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+.ppn_sb_rectangle2_DE_doodle .singlebox:hover {
+	background: #f4f6fb;
+}
+.ppn_sb_rectangle2_DE_doodle .title {
+	font: normal 18px/20px Arial, sans-serif;
+	margin: 6px 8px 4px 8px;
+  max-height: 20px;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+	color: #0066dd;
+	text-align: left;
+	text-decoration: none;
+}
+.ppn_sb_rectangle2_DE_doodle .title a:link, .ppn_sb_rectangle2_DE_doodle .title a:visited, .ppn_sb_rectangle2_DE_doodle .title a:active, .ppn_sb_rectangle2_DE_doodle .title a:hover {
+	color: #0066dd;
+  text-decoration: none;
+}
+.ppn_sb_rectangle2_DE_doodle .text {
+	cursor: pointer;
+  color: #6f6f6f;
+  font: normal 11px/15px Arial, sans-serif;
+  text-align: left;
+  max-height: 75px;
+  overflow: hidden;
+  padding-top: 5px;
+	margin: 10px 10px 10px 167px;
+	padding: 0;
+	text-decoration: none;
+}
+.ppn_sb_rectangle2_DE_doodle .text a:link, .ppn_sb_rectangle2_DE_doodle .text a:visited, .ppn_sb_rectangle2_DE_doodle .text a:hover, .ppn_sb_rectangle2_DE_doodle .text a:active, .ppn_sb_rectangle2_DE_doodle .text a:hover {
+  color: #6f6f6f;
+  text-decoration: none;
+}
+.ppn_sb_rectangle2_DE_doodle .text span.url {
+	cursor: pointer;
+  display: inline-block;
+  color: #0066dd;
+  font: bold 11px/15px Arial, sans-serif;
+  text-align: left;
+}
+.ppn_sb_rectangle2_DE_doodle .url a, .ppn_sb_rectangle2_DE_doodle .url a:link, .ppn_sb_rectangle2_DE_doodle .url a:visited, .ppn_sb_rectangle2_DE_doodle .url a:hover, .ppn_sb_rectangle2_DE_doodle .url a:active, .ppn_sb_rectangle2_DE_doodle .text span.url a:hover {
+	color: #0066dd;
+  text-decoration: none;
+}
+.ppn_sb_rectangle2_DE_doodle img.adimage {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	width: 147px;
+	height: 81px;
+}
+.ppn_sb_rectangle2_DE_doodle .ppncaption {
+  display: none;
+}
+.ppn_sb_rectangle2_DE_doodle .ppnlogo{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.ppn_sb_rectangle2_DE_doodle .tnlogo > a{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: #0066dd;
+	border-top-left-radius: 6px;
+	padding: 3px 4px 3px 6px;
+	font: bold 10px/10px Arial, sans-serif;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+.ppn_sb_rectangle2_DE_doodle .tnlogo{
+    position: absolute; bottom:0; right:0; max-width:100px;height: 15px;
+}
