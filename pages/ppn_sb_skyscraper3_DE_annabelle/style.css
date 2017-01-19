@@ -1,0 +1,106 @@
+
+@import url(http://fonts.googleapis.com/css?family=Patua+One|Fjord+One);
+.ppn_sb_skyscraper3_DE_annabelle {
+    width: 160px;
+    height: 600px;
+    overflow: hidden;
+    background: white;
+    position: relative;
+    border-top: 4px solid rgb(26, 28, 60);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_skyscraper3_DE_annabelle .ppninnerbox {
+    width: 160px;
+    height: 586px;
+    position: relative;
+    margin-top: 10px;
+}
+.ppn_sb_skyscraper3_DE_annabelle .singlebox {
+    width: 160px;
+    height: 195px;
+    position: relative;
+    float: left;
+    border-top: 1px dotted rgb(26, 28, 60);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_skyscraper3_DE_annabelle .singlebox:first-child {
+    border: none;
+}
+.ppn_sb_skyscraper3_DE_annabelle .title {
+    cursor: pointer;
+    width: 160px;
+    color: rgb(80, 80, 80);
+    font: normal 15px/18px 'Patua One', serif;
+    text-align: center;
+}
+.ppn_sb_skyscraper3_DE_annabelle .title a:link, .ppn_sb_skyscraper3_DE_annabelle .title a:visited, .ppn_sb_skyscraper3_DE_annabelle .title a:active {
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+}
+.ppn_sb_skyscraper3_DE_annabelle .title a:hover {
+    color: rgb(68, 170, 128);
+    text-decoration: none;
+}
+.ppn_sb_skyscraper3_DE_annabelle .text {
+    cursor: pointer;
+    width: 160px;
+    position: relative;
+    color: rgb(80, 80, 80);
+    font: normal 10px/12px 'Fjord One', serif;
+    text-align: center;
+    padding-top: 5px;
+}
+.ppn_sb_skyscraper3_DE_annabelle .text a:link, .ppn_sb_skyscraper3_DE_annabelle .text a:visited, .ppn_sb_skyscraper3_DE_annabelle .text a:hover, .ppn_sb_skyscraper3_DE_annabelle .text a:active {
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+}
+.ppn_sb_skyscraper3_DE_annabelle .text a:hover {
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+}
+.ppn_sb_skyscraper3_DE_annabelle .url {
+    cursor: pointer;
+    display: inline;
+    color: rgb(68, 170, 128);
+    font: Italic 11px/12px "Times New Roman", Times, serif;
+    text-align: left;
+}
+.ppn_sb_skyscraper3_DE_annabelle .url a, .ppn_sb_skyscraper3_DE_annabelle .url a:link, .ppn_sb_skyscraper3_DE_annabelle .url a:visited, .ppn_sb_skyscraper3_DE_annabelle .url a:hover, .ppn_sb_skyscraper3_DE_annabelle .url a:active {
+    color: rgb(68, 170, 128);
+    text-decoration: underline;
+}
+.ppn_sb_skyscraper3_DE_annabelle .url a:hover {
+    color: rgb(236, 28, 36);
+    text-decoration: underline;
+}
+.ppn_sb_skyscraper3_DE_annabelle .adimage {
+    border-width: 0;
+    position: relative;
+    float: left;
+}
+.ppn_sb_skyscraper3_DE_annabelle img.adimage {
+    width: 160px;
+    height: 90px;
+    margin: 5px 0px 5px 0px;
+}
+.ppn_sb_skyscraper3_DE_annabelle .ppncaption {
+    display: none;
+}
+.ppn_sb_skyscraper3_DE_annabelle .tnlogo {
+    position: absolute; top:0; left:0; width:100%; height:15px;
+}
+.ppn_sb_skyscraper3_DE_annabelle .tnlogo > a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0px 3px 3px 3px;
+    background: rgb(26, 28, 60);;
+    font: normal 9px/9px 'Patua One', serif;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
