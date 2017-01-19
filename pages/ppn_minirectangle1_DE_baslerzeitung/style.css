@@ -1,0 +1,99 @@
+
+.ppn_minirectangle1_DE_baslerzeitung {
+    width: 260px;
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+    font-family: Arial, sans-serif;
+    border-bottom: 1px solid rgb(51,51,51);
+    border-top: 1px solid rgb(51,51,51);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.ppn_minirectangle1_DE_baslerzeitung .ppninnerbox {
+    width: 258px;
+    height: 118px;
+    overflow: hidden;
+}
+.ppn_minirectangle1_DE_baslerzeitung .singlebox {
+    width: 258px;
+    height: 118px;
+    overflow: hidden;
+    position: relative;
+}
+.ppn_minirectangle1_DE_baslerzeitung .title {
+    cursor: pointer;
+    color: rgb(51, 51, 51);
+    font: bold 16px/19px Arial, sans-serif;
+    text-align: left;
+    margin: 7px 1px 5px 1px;
+    width: 235px;
+    height: 20px;
+    overflow: hidden;
+}
+.ppn_minirectangle1_DE_baslerzeitung .title a:link, .ppn_minirectangle1_DE_baslerzeitung .title a:visited, .ppn_minirectangle1_DE_baslerzeitung .title a:active {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_minirectangle1_DE_baslerzeitung .title a:hover {
+    color: rgb(204, 0, 0);
+    text-decoration: none;
+}
+.ppn_minirectangle1_DE_baslerzeitung .text {
+    cursor: pointer;
+    font: normal 11px/13px Arial, sans-serif;
+    text-align: left;
+    margin-left: 149px;
+    width: 108px;
+    max-height: 66px;
+    overflow: hidden;
+}
+.ppn_minirectangle1_DE_baslerzeitung .text a:link, .ppn_minirectangle1_DE_baslerzeitung .text a:visited, .ppn_minirectangle1_DE_baslerzeitung .text a:hover, .ppn_minirectangle1_DE_baslerzeitung .text a:active {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_minirectangle1_DE_baslerzeitung .text a:hover {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_minirectangle1_DE_baslerzeitung .url {
+    cursor: pointer;
+    font: bold 11px/13px Arial, sans-serif;
+    text-align: left;
+    margin-left: 149px;
+    margin-top: 3px;
+}
+.ppn_minirectangle1_DE_baslerzeitung .url a, .ppn_minirectangle1_DE_baslerzeitung .url a:link, .ppn_minirectangle1_DE_baslerzeitung .url a:visited, .ppn_minirectangle1_DE_baslerzeitung .url a:hover, .ppn_minirectangle1_DE_baslerzeitung .url a:active {
+    color: rgb(204, 0, 0);
+    text-decoration: none;
+}
+.ppn_minirectangle1_DE_baslerzeitung .url a:hover {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_minirectangle1_DE_baslerzeitung .adimage {
+    border-width: 0;
+    width: 140px;
+    height: 79px;
+    position: absolute;
+    bottom:6px;
+    left: 0
+}
+.ppn_minirectangle1_DE_baslerzeitung .ppncaption {
+    display: none;
+}
+.ppn_minirectangle1_DE_baslerzeitung .tnlogo{
+    position: absolute; top:0px; left:0; width:100%; height:10px;
+}
+.ppn_minirectangle1_DE_baslerzeitung .tnlogo > a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: black;
+    padding: 1px 2px;
+    font: bold 8px/8px Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+}

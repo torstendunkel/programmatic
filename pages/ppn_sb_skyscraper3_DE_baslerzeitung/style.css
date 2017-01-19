@@ -1,0 +1,91 @@
+
+.ppn_sb_skyscraper3_DE_baslerzeitung {
+    width: 160px;
+    height: 600px;
+    overflow: hidden;
+    background: rgb(239, 239, 239);
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ppn_sb_skyscraper3_DE_baslerzeitung .ppninnerbox {
+    height: 585px;
+    width: 150px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.ppn_sb_skyscraper3_DE_baslerzeitung .singlebox {
+    width: 150px;
+    height: 195px;
+    position: relative;
+    float: left;
+}
+.ppn_sb_skyscraper3_DE_baslerzeitung .title {
+    cursor: pointer;
+    color : rgb(51, 51, 51);
+    font: bold 12px/14px Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+.ppn_sb_skyscraper3_DE_baslerzeitung .title a:link, .ppn_sb_skyscraper3_DE_baslerzeitung .title a:visited, .ppn_sb_skyscraper3_DE_baslerzeitung .title a:active {
+    color : rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_skyscraper3_DE_baslerzeitung .title a:hover {
+    color : rgb(204, 0, 0);
+    text-decoration: none;
+}
+.ppn_sb_skyscraper3_DE_baslerzeitung .text {
+    cursor: pointer;
+    width: 150px;
+    overflow: hidden;
+    font: normal 11px/13px Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding-top: 8px;
+}
+.ppn_sb_skyscraper3_DE_baslerzeitung .text a:link, .ppn_sb_skyscraper3_DE_baslerzeitung .text a:visited, .ppn_sb_skyscraper3_DE_baslerzeitung .text a:hover, .ppn_sb_skyscraper3_DE_baslerzeitung .text a:active {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_skyscraper3_DE_baslerzeitung .text a:hover {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_skyscraper3_DE_baslerzeitung .url {
+    cursor: pointer;
+    display: inline-block;
+    font: bold 11px/13px Arial, sans-serif;
+    text-align: left;
+    padding-top: 5px;
+}
+.ppn_sb_skyscraper3_DE_baslerzeitung .url a, .ppn_sb_skyscraper3_DE_baslerzeitung .url a:link, .ppn_sb_skyscraper3_DE_baslerzeitung .url a:visited, .ppn_sb_skyscraper3_DE_baslerzeitung .url a:hover, .ppn_sb_skyscraper3_DE_baslerzeitung .url a:active {
+    color : rgb(204, 0, 0);
+    text-decoration: none;
+}
+.ppn_sb_skyscraper3_DE_baslerzeitung .url a:hover {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_skyscraper3_DE_baslerzeitung .adimage {
+    border-width: 0;
+    float: left;
+}
+.ppn_sb_skyscraper3_DE_baslerzeitung img.adimage {
+    width: 150px;
+    height: 84px;
+    margin-bottom: 10px;
+}
+.ppn_sb_skyscraper3_DE_baslerzeitung .ppncaption {
+    display: none;
+}
+.ppn_sb_skyscraper3_DE_baslerzeitung .tnlogo {
+    position: absolute; top:0; left:0; width:100%; height:10px;
+}
+.ppn_sb_skyscraper3_DE_baslerzeitung .tnlogo > a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 3px 4px;
+    font: bold 9px/9px Arial, sans-serif;
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,93 @@
+
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:700);
+.ppn_sb_billboard4_DE_derbund {
+    width: 650px;
+    height: 350px;
+    overflow: hidden;
+    background: white;
+    position: relative;
+    border-top: 2px solid rgb(51,51,51);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_billboard4_DE_derbund .ppninnerbox {
+}
+.ppn_sb_billboard4_DE_derbund .singlebox {
+    width: 650px;
+    height: 87px;
+    position: relative;
+    float: left;
+}
+.ppn_sb_billboard4_DE_derbund .title {
+    cursor: pointer;
+    color : rgb(51, 51, 51);
+    font: bold 22px/22px 'Playfair', serif;
+    text-align: left;
+    padding-top: 12px;
+}
+.ppn_sb_billboard4_DE_derbund .title a:link, .ppn_sb_billboard4_DE_derbund .title a:visited, .ppn_sb_billboard4_DE_derbund .title a:active {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_billboard4_DE_derbund .title a:hover {
+    color: rgb(0, 133, 171);
+    text-decoration: none;
+}
+.ppn_sb_billboard4_DE_derbund .text {
+    cursor: pointer;
+    overflow: hidden;
+    width: 450px;
+    color: rgb(51, 51, 51);
+    font: normal 14px/17px Georgia, serif;
+    text-align: left;
+    padding-top: 5px;
+}
+.ppn_sb_billboard4_DE_derbund .text a:link, .ppn_sb_billboard4_DE_derbund .text a:visited, .ppn_sb_billboard4_DE_derbund .text a:hover, .ppn_sb_billboard4_DE_derbund .text a:active {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_billboard4_DE_derbund .text a:hover {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_billboard4_DE_derbund .text span.url {
+    cursor: pointer;
+    color: rgb(0, 133, 171);
+    font: normal 14px/17px Georgia, serif;
+    text-align: left;
+}
+.ppn_sb_billboard4_DE_derbund .url a, .ppn_sb_billboard4_DE_derbund .url a:link, .ppn_sb_billboard4_DE_derbund .url a:visited, .ppn_sb_billboard4_DE_derbund .url a:hover, .ppn_sb_billboard4_DE_derbund .url a:active {
+    color: rgb(0, 133, 171);
+    text-decoration: none;
+}
+.ppn_sb_billboard4_DE_derbund .text span.url a:hover {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_billboard4_DE_derbund .adimage {
+    border-width: 0;
+    float: left;
+}
+.ppn_sb_billboard4_DE_derbund img.adimage {
+    width: 130px;
+    height: 73px;
+    margin: 10px 15px 6px 0px;
+}
+.ppn_sb_billboard4_DE_derbund .ppncaption {
+    display: none;
+}
+.ppn_sb_billboard4_DE_derbund  .tnlogo {
+    position: absolute; top:0; left:0; width:100%;height: 10px;
+}
+.ppn_sb_billboard4_DE_derbund  .tnlogo > a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgb(51,51,51);
+    padding: 3px 5px;
+    font: normal 10px/10px Georgia, serif;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
