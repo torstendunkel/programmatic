@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+.ppn_sb_monsterboard3_FR_ghi {
+  width: 460px;
+  height: 270px;
+  overflow: hidden;
+  background: #FAFAFA;
+  font-family: 'Open Sans', sans-serif;
+  color: #494747;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.1);
+}
+.ppn_sb_monsterboard3_FR_ghi .ppninnerbox {
+  width: 460px;
+  height: 270px;
+  border: none;
+  overflow: hidden;
+}
+.ppn_sb_monsterboard3_FR_ghi .singlebox {
+  width: 450px;
+  height: 89px;
+  margin: 0 5px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  border: none;
+  border-bottom: 1px solid #D1D1D1;
+}
+.ppn_sb_monsterboard3_FR_ghi .singlebox:last-child {
+  border: none;
+}
+.ppn_sb_monsterboard3_FR_ghi .title {
+  font: 700 18px/24px 'Open Sans', sans-serif;
+  margin: 10px 0px 0px 155px;
+  max-height: 24px;
+  overflow: hidden;
+  border: none;
+  padding: 0px;
+}
+.ppn_sb_monsterboard3_FR_ghi .title a:link,
+.ppn_sb_monsterboard3_FR_ghi .title a:visited,
+.ppn_sb_monsterboard3_FR_ghi .title a:active{
+  font: 700 18px/22px 'Open Sans', sans-serif;
+  text-align: left;
+  border: none;
+  color: #599428;
+  text-decoration: none;
+}
+.ppn_sb_monsterboard3_FR_ghi .title a:hover {
+  text-decoration: underline;
+}
+.ppn_sb_monsterboard3_FR_ghi .text {
+  font: 400 12px/18px 'Open Sans', sans-serif;
+  margin: 8px 0px 0px 155px;
+  max-height: 36px;
+  overflow: hidden;
+}
+.ppn_sb_monsterboard3_FR_ghi .text a:link, .ppn_sb_monsterboard3_FR_ghi .text a:visited, .ppn_sb_monsterboard3_FR_ghi .text a:hover, .ppn_sb_monsterboard3_FR_ghi .text a:active, .ppn_sb_monsterboard3_FR_ghi .text a:hover  {
+  font: 400 12px/18px 'Open Sans', sans-serif;
+  text-transform: none;
+  text-align: left;
+  border: none;
+  color: #494747;
+  text-decoration: none;
+}
+.ppn_sb_monsterboard3_FR_ghi .text span.url, .ppn_sb_monsterboard3_FR_ghi .url a, .ppn_sb_monsterboard3_FR_ghi .url a:link, .ppn_sb_monsterboard3_FR_ghi .url a:visited, .ppn_sb_monsterboard3_FR_ghi .url a:hover, .ppn_sb_monsterboard3_FR_ghi .url a:active, .ppn_sb_monsterboard3_FR_ghi .url a:hover {
+  font: 700 12px/18px 'Open Sans', sans-serif;
+  display: inline-block;
+  color: #C84D1B;
+  text-decoration: none;
+}
+.ppn_sb_monsterboard3_FR_ghi .url a .white {
+  font: 400 11px/11px 'Open Sans', sans-serif;
+  color: white;
+  background-color: #C84D1B;
+  border-radius: 15px;
+  padding: 0px 4px 0px 4px;
+}
+.ppn_sb_monsterboard3_FR_ghi .adimage {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  border-width: 0;
+  width: 140px;
+  height: 78px;
+}
+.ppn_sb_monsterboard3_FR_ghi .ppncaption {
+  display: none;
+}
+.ppn_sb_monsterboard3_FR_ghi .tnlogo > a{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: #D1D1D1;
+	padding: 2px 4px 3px 4px;
+	font: 700 10px/10px 'Open Sans', sans-serif;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+.ppn_sb_monsterboard3_FR_ghi .tnlogo{
+    position: absolute; bottom:0; right:0; max-width:100px; height:15px;
+}
