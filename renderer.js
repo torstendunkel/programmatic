@@ -4,14 +4,21 @@ ch.tam = ch.tam || {};
 
 ch.tam.addnexusRender = (function(){
 
+    "use strict";
+
   var settings = {
       identifier : 'ppn_sb_billboard3_DE_20min', //fallback
       member : 3646, // fallback variables
       numads : 4, // fallback variables
       tagid : 9461257, // fallback variables
       idPrefix : 'ad-',
+      adMarker : {
+        de : 'Anzeige',
+        fr : 'Publicité',
+        it : 'Pubblicità'
+      },
       trackingPixel : '<img class="pixel" src="{{imgSrc}}" width="0" height="0" style="display:none"/>',
-      wrapper : '<div class="{{identifier}}"><div class="ppncaption">Werbung</div><div id="ppninnerbox" class="ppninnerbox">{{content}}<div class="tnlogo" style="position: absolute; top:0; left:0; width:100%;height: 10px;"><a href="https://goo.gl/gJLreW" target="_blank">Anzeige</a></div>',
+      wrapper : '<div class="{{identifier}}"><div class="ppncaption">Werbung</div><div id="ppninnerbox" class="ppninnerbox">{{content}}</div><div class="tnlogo"><a href="https://goo.gl/gJLreW" target="_blank">{{admarker}}</a></div>',
       template : '<div class="singlebox bottom left right" id="{{id}}"><a target="_blank" href="{{href}}"><img class="adimage" alt="Werbung" src="{{img}}"/></a><div class="title"> <a target="_blank" href="{{href}}">{{title}}</a></div><div class="text"><a target="_blank" href="{{href}}">{{description}}</a></div><div class="url"><a target="_blank" href="{{href}}"></a></div>{{impression}}</div>'
   };
 
@@ -45,18 +52,28 @@ ch.tam.addnexusRender = (function(){
         catch(e){
             this.options = {};
         }
+        console.log(this.options);
 
         this.options.numads = parseInt(this.options.numads) || this.settings.numads;
         this.options.member = parseInt(this.options.member) || this.settings.member;
         this.options.identifier = this.options.identifier || this.settings.identifier;
         this.options.tagid = parseInt(this.options.tagid)    || this.settings.tagid;
+
+        //guessing the language
+        if(!this.options.lang){
+            this.options.lang = this.options.identifier.indexOf('_DE_') !== -1 ? 'de' : this.options.identifier.indexOf('_FR_') !== -1 ? 'fr' : 'it';
+        }
+
         return true;
     },
 
     pushTags: function(){
       //set global page options
       apntag.setPageOpts({
-        member: parseInt(this.options.member) || this.settings.member
+        member: parseInt(this.options.member) || this.settings.member,
+        user : {
+            language : this.options.lang.toUpperCase()
+        }
       });
 
 
@@ -88,7 +105,8 @@ ch.tam.addnexusRender = (function(){
     render: function(){
         var data= {
             content : '',
-            identifier : this.options.identifier
+            identifier : this.options.identifier,
+            admarker : this.settings.adMarker[this.options.lang]
         };
 
         for(var i=0; i<this.loadedAds.length; i++){
@@ -158,18 +176,19 @@ ch.tam.addnexusRender = (function(){
     },
     tmpl:function(template, data) {
         var prop, regProp, html = template;
-        for (prop in data) regProp = new RegExp("{{" + prop + "}}", "gim"), html = html.replace(regProp, data[prop]);
+        for (prop in data) {
+            if(data.hasOwnProperty(prop)){
+                regProp = new RegExp("{{" + prop + "}}", "gim");
+                html = html.replace(regProp, data[prop]);
+            }
+        }
         return html;
     },
-    prependNode : function (newNode, referenceNode) {
-        referenceNode.insertBefore(newNode, referenceNode.firstChild);
 
-    },
     createDomNodeFromHTML: function(html){
         var div = document.createElement('div');
         div.innerHTML = html;
-        var elements = div.childNodes;
-        return elements;
+        return div.childNodes;
     },
 
     addStyle: function(){

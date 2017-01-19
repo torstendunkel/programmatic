@@ -1,0 +1,109 @@
+
+@import url(http://fonts.googleapis.com/css?family=Patua+One|Fjord+One);
+.ppn_sb_monsterboard3_DE_annabelle{
+    width: 640px;
+    height: 400px;
+    overflow: hidden;
+    background: white;
+    position: relative;
+    border-top: 4px solid rgb(26, 28, 60);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_monsterboard3_DE_annabelle .ppninnerbox{
+    width: 640px;
+    height: 390px;
+    position: relative;
+    margin-top: 10px;
+}
+.ppn_sb_monsterboard3_DE_annabelle .singlebox{
+    width: 640px;
+    height: 130px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    border-bottom: 1px dotted rgb(26, 28, 60);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_monsterboard3_DE_annabelle .singlebox:last-child{
+    border: none;
+}
+.ppn_sb_monsterboard3_DE_annabelle .title{
+    cursor: pointer;
+    margin-top: 15px;
+    overflow: hidden;
+    color: rgb(80, 80, 80);
+    font: normal 24px/26px 'Patua One', serif;
+    text-align: left;
+    padding-bottom: 10px;
+}
+.ppn_sb_monsterboard3_DE_annabelle .title a:link, .ppn_sb_monsterboard3_DE_annabelle .title a:visited, .ppn_sb_monsterboard3_DE_annabelle .title a:active{
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+}
+.ppn_sb_monsterboard3_DE_annabelle .title a:hover{
+    color: rgb(68, 170, 128);
+    text-decoration: none;
+}
+.ppn_sb_monsterboard3_DE_annabelle .text{
+    cursor: pointer;
+    color: rgb(80, 80, 80);
+    font: normal 16px/22px 'Fjord One', serif;
+    text-align: left;
+    margin-left: 201px;
+}
+.ppn_sb_monsterboard3_DE_annabelle .text a:link, .ppn_sb_monsterboard3_DE_annabelle .text a:visited, .ppn_sb_monsterboard3_DE_annabelle .text a:hover, .ppn_sb_monsterboard3_DE_annabelle .text a:active{
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+}
+.ppn_sb_monsterboard3_DE_annabelle .text a:hover{
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+}
+.ppn_sb_monsterboard3_DE_annabelle .text span.url{
+    cursor: pointer;
+    overflow: hidden;
+    display: inline;
+    color: rgb(68, 170, 128);
+    font: Italic 16px/22px "Times New Roman", Times, serif;
+    text-align: left;
+}
+.ppn_sb_monsterboard3_DE_annabelle .url a, .ppn_sb_monsterboard3_DE_annabelle .url a:link, .ppn_sb_monsterboard3_DE_annabelle .url a:visited, .ppn_sb_monsterboard3_DE_annabelle .url a:hover, .ppn_sb_monsterboard3_DE_annabelle .url a:active{
+    color: rgb(68, 170, 128);
+    text-decoration: underline;
+}
+.ppn_sb_monsterboard3_DE_annabelle .text span.url a:hover{
+    color: rgb(236, 28, 36);
+    text-decoration: underline;
+}
+.ppn_sb_monsterboard3_DE_annabelle .adimage{
+    border-width: 0;
+    float: left;
+}
+.ppn_sb_monsterboard3_DE_annabelle img.adimage{
+    width: 186px;
+    height: 105px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+.ppn_sb_monsterboard3_DE_annabelle .ppncaption{
+    display: none;
+}
+.ppn_sb_monsterboard3_DE_annabelle .tnlogo{
+    position: absolute; top:0px; left:0; width:100%; height:15px
+
+}
+.ppn_sb_monsterboard3_DE_annabelle .tnlogo > a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0px 4px 4px 4px;
+    background: rgb(26, 28, 60);
+    font: normal 10px/10px 'Patua One', serif;
+    color: white;
+    text-decoration: none;
+    border: none;
+}

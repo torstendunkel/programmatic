@@ -1,0 +1,114 @@
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    background: white;
+    color: #333;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    border-bottom: 1px solid #333;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .ppninnerbox {
+    width: 300px;
+    height: 250px;
+    border: none;
+    overflow: hidden;
+}
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .singlebox {
+    width: 300px;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    border: none;
+}
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .title {
+    margin: 180px 0px 3px 0px;
+    max-height:20px;
+    overflow: hidden;
+    border: none;
+    padding: 0px;
+    font: bold 16px/20px Georgia, serif;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-align: left;
+    color: #007abf;
+}
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .title a:link,
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .title a:visited,
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .title a:active{
+    text-decoration: none;
+    color: #007abf;
+}
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .title a:hover{
+    text-decoration: none;
+    color: #333;
+}
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .text {
+    margin: 0px 0px 5px 0px;
+    max-height: 36px;
+    overflow: hidden;
+    font: 400 13px/18px 'PT Sans', sans-serif;
+    text-decoration: none;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .text a:link, .ppn_sb_mobilerect1_v2_DE_tagesanzeiger .text a:visited, .ppn_sb_mobilerect1_v2_DE_tagesanzeiger .text a:hover, .ppn_sb_mobilerect1_v2_DE_tagesanzeiger .text a:active, .ppn_sb_mobilerect1_v2_DE_tagesanzeiger .text a:hover  {
+    text-decoration: none;
+    color: black;
+}
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .text span.url,
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .url a,
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .url a:link,
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .url a:visited,
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .url a:hover,
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .url a:active{
+    margin-top: 5px;
+    font: 700 13px/18px 'PT Sans', sans-serif;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0px;
+    text-align: left;
+    text-decoration: none;
+    color: #007abf;
+}
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .url a:hover {
+    color: #333;
+}
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .adimage {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-width: 0;
+    width: 300px;
+    height: 168px;
+}
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .ppncaption {
+    display: none;
+}
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .tnlogo {
+    position: absolute; bottom:0; right:0; max-width:100px; height:13px;
+}
+.ppn_sb_mobilerect1_v2_DE_tagesanzeiger .tnlogo > a{
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #333;
+    padding: 2px 4px;
+    font: normal 10px/10px Georgia, serif;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}

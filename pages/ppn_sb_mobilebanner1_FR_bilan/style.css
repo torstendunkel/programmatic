@@ -1,0 +1,104 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+.ppn_sb_mobilebanner1_FR_bilan {
+    width: 320px;
+    height: 50px;
+    overflow: hidden;
+    background: #fdfdfa;
+    position: relative;
+    cursor: pointer;
+    border-top: 5px solid #d41317;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_mobilebanner1_FR_bilan .ppninnerbox {
+    width: 320px;
+    height: 45px;
+    overflow: hidden;
+    border: none;
+}
+.ppn_sb_mobilebanner1_FR_bilan .singlebox {
+    width: 320px;
+    height: 45px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    border: none;
+}
+.ppn_sb_mobilebanner1_FR_bilan .title {
+    font: normal 13px/14px Georgia, serif;
+    margin: 5px 5px 0px 95px;
+    max-height: 14px;
+    overflow: hidden;
+    border: none;
+    padding: 0px;
+    text-align: left;
+}
+.ppn_sb_mobilebanner1_FR_bilan .title a:link, .ppn_sb_mobilebanner1_FR_bilan .title a:visited, .ppn_sb_mobilebanner1_FR_bilan .title a:active, .ppn_sb_mobilebanner1_FR_bilan .title a:hover {
+    color: #d41317;
+    text-decoration: none;
+}
+.ppn_sb_mobilebanner1_FR_bilan .text {
+    font: normal 9px/10px Georgia, serif;
+    margin: 3px 5px 2px 95px;
+    max-height: 20px;
+    overflow: hidden;
+    border: none;
+    padding: 0px;
+    text-align: left;
+}
+.ppn_sb_mobilebanner1_FR_bilan .text a:link, .ppn_sb_mobilebanner1_FR_bilan .text a:visited, .ppn_sb_mobilebanner1_FR_bilan .text a:hover, .ppn_sb_mobilebanner1_FR_bilan .text a:active, .ppn_sb_mobilebanner1_FR_bilan .text a:hover {
+    color: #444444;
+    text-decoration: none;
+}
+.ppn_sb_mobilebanner1_FR_bilan .text a:hover {
+    color: #d41317;
+    text-decoration: none;
+}
+.ppn_sb_mobilebanner1_FR_bilan .url, .ppn_sb_mobilebanner1_FR_bilan .url a, .ppn_sb_mobilebanner1_FR_bilan .url a:link, .ppn_sb_mobilebanner1_FR_bilan .url a:visited, .ppn_sb_mobilebanner1_FR_bilan .url a:hover, .ppn_sb_mobilebanner1_FR_bilan .url a:active, .ppn_sb_mobilebanner1_FR_bilan .url a:hover  {
+    font: normal 9px/10px 'Open Sans', sans-serif;
+    display: inline-block;
+    color: #d41317;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.ppn_sb_mobilebanner1_FR_bilan .singlebox > a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 88px;
+    height: 50px;
+    background-color: #d41317;
+    opacity: 1;
+}
+.ppn_sb_mobilebanner1_FR_bilan img.adimage {
+    border-width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 88px;
+    height: 50px;
+    background-color: #d41317;
+    opacity: 1;
+}
+.ppn_sb_mobilebanner1_FR_bilan img.adimage:hover {
+    opacity: 0.85;
+}
+.ppn_sb_mobilebanner1_FR_bilan .ppncaption {
+    display: none;
+}
+.ppn_sb_mobilebanner1_FR_bilan .tnlogo {
+    position: absolute; top:0; left:0; width:100%; height:15px;
+}
+.ppn_sb_mobilebanner1_FR_bilan .tnlogo > a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0px 3px 3px 3px;
+    background: #d41317;
+    font: 700 8px/8px 'Open Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    border: none;
+}

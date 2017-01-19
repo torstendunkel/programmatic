@@ -1,0 +1,106 @@
+
+.ppn_sb_mobilerectangle3_DE_tagesanzeiger {
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.ppn_sb_mobilerectangle3_DE_tagesanzeiger .ppninnerbox {
+    height: 580px;
+    width: 300px;
+    margin: 10px 0;
+    background: white;
+}
+.ppn_sb_mobilerectangle3_DE_tagesanzeiger .singlebox {
+    width: 300px;
+    height: 193px;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #333;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_mobilerectangle3_DE_tagesanzeiger .singlebox:last-child {
+    border-bottom: 1px solid #333;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_mobilerectangle3_DE_tagesanzeiger .title {
+    position: relative;
+    width: 280px;
+    max-height: 22px;
+    overflow: hidden;
+    margin: 0px 10px;
+    color: #007abf;
+    font: bold 17px/20px Georgia, serif;
+    text-align: left;
+    border: none;
+}
+.ppn_sb_mobilerectangle3_DE_tagesanzeiger .title a:link, .ppn_sb_mobilerectangle3_DE_tagesanzeiger .title a:visited, .ppn_sb_mobilerectangle3_DE_tagesanzeiger .title a:active, .ppn_sb_mobilerectangle3_DE_tagesanzeiger .title a:hover {
+    color: #007abf;
+    text-decoration: none;
+}
+.ppn_sb_mobilerectangle3_DE_tagesanzeiger .title a:hover {
+    color: #333;
+    text-decoration: none;
+}
+.ppn_sb_mobilerectangle3_DE_tagesanzeiger .text {
+    position: relative;
+    width: 280px;
+    max-height: 38px;
+    overflow: hidden;
+    margin: 5px 10px 10px 10px;
+    font: normal 13px/18px Georgia, serif;
+    text-align: left;
+    border: none;
+}
+.ppn_sb_mobilerectangle3_DE_tagesanzeiger .text a:link, .ppn_sb_mobilerectangle3_DE_tagesanzeiger .text a:visited, .ppn_sb_mobilerectangle3_DE_tagesanzeiger .text a:hover, .ppn_sb_mobilerectangle3_DE_tagesanzeiger .text a:active {
+    color: #333;
+    text-decoration: none;
+}
+.ppn_sb_mobilerectangle3_DE_tagesanzeiger .text a:hover {
+    color: #333;
+    text-decoration: none;
+}
+.ppn_sb_mobilerectangle3_DE_tagesanzeiger .url {
+    display: inline-block;
+    font: normal 13px/18px Georgia, serif;
+    text-align: left;
+}
+.ppn_sb_mobilerectangle3_DE_tagesanzeiger .url a, .ppn_sb_mobilerectangle3_DE_tagesanzeiger .url a:link, .ppn_sb_mobilerectangle3_DE_tagesanzeiger .url a:visited, .ppn_sb_mobilerectangle3_DE_tagesanzeiger .url a:hover, .ppn_sb_mobilerectangle3_DE_tagesanzeiger .url a:active {
+    color: #007abf;
+    text-decoration: none;
+}
+.ppn_sb_mobilerectangle3_DE_tagesanzeiger .url a:hover {
+    color: #333;
+    text-decoration: none;
+}
+.ppn_sb_mobilerectangle3_DE_tagesanzeiger .adimage {
+    position: relative;
+    float: left;
+    border-width: 0;
+    width: 180px;
+    height: 101px;
+    margin: 12px 10px 10px 10px;
+}
+.ppn_sb_mobilerectangle3_DE_tagesanzeiger .ppncaption {
+    display: none;
+}
+.ppn_sb_mobilerectangle3_DE_tagesanzeiger .tnlogo {
+    position: absolute; top:10px; right:0; max-width:100px; height:15px;
+}
+.ppn_sb_mobilerectangle3_DE_tagesanzeiger .tnlogo > a{
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #333;
+    padding: 3px 4px;
+    font: normal 10px/10px Georgia, serif;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
