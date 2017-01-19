@@ -1,108 +1,156 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+@torstendunkel
+Watch 6
+Star 0
+Fork 0 omibee/tamedia-ppn-template Private
+Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
+Branch: master Find file Copy pathtamedia-ppn-template/Friday/fridayMobileWideboard1erDE.html
+426b1ce  7 days ago
+@BeatrizRema BeatrizRema Change from ppn link and logo to tamedia network; give unique class w…
+1 contributor
+RawBlameHistory
+168 lines (154 sloc)  4.31 KB
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
 
-    <title>Mobile Rectangle (300x250) 2 Ads FR</title>
+    <title>Mobile Wideboard (640x320) 1Ad DE</title>
 
     <!-- styling -->
     <style type="text/css">
-        .ppn_sb_mobilerectangle2_FR_24heures {
-            width: 300px;
-            height: 250px;
+        @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:700italic,700);
+        .ppn_sb_mobilewideboard1_DE_friday {
+            width: 640px;
+            height: 320px;
             overflow: hidden;
-            background: rgb(239, 239, 239);
-            position: relative;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .ppn_sb_mobilerectangle2_FR_24heures .ppninnerbox {
-        }
-        .ppn_sb_mobilerectangle2_FR_24heures .singlebox {
-            width: 300px;
-            height: 125px;
-            position: relative;
-        }
-        .ppn_sb_mobilerectangle2_FR_24heures .title {
-            cursor: pointer;
-            color : rgb(51, 51, 51);
-            font: bold 17px/20px Arial, Helvetica, sans-serif;
+            background: #F8F6EF;
+            color: black;
             text-align: left;
-            padding-top: 15px;
-            padding-left: 5px;
-        }
-        .ppn_sb_mobilerectangle2_FR_24heures .title a:link, .ppn_sb_mobilerectangle2_FR_24heures .title a:visited, .ppn_sb_mobilerectangle2_FR_24heures .title a:active {
-            color : rgb(51, 51, 51);
-            text-decoration: none;
-        }
-        .ppn_sb_mobilerectangle2_FR_24heures .title a:hover {
-            color : rgb(227, 6, 19);
-            text-decoration: none;
-        }
-        .ppn_sb_mobilerectangle2_FR_24heures .text {
+            position: relative;
             cursor: pointer;
-            width: 140px;
+            border: none;
+            text-align: center;
+            border: 1px solid white;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box
+        }
+        .ppn_sb_mobilewideboard1_DE_friday .ppninnerbox {
+            width: 640px;
+            height: 320px;
+            border: none;
             overflow: hidden;
-            font: normal 11px/13px Arial, Helvetica, sans-serif;
+        }
+        .ppn_sb_mobilewideboard1_DE_friday .singlebox {
+            width: 640px;
+            height: 320px;
+            overflow: hidden;
+            position: relative;
+            float: left;
+            border: none;
+        }
+        .ppn_sb_mobilewideboard1_DE_friday .title {
+            position: relative;
+            margin: 20px 40px 20px 20px;
+            max-height: 25px;
+            overflow: hidden;
+            font: 700 28px/35px 'Josefin Sans', sans-serif;
+            font-style: italic;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.25px;
             text-align: left;
-            padding-top: 10px;
-            margin-left: 155px;
-        }
-        .ppn_sb_mobilerectangle2_FR_24heures .text a:link, .ppn_sb_mobilerectangle2_FR_24heures .text a:visited, .ppn_sb_mobilerectangle2_FR_24heures .text a:hover, .ppn_sb_mobilerectangle2_FR_24heures .text a:active {
-            color: rgb(51, 51, 51);
             text-decoration: none;
+            color: black;
         }
-        .ppn_sb_mobilerectangle2_FR_24heures .text a:hover {
-            color : rgb(51, 51, 51);
+        .ppn_sb_mobilewideboard1_DE_friday .title a:hover,
+        .ppn_sb_mobilewideboard1_DE_friday .title a:link,
+        .ppn_sb_mobilewideboard1_DE_friday .title a:visited,
+        .ppn_sb_mobilewideboard1_DE_friday .title a:active{
             text-decoration: none;
+            color: black;
         }
-        .ppn_sb_mobilerectangle2_FR_24heures .url {
-            cursor: pointer;
-            display: inline-block;
-            margin-left: 155px;
-            padding-top: 5px;
-            font: bold 11px/13px Arial, Helvetica, sans-serif;
-            text-align: left;
-        }
-        .ppn_sb_mobilerectangle2_FR_24heures .url a, .ppn_sb_mobilerectangle2_FR_24heures .url a:link, .ppn_sb_mobilerectangle2_FR_24heures .url a:visited, .ppn_sb_mobilerectangle2_FR_24heures .url a:hover, .ppn_sb_mobilerectangle2_FR_24heures .url a:active {
-            color : rgb(227, 6, 19);
-            text-decoration: none;
-        }
-        .ppn_sb_mobilerectangle2_FR_24heures .url a:hover {
-            color : rgb(51, 51, 51);
-            text-decoration: none;
-        }
-        .ppn_sb_mobilerectangle2_FR_24heures .adimage {
-            border-width: 0;
-            position:absolute;
+        .ppn_sb_mobilewideboard1_DE_friday .text {
+            position: absolute;
             bottom: 0px;
+            right: 0px;
+            border: 0;
+            width: 250px;
+            height: 223px;
+            max-height: 223px;
+            overflow: hidden;
+            z-index: 2;
+            background: white;
+            padding: 0px;
+            font: normal 18px/29px Arial, sans-serif;
+            text-decoration: none;
+            text-align: left;
+            text-decoration: none;
+            color: black;
         }
-        .ppn_sb_mobilerectangle2_FR_24heures img.adimage {
-            width: 140px;
-            height: 79px;
-            margin: 20px 5px 5px 5px;
+        .ppn_sb_mobilewideboard1_DE_friday .text > a:link,
+        .ppn_sb_mobilewideboard1_DE_friday .text > a:visited,
+        .ppn_sb_mobilewideboard1_DE_friday .text > a:hover,
+        .ppn_sb_mobilewideboard1_DE_friday .text > a:active,
+        .ppn_sb_mobilewideboard1_DE_friday .text > a:hover  {
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            padding: 17px 20px 0px 20px;
         }
-        .ppn_sb_mobilerectangle2_FR_24heures .ppncaption {
+        .ppn_sb_mobilewideboard1_DE_friday .url > a,
+        .ppn_sb_mobilewideboard1_DE_friday .url > a:link,
+        .ppn_sb_mobilewideboard1_DE_friday .url > a:visited,
+        .ppn_sb_mobilewideboard1_DE_friday .url > a:hover,
+        .ppn_sb_mobilewideboard1_DE_friday .url > a:active,
+        .ppn_sb_mobilewideboard1_DE_friday .url > a:hover {
+            font: 700 18px/29px 'Josefin Sans', sans-serif;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.25px;
+            text-align: left;
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            padding: 3px 20px 0px 20px;
+        }
+        .ppn_sb_mobilewideboard1_DE_friday .adimage {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            border-width: 0;
+            width: 450px;
+            height: 253px;
+            z-index: 1;
+        }
+        .ppn_sb_mobilewideboard1_DE_friday .ppncaption {
             display: none;
         }
-        .ppn_sb_mobilerectangle2_FR_24heures .tnlogo > a{
+        .ppn_sb_mobilewideboard1_DE_friday .tnlogo > a{
+            z-index: 2;
             position: absolute;
-            left: 0;
+            right: 0;
             top: 0;
-            padding: 2px 3px;
-            font: bold 9px/9px Arial, Helvetica, sans-serif;
-            color: black;
+            background: black;
+            padding: 4px;
+            font: normal 10px/10px Arial, sans-serif;
+            text-align: center;
+            color: white;
             text-decoration: none;
         }
     </style>
-
 </head>
 
 <body>
 
-
-<div class="ppn_sb_mobilerectangle2_FR_24heures">
-
+<div class="ppn_sb_mobilewideboard1_DE_friday">
     <div class="ppncaption">Werbung</div>
 
     <!-- The ads are inserted into this div: -->
@@ -112,50 +160,24 @@
             <a target="_blank" href="http://ppn.ch/">
                 <img class="adimage" alt="Werbung" src="http://cdn-content-production.cxpublic.com/0b9fcac32bd7bcc709a1a5cc252006595176027a34cb4a8dbdc59b246ca3e832.jpg"/>
             </a>
-
             <div class="title">
                 <a target="_blank" href="http://ppn.ch/">Sommerschlussverkauf Bonn</a>
             </div>
-
             <div class="text">
                 <a target="_blank" href="http://ppn.ch/">Die Idee ist das Absolute, und alles Wirkliche ist nur Realisierung der Idee. Georg Hegel.</a>
+                <span class="url"><a target="_blank" href="http://ppn.ch/"> MEHR ►</a></span>
             </div>
-            <div class="url">
-                <a target="_blank" href="http://ppn.ch/">► Mehr</a>
-            </div>
-
-
         </div>
-
-
-        <div class="singlebox bottom left right">
-            <a target="_blank" href="http://ppn.ch/">
-                <img class="adimage" alt="Werbung" src="http://cdn-content-production.cxpublic.com/9c12b44cf25d85a37e0dd4e85caccc0e2e430ff3e9721e8303c2b797d7f01ef3.jpg"/>
-            </a>
-
-            <div class="title">
-                <a target="_blank" href="http://ppn.ch/">Top Qualitätsweine</a>
-            </div>
-
-            <div class="text">
-                <a target="_blank" href="http://ppn.ch/">10% Rabatt auf alle Weine beim Kauf von einem Karton.</a>
-            </div>
-            <div class="url">
-                <a target="_blank" href="http://ppn.ch/">► Mehr</a>
-            </div>
-
-
-        </div>
-
 
     </div>
 
     <!-- Hovering logo -->
-    <div class="tnlogo" style="position: absolute; top:0; left:0; width:100%; height:10px">
-        <a href="https://goo.gl/gJLreW" target="_blank">Publicité</a>
+    <div class="tnlogo" style="position: absolute; top:0; right:0; max-width:100px; height:15px;">
+        <a href="https://goo.gl/gJLreW" target="_blank">Anzeige</a>
     </div>
 
 </div>
-
 </body>
 </html>
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help

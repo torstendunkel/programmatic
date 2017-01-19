@@ -1,0 +1,124 @@
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:700italic,700);
+.ppn_sb_mobilewideboard1_FR_friday {
+    width: 640px;
+    height: 320px;
+    overflow: hidden;
+    background: #F8F6EF;
+    color: black;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    border: 1px solid white;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+.ppn_sb_mobilewideboard1_FR_friday .ppninnerbox {
+    width: 640px;
+    height: 320px;
+    border: none;
+    overflow: hidden;
+}
+.ppn_sb_mobilewideboard1_FR_friday .singlebox {
+    width: 640px;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    border: none;
+}
+.ppn_sb_mobilewideboard1_FR_friday .title {
+    position: relative;
+    margin: 20px 40px 20px 20px;
+    max-height: 25px;
+    overflow: hidden;
+    font: 700 28px/35px 'Josefin Sans', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.25px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+.ppn_sb_mobilewideboard1_FR_friday .title a:hover,
+.ppn_sb_mobilewideboard1_FR_friday .title a:link,
+.ppn_sb_mobilewideboard1_FR_friday .title a:visited,
+.ppn_sb_mobilewideboard1_FR_friday .title a:active{
+    text-decoration: none;
+    color: black;
+}
+.ppn_sb_mobilewideboard1_FR_friday .text {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border: 0;
+    width: 250px;
+    height: 223px;
+    max-height: 223px;
+    overflow: hidden;
+    z-index: 2;
+    background: white;
+    padding: 0px;
+    font: normal 18px/29px Arial, sans-serif;
+    text-decoration: none;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+.ppn_sb_mobilewideboard1_FR_friday .text > a:link,
+.ppn_sb_mobilewideboard1_FR_friday .text > a:visited,
+.ppn_sb_mobilewideboard1_FR_friday .text > a:hover,
+.ppn_sb_mobilewideboard1_FR_friday .text > a:active,
+.ppn_sb_mobilewideboard1_FR_friday .text > a:hover  {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 17px 20px 0px 20px;
+}
+.ppn_sb_mobilewideboard1_FR_friday .url > a,
+.ppn_sb_mobilewideboard1_FR_friday .url > a:link,
+.ppn_sb_mobilewideboard1_FR_friday .url > a:visited,
+.ppn_sb_mobilewideboard1_FR_friday .url > a:hover,
+.ppn_sb_mobilewideboard1_FR_friday .url > a:active,
+.ppn_sb_mobilewideboard1_FR_friday .url > a:hover {
+    font: 700 18px/29px 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.25px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 3px 20px 0px 20px;
+}
+.ppn_sb_mobilewideboard1_FR_friday .adimage {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-width: 0;
+    width: 450px;
+    height: 253px;
+    z-index: 1;
+}
+.ppn_sb_mobilewideboard1_FR_friday .ppncaption {
+    display: none;
+}
+.ppn_sb_mobilewideboard1_FR_friday .tnlogo {
+    position: absolute; top:0; right:0; max-width:100px; height:15px;
+}
+.ppn_sb_mobilewideboard1_FR_friday .tnlogo > a{
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: black;
+    padding: 4px;
+    font: normal 10px/10px Arial, sans-serif;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,125 @@
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:700italic,700);
+.ppn_sb_mobilerectangle2_DE_friday {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    background: #F8F6EF;
+    color: black;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    border: none;
+}
+.ppn_sb_mobilerectangle2_DE_friday .ppninnerbox {
+    width: 300px;
+    height: 250px;
+    border: none;
+    overflow: hidden;
+}
+.ppn_sb_mobilerectangle2_DE_friday .singlebox {
+    width: 300px;
+    height: 125px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    border: 1px solid white;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+.ppn_sb_mobilerectangle2_DE_friday .title {
+    position: relative;
+    z-index: 2;
+    margin: 7px 35px 7px 10px;
+    max-height: 17px;
+    overflow: hidden;
+    font: 700 13px/17px 'Josefin Sans', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.25px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+.ppn_sb_mobilerectangle2_DE_friday .title a:hover,
+.ppn_sb_mobilerectangle2_DE_friday .title a:link,
+.ppn_sb_mobilerectangle2_DE_friday .title a:visited,
+.ppn_sb_mobilerectangle2_DE_friday .title a:active{
+    text-decoration: none;
+    color: black;
+}
+.ppn_sb_mobilerectangle2_DE_friday .text {
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    right: 0px;
+    border: 0;
+    width: 154px;
+    height: 84px;
+    max-height: 84px;
+    overflow: hidden;
+    z-index: 2;
+    background: white;
+    padding: 0px;
+    font: normal 11px/15px Arial, sans-serif;
+    text-decoration: none;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+.ppn_sb_mobilerectangle2_DE_friday .text > a,
+.ppn_sb_mobilerectangle2_DE_friday .text > a:link,
+.ppn_sb_mobilerectangle2_DE_friday .text > a:visited,
+.ppn_sb_mobilerectangle2_DE_friday .text > a:hover,
+.ppn_sb_mobilerectangle2_DE_friday .text > a:active,
+.ppn_sb_mobilerectangle2_DE_friday .text > a:hover  {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 6px 7px 0 7px;
+}
+.ppn_sb_mobilerectangle2_DE_friday .url > a,
+.ppn_sb_mobilerectangle2_DE_friday .url > a:link,
+.ppn_sb_mobilerectangle2_DE_friday .url > a:visited,
+.ppn_sb_mobilerectangle2_DE_friday .url > a:hover,
+.ppn_sb_mobilerectangle2_DE_friday .url > a:active,
+.ppn_sb_mobilerectangle2_DE_friday .url > a:hover {
+    font: 700 11px/15px 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.25px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 1px 7px 0 7px;
+}
+.ppn_sb_mobilerectangle2_DE_friday .adimage {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-width: 0;
+    width: 166px;
+    height: 93px;
+    z-index: 1;
+}
+.ppn_sb_mobilerectangle2_DE_friday .ppncaption {
+    display: none;
+}
+.ppn_sb_mobilerectangle2_DE_friday .tnlogo {
+    position: absolute; top:0; right:0; max-width:100px; height:15px;
+}
+.ppn_sb_mobilerectangle2_DE_friday .tnlogo > a{
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: black;
+    padding: 4px;
+    font: normal 10px/10px Arial, sans-serif;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}

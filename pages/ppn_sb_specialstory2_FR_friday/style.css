@@ -1,0 +1,133 @@
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:700italic,700);
+.ppn_sb_specialstory2_FR_friday {
+    width: 620px;
+    height: 200px;
+    overflow: hidden;
+    background: #F8F6EF;
+    color: black;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    border: none;
+}
+.ppn_sb_specialstory2_FR_friday .ppninnerbox {
+    width: 620px;
+    height: 200px;
+    border: none;
+    overflow: hidden;
+}
+.ppn_sb_specialstory2_FR_friday .singlebox {
+    width: 310px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    border: 1px solid white;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+.ppn_sb_specialstory2_FR_friday .title {
+    position: absolute;
+    bottom: 49px;
+    right: 0px;
+    border: 0;
+    width: 280px;
+    height: 25px;
+    max-height: 25px;
+    overflow: hidden;
+    z-index: 2;
+    background: white;
+    padding: 0px;
+    font: 700 15px/20px 'Josefin Sans', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.25px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+.ppn_sb_specialstory2_FR_friday .title > a,
+.ppn_sb_specialstory2_FR_friday .title > a:hover,
+.ppn_sb_specialstory2_FR_friday .title > a:link,
+.ppn_sb_specialstory2_FR_friday .title > a:visited,
+.ppn_sb_specialstory2_FR_friday .title > a:active{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px 10px;
+}
+.ppn_sb_specialstory2_FR_friday .text {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border: 0;
+    width: 280px;
+    height: 49px;
+    max-height: 49px;
+    overflow: hidden;
+    z-index: 2;
+    background: white;
+    padding: 0px;
+    font: normal 11px/15px Arial, sans-serif;
+    text-decoration: none;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+.ppn_sb_specialstory2_FR_friday .text > a,
+.ppn_sb_specialstory2_FR_friday .text > a:link,
+.ppn_sb_specialstory2_FR_friday .text > a:visited,
+.ppn_sb_specialstory2_FR_friday .text > a:hover,
+.ppn_sb_specialstory2_FR_friday .text > a:active,
+.ppn_sb_specialstory2_FR_friday .text > a:hover  {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 1px 10px;
+}
+.ppn_sb_specialstory2_FR_friday .url > a,
+.ppn_sb_specialstory2_FR_friday .url > a:link,
+.ppn_sb_specialstory2_FR_friday .url > a:visited,
+.ppn_sb_specialstory2_FR_friday .url > a:hover,
+.ppn_sb_specialstory2_FR_friday .url > a:active,
+.ppn_sb_specialstory2_FR_friday .url > a:hover {
+    font: 700 11px/15px 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.25px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 1px 10px;
+}
+.ppn_sb_specialstory2_FR_friday .adimage {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-width: 0;
+    width: 265px;
+    height: 149px;
+    z-index: 1;
+}
+.ppn_sb_specialstory2_FR_friday .ppncaption {
+    display: none;
+}
+.ppn_sb_specialstory2_FR_friday .tnlogo {
+    position: absolute; top:0; left:0; max-width:100px; height:15px;
+}
+.ppn_sb_specialstory2_FR_friday .tnlogo > a{
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: black;
+    padding: 4px;
+    font: normal 10px/10px Arial, sans-serif;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
