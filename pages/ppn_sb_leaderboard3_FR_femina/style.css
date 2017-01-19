@@ -1,0 +1,108 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600,400);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+.ppn_sb_leaderboard3_FR_femina {
+    width: 728px;
+    height: 90px;
+    overflow: hidden;
+    background:  white;
+    position: relative;
+    border: 1px solid rgb(234, 243, 245);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_leaderboard3_FR_femina .ppninnerbox {
+}
+.ppn_sb_leaderboard3_FR_femina .singlebox {
+    width: 240px;
+    height: 90px;
+    position: relative;
+    float: left;
+    margin-right: 2px;
+    border-left: 1px solid rgb(234, 243, 245);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_leaderboard3_FR_femina .singlebox:first-child {
+    margin-left: 0;
+    float: left;
+    border: none;
+}
+.ppn_sb_leaderboard3_FR_femina .title {
+    cursor: pointer;
+    width: 240px;
+    color: rgb(51,51,51);
+    font: 400 12px/14px 'Playfair Display', serif;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 4px;
+}
+.ppn_sb_leaderboard3_FR_femina .title a:link, .ppn_sb_leaderboard3_FR_femina .title a:visited, .ppn_sb_leaderboard3_FR_femina .title a:active {
+    color: rgb(51,51,51);
+    text-decoration: none;
+}
+.ppn_sb_leaderboard3_FR_femina .title a:hover {
+    color: rgb(239,61,82);
+    text-decoration: none;
+}
+.ppn_sb_leaderboard3_FR_femina .text {
+    cursor: pointer;
+    width: 110px;
+    margin-left: 128px;
+    color: rgb(51,51,51);
+    font: 400 10px/12px 'Open Sans', sans-serif;
+    text-align: left;
+    padding-top: 6px;
+}
+.ppn_sb_leaderboard3_FR_femina .text a:link, .ppn_sb_leaderboard3_FR_femina .text a:visited, .ppn_sb_leaderboard3_FR_femina .text a:hover, .ppn_sb_leaderboard3_FR_femina .text a:active {
+    color : rgb(51,51,51);
+    text-decoration: none;
+}
+.ppn_sb_leaderboard3_FR_femina .text a:hover {
+    color : rgb(51,51,51);
+    text-decoration: none;
+}
+.ppn_sb_leaderboard3_FR_femina .url {
+    cursor: pointer;
+    display: inline;
+    color: rgb(239,61,82);
+    font: 600 10px/12px 'Open Sans', sans-serif;
+    text-align: left;
+}
+.ppn_sb_leaderboard3_FR_femina .url a, .ppn_sb_leaderboard3_FR_femina .url a:link, .ppn_sb_leaderboard3_FR_femina .url a:visited, .ppn_sb_leaderboard3_FR_femina .url a:hover, .ppn_sb_leaderboard3_FR_femina .url a:active {
+    color : rgb(239,61,82);
+    text-decoration: none;
+}
+.ppn_sb_leaderboard3_FR_femina .url a:hover {
+    color : rgb(239,61,82);
+    text-decoration: underline
+}
+.ppn_sb_leaderboard3_FR_femina .adimage {
+    border-width: 0;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.ppn_sb_leaderboard3_FR_femina img.adimage {
+    width: 123px;
+    height: 69px;
+}
+.ppn_sb_leaderboard3_FR_femina .ppncaption {
+    display: none;
+}
+.ppn_sb_leaderboard3_FR_femina .tnlogo {
+    position: absolute; bottom:0; right:0; max-width:100px; height:12px;
+}
+.ppn_sb_leaderboard3_FR_femina .tnlogo > a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgb(234, 243, 245);
+    padding: 2px 3px 2px 3px;
+    font: 400 9px/9px 'Open Sans', sans-serif;
+    text-align: center;
+    color: rgb(239,61,82);
+    text-decoration: none;
+}
