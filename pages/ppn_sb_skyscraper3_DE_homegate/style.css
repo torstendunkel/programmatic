@@ -1,0 +1,102 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+.ppn_sb_skyscraper3_DE_homegate {
+    width: 160px;
+    height: 600px;
+    overflow: hidden;
+    background: white;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid rgb(240, 240, 240);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_skyscraper3_DE_homegate .ppninnerbox {
+    width: 140px;
+    height: 590px;
+    float: left;
+    margin-left: 9px;
+    margin-top: 9px;
+}
+.ppn_sb_skyscraper3_DE_homegate .singlebox {
+    width: 140px;
+    height: 196px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+.ppn_sb_skyscraper3_DE_homegate .title {
+    cursor: pointer;
+    color : rgb(80, 80, 80);
+    font: 700 12px/14px 'Open Sans', sans-serif;
+    text-align: left;
+}
+.ppn_sb_skyscraper3_DE_homegate .title a:link, .ppn_sb_skyscraper3_DE_homegate .title a:visited, .ppn_sb_skyscraper3_DE_homegate .title a:active {
+    color : rgb(80, 80, 80);
+    text-decoration: none;
+}
+.ppn_sb_skyscraper3_DE_homegate .title a:hover {
+    color : rgb(80, 80, 80);
+    text-decoration: underline;
+}
+.ppn_sb_skyscraper3_DE_homegate .text {
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color : rgb(80, 80, 80);
+    font: 400 11px/13px 'Open Sans', sans-serif;
+    text-align: left;
+}
+.ppn_sb_skyscraper3_DE_homegate .text a:link, .ppn_sb_skyscraper3_DE_homegate .text a:visited, .ppn_sb_skyscraper3_DE_homegate .text a:hover, .ppn_sb_skyscraper3_DE_homegate .text a:active {
+    color : rgb(80, 80, 80);
+    text-decoration: none;
+}
+.ppn_sb_skyscraper3_DE_homegate .text a:hover {
+    color : rgb(80, 80, 80);
+    text-decoration: none;
+}
+.ppn_sb_skyscraper3_DE_homegate .url {
+    cursor: pointer;
+    padding-left: 12px;
+    background: url("http://media.das.tamedia.ch/images/ppnhomegate-arrow.gif")left center no-repeat;
+    background-size: 12px;
+    color : rgb(230, 50, 50);
+    font: 700 11px/13px 'Open Sans', sans-serif;
+    text-align: left;
+}
+.ppn_sb_skyscraper3_DE_homegate .url a, .ppn_sb_skyscraper3_DE_homegate .url a:link, .ppn_sb_skyscraper3_DE_homegate .url a:visited, .ppn_sb_skyscraper3_DE_homegate .url a:hover, .ppn_sb_skyscraper3_DE_homegate .url a:active {
+    color: rgb(230, 50, 50);
+    text-decoration: none;
+}
+.ppn_sb_skyscraper3_DE_homegate .url a:hover {
+    color : rgb(200, 50, 50);
+    text-decoration: underline;
+}
+.ppn_sb_skyscraper3_DE_homegate .adimage {
+    border-width: 0;
+    float: left;
+}
+.ppn_sb_skyscraper3_DE_homegate img.adimage {
+    width: 140px;
+    height: 78px;
+    margin-bottom: 7px;
+}
+.ppn_sb_skyscraper3_DE_homegate .ppncaption {
+    display: none;
+}
+.ppn_sb_skyscraper3_DE_homegate .tnlogo > a{
+	border: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: rgb(80, 80, 80);
+	padding: 2px 4px 3px 4px;
+	font: 700 10px/10px 'Open Sans', sans-serif;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+.ppn_sb_skyscraper3_DE_homegate .tnlogo{
+    position: absolute; bottom:0; right:0; max-width:100px; height:15px;
+}

@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+.ppn_sb_mobilebanner1_FR_homegate {
+    width: 320px;
+    height: 50px;
+    overflow: hidden;
+    background: white;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+.ppn_sb_mobilebanner1_FR_homegate .ppninnerbox {
+}
+.ppn_sb_mobilebanner1_FR_homegate .singlebox {
+    width: 320px;
+    height: 50px;
+    position: relative;
+    float: left;
+}
+.ppn_sb_mobilebanner1_FR_homegate .title {
+    cursor: pointer;
+    font: 700 13px/13px 'Open Sans', sans-serif;
+    text-align: left;
+    padding-right: 5px;
+    padding-top: 2px;
+}
+.ppn_sb_mobilebanner1_FR_homegate .title a:link, .ppn_sb_mobilebanner1_FR_homegate .title a:visited, .ppn_sb_mobilebanner1_FR_homegate .title a:active {
+    color : rgb(80, 80, 80);
+    text-decoration: none;
+}
+.ppn_sb_mobilebanner1_FR_homegate .title a:hover {
+    color : rgb(80, 80, 80);
+    text-decoration: underline;
+}
+.ppn_sb_mobilebanner1_FR_homegate .text {
+    cursor: pointer;
+  	overflow: hidden;
+  	font: 400 10px/12px 'Open Sans', sans-serif;
+  	text-align: left;
+    padding-top: 3px;
+    padding-bottom: 1px;
+}
+.ppn_sb_mobilebanner1_FR_homegate .text a:link, .ppn_sb_mobilebanner1_FR_homegate .text a:visited, .ppn_sb_mobilebanner1_FR_homegate .text a:hover, .ppn_sb_mobilebanner1_FR_homegate .text a:active {
+    color : rgb(80, 80, 80);
+    text-decoration: none;
+}
+.ppn_sb_mobilebanner1_FR_homegate .text a:hover {
+    color : rgb(80, 80, 80);
+    text-decoration: none;
+}
+.ppn_sb_mobilebanner1_FR_homegate .url {
+    cursor: pointer;
+  	display: inline;
+    color : rgb(230, 50, 50);
+  	font: 700 10px/12px 'Open Sans', sans-serif;
+  	text-align: left;
+}
+.ppn_sb_mobilebanner1_FR_homegate .url a, .ppn_sb_mobilebanner1_FR_homegate .url a:link, .ppn_sb_mobilebanner1_FR_homegate .url a:visited, .ppn_sb_mobilebanner1_FR_homegate .url a:hover, .ppn_sb_mobilebanner1_FR_homegate .url a:active {
+    color : rgb(230, 50, 50);
+    text-decoration: none;
+}
+.ppn_sb_mobilebanner1_FR_homegate .url a:hover {
+    color : rgb(200, 50, 50);
+    text-decoration: underline;
+}
+.ppn_sb_mobilebanner1_FR_homegate .adimage {
+    border-width: 0;
+    float: left;
+}
+.ppn_sb_mobilebanner1_FR_homegate img.adimage {
+    width: 88px;
+    height: 50px;
+    margin-right: 5px;
+}
+.ppn_sb_mobilebanner1_FR_homegate .ppncaption {
+    display: none;
+}
+.ppn_sb_mobilebanner1_FR_homegate .tnlogo > a{
+	border: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgb(80, 80, 80);
+	padding: 1px 3px 2px 3px;
+	font: 700 9px/9px 'Open Sans', sans-serif;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+.ppn_sb_mobilebanner1_FR_homegate .tnlogo{
+    position: absolute; top:0; left:0; max-width:100px; height:15px;
+}

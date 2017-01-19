@@ -1,0 +1,108 @@
+.ppn_sb_rectangle3_IT_zattoo {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.ppn_sb_rectangle3_IT_zattoo .ppninnerbox {
+    width: 300px;
+    height: 249px;
+    position: relative;
+    overflow: hidden;
+    background: rgb(51, 51, 51);
+}
+.ppn_sb_rectangle3_IT_zattoo .singlebox {
+    width: 300px;
+    height: 83px;
+    position: relative;
+    float: left;
+}
+.ppn_sb_rectangle3_IT_zattoo .title {
+    cursor: pointer;
+    width: 300px;
+    height: 20px;
+    overflow: hidden;
+    font: bold 14px/16px Helvetica, Arial, sans-serif;
+    text-align: left;
+    color: white;
+    background: rgb(244, 119, 33);
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.ppn_sb_rectangle3_IT_zattoo .title a:link, .ppn_sb_rectangle3_IT_zattoo .title a:visited, .ppn_sb_rectangle3_IT_zattoo .title a:active {
+    color : white;
+    text-decoration: none;
+}
+.ppn_sb_rectangle3_IT_zattoo .title a:hover {
+    color : rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_rectangle3_IT_zattoo .text {
+    cursor: pointer;
+    width: 180px;
+    font: normal 11px/14px Helvetica, Arial, sans-serif;
+    text-align: left;
+    color: white;
+    margin-left: 110px;
+    margin-top: 7px;
+}
+.ppn_sb_rectangle3_IT_zattoo .text a:link, .ppn_sb_rectangle3_IT_zattoo .text a:visited, .ppn_sb_rectangle3_IT_zattoo .text a:hover, .ppn_sb_rectangle3_IT_zattoo .text a:active {
+    color : white;
+    text-decoration: none;
+}
+.ppn_sb_rectangle3_IT_zattoo .text a:hover {
+    color : white;
+    text-decoration: none;
+}
+.ppn_sb_rectangle3_IT_zattoo .url {
+    cursor: pointer;
+}
+.ppn_sb_rectangle3_IT_zattoo .url a, .ppn_sb_rectangle3_IT_zattoo .url a:link, .ppn_sb_rectangle3_IT_zattoo .url a:visited, .ppn_sb_rectangle3_IT_zattoo .url a:hover, .ppn_sb_rectangle3_IT_zattoo .url a:active {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 2px;
+    top: 0px;
+    background: url("http://media.das.tamedia.ch/images/ppnzattoo-arrow.gif")left center no-repeat;
+}
+.ppn_sb_rectangle3_IT_zattoo .url a:hover {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 2px;
+    top: 0px;
+    background: url("http://media.das.tamedia.ch/images/ppnzattoo-arrow-hover.gif")left center no-repeat;
+}
+.ppn_sb_rectangle3_IT_zattoo .adimage {
+    border-width: 0;
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.ppn_sb_rectangle3_IT_zattoo img.adimage {
+    width: 102px;
+    height: 58px;
+}
+.ppn_sb_rectangle3_IT_zattoo .ppncaption {
+    display: none;
+}
+.ppn_sb_rectangle3_IT_zattoo .tnlogo > a{
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: none;
+	padding: 2px 4px 3px 4px;
+	font: bold 10px/10px Helvetica, Arial, sans-serif;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+.ppn_sb_rectangle3_IT_zattoo .tnlogo{
+    position: absolute; bottom:2px; right:0; max-width:100px; height:15px;
+}

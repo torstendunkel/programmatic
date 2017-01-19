@@ -1,0 +1,115 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+.ppn_sb_leaderboard3_IT_homegate {
+    width: 728px;
+    height: 90px;
+    overflow: hidden;
+    background:  white;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid rgb(240, 240, 240);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_leaderboard3_IT_homegate .ppninnerbox {
+}
+.ppn_sb_leaderboard3_IT_homegate .singlebox {
+    width: 242px;
+    height: 90px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    border-right: 1px solid rgb(240, 240, 240);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_leaderboard3_IT_homegate .singlebox:last-child {
+    margin-right: 0;
+    float: right;
+    border: none;
+}
+.ppn_sb_leaderboard3_IT_homegate .title {
+    cursor: pointer;
+    color : rgb(80, 80, 80);
+	font: 700 13px/15px 'Open Sans', sans-serif;
+	text-align: left;
+	padding-left: 7px;
+	padding-top: 6px;
+}
+.ppn_sb_leaderboard3_IT_homegate .title a:link, .ppn_sb_leaderboard3_IT_homegate .title a:visited, .ppn_sb_leaderboard3_IT_homegate .title a:active {
+    color : rgb(80, 80, 80);
+    text-decoration: none;
+}
+.ppn_sb_leaderboard3_IT_homegate .title a:hover {
+    color : rgb(80, 80, 80);
+    text-decoration: underline;
+}
+.ppn_sb_leaderboard3_IT_homegate .text {
+    cursor: pointer;
+    width: 122px;
+  	overflow: hidden;
+    margin-left: 115px;
+    margin-top: 2px;
+    color : rgb(80, 80, 80);
+    font: 400 10px/12px 'Open Sans', sans-serif;
+    text-align: left;
+}
+.ppn_sb_leaderboard3_IT_homegate .text a:link, .ppn_sb_leaderboard3_IT_homegate .text a:visited, .ppn_sb_leaderboard3_IT_homegate .text a:hover, .ppn_sb_leaderboard3_IT_homegate .text a:active {
+    color : rgb(80, 80, 80);
+    text-decoration: none;
+}
+.ppn_sb_leaderboard3_IT_homegate .text a:hover {
+    color : rgb(80, 80, 80);
+    text-decoration: none;
+}
+.ppn_sb_leaderboard3_IT_homegate .url {
+    cursor: pointer;
+    width: 100px;
+  	overflow: hidden;
+  	margin-left: 115px;
+  	margin-top: 1px;
+  	padding-left: 12px;
+    background: url("http://media.das.tamedia.ch/images/ppnhomegate-arrow.gif")left center no-repeat;
+    background-size: 12px;
+    color : rgb(230, 50, 50);
+    font: 700 10px/12px 'Open Sans', sans-serif;
+    text-align: left;
+}
+.ppn_sb_leaderboard3_IT_homegate .url a, .ppn_sb_leaderboard3_IT_homegate .url a:link, .ppn_sb_leaderboard3_IT_homegate .url a:visited, .ppn_sb_leaderboard3_IT_homegate .url a:hover, .ppn_sb_leaderboard3_IT_homegate .url a:active {
+    color : rgb(230, 50, 50);
+    text-decoration: none;
+}
+.ppn_sb_leaderboard3_IT_homegate .url a:hover {
+    color : rgb(200, 50, 50);
+    text-decoration: underline;
+}
+.ppn_sb_leaderboard3_IT_homegate .adimage {
+    border-width: 0;
+	position: absolute;
+	left: 7px;
+	bottom: 7px;
+}
+.ppn_sb_leaderboard3_IT_homegate img.adimage {
+    width: 103px;
+    height: 58px;
+}
+.ppn_sb_leaderboard3_IT_homegate .ppncaption {
+    display: none;
+}
+.ppn_sb_leaderboard3_IT_homegate .tnlogo > a{
+	border: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: rgb(80, 80, 80);
+	padding: 1px 3px 3px 3px;
+	font: 700 9px/9px 'Open Sans', sans-serif;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+.ppn_sb_leaderboard3_IT_homegate .tnlogo{
+    position: absolute; bottom:0; right:0; max-width:100px; height:12px;
+}
