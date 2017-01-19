@@ -1,0 +1,102 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+.ppn_sb_monsterboard4_DE_tilllate {
+    width: 468px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #dedccf;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_monsterboard4_DE_tilllate .singlebox {
+    width: 468px;
+    height: 99px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    border-bottom: 1px solid #dedccf;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_monsterboard4_DE_tilllate .title {
+    cursor: pointer;
+    color : black;
+    font: 800 18px/20px 'Open Sans', sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 7px;
+    margin-right: 40px;
+}
+.ppn_sb_monsterboard4_DE_tilllate .title a:link, .ppn_sb_monsterboard4_DE_tilllate .title a:visited, .ppn_sb_monsterboard4_DE_tilllate .title a:active {
+    color : rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_monsterboard4_DE_tilllate .title a:hover {
+    color : rgb(241, 196, 25);
+    text-decoration: none;
+}
+.ppn_sb_monsterboard4_DE_tilllate .text {
+    cursor: pointer;
+    color : black;
+    overflow: hidden;
+    width: 300px;
+    font: normal 13px/15px Georgia, serif;
+    text-align: left;
+    padding-top: 10px;
+}
+.ppn_sb_monsterboard4_DE_tilllate .text a:link, .ppn_sb_monsterboard4_DE_tilllate .text a:visited, .ppn_sb_monsterboard4_DE_tilllate .text a:hover, .ppn_sb_monsterboard4_DE_tilllate .text a:active {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_monsterboard4_DE_tilllate .text a:hover {
+    color : rgb(241, 196, 25);
+    text-decoration: none;
+}
+.ppn_sb_monsterboard4_DE_tilllate .url {
+    cursor: pointer;
+}
+.ppn_sb_monsterboard4_DE_tilllate .url a, .ppn_sb_monsterboard4_DE_tilllate .url a:link, .ppn_sb_monsterboard4_DE_tilllate .url a:visited, .ppn_sb_monsterboard4_DE_tilllate .url a:hover, .ppn_sb_monsterboard4_DE_tilllate .url a:active {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    right: 8px;
+    top: 10px;
+    background: url("http://media.das.tamedia.ch/images/ppntilllate-black.gif")left center no-repeat;
+}
+.ppn_sb_monsterboard4_DE_tilllate .url a:hover {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    right: 8px;
+    top: 10px;
+    background: url("http://media.das.tamedia.ch/images/ppntilllate-yellow.gif")left center no-repeat;
+}
+.ppn_sb_monsterboard4_DE_tilllate .adimage {
+    border-width: 0;
+    float: left;
+}
+.ppn_sb_monsterboard4_DE_tilllate img.adimage {
+    width: 142px;
+    height: 80px;
+    margin: 10px 10px 9px 0px;
+}
+.ppn_sb_monsterboard4_DE_tilllate .ppncaption {
+    display: none;
+}
+.ppn_sb_monsterboard4_DE_tilllate .tnlogo {
+    position: absolute; bottom:3px; right:0; width:100%;height: 10px;
+}
+.ppn_sb_monsterboard4_DE_tilllate .tnlogo > a{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #dedccf;
+    padding: 3px 4px;
+    font: bold 10px/10px Arial, sans-serif;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,107 @@
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:700|Quantico);
+.ppn_sb_wideboard3_FR_tilllate {
+    width: 994px;
+    height: 250px;
+    overflow: hidden;
+    background: black;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+.ppn_sb_wideboard3_FR_tilllate .ppninnerbox {
+    width: 994px;
+    height: 250px;
+    overflow: hidden;
+}
+.ppn_sb_wideboard3_FR_tilllate .singlebox {
+    width: 331px;
+    height: 250px;
+    position: relative;
+    float: left;
+}
+.ppn_sb_wideboard3_FR_tilllate .singlebox:first-child .title,
+.ppn_sb_wideboard3_FR_tilllate .singlebox:first-child .text {
+    margin-right:17px;
+    margin-left: 37px;
+}
+.ppn_sb_wideboard3_FR_tilllate .singlebox:nth-child(2) .title,
+.ppn_sb_wideboard3_FR_tilllate .singlebox:nth-child(2) .text{
+    margin-right:27px;
+    margin-left: 27px;
+}
+.ppn_sb_wideboard3_FR_tilllate .singlebox:nth-child(3) .title,
+.ppn_sb_wideboard3_FR_tilllate .singlebox:nth-child(3) .text{
+    margin-right:37px;
+    margin-left: 17px;
+}
+.ppn_sb_wideboard3_FR_tilllate .title {
+    font: 700 15px/25px 'Poppins', sans-serif;
+    margin-top: 8px;
+    margin-bottom: 0;
+    max-height: 25px;
+    overflow: hidden;
+    border: none;
+    padding: 0px;
+}
+.ppn_sb_wideboard3_FR_tilllate .title a:link, .ppn_sb_wideboard3_FR_tilllate .title a:visited, .ppn_sb_wideboard3_FR_tilllate .title a:active, .ppn_sb_wideboard3_FR_tilllate .title a:hover {
+    font: 700 15px/25px 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+.ppn_sb_wideboard3_FR_tilllate .text {
+    font: 400 12px/17px 'Quantico', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-height: 35px;
+    overflow: hidden;
+}
+.ppn_sb_wideboard3_FR_tilllate .text a:link, .ppn_sb_wideboard3_FR_tilllate .text a:visited, .ppn_sb_wideboard3_FR_tilllate .text a:hover, .ppn_sb_wideboard3_FR_tilllate .text a:active, .ppn_sb_wideboard3_FR_tilllate .text a:hover  {
+    font: 400 12px/17px 'Quantico', sans-serif;
+    text-transform: none;
+    text-align: left;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+.ppn_sb_wideboard3_FR_tilllate .url, .ppn_sb_wideboard3_FR_tilllate .url a, .ppn_sb_wideboard3_FR_tilllate .url a:link, .ppn_sb_wideboard3_FR_tilllate .url a:visited, .ppn_sb_wideboard3_FR_tilllate .url a:hover, .ppn_sb_wideboard3_FR_tilllate .url a:active, .ppn_sb_wideboard3_FR_tilllate .url a:hover  {
+    font: 400 12px/17px 'Quantico', sans-serif;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+.ppn_sb_wideboard3_FR_tilllate .adimage {
+    position: relative;
+    border-width: 0;
+    width: 276px;
+    height: 157px;
+}
+.ppn_sb_wideboard3_FR_tilllate .singlebox:first-child .adimage {
+    margin: 15px 17px 0 37px;
+}
+.ppn_sb_wideboard3_FR_tilllate .singlebox:nth-child(2) .adimage{
+    margin: 15px 27px 0 27px;
+}
+.ppn_sb_wideboard3_FR_tilllate .singlebox:nth-child(3) .adimage{
+    margin: 15px 37px 0 17px;
+}
+.ppn_sb_wideboard3_FR_tilllate .ppncaption {
+    display: none;
+}
+.ppn_sb_wideboard3_FR_tilllate .tnlogo {
+    position: absolute; bottom:0; right:0; width:100%;height: 10px;
+}
+.ppn_sb_wideboard3_FR_tilllate .tnlogo > a{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: white;
+    padding: 2px 0px 0px 3px;
+    font: bold 10px/10px Arial, sans-serif;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}

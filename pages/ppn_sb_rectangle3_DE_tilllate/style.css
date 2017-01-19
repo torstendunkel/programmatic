@@ -1,0 +1,101 @@
+
+.ppn_sb_rectangle3_DE_tilllate {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #dedccf;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+.ppn_sb_rectangle3_DE_tilllate .ppninnerbox {
+}
+.ppn_sb_rectangle3_DE_tilllate .singlebox {
+    width: 300px;
+    height: 83px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    border-bottom: 1px solid #dedccf;
+    border-right: 1px solid #dedccf;
+    border-left: 1px solid #dedccf;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_rectangle3_DE_tilllate .title {
+    cursor: pointer;
+    color: black;
+    font: italic bold 11px/13px Georgia, serif;
+    text-align: left;
+    padding-top: 8px;
+    padding-right: 8px;
+}
+.ppn_sb_rectangle3_DE_tilllate .title a:link, .ppn_sb_rectangle3_DE_tilllate .title a:visited, .ppn_sb_rectangle3_DE_tilllate .title a:active {
+    color: black;
+    text-decoration: none;
+}
+.ppn_sb_rectangle3_DE_tilllate .title a:hover {
+    color : rgb(241, 196, 25);
+    text-decoration: none;
+}
+.ppn_sb_rectangle3_DE_tilllate .text {
+    cursor: pointer;
+    color: black;
+    width: 160px;
+    margin-left: 130px;
+    font: normal 10px/12px Georgia, serif;
+    text-align: left;
+    padding-top: 3px;
+}
+.ppn_sb_rectangle3_DE_tilllate .text a:link, .ppn_sb_rectangle3_DE_tilllate .text a:visited, .ppn_sb_rectangle3_DE_tilllate .text a:hover, .ppn_sb_rectangle3_DE_tilllate .text a:active {
+    color : black;
+    text-decoration: none;
+}
+.ppn_sb_rectangle3_DE_tilllate .text a:hover {
+    color: rgb(241, 196, 25);
+    text-decoration: none;
+}
+.ppn_sb_rectangle3_DE_tilllate .url {
+    cursor: pointer;
+    display: inline;
+    color : black;
+    font: italic bold 10px/12px Georgia, serif;
+    text-align: left;
+}
+.ppn_sb_rectangle3_DE_tilllate .url a, .ppn_sb_rectangle3_DE_tilllate .url a:link, .ppn_sb_rectangle3_DE_tilllate .url a:visited, .ppn_sb_rectangle3_DE_tilllate .url a:hover, .ppn_sb_rectangle3_DE_tilllate .url a:active {
+    color: black;
+    text-decoration: none;
+}
+.ppn_sb_rectangle3_DE_tilllate .url a:hover {
+    color: rgb(241, 196, 25);
+    text-decoration: none;
+}
+.ppn_sb_rectangle3_DE_tilllate .adimage {
+    border-width: 0;
+    float: left;
+}
+.ppn_sb_rectangle3_DE_tilllate img.adimage {
+    width: 110px;
+    height: 62px;
+    margin: 10px;
+}
+.ppn_sb_rectangle3_DE_tilllate .ppncaption {
+    display: none;
+}
+.ppn_sb_rectangle3_DE_tilllate .tnlogo {
+    position: absolute; bottom:0; right:0; width:100%;height: 10px;
+}
+.ppn_sb_rectangle3_DE_tilllate .tnlogo > a{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #dedccf;
+    padding: 2px 3px;
+    font: bold 10px/10px Arial, sans-serif;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}

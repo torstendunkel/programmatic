@@ -1,0 +1,115 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+.ppn_sb_gallery2_DE_tilllate {
+    width: 830px;
+    height: 550px;
+    background: black;
+    overflow: hidden;
+    position: relative;
+}
+.ppn_sb_gallery2_DE_tilllate .ppninnerbox {
+    width: 650px;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(241, 196, 25);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_gallery2_DE_tilllate .singlebox {
+    width: 650px;
+    height: 275px;
+    position: relative;
+    float: left;
+}
+.ppn_sb_gallery2_DE_tilllate .title {
+    cursor: pointer;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 340px;
+    color : rgb(241, 196, 25);
+    font: 800 21px/25px 'Open Sans', sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+}
+.ppn_sb_gallery2_DE_tilllate .title a:link, .ppn_sb_gallery2_DE_tilllate .title a:visited, .ppn_sb_gallery2_DE_tilllate .title a:active {
+    color: rgb(241, 196, 25);
+    text-decoration: none;
+}
+.ppn_sb_gallery2_DE_tilllate .title a:hover {
+    color: white;
+    text-decoration: none;
+}
+.ppn_sb_gallery2_DE_tilllate .text {
+    cursor: pointer;
+    color: white;
+    overflow: hidden;
+    width: 300px;
+    font: normal 14px/16px Georgia, serif;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.ppn_sb_gallery2_DE_tilllate .text a:link, .ppn_sb_gallery2_DE_tilllate .text a:visited, .ppn_sb_gallery2_DE_tilllate .text a:hover, .ppn_sb_gallery2_DE_tilllate .text a:active {
+    color: white;
+    text-decoration: none;
+}
+.ppn_sb_gallery2_DE_tilllate .text a:hover {
+    color : rgb(241, 196, 25);
+    text-decoration: none;
+}
+.ppn_sb_gallery2_DE_tilllate .url {
+}
+.ppn_sb_gallery2_DE_tilllate .url a, .ppn_sb_gallery2_DE_tilllate .url a:link, .ppn_sb_gallery2_DE_tilllate .url a:visited, .ppn_sb_gallery2_DE_tilllate .url a:hover, .ppn_sb_gallery2_DE_tilllate .url a:active {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    padding-right: 24px;
+    padding-bottom: 10px;
+    background: url("http://media.das.tamedia.ch/images/ppntilllate-yellow-l.gif")left center no-repeat;
+    background-size: 24px;
+}
+.ppn_sb_gallery2_DE_tilllate .url a:hover {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    padding-right: 24px;
+    padding-bottom: 10px;
+    background: url("http://media.das.tamedia.ch/images/ppntilllate-white-l.gif")left center no-repeat;
+    background-size: 24px;
+}
+.ppn_sb_gallery2_DE_tilllate .adimage {
+    border-width: 0;
+    float: left;
+}
+.ppn_sb_gallery2_DE_tilllate img.adimage {
+    width: 320px;
+    height: 180px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.ppn_sb_gallery2_DE_tilllate .ppncaption {
+    display: none;
+}
+.ppn_sb_gallery2_DE_tilllate .tnlogo{
+    margin-bottom:1px;
+    margin-right: 90px;
+}
+.ppn_sb_gallery2_DE_tilllate .tnlogo {
+    position: absolute; bottom:0; right:0; width:100%;height: 15px;
+}
+.ppn_sb_gallery2_DE_tilllate .tnlogo > a{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: rgb(241, 196, 25);
+    padding: 4px 5px;
+    font: 800 10px/10px 'Open Sans', sans-serif;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
