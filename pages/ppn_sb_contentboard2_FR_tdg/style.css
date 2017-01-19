@@ -1,0 +1,99 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+.ppn_sb_contentboard2_FR_tdg {
+    width: 320px;
+    height: 120px;
+    overflow: hidden;
+    background: white;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    border-top: 1px solid rgb(51,51,51);
+    border-bottom: 1px solid rgb(51,51,51);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_contentboard2_FR_tdg .ppninnerbox {
+    width: 320px;
+    height: 116px;
+    margin-top: 1px;
+}
+.ppn_sb_contentboard2_FR_tdg .singlebox {
+    width: 320px;
+    height: 58px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+.ppn_sb_contentboard2_FR_tdg .title {
+    cursor: pointer;
+    color: rgb(48, 126, 195);
+    font: 700 12px/14px 'Open Sans', sans-serif;
+    text-align: left;
+    padding-top: 5px;
+}
+.ppn_sb_contentboard2_FR_tdg .title a:link, .ppn_sb_contentboard2_FR_tdg .title a:visited, .ppn_sb_contentboard2_FR_tdg .title a:active {
+    color: rgb(48, 126, 195);
+    text-decoration: none;
+}
+.ppn_sb_contentboard2_FR_tdg .title a:hover {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_contentboard2_FR_tdg .text {
+    cursor: pointer;
+    width: 220px;
+    overflow: hidden;
+    color: rgb(51, 51, 51);
+    font: 400 10px/12px 'Open Sans', sans-serif;
+    text-align: left;
+    padding-top: 1px;
+}
+.ppn_sb_contentboard2_FR_tdg .text a:link, .ppn_sb_contentboard2_FR_tdg .text a:visited, .ppn_sb_contentboard2_FR_tdg .text a:hover, .ppn_sb_contentboard2_FR_tdg .text a:active {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_contentboard2_FR_tdg .text a:hover {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_contentboard2_FR_tdg .url {
+    cursor: pointer;
+    display: inline;
+    color: rgb(48, 126, 195);
+    font: 400 10px/12px 'Open Sans', sans-serif;
+    text-align: left;
+}
+.ppn_sb_contentboard2_FR_tdg .url a, .ppn_sb_contentboard2_FR_tdg .url a:link, .ppn_sb_contentboard2_FR_tdg .url a:visited, .ppn_sb_contentboard2_FR_tdg .url a:hover, .ppn_sb_contentboard2_FR_tdg .url a:active {
+    color: rgb(48, 126, 195);
+    text-decoration: none;
+}
+.ppn_sb_contentboard2_FR_tdg .url a:hover {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_contentboard2_FR_tdg .adimage {
+    border-width: 0;
+    float: left;
+}
+.ppn_sb_contentboard2_FR_tdg img.adimage {
+    width: 93px;
+    height: 52px;
+    margin: 3px 7px 3px 0px;
+}
+.ppn_sb_contentboard2_FR_tdg .ppncaption {
+    display: none;
+}
+.ppn_sb_contentboard2_FR_tdg .tnlogo {
+    position: absolute; bottom:0; right:0; width:100%; height:13px;
+}
+.ppn_sb_contentboard2_FR_tdg .tnlogo > a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: black;
+    padding: 2px 3px;
+    font: normal 10px/10px Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+}

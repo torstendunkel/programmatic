@@ -1,0 +1,105 @@
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:700|Open+Sans);
+.ppn_sb_mobilerectangle3_FR_tdg {
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.ppn_sb_mobilerectangle3_FR_tdg .ppninnerbox {
+    height: 588px;
+    width: 300px;
+    margin: 6px 0;
+    background: white;
+}
+.ppn_sb_mobilerectangle3_FR_tdg .singlebox {
+    width: 300px;
+    height: 196px;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #333;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_mobilerectangle3_FR_tdg .singlebox:last-child {
+    border-bottom: 1px solid #333;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_mobilerectangle3_FR_tdg .title {
+    position: relative;
+    width: 280px;
+    max-height: 22px;
+    overflow: hidden;
+    margin: 0px 10px;
+    color: #307ec3;
+    font: 700 18px/21px 'Playfair Display', serif;
+    text-align: left;
+    border: none;
+}
+.ppn_sb_mobilerectangle3_FR_tdg .title a:link, .ppn_sb_mobilerectangle3_FR_tdg .title a:visited, .ppn_sb_mobilerectangle3_FR_tdg .title a:active, .ppn_sb_mobilerectangle3_FR_tdg .title a:hover {
+    color: #307ec3;
+    text-decoration: none;
+}
+.ppn_sb_mobilerectangle3_FR_tdg .title a:hover {
+    color: #333;
+    text-decoration: none;
+}
+.ppn_sb_mobilerectangle3_FR_tdg .text {
+    position: relative;
+    width: 280px;
+    max-height: 38px;
+    overflow: hidden;
+    margin: 3px 10px 10px 10px;
+    font: 400 13px/18px 'Open Sans', sans-serif;
+    text-align: left;
+    border: none;
+}
+.ppn_sb_mobilerectangle3_FR_tdg .text a:link, .ppn_sb_mobilerectangle3_FR_tdg .text a:visited, .ppn_sb_mobilerectangle3_FR_tdg .text a:hover, .ppn_sb_mobilerectangle3_FR_tdg .text a:active {
+    color: #333;
+    text-decoration: none;
+}
+.ppn_sb_mobilerectangle3_FR_tdg .text a:hover {
+    color: #333;
+    text-decoration: none;
+}
+.ppn_sb_mobilerectangle3_FR_tdg .url {
+    display: inline-block;
+    font: 400 13px/18px 'Open Sans', sans-serif;
+    text-align: left;
+}
+.ppn_sb_mobilerectangle3_FR_tdg .url a, .ppn_sb_mobilerectangle3_FR_tdg .url a:link, .ppn_sb_mobilerectangle3_FR_tdg .url a:visited, .ppn_sb_mobilerectangle3_FR_tdg .url a:hover, .ppn_sb_mobilerectangle3_FR_tdg .url a:active {
+    color: #307ec3;
+    text-decoration: none;
+}
+.ppn_sb_mobilerectangle3_FR_tdg .url a:hover {
+    color: #333;
+    text-decoration: none;
+}
+.ppn_sb_mobilerectangle3_FR_tdg .adimage {
+    position: relative;
+    float: left;
+    border-width: 0;
+    width: 180px;
+    height: 101px;
+    margin: 12px 10px 10px 10px;
+}
+.ppn_sb_mobilerectangle3_FR_tdg .ppncaption {
+    display: none;
+}
+.ppn_sb_mobilerectangle3_FR_tdg .tnlogo {
+    position: absolute; bottom:6px; right:0; width:100%; height:13px;
+}
+.ppn_sb_mobilerectangle3_FR_tdg .tnlogo > a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: black;
+    padding: 2px 3px;
+    font: normal 9px/9px Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+}
