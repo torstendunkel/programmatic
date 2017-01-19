@@ -17,9 +17,16 @@ ch.tam.addnexusRender = (function(){
         fr : 'Publicité',
         it : 'Pubblicità'
       },
-      trackingPixel : '<img class="pixel" src="{{imgSrc}}" width="0" height="0" style="display:none"/>',
+      more : {
+          de : 'mehr...',
+          fr : '',
+          it : ''
+      },
+      trackingPixelClass: 'pixel',
+      trackingPixel : '<img class="{{trackingPixelClass}}" src="{{imgSrc}}" width="0" height="0" style="display:none"/>',
       wrapper : '<div class="{{identifier}}"><div class="ppncaption">Werbung</div><div id="ppninnerbox" class="ppninnerbox">{{content}}</div><div class="tnlogo"><a href="https://goo.gl/gJLreW" target="_blank">{{admarker}}</a></div>',
-      template : '<div class="singlebox bottom left right" id="{{id}}"><a target="_blank" href="{{href}}"><img class="adimage" alt="Werbung" src="{{img}}"/></a><div class="title"> <a target="_blank" href="{{href}}">{{title}}</a></div><div class="text"><a target="_blank" href="{{href}}">{{description}}</a></div><div class="url"><a target="_blank" href="{{href}}"></a></div>{{impression}}</div>'
+      template : '<div class="singlebox bottom left right" id="{{id}}" data-href="{{href}}"><a target="_blank" href="{{href}}"><img class="adimage" alt="Werbung" src="{{img}}"/></a><div class="title"> <a target="_blank" href="{{href}}">{{title}}</a></div><div class="text"><a target="_blank" href="{{href}}">{{description}} </a><span class="url"><a target="_blank" href="{{href}}">{{more}}</a></span></div>{{impression}}</div>'
+      //template : '<div class="singlebox bottom left right" id="{{id}}"><a target="_blank" href="{{href}}"><img class="adimage" alt="Werbung" src="{{img}}"/></a><div class="title"> <a target="_blank" href="{{href}}">{{title}}</a></div><div class="text"><a target="_blank" href="{{href}}">{{description}}</a></div><div class="url"><a target="_blank" href="{{href}}"></a></div>{{impression}}</div>'
   };
 
   var Renderer = function(){
@@ -124,14 +131,15 @@ ch.tam.addnexusRender = (function(){
             description : data.native.description,
             href : data.native.clickUrl,
             impression : '',
-            id: data.id
+            id: data.id,
+            more : this.settings.more[this.options.lang]
         };
 
         //add impression pixels to the native ad
         if(data.native && data.native.impressionTrackers && data.native.impressionTrackers.length >0){
            var impressionTracker = data.native.impressionTrackers;
             for(var i=0; i<impressionTracker.length; i++){
-                obj.impression +=  this.tmpl(this.settings.trackingPixel, {imgSrc: impressionTracker[i]});
+                obj.impression +=  this.tmpl(this.settings.trackingPixel, {imgSrc: impressionTracker[i], trackingPixelClass:this.settings.trackingPixelClass});
             }
         }
         return this.tmpl(this.settings.template, obj);
@@ -151,12 +159,34 @@ ch.tam.addnexusRender = (function(){
         // find all a-tag in the specified ad and add event listener to them
         var elem = document.getElementById(id);
         if(elem){
-            this.addEvent(elem,'click',this.trackClick.bind(this,elem,trackingUrl))
+            this.addEvent(elem,'click',this.handleElemClick.bind(this,elem,trackingUrl))
         }
     },
 
-    trackClick: function(elem,trackingUrl){
-        elem.appendChild(this.createDomNodeFromHTML(this.tmpl(this.settings.trackingPixel,{imgSrc:trackingUrl}))[0]);
+    handleElemClick: function(elem,trackingUrl,e){
+        this.trackClick(elem,trackingUrl,e);
+        this.openUrl(elem,e);
+    },
+
+    trackClick: function(elem,trackingUrl,e){
+        this.setTrackingPixel(elem,trackingUrl);
+
+    },
+
+    openUrl: function(elem,e){
+        var href = elem.getAttribute("data-href");
+        //just prevent default if we have a href. otherwise stick to browser default behavior
+        if(href){
+            e.preventDefault();
+            window.open(href);
+        }
+    },
+
+    setTrackingPixel: function(elem,trackingUrl){
+        var pixel = elem.getElementsByClassName(this.settings.trackingPixelClass);
+        if(pixel && pixel.length > 0){
+            pixel[0].src = trackingUrl;
+        }
     },
 
     // ###########################  HELPER  ###########################
