@@ -87,6 +87,7 @@ ch.tam.addnexusRender = (function(){
             _this.options.moreInTxt = _this.options.moreInTxt ? _this.options.moreInTxt === "true" : json.moreInTxt || _this.settings.moreInTxt;
             _this.options.moreNode = _this.options.moreNode ? _this.options.moreNode : json.moreNode || _this.settings.moreNode || _this.settings.moreNode;
             _this.options.showMore = _this.options.showMore ? _this.options.showMore === "true" : json.showMore || _this.settings.showMore;
+            _this.options.more = _this.options.more ? _this.options.more : json.more || null;
 
             var guessedNumads;
             try{
@@ -192,7 +193,7 @@ ch.tam.addnexusRender = (function(){
 
     renderMoreBtn: function(clickUrl){
         var data = {
-            more : this.options.showMore ? this.settings.more[this.options.lang] : '',
+            more : this.options.more ? this.options.more : this.options.showMore ? this.settings.more[this.options.lang] : '',
             moreNode : this.options.moreNode,
             href : clickUrl
         };
