@@ -168,7 +168,7 @@ ch.tam.addnexusRender = (function(){
         var moreBtn = this.renderMoreBtn(data.native.clickUrl);
 
         var obj = {
-          title : data.native.title,
+            title : data.native.title,
             img : data.native.mainMedia[0].url,
             description : data.native.description,
             href : data.native.clickUrl,
