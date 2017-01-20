@@ -10,7 +10,7 @@ ch.tam.addnexusRender = (function(){
       identifier : 'ppn_sb_billboard3_DE_20min', //fallback
       member : 3646, // fallback variables
       numads : 4, // fallback variables
-      tagid : 9461257, // fallback variables
+      tagid : 9518829, // fallback variables
       jsonUrl : 'config.json',
       idPrefix : 'ad-',
       adMarker : {
@@ -19,9 +19,9 @@ ch.tam.addnexusRender = (function(){
         it : 'Pubblicità'
       },
       more : {
-          de : 'mehr ...',
-          fr : 'plus ...',
-          it : 'più ...'
+          de : 'Mehr ..',
+          fr : 'plus',
+          it : 'più'
       },
       trackingPixelClass: 'pixel',
       moreNode : 'div',
