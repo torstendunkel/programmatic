@@ -1,0 +1,111 @@
+.ppn_sb_leaderboard3_FR_immo {
+    width: 728px;
+    height: 90px;
+    overflow: hidden;
+    background: white;
+    position: relative;
+    border-bottom: 1px solid rgb(180,180,180);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+.ppn_sb_leaderboard3_FR_immo .ppninnerbox {
+}
+.ppn_sb_leaderboard3_FR_immo .singlebox {
+    width: 240px;
+    height: 90px;
+    position: relative;
+    float: left;
+    margin-right: 4px;
+}
+.ppn_sb_leaderboard3_FR_immo .singlebox:last-child {
+    margin-right: 0;
+    float: right;
+}
+.ppn_sb_leaderboard3_FR_immo .title {
+    cursor: pointer;
+    width: 230px;
+    height: 22px;
+    padding-top: 2px;
+    padding-left: 3px;
+    overflow: hidden;
+    color : rgb(60, 50, 43);
+	font: bold 12px/14px Tahoma, Geneva, sans-serif;
+	text-align: left;
+    border-bottom: 1px solid rgb(180,180,180);
+    border-top: 1px solid rgb(180,180,180);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_leaderboard3_FR_immo .title a:link, .ppn_sb_leaderboard3_FR_immo .title a:visited, .ppn_sb_leaderboard3_FR_immo .title a:active {
+    color : rgb(60, 50, 43);
+    text-decoration: none;
+}
+.ppn_sb_leaderboard3_FR_immo .title a:hover {
+	color : rgb(93, 88, 85);
+    text-decoration: none;
+}
+.ppn_sb_leaderboard3_FR_immo .text {
+    cursor: pointer;
+    position: relative;
+    width: 115px;
+    height: 58px;
+    margin-left: 115px;
+    overflow: hidden;
+    color : rgb(51, 51, 51);
+	font: normal 10px/12px Tahoma, Geneva, sans-serif;
+	text-align: left;
+    padding-top: 5px;
+}
+.ppn_sb_leaderboard3_FR_immo .text a:link, .ppn_sb_leaderboard3_FR_immo .text a:visited, .ppn_sb_leaderboard3_FR_immo .text a:hover, .ppn_sb_leaderboard3_FR_immo .text a:active {
+    color : rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_leaderboard3_FR_immo .text a:hover {
+    color : rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_leaderboard3_FR_immo .url {
+	cursor: pointer;
+	display: inline;
+    color: rgb(50, 125, 170);
+	font: bold 10px/12px Tahoma, Geneva, sans-serif;
+	text-align: left;
+}
+.ppn_sb_leaderboard3_FR_immo .url a, .ppn_sb_leaderboard3_FR_immo .url a:link, .ppn_sb_leaderboard3_FR_immo .url a:visited, .ppn_sb_leaderboard3_FR_immo .url a:hover, .ppn_sb_leaderboard3_FR_immo .url a:active {
+	color : rgb(50, 125, 170);
+    text-decoration: none;
+}
+.ppn_sb_leaderboard3_FR_immo .url a:hover {
+	color : rgb(40, 105, 150);
+    text-decoration: none;
+}
+.ppn_sb_leaderboard3_FR_immo .adimage {
+    border-width: 0;
+	position: absolute;
+	left: 3px;
+	bottom: 4px;
+}
+.ppn_sb_leaderboard3_FR_immo img.adimage {
+	width: 106px;
+	height: 60px;
+}
+.ppn_sb_leaderboard3_FR_immo .ppncaption{
+    display: none;
+}
+.ppn_sb_leaderboard3_FR_immo .tnlogo{
+	border: none;
+	text-align: right;
+}
+.ppn_sb_leaderboard3_FR_immo .tnlogo > a{
+	border: none;
+	font: bold 9px/9px Tahoma, sans-serif;
+	text-decoration: none;
+	text-align: right;
+	color: rgb(180,180,180);
+}
+.ppn_sb_leaderboard3_FR_immo .tnlogo{
+    position: absolute; bottom:0; left:0; width:100%; height:11px;
+}

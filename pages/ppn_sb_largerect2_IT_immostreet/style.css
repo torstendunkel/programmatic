@@ -1,0 +1,111 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+.ppn_sb_largerect2_IT_immostreet {
+  width: 720px;
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+.ppn_sb_largerect2_IT_immostreet .ppninnerbox {
+}
+.ppn_sb_largerect2_IT_immostreet .singlebox {
+  width: 720px;
+  height: 89px;
+  position: relative;
+  background: rgb(241, 241, 241);
+}
+.ppn_sb_largerect2_IT_immostreet .singlebox:first-child {
+	border-bottom: 1px solid white;
+}
+.ppn_sb_largerect2_IT_immostreet .singlebox:nth-child(2) {
+	border-top: 1px solid white;
+}
+.ppn_sb_largerect2_IT_immostreet .title {
+  cursor: pointer;
+  width: 505px;
+  height: 33px;
+  overflow: hidden;
+  font: 700 19px/22px 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  color: rgb(228, 62, 51);
+  background: white;
+  padding-top: 12px;
+  padding-left: 170px;
+}
+.ppn_sb_largerect2_IT_immostreet .title a:link, .ppn_sb_largerect2_IT_immostreet .title a:visited, .ppn_sb_largerect2_IT_immostreet .title a:active {
+  color: rgb(228, 62, 51);
+  text-decoration: none;
+}
+.ppn_sb_largerect2_IT_immostreet .title a:hover {
+  color: rgb(228, 62, 51);
+  text-decoration: underline;
+}
+.ppn_sb_largerect2_IT_immostreet .text {
+  cursor: pointer;
+  width: 550px;
+  position: relative;
+  overflow: hidden;
+  font: 400 13px/15px 'Open Sans', sans-serif;
+  text-align: left;
+  color: rgb(42, 42, 42);
+  margin-left: 170px;
+  margin-top: 15px;
+}
+.ppn_sb_largerect2_IT_immostreet .text a:link, .ppn_sb_largerect2_IT_immostreet .text a:visited, .ppn_sb_largerect2_IT_immostreet .text a:hover, .ppn_sb_largerect2_IT_immostreet .text a:active {
+	color : rgb(42, 42, 42);
+   text-decoration: none;
+}
+.ppn_sb_largerect2_IT_immostreet .text a:hover {
+	color : rgb(42, 42, 42);
+  text-decoration: none;
+}
+.ppn_sb_largerect2_IT_immostreet .url {
+  cursor: pointer;
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  right: 0px;
+  top: 0px;
+	background: url("images/ppnimmostreet-arrow-xl.gif")left center no-repeat;
+}
+.ppn_sb_largerect2_IT_immostreet .url a, .ppn_sb_largerect2_IT_immostreet .url a:link, .ppn_sb_largerect2_IT_immostreet .url a:visited, .ppn_sb_largerect2_IT_immostreet .url a:hover, .ppn_sb_largerect2_IT_immostreet .url a:active {
+
+}
+.ppn_sb_largerect2_IT_immostreet .url a:hover {
+
+}
+.ppn_sb_largerect2_IT_immostreet .adimage {
+  border-width: 0;
+  position:absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.ppn_sb_largerect2_IT_immostreet img.adimage {
+	width: 157px;
+	height: 89px;
+}
+.ppn_sb_largerect2_IT_immostreet .ppncaption {
+  display: none;
+}
+.ppn_sb_largerect2_IT_immostreet .tnlogo > a{
+	border: none;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: rgb(241, 241, 241);
+	padding: 1px 4px 3px 4px;
+	font: 700 10px/10px 'Open Sans', sans-serif;
+	text-align: center;
+	color: rgb(42, 42, 42);
+	text-decoration: none;
+}
+.ppn_sb_largerect2_IT_immostreet .tnlogo{
+    position: absolute; bottom:0; right:0; max-width:100px; height:15px;
+}
