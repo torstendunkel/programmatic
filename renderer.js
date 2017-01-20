@@ -11,6 +11,7 @@ ch.tam.addnexusRender = (function(){
       member : 3646, // fallback variables
       numads : 4, // fallback variables
       tagid : 9461257, // fallback variables
+      jsonUrl : 'config.json',
       idPrefix : 'ad-',
       adMarker : {
         de : 'Anzeige',
@@ -18,22 +19,28 @@ ch.tam.addnexusRender = (function(){
         it : 'Pubblicità'
       },
       more : {
-          de : 'mehr...',
-          fr : '',
-          it : ''
+          de : 'mehr ...',
+          fr : 'plus ...',
+          it : 'più ...'
       },
       trackingPixelClass: 'pixel',
+      moreNode : 'div',
+      showMore : false,
+      moreInTxt : false,
+      moreBtn : '<{{moreNode}} class="url"><a target="_blank" href="{{href}}">{{more}}</a></{{moreNode}}>',
       trackingPixel : '<img class="{{trackingPixelClass}}" src="{{imgSrc}}" width="0" height="0" style="display:none"/>',
       wrapper : '<div class="{{identifier}}"><div class="ppncaption">Werbung</div><div id="ppninnerbox" class="ppninnerbox">{{content}}</div><div class="tnlogo"><a href="https://goo.gl/gJLreW" target="_blank">{{admarker}}</a></div>',
-      template : '<div class="singlebox bottom left right" id="{{id}}" data-href="{{href}}"><a target="_blank" href="{{href}}"><img class="adimage" alt="Werbung" src="{{img}}"/></a><div class="title"> <a target="_blank" href="{{href}}">{{title}}</a></div><div class="text"><a target="_blank" href="{{href}}">{{description}} </a><span class="url"><a target="_blank" href="{{href}}">{{more}}</a></span></div>{{impression}}</div>'
+      template : '<div class="singlebox bottom left right" id="{{id}}" data-href="{{href}}"><a target="_blank" href="{{href}}"><img class="adimage" alt="Werbung" src="{{img}}"/></a><div class="title"> <a target="_blank" href="{{href}}">{{title}}</a></div><div class="text"><a target="_blank" href="{{href}}">{{description}} </a>{{moreInTxt}}</div>{{moreOutTxt}}{{impression}}</div>'
       //template : '<div class="singlebox bottom left right" id="{{id}}"><a target="_blank" href="{{href}}"><img class="adimage" alt="Werbung" src="{{img}}"/></a><div class="title"> <a target="_blank" href="{{href}}">{{title}}</a></div><div class="text"><a target="_blank" href="{{href}}">{{description}}</a></div><div class="url"><a target="_blank" href="{{href}}"></a></div>{{impression}}</div>'
   };
 
   var Renderer = function(){
+    var _this = this;
     this.settings = settings;
-    if(this.validateOptions()){
-      this.init();
-    }
+
+    this.validateOptions(function(){
+       _this.init();
+    });
   };
 
   Renderer.prototype = {
@@ -52,26 +59,58 @@ ch.tam.addnexusRender = (function(){
     },
 
     // validates the options object to check if ads can be requested and rendered
-    validateOptions: function(){
+    // options priority:
+    // 1. settings by hash
+    // 2. settings by json
+    // 3. default settings
+    validateOptions: function(callback){
+        var _this = this;
+
         try{
             this.options = JSON.parse('{"' + decodeURI(location.hash.substring(1)).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
         }
         catch(e){
             this.options = {};
         }
-        console.log(this.options);
 
-        this.options.numads = parseInt(this.options.numads) || this.settings.numads;
-        this.options.member = parseInt(this.options.member) || this.settings.member;
         this.options.identifier = this.options.identifier || this.settings.identifier;
-        this.options.tagid = parseInt(this.options.tagid)    || this.settings.tagid;
 
-        //guessing the language
-        if(!this.options.lang){
-            this.options.lang = this.options.identifier.indexOf('_DE_') !== -1 ? 'de' : this.options.identifier.indexOf('_FR_') !== -1 ? 'fr' : 'it';
-        }
+        //loading the config json to override settings
+        this.loadJSON('pages/' +this.options.identifier + '/' + this.settings.jsonUrl,function(json){
+            try{
+                json = JSON.parse(json);
+            }catch(e){
+                console.error("malformed settings json!", json);
+                json = {};
+            }
+            //checking the "more btn" rendering
+            _this.options.moreInTxt = _this.options.moreInTxt ? _this.options.moreInTxt === "true" : json.moreInTxt || _this.settings.moreInTxt;
+            _this.options.moreNode = _this.options.moreNode ? _this.options.moreNode : json.moreNode || _this.settings.moreNode || _this.settings.moreNode;
+            _this.options.showMore = _this.options.showMore ? _this.options.showMore === "true" : json.showMore || _this.settings.showMore;
 
-        return true;
+            var guessedNumads;
+            try{
+                guessedNumads = parseInt(_this.options.identifier.match(/\d+/)[0]);
+            }catch(e){
+                guessedNumads = null;
+            }
+
+            _this.options.numads = _this.options.numads ? parseInt(_this.options.numads) : json.numads || guessedNumads || this.settings.numads;
+            _this.options.tagid = _this.options.tagid ? parseInt(_this.options.tagid) : json.tagid || _this.settings.tagid;
+            _this.options.member = _this.options.member ? parseInt(this.options.member) : json.member || _this.settings.member;
+            //language is guessed by the identifier when not in hash-options or in json
+            _this.options.lang = _this.options.lang ? _this.options.lang : json.lang ? json.lang.toLowerCase() : (_this.options.identifier.indexOf('_DE_') !== -1 ? 'de' : _this.options.identifier.indexOf('_FR_') !== -1 ? 'fr' : 'it');
+
+
+
+            if(typeof callback === "function"){
+                console.log(_this.options);
+                callback.call();
+            }
+        });
+
+
+
     },
 
     pushTags: function(){
@@ -125,6 +164,9 @@ ch.tam.addnexusRender = (function(){
     },
 
     renderNativeAd: function(data){
+
+        var moreBtn = this.renderMoreBtn(data.native.clickUrl);
+
         var obj = {
           title : data.native.title,
             img : data.native.mainMedia[0].url,
@@ -132,8 +174,11 @@ ch.tam.addnexusRender = (function(){
             href : data.native.clickUrl,
             impression : '',
             id: data.id,
-            more : this.settings.more[this.options.lang]
+            moreInTxt : this.options.moreInTxt ? moreBtn : '',
+            moreOutTxt : !this.options.moreInTxt ? moreBtn : ''
         };
+
+
 
         //add impression pixels to the native ad
         if(data.native && data.native.impressionTrackers && data.native.impressionTrackers.length >0){
@@ -143,6 +188,16 @@ ch.tam.addnexusRender = (function(){
             }
         }
         return this.tmpl(this.settings.template, obj);
+    },
+
+    renderMoreBtn: function(clickUrl){
+        var data = {
+            more : this.options.showMore ? this.settings.more[this.options.lang] : '',
+            moreNode : this.options.moreNode,
+            href : clickUrl
+        };
+
+        return this.tmpl(this.settings.moreBtn,data);
     },
 
     initClickTracking: function(){
@@ -228,8 +283,22 @@ ch.tam.addnexusRender = (function(){
         style.setAttribute('rel', 'stylesheet');
         style.setAttribute('type', 'text/css');
         style.setAttribute('href', './pages/' + this.options.identifier + '/' + 'style.css');
-    }
+    },
 
+    loadJSON: function(url, callback) {
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', url, true);
+    xobj.onreadystatechange = function () {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+            callback(xobj.responseText);
+        }else if(xobj.readyState == 4 && xobj.status == "404"){
+            callback("{}");
+        }
+    };
+    xobj.send(null);
+    }
   };
   return Renderer;
 })();
