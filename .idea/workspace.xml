@@ -2,15 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecada909-ba54-4aca-bdc5-42610f8039de" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_autoonline/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_homegate/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_immo/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_immostreet/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_DE_homegate/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_DE_tilllate/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_DE_tilllate_2/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_FR_bilan/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_FR_homegate/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_FR_tilllate/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_FR_tilllate_2/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_IT_homegate/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilehalfpage3_DE_baslerzeitung/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilehalfpage3_DE_bernerzeitung/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilehalfpage4_DE_20min/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilehalfpage4_FR_20min/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerect1_DE_friday/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerect1_FR_friday/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerect1_v2_DE_tagesanzeiger/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_20min/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_basler/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_bernerzeitung/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_derbund/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_tilllate/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_tutti/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_20min/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_24heures/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_bilan/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_lematin/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_tdg/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_tilllate/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_tutti/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_IT_tio/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_IT_tutti/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_20min/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_baslerzeitung/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_bernerzeitung/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_derbund/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_friday/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_tagesanzeiger/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_20min/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_24heures/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_friday/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_lematin/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_tdg/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_IT_tio/config.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -33,100 +62,100 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_FR_immostreet/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_alleimmobilien/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_autoonline/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_homegate/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="21" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_immo/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_immostreet/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_DE_homegate/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_DE_tilllate/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_DE_tilllate_2/config.json">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_bernerzeitung/config.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_derbund/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_friday/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_tagesanzeiger/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_20min/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_24heures/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_friday/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_lematin/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_tdg/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="config.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_FR_bilan/config.json">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_IT_tio/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -151,33 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/ppn_rectangle1_IT_autoonline/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_rectangle2_DE_zattoo/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_rectangle2_FR_doodle/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_rectangle1_FR_lematin/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_minirectangle1_FR_lematin/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_mobilehalfpage4_IT_tio/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_rectangle1_DE_autoonline/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_rectangle1_FR_autoonline/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_minirectangle1_DE_baslerzeitung/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_landbote/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_billboard3_FR_20min/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_20min/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_24heures/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_femina/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_lematin/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_tdg/config.json" />
-        <option value="$PROJECT_DIR$/renderer.js" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_contentboard2_FR_lematin/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_contentboard2_FR_tdg/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_gallery2_DE_tilllate/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage2_DE_friday/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage2_DE_homegate/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_bilan/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_friday/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_ghi/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_homegate/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage2_IT_homegate/config.json" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage3_DE_friday/config.json" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage3_FR_friday/config.json" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_largerect2_DE_immostreet/style.css" />
@@ -202,6 +204,33 @@
         <option value="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_immo/config.json" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_immostreet/config.json" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_DE_homegate/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_FR_bilan/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_FR_tilllate/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_FR_tilllate_2/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_IT_homegate/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilehalfpage4_DE_20min/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerect1_DE_friday/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerect1_FR_friday/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerect1_v2_DE_tagesanzeiger/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_20min/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_tilllate/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_tutti/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_bilan/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_tilllate/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_tutti/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_IT_tio/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_IT_tutti/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_20min/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_baslerzeitung/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_derbund/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_friday/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_tagesanzeiger/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_20min/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_24heures/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_friday/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_lematin/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_tdg/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_IT_tio/config.json" />
       </list>
     </option>
   </component>
@@ -212,8 +241,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="26" />
-    <option name="y" value="50" />
+    <option name="x" value="9" />
+    <option name="y" value="101" />
     <option name="width" value="1852" />
     <option name="height" value="1098" />
   </component>
@@ -258,6 +287,690 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle2_IT_tio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle2_FR_tdg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle2_FR_lematin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle2_FR_friday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle2_FR_24heures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle2_FR_20min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle2_DE_tagesanzeiger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle2_DE_friday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle2_DE_derbund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle2_DE_bernerzeitung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle2_DE_baslerzeitung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle2_DE_20min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle1_IT_tutti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle1_IT_tio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle1_FR_tutti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle1_FR_tilllate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle1_FR_tdg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle1_FR_lematin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle1_FR_bilan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle1_FR_24heures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle1_FR_20min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle1_DE_tutti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle1_DE_tilllate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle1_DE_derbund" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle1_DE_bernerzeitung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle1_DE_basler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerectangle1_DE_20min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerect1_v2_DE_tagesanzeiger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerect1_FR_friday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilerect1_DE_friday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilehalfpage4_FR_20min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilehalfpage4_DE_20min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilehalfpage3_DE_bernerzeitung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilehalfpage3_DE_baslerzeitung" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilebanner1_IT_homegate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilebanner1_FR_tilllate_2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilebanner1_FR_tilllate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_mobilebanner1_FR_homegate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1086,11 +1799,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_mobilebanner1_FR_bilan" />
-      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_mobilebanner1_DE_tilllate_2" />
-      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_mobilebanner1_DE_tilllate" />
-      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_mobilebanner1_DE_homegate" />
-      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_leaderboard3_IT_immostreet" />
+      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_mobilerectangle2_IT_tio" />
+      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_mobilerectangle2_FR_tdg" />
+      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_mobilerectangle2_FR_lematin" />
+      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_mobilerectangle2_FR_24heures" />
+      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_mobilerectangle2_FR_20min" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_minirectangle1_FR_lematin" />
@@ -1180,12 +1893,12 @@
       <workItem from="1484907580010" duration="602000" />
       <workItem from="1484908189065" duration="3087000" />
       <workItem from="1484915007061" duration="205000" />
-      <workItem from="1484915217684" duration="985000" />
+      <workItem from="1484915217684" duration="3318000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59892000" />
+    <option name="totallyTimeSpent" value="62225000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1197,12 +1910,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="26" y="50" width="1852" height="1098" extended-state="0" />
+    <frame x="9" y="101" width="1852" height="1098" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26391184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24559586" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3326425" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1214,7 +1928,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24559586" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1230,284 +1943,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/renderer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1342">
-          <caret line="89" column="28" lean-forward="false" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
-          <folding>
-            <marker date="1484905704023" expanded="true" signature="881:893" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_contentboard2_DE_derbund/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_contentboard2_FR_24heures/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_contentboard2_FR_lematin/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_contentboard2_FR_tdg/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_gallery2_DE_tilllate/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_gallery2_FR_tilllate/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_DE_friday/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_DE_homegate/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_DE_landbote/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_bilan/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_friday/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_ghi/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="48" lean-forward="false" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_homegate/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_IT_homegate/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage3_DE_friday/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_largerect2_DE_immostreet/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage3_FR_friday/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_largerect2_DE_immostreet/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_skyscraper3_DE_immo/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1275">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_largerect2_IT_immostreet/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_largerect2_FR_immostreet/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard2_DE_tutti/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard2_FR_tutti/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard2_IT_tutti/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard2_FR_ghi/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_20min/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_20min/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="92" column="1" lean-forward="false" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_alleimmobilien/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_annabelle/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_anzeiger/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_autoonline/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_immo/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_homegate/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_immostreet/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_FR_20min/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_FR_alleimmobilien/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_FR_autoonline/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_FR_femina/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1535,7 +1970,7 @@
     <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_FR_immostreet/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1567,7 +2002,7 @@
     <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_immo/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1608,6 +2043,310 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_FR_homegate/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_FR_tilllate/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_FR_tilllate_2/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilebanner1_IT_homegate/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilehalfpage3_DE_baslerzeitung/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilehalfpage3_DE_bernerzeitung/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilehalfpage4_DE_20min/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilehalfpage4_FR_20min/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerect1_DE_friday/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerect1_FR_friday/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerect1_v2_DE_tagesanzeiger/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_20min/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_basler/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_bernerzeitung/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_derbund/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_tilllate/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_24heures/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_20min/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_tutti/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_bilan/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_lematin/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_tdg/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_tilllate/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_tutti/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_IT_tio/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_IT_tutti/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_20min/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_baslerzeitung/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_bernerzeitung/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_derbund/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_friday/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_tagesanzeiger/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_20min/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_24heures/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_friday/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_lematin/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_tdg/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_IT_tio/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
           <folding />
         </state>
       </provider>
