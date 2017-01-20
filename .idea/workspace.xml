@@ -2,129 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecada909-ba54-4aca-bdc5-42610f8039de" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_DE_immostreet/images/ppnimmostreet-arrow-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_DE_immostreet/images/ppnimmostreet-arrow-long.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_DE_immostreet/images/ppnimmostreet-arrow-xl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_DE_immostreet/images/ppnimmostreet-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_DE_immostreet/images/ppnimmostreet-logo-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_DE_immostreet/images/ppnimmostreet-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_FR_immostreet/images/ppnimmostreet-arrow-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_FR_immostreet/images/ppnimmostreet-arrow-long.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_FR_immostreet/images/ppnimmostreet-arrow-xl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_FR_immostreet/images/ppnimmostreet-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_FR_immostreet/images/ppnimmostreet-logo-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_FR_immostreet/images/ppnimmostreet-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_IT_immostreet/images/ppnimmostreet-arrow-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_IT_immostreet/images/ppnimmostreet-arrow-long.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_IT_immostreet/images/ppnimmostreet-arrow-xl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_IT_immostreet/images/ppnimmostreet-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_IT_immostreet/images/ppnimmostreet-logo-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_IT_immostreet/images/ppnimmostreet-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_immostreet/images/ppnimmostreet-arrow-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_immostreet/images/ppnimmostreet-arrow-long.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_immostreet/images/ppnimmostreet-arrow-xl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_immostreet/images/ppnimmostreet-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_immostreet/images/ppnimmostreet-logo-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_immostreet/images/ppnimmostreet-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_FR_immostreet/images/ppnimmostreet-arrow-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_FR_immostreet/images/ppnimmostreet-arrow-long.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_FR_immostreet/images/ppnimmostreet-arrow-xl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_FR_immostreet/images/ppnimmostreet-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_FR_immostreet/images/ppnimmostreet-logo-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_FR_immostreet/images/ppnimmostreet-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_immostreet/images/ppnimmostreet-arrow-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_immostreet/images/ppnimmostreet-arrow-long.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_immostreet/images/ppnimmostreet-arrow-xl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_immostreet/images/ppnimmostreet-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_immostreet/images/ppnimmostreet-logo-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_immostreet/images/ppnimmostreet-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_DE_immostreet/images/ppnimmostreet-arrow-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_DE_immostreet/images/ppnimmostreet-arrow-long.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_DE_immostreet/images/ppnimmostreet-arrow-xl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_DE_immostreet/images/ppnimmostreet-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_DE_immostreet/images/ppnimmostreet-logo-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_DE_immostreet/images/ppnimmostreet-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_FR_immostreet/images/ppnimmostreet-arrow-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_FR_immostreet/images/ppnimmostreet-arrow-long.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_FR_immostreet/images/ppnimmostreet-arrow-xl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_FR_immostreet/images/ppnimmostreet-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_FR_immostreet/images/ppnimmostreet-logo-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_FR_immostreet/images/ppnimmostreet-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_IT_immostreet/images/ppnimmostreet-arrow-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_IT_immostreet/images/ppnimmostreet-arrow-long.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_IT_immostreet/images/ppnimmostreet-arrow-xl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_IT_immostreet/images/ppnimmostreet-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_IT_immostreet/images/ppnimmostreet-logo-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_IT_immostreet/images/ppnimmostreet-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_DE_immostreet/images/ppnimmostreet-arrow-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_DE_immostreet/images/ppnimmostreet-arrow-long.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_DE_immostreet/images/ppnimmostreet-arrow-xl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_DE_immostreet/images/ppnimmostreet-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_DE_immostreet/images/ppnimmostreet-logo-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_DE_immostreet/images/ppnimmostreet-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_FR_immostreet/images/ppnimmostreet-arrow-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_FR_immostreet/images/ppnimmostreet-arrow-long.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_FR_immostreet/images/ppnimmostreet-arrow-xl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_FR_immostreet/images/ppnimmostreet-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_FR_immostreet/images/ppnimmostreet-logo-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_FR_immostreet/images/ppnimmostreet-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_IT_immostreet/images/ppnimmostreet-arrow-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_IT_immostreet/images/ppnimmostreet-arrow-long.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_IT_immostreet/images/ppnimmostreet-arrow-xl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_IT_immostreet/images/ppnimmostreet-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_IT_immostreet/images/ppnimmostreet-logo-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_IT_immostreet/images/ppnimmostreet-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_DE_immostreet/images/ppnimmostreet-arrow-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_DE_immostreet/images/ppnimmostreet-arrow-long.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_DE_immostreet/images/ppnimmostreet-arrow-xl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_DE_immostreet/images/ppnimmostreet-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_DE_immostreet/images/ppnimmostreet-logo-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_DE_immostreet/images/ppnimmostreet-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_immostreet/images/ppnimmostreet-arrow-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_immostreet/images/ppnimmostreet-arrow-long.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_immostreet/images/ppnimmostreet-arrow-xl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_immostreet/images/ppnimmostreet-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_immostreet/images/ppnimmostreet-logo-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_immostreet/images/ppnimmostreet-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_IT_immostreet/images/ppnimmostreet-arrow-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_IT_immostreet/images/ppnimmostreet-arrow-long.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_IT_immostreet/images/ppnimmostreet-arrow-xl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_IT_immostreet/images/ppnimmostreet-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_IT_immostreet/images/ppnimmostreet-logo-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_IT_immostreet/images/ppnimmostreet-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_smallrect1_DE_immostreet/images/ppnimmostreet-arrow-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_smallrect1_DE_immostreet/images/ppnimmostreet-arrow-long.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_smallrect1_DE_immostreet/images/ppnimmostreet-arrow-xl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_smallrect1_DE_immostreet/images/ppnimmostreet-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_smallrect1_DE_immostreet/images/ppnimmostreet-logo-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_smallrect1_DE_immostreet/images/ppnimmostreet-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_smallrect1_FR_immostreet/images/ppnimmostreet-arrow-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_smallrect1_FR_immostreet/images/ppnimmostreet-arrow-long.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_smallrect1_FR_immostreet/images/ppnimmostreet-arrow-xl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_smallrect1_FR_immostreet/images/ppnimmostreet-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_smallrect1_FR_immostreet/images/ppnimmostreet-logo-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_smallrect1_FR_immostreet/images/ppnimmostreet-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_smallrect1_IT_immostreet/images/ppnimmostreet-arrow-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_smallrect1_IT_immostreet/images/ppnimmostreet-arrow-long.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_smallrect1_IT_immostreet/images/ppnimmostreet-arrow-xl.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_smallrect1_IT_immostreet/images/ppnimmostreet-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_smallrect1_IT_immostreet/images/ppnimmostreet-logo-l.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_smallrect1_IT_immostreet/images/ppnimmostreet-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_gallery2_DE_tilllate/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_gallery2_FR_tilllate/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_halfpage2_DE_friday/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_halfpage2_DE_homegate/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_halfpage2_DE_landbote/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_bilan/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_friday/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_ghi/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_homegate/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_halfpage2_IT_homegate/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_halfpage3_DE_friday/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_halfpage3_FR_friday/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_DE_immostreet/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_FR_immostreet/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_largerect2_IT_immostreet/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard2_DE_tutti/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard2_FR_ghi/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard2_FR_tutti/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard2_IT_tutti/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_20min/config.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -147,46 +29,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_ghi/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="48" lean-forward="false" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_homegate/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_IT_homegate/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage3_DE_friday/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage3_FR_friday/config.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -206,11 +48,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/ppn_sb_largerect2_FR_immostreet/config.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard2_DE_tutti/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard2_FR_tutti/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard2_IT_tutti/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard2_FR_ghi/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_20min/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_20min/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="54" column="17" lean-forward="true" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -221,16 +123,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1275">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_largerect2_DE_immostreet/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -254,9 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/ppn_sb_rectangle3_FR_tilllate/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_storyplacement3_DE_tilllate/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_storyplacement3_FR_tilllate/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_wideboard3_DE_tilllate/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_wideboard3_FR_tilllate/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_billboard4_DE_20min/style.css" />
@@ -305,6 +194,9 @@
         <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage3_FR_friday/config.json" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_largerect2_DE_immostreet/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_largerect2_DE_immostreet/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_leaderboard2_DE_tutti/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_leaderboard2_FR_ghi/config.json" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_20min/config.json" />
       </list>
     </option>
   </component>
@@ -361,6 +253,78 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_leaderboard3_DE_20min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_leaderboard2_IT_tutti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_leaderboard2_FR_tutti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_leaderboard2_FR_ghi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -703,11 +667,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_smallrect1_IT_immostreet" />
-      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_smallrect1_FR_immostreet" />
-      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_smallrect1_DE_immostreet" />
-      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_skyscraper3_IT_immostreet" />
-      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_skyscraper3_FR_immostreet" />
+      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_leaderboard3_DE_20min" />
+      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_leaderboard2_FR_ghi" />
+      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_leaderboard2_IT_tutti" />
+      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_leaderboard2_FR_tutti" />
+      <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_leaderboard2_DE_tutti" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_minirectangle1_FR_lematin" />
@@ -795,12 +759,12 @@
       <workItem from="1484733231897" duration="36490000" />
       <workItem from="1484838359451" duration="12177000" />
       <workItem from="1484907580010" duration="602000" />
-      <workItem from="1484908189065" duration="368000" />
+      <workItem from="1484908189065" duration="919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55983000" />
+    <option name="totallyTimeSpent" value="56534000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -813,9 +777,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="19" y="44" width="1852" height="1097" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26391184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26391184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33298755" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -845,48 +809,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_autoonline/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="111" column="30" lean-forward="false" selection-start-line="111" selection-start-column="30" selection-end-line="113" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_rectangle1_FR_autoonline/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="93" column="30" lean-forward="true" selection-start-line="93" selection-start-column="30" selection-end-line="95" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_rectangle2_DE_zattoo/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_rectangle1_DE_autoonline/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="71" column="43" lean-forward="true" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_rectangle2_FR_doodle/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_minirectangle1_DE_baslerzeitung/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/ppn_minirectangle1_FR_lematin/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1244,7 +1166,55 @@
     <entry file="file://$PROJECT_DIR$/pages/ppn_sb_largerect2_FR_immostreet/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard2_DE_tutti/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard2_FR_tutti/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard2_IT_tutti/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard2_FR_ghi/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_20min/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_20min/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="54" column="17" lean-forward="true" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
           <folding />
         </state>
       </provider>
