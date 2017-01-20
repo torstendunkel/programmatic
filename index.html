@@ -1,28 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-<script>
-  var apntag = apntag || {};
-    //create a queue on the apntag object
-    apntag.anq = apntag.anq || [];
-    //load ast.js - async
-  (function() {
-      var d = document, scr = d.createElement('script'), pro = d.location.protocol,
-      tar = d.getElementsByTagName("head")[0];
-      scr.type = 'text/javascript';  scr.async = true;
-      scr.src = ((pro === 'https:') ? 'https' : 'http') + '://acdn.adnxs.com/ast/ast.js';
-      if(!apntag.l){apntag.l=true; tar.insertBefore(scr, tar.firstChild);}
-  })();
-</script>
-<script src="./renderer.js"></script>
-</head>
+  <meta charset="utf-8" />
 
+  <script>
+    document.write("<script src=\".\/renderer.js" + document.location.hash + "\"> <\/script>");
+  </script>
+</head>
 <body>
 
-<script>
-        var adRenderer = new ch.tam.addnexusRender();
-</script>
 </body>
 </html>
 

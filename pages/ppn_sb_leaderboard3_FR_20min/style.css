@@ -48,6 +48,7 @@ html, body {
     padding: 5px 0 0 5px;
     text-decoration: none;
     width: 132px;
+    line-height: 0px;
 }
 .ppn_sb_leaderboard3_FR_20min .text a:link, .ppn_sb_leaderboard3_FR_20min .text a:visited, .ppn_sb_leaderboard3_FR_20min .text a:hover, .ppn_sb_leaderboard3_FR_20min .text a:active {
     color: #4d4d4d;

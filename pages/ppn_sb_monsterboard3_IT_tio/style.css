@@ -43,6 +43,7 @@ html, body {
     width: 280px;
     max-height: 32px;
     overflow: hidden;
+    line-height: 0px;
 }
 .ppn_sb_monsterboard3_IT_tio .text a:link, .ppn_sb_monsterboard3_IT_tio .text a:visited, .ppn_sb_monsterboard3_IT_tio .text a:hover, .ppn_sb_monsterboard3_IT_tio .text a:active {
     color: #4d4d4d;

@@ -91,6 +91,8 @@
   box-sizing: border-box;
 	text-align: right;
 	padding-top: 1px;
+    line-height: 0px;
+    height:15px;
 }
 .ppn_sb_skyscraper3_IT_immo .tnlogo > a{
 	border: none;

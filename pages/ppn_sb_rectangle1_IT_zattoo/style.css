@@ -84,6 +84,9 @@
 .ppn_sb_rectangle1_IT_zattoo .ppncaption {
     display: none;
 }
+.ppn_sb_rectangle1_IT_zattoo .tnlogo {
+    position: absolute; bottom:2px; right:0; max-width:100px; height:14px;
+}
 .ppn_sb_rectangle1_IT_zattoo .tnlogo > a{
 	border-top: 1px solid white;
 	border-left: 1px solid white;

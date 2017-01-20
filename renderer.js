@@ -38,6 +38,11 @@ ch.tam.addnexusRender = (function(){
     var _this = this;
     this.settings = settings;
 
+    this.scriptTag = document.getElementsByTagName('script');
+    var index = this.scriptTag.length - 1;
+    this.scriptTag = this.scriptTag[index];
+
+    this.addAppNexusLib();
     this.validateOptions(function(){
        _this.init();
     });
@@ -67,9 +72,11 @@ ch.tam.addnexusRender = (function(){
         var _this = this;
 
         try{
-            this.options = JSON.parse('{"' + decodeURI(location.hash.substring(1)).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
+            //this.options = JSON.parse('{"' + decodeURI(location.hash.substring(1)).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
+            this.options = JSON.parse('{"' + this.scriptTag.src.split('#')[1].replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
         }
         catch(e){
+            console.error("No or malformed options passed");
             this.options = {};
         }
 
@@ -299,7 +306,26 @@ ch.tam.addnexusRender = (function(){
         }
     };
     xobj.send(null);
+    },
+
+    addAppNexusLib: function(){
+        window.apntag = window.apntag || {};
+        //create a queue on the apntag object
+        apntag.anq = apntag.anq || [];
+        //load ast.js - async
+        (function() {
+            var d = document, scr = d.createElement('script'), pro = d.location.protocol,
+                tar = d.getElementsByTagName("head")[0];
+            scr.type = 'text/javascript';  scr.async = true;
+            scr.src = ((pro === 'https:') ? 'https' : 'http') + '://acdn.adnxs.com/ast/ast.js';
+            if(!apntag.l){apntag.l=true; tar.insertBefore(scr, tar.firstChild);}
+        })();
     }
+
+
+
   };
   return Renderer;
 })();
+
+var adRenderer = new ch.tam.addnexusRender();
