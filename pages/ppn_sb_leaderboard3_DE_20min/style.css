@@ -1,5 +1,6 @@
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+
 html, body {
     margin: 0;
     padding: 0;
@@ -100,4 +101,8 @@ html, body {
     text-align: center;
     color: white;
     text-decoration: none;
+}
+.ppn_sb_leaderboard3_DE_20min .tnlogo{
+    background: url('http://media.das.tamedia.ch/images/top_bar.gif') top repeat-x;
+    position: absolute; top:0; left:0; width:100%;height: 10px;
 }
