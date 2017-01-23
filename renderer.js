@@ -73,7 +73,10 @@ ch.tam.addnexusRender = (function(){
 
         try{
             //this.options = JSON.parse('{"' + decodeURI(location.hash.substring(1)).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
-            this.options = JSON.parse('{"' + this.scriptTag.src.split('#')[1].replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
+            this.baseUrl = this.scriptTag.src.split('#')[0].replace('renderer.js','');
+            //this.baseUrl = "https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/";
+            this.hash = this.scriptTag.src.split('#')[1];
+            this.options = JSON.parse('{"' + this.hash.replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
         }
         catch(e){
             console.error("No or malformed options passed");
@@ -290,13 +293,13 @@ ch.tam.addnexusRender = (function(){
         head.appendChild(style);
         style.setAttribute('rel', 'stylesheet');
         style.setAttribute('type', 'text/css');
-        style.setAttribute('href', './pages/' + this.options.identifier + '/' + 'style.css');
+        style.setAttribute('href', this.baseUrl + 'pages/' + this.options.identifier + '/' + 'style.css');
     },
 
     loadJSON: function(url, callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', url, true);
+    xobj.open('GET', this.baseUrl + url, true);
     xobj.onreadystatechange = function () {
         if (xobj.readyState == 4 && xobj.status == "200") {
             // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
