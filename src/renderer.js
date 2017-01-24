@@ -86,7 +86,7 @@ ch.tam.addnexusRender = (function(){
         this.options.identifier = this.options.identifier || this.settings.identifier;
 
         //loading the config json to override settings
-        this.loadJSON('pages/' +this.options.identifier + '/' + this.settings.jsonUrl,function(json){
+        this.loadJSON(this.settings.jsonUrl,function(json){
             try{
                 json = JSON.parse(json);
             }catch(e){
@@ -115,12 +115,10 @@ ch.tam.addnexusRender = (function(){
 
 
             if(typeof callback === "function"){
-                console.log(_this.options);
+                //console.log(_this.options);
                 callback.call();
             }
         });
-
-
 
     },
 
@@ -293,7 +291,7 @@ ch.tam.addnexusRender = (function(){
         head.appendChild(style);
         style.setAttribute('rel', 'stylesheet');
         style.setAttribute('type', 'text/css');
-        style.setAttribute('href', this.baseUrl + 'pages/' + this.options.identifier + '/' + 'style.css');
+        style.setAttribute('href', this.baseUrl + '/style.css');
     },
 
     loadJSON: function(url, callback) {

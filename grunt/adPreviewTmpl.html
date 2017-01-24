@@ -1,0 +1,11 @@
+<div>
+    <h3>%%HEADER%%</h3>
+    <iframe id="%%ifrmID%%"> </iframe>
+    <script>
+        var ifrm = document.getElementById("%%ifrmID%%");
+        ifrm = ifrm.contentWindow || ifrm.contentDocument.document || ifrm.contentDocument;
+        ifrm.document.open();
+        ifrm.document.write('<script src="%%SCRIPTSRC%%"><\/script>');
+        ifrm.document.close();
+    </script>
+</div>
