@@ -76,9 +76,10 @@ module.exports = function(grunt) {
             var processLine = function(lineCode, gruntRelPath) {
                 var dirPath = path.dirname(gruntRelPath);
                 var importMatch = lineCode.match(/\s*@import\s*?(?: url\(\s*)?([\'\"])?((?!\/)[\w\-\.\/\?=&]+)\1\s*\)?\s*;?/i);
-                if (importMatch) {
+                if (false) {
                     // @import
                     var importPath = path.join(dirPath, importMatch[2]).replace(/\\/g, '/');
+
                     if (! fs.existsSync(importPath)) {
                         throw new Error(gruntRelPath + ' Error!\n@import file not exist: ' + importPath);
                     }
@@ -91,12 +92,17 @@ module.exports = function(grunt) {
                     }
                 } else {
                     // url()
-                    lineCode = lineCode.replace(/url\(\s*(['"]?)((?!\/)[\w\-\.\/\?=&]+)(#[\w\-=&]+)?\1\s*\)/ig, function(matchString, quote, staticUrl) {
+                    /*lineCode = lineCode.replace(/url\(\s*(['"]?)((?!\/)[\w\-\.\/\?=&]+)(#[\w\-=&]+)?\1\s*\)/ig, function(matchString, quote, staticUrl) {
+
+
                         var staticPath = path.join(dirPath, staticUrl.replace(/(\.[A-Za-z0-9]+)(\?[\w\-=&]*)?$/, '$1'));
-                        var baseRelUrl = path.relative(options.baseDir, staticPath).replace(/\\/g, '/') + '?v=' + getVersion(staticPath, gruntRelPath);
+                        var baseRelUrl = path.relative(options.baseDir, staticPath).replace(/\\/g, '/');
                         var absUrl = options.baseUrl + baseRelUrl;
-                        return matchString.replace(staticUrl, absUrl);
-                    });
+
+                        return staticUrl;
+
+                        //return matchString.replace(staticUrl, absUrl);
+                    });*/
 
                     outputList.push(lineCode);
                 }
@@ -147,7 +153,7 @@ module.exports = function(grunt) {
             fileGroup.src.map(function(filePath) {
                 var gruntRelPath = (dirMode ? path.join(fileGroup.cwd, filePath) : filePath).replace(/\\/g, '/');
                 var destPath = (dirMode ? path.join(fileGroup.dest, filePath) : fileGroup.dest).replace(/^(.*)\.css$/i, '$1.js');
-                console.log('css2js:\t' + gruntRelPath);
+                //console.log('css2js:\t' + gruntRelPath);
                 var cssContent = processCss(gruntRelPath);
                 var jsContent = css2js(cssContent, filePath);
                 grunt.file.write(destPath, jsContent);

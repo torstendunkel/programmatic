@@ -34,7 +34,7 @@ ch.tam.addnexusRender = (function(){
       //template : '<div class="singlebox bottom left right" id="{{id}}"><a target="_blank" href="{{href}}"><img class="adimage" alt="Werbung" src="{{img}}"/></a><div class="title"> <a target="_blank" href="{{href}}">{{title}}</a></div><div class="text"><a target="_blank" href="{{href}}">{{description}}</a></div><div class="url"><a target="_blank" href="{{href}}"></a></div>{{impression}}</div>'
   };
 
-  var Renderer = function(){
+  var Renderer = function(config){
     var _this = this;
     this.settings = settings;
 
@@ -43,9 +43,19 @@ ch.tam.addnexusRender = (function(){
     this.scriptTag = this.scriptTag[index];
 
     this.addAppNexusLib();
-    this.validateOptions(function(){
-       _this.init();
-    });
+
+    if(config){
+        this.validateOptions(function(){
+            _this.init();
+        },config);
+    }else{
+        this.validateOptions(function(){
+            _this.init();
+            _this.addStyle();
+        });
+    }
+
+
   };
 
   Renderer.prototype = {
@@ -56,8 +66,6 @@ ch.tam.addnexusRender = (function(){
       this.loadedAds = [];
       this.adsLoaded = 0;
 
-      this.addStyle();
-
       apntag.anq.push(function() {
         _this.pushTags();
       });
@@ -66,60 +74,78 @@ ch.tam.addnexusRender = (function(){
     // validates the options object to check if ads can be requested and rendered
     // options priority:
     // 1. settings by hash
-    // 2. settings by json
+    // 2. settings by json or inline rendered
     // 3. default settings
-    validateOptions: function(callback){
+    validateOptions: function(callback, config){
         var _this = this;
-
+        this.options = {};
         try{
-            //this.options = JSON.parse('{"' + decodeURI(location.hash.substring(1)).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
-            this.baseUrl = this.scriptTag.src.split('#')[0].replace('renderer.js','');
-            //this.baseUrl = "https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/";
-            this.hash = this.scriptTag.src.split('#')[1];
-            this.options = JSON.parse('{"' + this.hash.replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
+            var temp = this.scriptTag.src.split('#');
+            this.baseUrl = temp[0].replace('src/renderer.js','pages/'); //only for preview
+            if(temp.length > 1){
+                this.hash = temp[1];
+                this.options = JSON.parse('{"' + this.hash.replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
+            }
         }
         catch(e){
             console.error("No or malformed options passed");
-            this.options = {};
         }
 
-        this.options.identifier = this.options.identifier || this.settings.identifier;
-
-        //loading the config json to override settings
-        this.loadJSON(this.settings.jsonUrl,function(json){
-            try{
-                json = JSON.parse(json);
-            }catch(e){
-                console.error("malformed settings json!", json);
-                json = {};
+        if(!this.options.identifier){
+            if(config && config.identifier){
+                this.options.identifier = config.identifier;
+            }else{
+                this.options.identifier = this.settings.identifier;
             }
-            //checking the "more btn" rendering
-            _this.options.moreInTxt = _this.options.moreInTxt ? _this.options.moreInTxt === "true" : json.moreInTxt || _this.settings.moreInTxt;
-            _this.options.moreNode = _this.options.moreNode ? _this.options.moreNode : json.moreNode || _this.settings.moreNode || _this.settings.moreNode;
-            _this.options.showMore = _this.options.showMore ? _this.options.showMore === "true" : json.showMore || _this.settings.showMore;
-            _this.options.more = _this.options.more ? _this.options.more : json.more || null;
-
-            var guessedNumads;
-            try{
-                guessedNumads = parseInt(_this.options.identifier.match(/\d+/)[0]);
-            }catch(e){
-                guessedNumads = null;
-            }
-
-            _this.options.numads = _this.options.numads ? parseInt(_this.options.numads) : json.numads || guessedNumads || this.settings.numads;
-            _this.options.tagid = _this.options.tagid ? parseInt(_this.options.tagid) : json.tagid || _this.settings.tagid;
-            _this.options.member = _this.options.member ? parseInt(this.options.member) : json.member || _this.settings.member;
-            //language is guessed by the identifier when not in hash-options or in json
-            _this.options.lang = _this.options.lang ? _this.options.lang : json.lang ? json.lang.toLowerCase() : (_this.options.identifier.indexOf('_DE_') !== -1 ? 'de' : _this.options.identifier.indexOf('_FR_') !== -1 ? 'fr' : 'it');
+        }
 
 
+        // if the json is rendered into the file we do not need to load it
+        if(config){
+            _this.setOptions(config,callback);
+        }else{
+            //loading the config json to override settings
+            this.loadJSON(this.settings.jsonUrl,function(json){
+                try{
+                    json = JSON.parse(json);
+                }catch(e){
+                    console.error("malformed settings json!", json);
+                    json = {};
+                }
+                _this.setOptions(json,callback);
+            });
+        }
 
-            if(typeof callback === "function"){
-                //console.log(_this.options);
-                callback.call();
-            }
-        });
 
+    },
+
+    setOptions : function(json, callback){
+        var _this = this;
+        //checking the "more btn" rendering
+        _this.options.moreInTxt = _this.options.moreInTxt ? _this.options.moreInTxt === "true" : json.moreInTxt || _this.settings.moreInTxt;
+        _this.options.moreNode = _this.options.moreNode ? _this.options.moreNode : json.moreNode || _this.settings.moreNode || _this.settings.moreNode;
+        _this.options.showMore = _this.options.showMore ? _this.options.showMore === "true" : json.showMore || _this.settings.showMore;
+        _this.options.more = _this.options.more ? _this.options.more : json.more || null;
+
+        var guessedNumads;
+        try{
+            guessedNumads = parseInt(_this.options.identifier.match(/\d+/)[0]);
+        }catch(e){
+            guessedNumads = null;
+        }
+
+        _this.options.numads = _this.options.numads ? parseInt(_this.options.numads) : json.numads || guessedNumads || this.settings.numads;
+        _this.options.tagid = _this.options.tagid ? parseInt(_this.options.tagid) : json.tagid || _this.settings.tagid;
+        _this.options.member = _this.options.member ? parseInt(this.options.member) : json.member || _this.settings.member;
+        //language is guessed by the identifier when not in hash-options or in json
+        _this.options.lang = _this.options.lang ? _this.options.lang : json.lang ? json.lang.toLowerCase() : (_this.options.identifier.indexOf('_DE_') !== -1 ? 'de' : _this.options.identifier.indexOf('_FR_') !== -1 ? 'fr' : 'it');
+
+
+
+        if(typeof callback === "function"){
+            //console.log(_this.options);
+            callback.call();
+        }
     },
 
     pushTags: function(){
@@ -158,7 +184,7 @@ ch.tam.addnexusRender = (function(){
     },
 
     render: function(){
-        var data= {
+        var data = {
             content : '',
             identifier : this.options.identifier,
             admarker : this.settings.adMarker[this.options.lang]
@@ -291,13 +317,13 @@ ch.tam.addnexusRender = (function(){
         head.appendChild(style);
         style.setAttribute('rel', 'stylesheet');
         style.setAttribute('type', 'text/css');
-        style.setAttribute('href', this.baseUrl + '/style.css');
+        style.setAttribute('href', this.baseUrl + '/' + this.options.identifier + '/style.css');
     },
 
     loadJSON: function(url, callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
-    xobj.open('GET', this.baseUrl + url, true);
+    xobj.open('GET', this.baseUrl  + this.options.identifier + '/' + url, true);
     xobj.onreadystatechange = function () {
         if (xobj.readyState == 4 && xobj.status == "200") {
             // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
@@ -321,7 +347,21 @@ ch.tam.addnexusRender = (function(){
             scr.src = ((pro === 'https:') ? 'https' : 'http') + '://acdn.adnxs.com/ast/ast.js';
             if(!apntag.l){apntag.l=true; tar.insertBefore(scr, tar.firstChild);}
         })();
-    }
+    },
+
+     css : function(type, css){
+         var head = document.head || document.getElementsByTagName('head')[0];
+         var style = document.createElement('style');
+
+         style.type = 'text/css';
+         if (style.styleSheet){
+             style.styleSheet.cssText = css;
+         } else {
+             style.appendChild(document.createTextNode(css));
+         }
+
+         head.appendChild(style);
+     }
 
 
 
@@ -329,4 +369,4 @@ ch.tam.addnexusRender = (function(){
   return Renderer;
 })();
 
-var adRenderer = new ch.tam.addnexusRender();
+var adRenderer = new ch.tam.addnexusRender(window.renderingConfig);

@@ -25,6 +25,7 @@
     "grunt-contrib-cssmin": "^1.0.2",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-folder-list": "^1.1.0",
-    "grunt-multi-dest": "^1.0.0"
+    "grunt-multi-dest": "^1.0.0",
+    "grunt-variablize": "^0.1.0"
   }
 }

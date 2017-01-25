@@ -27,26 +27,30 @@ module.exports = function(grunt) {
         },
 
         copy: {
-            // Makes a backup of all the views files
             jsToPages: {
                 files: '<%= pages %>'
             },
-
             pages : {
                 expand: true,
                 cwd: 'pages',
                 src: '**',
                 dest: 'temp/'
+            },
+
+            images : {
+                files : '<%= pages_images %>'
             }
         },
         folder_list: {
             options: {
                 // Default options, you dont need these they are just to highlight the options available.
                 files: false,
-                folders: true
+                folders: true,
+                type : "dir",
+                depth :4
             },
             files: {
-                src : ['temp/**'],
+                src : ['temp/**/'],
                 dest: 'temp/folderlist.json'
             }
         },
@@ -58,15 +62,21 @@ module.exports = function(grunt) {
 
         css_to_js: {
             options: {
-                regFn: 'ch.tam.addnexusRender.css'
+                regFn: 'adRenderer.css'
             },
             pages: {
                 files: '<%= pages_css %>'
             }
+        },
+
+        concat:{
+            options: {
+                separator: ';'
+            },
+            build: {
+                files :'<%= pages_concat %>'
+            }
         }
-
-
-
     });
 
 
@@ -79,11 +89,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-folder-list');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-variablize');
 
 
     // Default task(s).
-    grunt.registerTask('default', ['clean:temp','copy:pages','folder_list','copy_Main','copy:jsToPages','prepareCSS_to_JS','css_to_js:pages','generateTestPage']);
-
+    grunt.registerTask('default', ['clean:temp','copy:pages','folder_list','copy_Main','copy:jsToPages','prepareCSS_to_JS','css_to_js:pages','jsonConfigCopy', 'prepareConcat','concat:build','prepare_copy_images','copy:images','generateTestPage','clean:temp']);
 
 
 };

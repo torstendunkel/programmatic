@@ -11,11 +11,11 @@ module.exports = function(grunt) {
         for (var i = 0; i < folderJSON.length; i++) {
             identifier = folderJSON[i].location;
             identifier = identifier.split('/');
-            if(identifier.length === 2){
+            if(identifier.length === 3){
                 htmlTmp = template
                     .replace(/%%HEADER%%/g,identifier[1])
                     .replace(/%%ifrmID%%/g,'iframe'+i)
-                    .replace(/%%SCRIPTSRC%%/g,'temp/'+identifier[1]+'/renderer.js#identifier='+identifier[1]);
+                    .replace(/%%SCRIPTSRC%%/g,'build/'+identifier[1]+'/index.js');
                 html += htmlTmp;
             }
         }
