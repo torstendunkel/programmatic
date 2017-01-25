@@ -317,7 +317,7 @@ ch.tam.addnexusRender = (function(){
         head.appendChild(style);
         style.setAttribute('rel', 'stylesheet');
         style.setAttribute('type', 'text/css');
-        style.setAttribute('href', this.baseUrl + '/' + this.options.identifier + '/style.css');
+        style.setAttribute('href', this.baseUrl  + this.options.identifier + '/style.css');
     },
 
     loadJSON: function(url, callback) {

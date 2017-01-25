@@ -62,7 +62,9 @@ module.exports = function(grunt) {
 
         css_to_js: {
             options: {
-                regFn: 'adRenderer.css'
+                regFn: 'adRenderer.css',
+                baseUrl : 'build',
+                tempUrl : 'temp'
             },
             pages: {
                 files: '<%= pages_css %>'

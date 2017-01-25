@@ -28,6 +28,7 @@ module.exports = function(grunt) {
             baseUrl: '/',       // base url
             baseDir: '.',       // local base dir
             regFn: 'jcssReg',   // js register function
+            tempUrl: 'temp',   // js register function
             debug: false        // debug mode
         });
 
@@ -92,19 +93,17 @@ module.exports = function(grunt) {
                     }
                 } else {
                     // url()
-                    /*lineCode = lineCode.replace(/url\(\s*(['"]?)((?!\/)[\w\-\.\/\?=&]+)(#[\w\-=&]+)?\1\s*\)/ig, function(matchString, quote, staticUrl) {
+                    lineCode = lineCode.replace(/url\(\s*(['"]?)((?!\/)[\w\-\.\/\?=&]+)(#[\w\-=&]+)?\1\s*\)/ig, function(matchString, quote, staticUrl) {
 
+                        //console.log(matchString, quote, staticUrl, '\n');
 
                         var staticPath = path.join(dirPath, staticUrl.replace(/(\.[A-Za-z0-9]+)(\?[\w\-=&]*)?$/, '$1'));
                         var baseRelUrl = path.relative(options.baseDir, staticPath).replace(/\\/g, '/');
-                        var absUrl = options.baseUrl + baseRelUrl;
-
-                        return staticUrl;
-
-                        //return matchString.replace(staticUrl, absUrl);
-                    });*/
-
+                        var absUrl = options.baseUrl + baseRelUrl.replace(options.tempUrl,'');
+                        return matchString.replace(staticUrl, absUrl);
+                    });
                     outputList.push(lineCode);
+
                 }
             };
 
