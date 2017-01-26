@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
     var fs = require("fs");
-    grunt.registerTask('jsonConfigCopy', 'Copies the main JS to all subfolders', function () {
+    grunt.registerTask('copy_json_config', 'Copies the main JS to all subfolders', function () {
 
         var folderJSON = grunt.file.readJSON('temp/folderlist.json');
         var pages_css = [];

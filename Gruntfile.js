@@ -57,6 +57,9 @@ module.exports = function(grunt) {
         clean: {
             temp: {
                 src: ['temp']
+            },
+            build: {
+                src: ['build']
             }
         },
 
@@ -95,16 +98,26 @@ module.exports = function(grunt) {
     // Default task(s).
     grunt.registerTask('default', [
         'clean:temp',
-        'copy:pages',
-        'folder_list',
-        'uglify:renderer',
-        'prepareCSS_to_JS',
+        'clean:build',
+
+        'copy:pages',   // copies all folders below /pages to /temp
+
+        'folder_list',   //generates a json for the folders in /temp
+
+        'uglify:renderer', //uglifies the renderer.js
+
+        'prepare_CSS_to_JS', //creates the files' array for css_to_js task
         'css_to_js:pages',
-        'jsonConfigCopy',
-        'prepare_concat',
+
+        'copy_json_config', // translates the config.json to config.js and copies it to all temp folders
+
+        'prepare_concat', // concats the config.js, renderer.js, and style.js to one file
         'concat:build',
-        'prepare_copy_images',
+
+        'prepare_copy_images', // copy the images folder to all builds that have an images folder
         'copy:images',
-        'generateTestPage',
+
+        'generate_test_page', // render the preview.html
+
         'clean:temp']);
 };

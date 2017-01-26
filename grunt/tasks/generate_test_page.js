@@ -47,7 +47,7 @@ module.exports = function(grunt) {
         return "600px";
     }
 
-    grunt.registerTask('generateTestPage', 'generates one Testpage where all pages are loaded', function () {
+    grunt.registerTask('generate_test_page', 'generates one Testpage where all pages are loaded', function () {
         var done = this.async();
         var folderJSON = grunt.file.readJSON('temp/folderlist.json');
         var html = "<!DOCTYPE html><html><head> <meta charset=\"UTF-8\"></head><body>";
@@ -58,8 +58,8 @@ module.exports = function(grunt) {
         for (var i = 0; i < folderJSON.length; i++) {
             identifier = folderJSON[i].location;
             identifier = identifier.split('/');
-            var scriptSrc = 'build/'+identifier[1]+'/index.js';
-            //var scriptSrc = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/build/'+identifier[1]+'/index.js';
+            //var scriptSrc = 'build/'+identifier[1]+'/';
+            var scriptSrc = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/build/'+identifier[1]+'/index.js';
             var templateUrl = '&lt;script src="https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/build/'+identifier[1]+'/index.js#tagid={ADD_ID}"&gt;&lt;/script&gt;';
 
             if(identifier.length === 3){

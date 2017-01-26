@@ -1,7 +1,7 @@
 
 module.exports = function(grunt) {
     var fs = require("fs");
-    grunt.registerTask('prepareCSS_to_JS', 'Copies the main JS to all subfolders', function () {
+    grunt.registerTask('prepare_CSS_to_JS', 'Copies the main JS to all subfolders', function () {
 
         var folderJSON = grunt.file.readJSON('temp/folderlist.json');
         var pages_css = [];
