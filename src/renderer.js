@@ -349,6 +349,7 @@ ch.tam.addnexusRender = (function(){
         })();
     },
 
+      // This function is called with the build css in production mode
      css : function(type, css){
          var head = document.head || document.getElementsByTagName('head')[0];
          var style = document.createElement('style');

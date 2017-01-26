@@ -9,9 +9,10 @@ module.exports = function(grunt) {
             options: {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
-            build: {
-                src: 'src/renderer.js',
-                dest: 'build/renderer.js'
+            renderer: {
+                files : {
+                    'temp/renderer.js' : ['src/renderer.js']
+                }
             }
         },
         cssmin: {
@@ -27,7 +28,7 @@ module.exports = function(grunt) {
         },
 
         copy: {
-            jsToPages: {
+            renderer_to_pages: {
                 files: '<%= pages %>'
             },
             pages : {
@@ -36,7 +37,6 @@ module.exports = function(grunt) {
                 src: '**',
                 dest: 'temp/'
             },
-
             images : {
                 files : '<%= pages_images %>'
             }
@@ -86,16 +86,25 @@ module.exports = function(grunt) {
 
     // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-folder-list');
     grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-variablize');
 
 
     // Default task(s).
-    grunt.registerTask('default', ['clean:temp','copy:pages','folder_list','copy_Main','copy:jsToPages','prepareCSS_to_JS','css_to_js:pages','jsonConfigCopy', 'prepareConcat','concat:build','prepare_copy_images','copy:images','generateTestPage','clean:temp']);
-
-
+    grunt.registerTask('default', [
+        'clean:temp',
+        'copy:pages',
+        'folder_list',
+        'uglify:renderer',
+        'prepareCSS_to_JS',
+        'css_to_js:pages',
+        'jsonConfigCopy',
+        'prepare_concat',
+        'concat:build',
+        'prepare_copy_images',
+        'copy:images',
+        'generateTestPage',
+        'clean:temp']);
 };
