@@ -157,8 +157,6 @@ ch.tam.addnexusRender = (function(){
         }
       });
 
-
-
       for(var i=0; i< this.options.numads; i++){
         apntag.defineTag({
           tagId: parseInt(this.options.tagid),
