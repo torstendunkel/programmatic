@@ -119,5 +119,7 @@ module.exports = function(grunt) {
 
         'generate_test_page', // render the preview.html
 
-        'clean:temp']);
+        //'clean:temp'
+
+    ]);
 };

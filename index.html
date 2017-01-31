@@ -4,12 +4,16 @@
     <meta charset="utf-8"/>
 
     <script>
-        document.write("<script src=\"src/renderer.js" + document.location.hash + "\"> <\/script>");
+
+        var hash = document.location.hash;
+
+        document.write("<script src=\"src/renderer.js" + hash + "\"> <\/script>");
     </script>
 
 
     <script>
 
+/*
 
         setTimeout(function () {
             var json = {
@@ -183,12 +187,12 @@
                         }
                     }]
                 }]
-            }
+            };
             for (var i = 0; i < json.tags.length; i++) {
                 adRenderer.adAvailable('ad' + i, {native: json.tags[i].ads["0"].rtb.native.native["0"]});
             }
-        }, 200)
-
+        }, 200);
+*/
 
     </script>
 </head>

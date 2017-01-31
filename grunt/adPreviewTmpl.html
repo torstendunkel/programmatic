@@ -1,15 +1,28 @@
+    <li class="list-group-item">
 
-        <div>
-            <h3>%%HEADER%%</h3>
+    <h3>%%HEADER%%</h3>
+    <strong>%%TEMPLATE_URL%%</strong>
+    <div class="panel-body">
+        <iframe id="%%ifrmID%%" width="1010px" height="%%HEIGHT%%" srolling="no" frameborder="0" style="overflow:hidden"></iframe>
+    </div>
 
-            <strong>%%TEMPLATE_URL%%</strong>
+    <script>
+        var ifrm = document.getElementById("%%ifrmID%%");
+        ifrm = ifrm.contentWindow || ifrm.contentDocument.document || ifrm.contentDocument;
+        ifrm.document.open();
+        ifrm.document.write('<script src="%%SCRIPTSRC%%" async><\/script>');
+        ifrm.document.close();
+    </script>
+    <script>
+        setTimeout(function () {
+            for (var i = 0; i < json.tags.length; i++) {
+                document.getElementById("%%ifrmID%%").contentWindow.adRenderer.adAvailable("ad" + i, {native: json.tags[i].ads["0"].rtb.native.native["0"]});
+            }
+        }, 2000);
+    </script>
+    </li>
 
-            <iframe id="%%ifrmID%%" width="1010px" height="%%HEIGHT%%" srolling="no" frameborder="0" style="overflow:hidden"> </iframe>
-            <script>
-                var ifrm = document.getElementById("%%ifrmID%%");
-                ifrm = ifrm.contentWindow || ifrm.contentDocument.document || ifrm.contentDocument;
-                ifrm.document.open();
-                ifrm.document.write('<script src="%%SCRIPTSRC%%"><\/script>');
-                ifrm.document.close();
-            </script>
-        </div>
+
+
+
+

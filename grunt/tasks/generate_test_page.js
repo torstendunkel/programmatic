@@ -13,11 +13,10 @@ module.exports = function(grunt) {
         "largerect" : "180px",
         "leaderboard" : "190px",
         "mobilebanner" : "75px",
-        "mobilehalfpage" : "600px",
-        "mobilerect" : "250px",
         "mobilerectangle2" : "250px",
         "mobilerectangle1" : "250px",
         "mobilerectangle3" : "500px",
+        "mobilerect1" : "250px",
         "mobilesmallrectangle1" : "160px",
         "mobilewideboard1" : "318px",
         "monsterboard2" : "396px",
@@ -48,32 +47,82 @@ module.exports = function(grunt) {
     }
 
     grunt.registerTask('generate_test_page', 'generates one Testpage where all pages are loaded', function () {
+
         var done = this.async();
         var folderJSON = grunt.file.readJSON('temp/folderlist.json');
-        var html = "<!DOCTYPE html><html><head> <meta charset=\"UTF-8\"></head><body>";
+        var html = "";
+        var wrapper = fs.readFileSync('grunt/previewWrapper.html', 'utf8');
+        var template = fs.readFileSync('grunt/adPreviewTmpl.html', 'utf8');
+        var pageWrapper = fs.readFileSync('grunt/pageWrapper.html', 'utf8');
         var identifier;
         var script;
-        var template = fs.readFileSync('grunt/adPreviewTmpl.html', 'utf8');
         var htmlTmp;
+
+        folderJSON.sort(function(a,b){
+            if(b.depth === 4){
+                return -1;
+            }
+            if(a.depth === 4){
+                return 1;
+            }
+            var locA = a.location.split('_');
+            var locB = b.location.split('_');
+            locA = locA[locA.length - 1].length < 3 ? locA[locA.length - 2].replace('/','') : locA[locA.length - 1].replace('/','');
+            locB = locB[locB.length - 1].length < 3 ? locB[locB.length - 2].replace('/','') : locB[locB.length - 1].replace('/','');
+
+
+
+            if(locA > locB){
+                return 1;
+            }else if(locB > locA){
+                return -1;
+            }
+            return 0;
+        });
+
+        var pageName;
+
+        var pagesHTML  = "";
+        var pId = 0;
         for (var i = 0; i < folderJSON.length; i++) {
             identifier = folderJSON[i].location;
             identifier = identifier.split('/');
             //var scriptSrc = 'build/'+identifier[1]+'/';
-            var scriptSrc = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/build/'+identifier[1]+'/index.js';
+            var scriptSrc = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/build/'+identifier[1]+'/index.js#debug=true';
             var templateUrl = '&lt;script src="https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/build/'+identifier[1]+'/index.js#tagid={ADD_ID}"&gt;&lt;/script&gt;';
 
+
+
             if(identifier.length === 3){
+                var pName = identifier[1].split('_');
+                pName = pName[pName.length - 1].length < 3 ? pName[pName.length - 2] : pName[pName.length - 1];
+
+                if(!pageName){
+                    pageName = pName;
+                }
+
                 htmlTmp = template
                     .replace(/%%HEADER%%/g,identifier[1])
+                    .replace('%%ID%%',pId)
                     .replace(/%%ifrmID%%/g,'iframe'+i)
                     .replace(/%%SCRIPTSRC%%/g,scriptSrc)
                     .replace(/%%TEMPLATE_URL%%/g,templateUrl)
                     .replace(/%%HEIGHT%%/g,getHeight(identifier[1]));
                 html += htmlTmp;
+
+                if(pName && pageName !== pName && html.length > 0 && html !== ""){
+                    pagesHTML += pageWrapper.replace('%%CONTENT%%',html).replace('%%PAGENAME%%',pageName).replace(/%%ID%%/gi,pId).replace("%%OPEN%%", pId===0?"in":"");
+                    pageName = pName;
+                    pId +=1;
+                    html ="";
+                }
             }
         }
-        html+="</body></html>";
-        fs.writeFile("preview.html", html, function(err) {
+
+        //render the last page
+        pagesHTML += pageWrapper.replace('%%CONTENT%%',html).replace('%%PAGENAME%%',pageName).replace(/%%ID%%/gi,pId);
+
+        fs.writeFile("preview.html", wrapper.replace('%%CONTENT%%',pagesHTML), function(err) {
             if(err) {
                 return console.log(err);
             }
