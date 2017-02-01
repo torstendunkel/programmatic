@@ -18,12 +18,13 @@ ch.tam.addnexusRender = (function(){
         fr : 'Publicité',
         it : 'Pubblicità'
       },
-      more : {
+      moreText : {
           de : 'Mehr ..',
           fr : 'plus',
           it : 'più'
       },
       challengeTimeout : 400,
+      masterTimeout : 2000, // time when rendering will definetly start even if not all ad-requests are resolved
       trackingPixelClass: 'pixel',
       moreNode : 'div',
       showMore : false,
@@ -76,24 +77,20 @@ ch.tam.addnexusRender = (function(){
         var _this = this;
         //parsing the hash
         try{
+            this.hashOptions = {};
             var temp = this.scriptTag.src.split('#');
             this.baseUrl = temp[0].replace('src/renderer.js','pages/'); //only for preview
             if(temp.length > 1){
                 this.hash = temp[1];
-                this.options = this.merge(this.options, JSON.parse('{"' + this.hash.replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}'));
+                this.hashOptions = JSON.parse('{"' + this.hash.replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
             }
         }
         catch(e){
             console.error("No or malformed options passed");
         }
 
-        if(!this.options.identifier){
-            if(this.config && this.config.identifier){
-                this.options.identifier = this.config.identifier;
-            }else{
-                this.options.identifier = this.settings.identifier;
-            }
-        }
+        // identifier must be set to load json and css
+        this.options.identifier = this.hashOptions.identifier || (this.config ? this.config.identifier : undefined) || this.settings.identifier;
 
 
         // if the json is rendered into the file we do not need to load it
@@ -114,19 +111,15 @@ ch.tam.addnexusRender = (function(){
     },
 
     setOptions : function(json, callback){
-
         var _this = this;
-        //checking the "more btn" rendering
-        _this.options.moreInTxt = _this.options.moreInTxt ? _this.options.moreInTxt === "true" : json.moreInTxt || _this.settings.moreInTxt;
-        _this.options.moreNode = _this.options.moreNode ? _this.options.moreNode : json.moreNode || _this.settings.moreNode || _this.settings.moreNode;
-        _this.options.showMore = _this.options.showMore ? _this.options.showMore === "true" : json.showMore || _this.settings.showMore;
-        _this.options.more = _this.options.more ? _this.options.more : json.more || null;
-
-        _this.options.numads = _this.options.numads ? parseInt(_this.options.numads) : json.numads || this.parseNumadsFromIdentifier(this.options.identifier) || this.settings.numads;
-        _this.options.tagid = _this.options.tagid ? parseInt(_this.options.tagid) : json.tagid || _this.settings.tagid;
-        _this.options.member = _this.options.member ? parseInt(this.options.member) : json.member || _this.settings.member;
+        _this.hashOptions.numads = _this.hashOptions.numads || json.numads || this.parseNumadsFromIdentifier(this.options.identifier) || this.settings.numads;
         //language is guessed by the identifier when not in hash-options or in json
-        _this.options.lang = _this.options.lang ? _this.options.lang : json.lang ? json.lang.toLowerCase() : _this.guessLangFromIdentifier(this.options.identifier);
+        _this.hashOptions.lang = _this.hashOptions.lang || json.lang || _this.guessLangFromIdentifier(_this.options.identifier);
+
+        //save the identifier because it may be set by the checkbeforeRender function
+        var tidentifier = this.options.identifier;
+        this.options = this.merge(this.merge(this.settings, json),this.hashOptions);
+        this.options.identifier = tidentifier;
 
         if(typeof callback === "function"){
             this.logger(_this.options);
@@ -164,8 +157,7 @@ ch.tam.addnexusRender = (function(){
             this.options.challengeNumAds = this.parseNumadsFromIdentifier(this.options.challenge);
             tags = tags.concat(this.generateTagArray(this.options.ctagid, this.options.challengeNumAds, "challenge"));
         }
-        this.pushTags(tags);
-
+        this.loadAds(tags);
     },
 
     generateTagArray:function(tagId,numads,prefix){
@@ -184,7 +176,7 @@ ch.tam.addnexusRender = (function(){
         return arr;
     },
 
-    pushTags: function(tags){
+    loadAds: function(tags){
       //set global page options
       apntag.setPageOpts({
         member: parseInt(this.options.member) || this.settings.member,
@@ -196,9 +188,7 @@ ch.tam.addnexusRender = (function(){
           apntag.defineTag(tags[i]);
       }
       apntag.loadTags();
-
       this.registerTimeout();
-
     },
 
     registerTimeout: function(){
@@ -210,10 +200,22 @@ ch.tam.addnexusRender = (function(){
             }else{
                 _this.timeoutExceeded = true;
                 _this.logger("no tag was loaded after timeout exceeded.");
+                _this.registerMasterFallback();
             }
         },this.settings.challengeTimeout);
     },
 
+    // this will trigger the rendering of the main ad even if not all ads have responded
+    // this is the worst case and will render all available main ads
+    registerMasterFallback: function(){
+        var _this = this;
+        this.logger("register master timeout");
+        this.masterTimeout = setTimeout(function(){
+            _this.logger("master timeout execeeded. Rendering all available 'main' ads.");
+            _this.checkBeforeRender(_this.ads["main"]);
+        },this.settings.masterTimeout);
+
+    },
 
     adAvailable: function(id, bucket, data){
       this.ads[bucket].adsLoaded +=1;
@@ -281,6 +283,10 @@ ch.tam.addnexusRender = (function(){
     // check if the ad we want to render is the main ad. Otherwise we have to load css and config.json first
     checkBeforeRender: function(ad){
         var _this = this;
+        if(this.masterTimeout){
+            clearTimeout(this.masterTimeout);
+        }
+
         if(ad.identifier !== this.options.identifier){
          this.logger("load css and json for", ad.identifier);
          this.options.identifier = ad.identifier;
@@ -299,13 +305,13 @@ ch.tam.addnexusRender = (function(){
         var data = {
             content : '',
             identifier : ad.identifier,
-            admarker : this.settings.adMarker[this.options.lang]
+            admarker : this.options.adMarker[this.options.lang]
         };
 
         for(var i=0; i<ad.loadedAds.length; i++){
             data.content += this.renderNativeAd(ad.loadedAds[i]);
         }
-        this.appendToBody(this.tmpl(this.settings.wrapper, data));
+        this.appendToBody(this.tmpl(this.options.wrapper, data));
 
         this.initClickTracking();
     },
@@ -329,20 +335,20 @@ ch.tam.addnexusRender = (function(){
         if(data.native && data.native.impressionTrackers && data.native.impressionTrackers.length >0){
            var impressionTracker = data.native.impressionTrackers;
             for(var i=0; i<impressionTracker.length; i++){
-                obj.impression +=  this.tmpl(this.settings.trackingPixel, {imgSrc: impressionTracker[i], trackingPixelClass:this.settings.trackingPixelClass});
+                obj.impression +=  this.tmpl(this.options.trackingPixel, {imgSrc: impressionTracker[i], trackingPixelClass:this.options.trackingPixelClass});
             }
         }
-        return this.tmpl(this.settings.template, obj);
+        return this.tmpl(this.options.template, obj);
     },
 
     renderMoreBtn: function(clickUrl){
         var data = {
-            more : this.options.more ? this.options.more : this.options.showMore ? this.settings.more[this.options.lang] : '',
+            more : this.options.more ? this.options.more : this.options.showMore ? this.options.moreText[this.options.lang] : '',
             moreNode : this.options.moreNode,
             href : clickUrl
         };
 
-        return this.tmpl(this.settings.moreBtn,data);
+        return this.tmpl(this.options.moreBtn,data);
     },
 
     initClickTracking: function(){

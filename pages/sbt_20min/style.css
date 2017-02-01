@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "BentonConSansBold";
+    src: url("https://s3-eu-west-1.amazonaws.com/booking.das.tamedia.ch/assets/benton.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+.tm-sb-content {
+    font-family: Georgia, "Times New Roman", Times, serif!important;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    font-size: 12px;
+    box-sizing: content-box;
+    line-height: normal;
+    background-color: #fcfefc;
+    overflow: hidden;
+    text-align: left;
+    cursor: pointer;
+}
+
+.tm-sb-content a {
+    color: #000;
+    text-decoration: none;
+}
+
+.tm-sb-content-img, .singlebox .adimage {
+    position: relative;
+    width: 272px;
+    height: 153px;
+    overflow: hidden;
+    margin: auto;
+    top: 4px;
+}
+
+.tm-sb-content-img img, .singlebox .adimage img {
+    width: 272px;
+    height: 153px;
+    float: left;
+    box-sizing: content-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto auto;
+}
+
+.tm-sb-content-txt, .singlebox .title, .singlebox .text, .adimage {
+    padding: 5px 13px 0px 13px;
+}
+
+.tm-sb-content span {
+    text-align: left;
+}
+
+.tm-sb-content-title, .singlebox .title {
+    font-family: BentonConSansBold, Arial, Helvetica, sans-serif!important;
+    color: #000;
+    font-size: 21px;
+}
+
+.tm-sb-content-text, .singlebox .text {
+    font-family: Georgia, "Times New Roman", Times, serif!important;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+}
+
+.tm-sb-content-url {
+    position: absolute;
+    bottom: 2px;
+    font-family: Arial, Helvetica, sans-serif!important;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.tm-sb-content-info {
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+    font-size: 14px;
+    font-family: BentonConSansBold, Arial, Helvetica, sans-serif!important;
+}
+
+.tm-sb-content-info a {
+    color: #000;
+}
+

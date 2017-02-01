@@ -13,7 +13,7 @@
 
     <script>
 
-/*
+
 
         setTimeout(function () {
             var json = {
@@ -189,10 +189,10 @@
                 }]
             };
             for (var i = 0; i < json.tags.length; i++) {
-                adRenderer.adAvailable('ad' + i, {native: json.tags[i].ads["0"].rtb.native.native["0"]});
+                adRenderer.adAvailable('ad' + i, "main",{cpm:1,native: json.tags[i].ads["0"].rtb.native.native["0"]});
             }
         }, 200);
-*/
+
 
     </script>
 </head>

@@ -1,0 +1,14 @@
+{
+  "numads" : 1,
+  "more" : "Mehr ...",
+  "showMore" : true,
+  "moreInTxt" : true,
+  "template" : "<a class=\"tm-sb-content-link\" href=\"{{href}}\" target=\"_blank\"><div class=\"tm-sb-content-img\"><img alt=\"banner-image\" src=\"{{img}}\"></div><div class=\"tm-sb-content-txt\"><span class=\"tm-sb-content-title\">{{title}}</span><br><span class=\"tm-sb-content-text\">{{description}}</span><br><div class=\"tm-sb-content-url\">{{moreInTxt}}</div></div><div style=\"position: absolute;top: 0;bottom: 0;left: 0;right: 0;\"></div></a>",
+  "wrapper" : "<div class=\"tm-sb-content\" style=\"position:relative\"><div class=\"{{identifier}}\">{{content}}</div><div class=\"tm-sb-content-info\"><a href=\"https://booking.20min.ch\" target=\"_blank\">i</a></div></div>"
+}
+
+
+
+
+
+
