@@ -328,7 +328,8 @@ ch.tam.addnexusRender = (function(){
             impression : '',
             id: data.id,
             moreInTxt : this.options.moreInTxt ? moreBtn : '',
-            moreOutTxt : !this.options.moreInTxt ? moreBtn : ''
+            moreOutTxt : !this.options.moreInTxt ? moreBtn : '',
+            cta: data.native.cta || ''
         };
 
         //add impression pixels to the native ad
