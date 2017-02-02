@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         "mobilesmallrectangle1" : "160px",
         "mobilewideboard1" : "318px",
         "monsterboard2" : "396px",
-        "monsterboard3" : "396px",
+        "monsterboard3" : "270px",
         "monsterboard4" : "468px",
         "rectangel3" : "468px",
         "rectangle1" : "468px",
@@ -33,7 +33,9 @@ module.exports = function(grunt) {
         "spezialcomments3" : "150px",
         "storyplacement3" : "598px",
         "wideboard2" : "180px",
-        "wideboard3" : "250px"
+        "wideboard3" : "250px",
+        "spezialfooter6" :"200px",
+        "sbt_20min" : "250px"
     };
 
 
@@ -88,7 +90,7 @@ module.exports = function(grunt) {
             identifier = folderJSON[i].location;
             identifier = identifier.split('/');
             //var scriptSrc = 'build/'+identifier[1]+'/';
-            var scriptSrc = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/build/'+identifier[1]+'/index.js#debug=true';
+            var scriptSrc = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/build/'+identifier[1]+'/index.js';
             var templateUrl = '&lt;script src="https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/build/'+identifier[1]+'/index.js#tagid={ADD_ID}"&gt;&lt;/script&gt;';
 
 
@@ -104,7 +106,7 @@ module.exports = function(grunt) {
                 htmlTmp = template
                     .replace(/%%HEADER%%/g,identifier[1])
                     .replace('%%ID%%',pId)
-                    .replace(/%%ifrmID%%/g,'iframe'+i)
+                    .replace(/%%ifrmID%%/g,identifier[1])
                     .replace(/%%SCRIPTSRC%%/g,scriptSrc)
                     .replace(/%%TEMPLATE_URL%%/g,templateUrl)
                     .replace(/%%HEIGHT%%/g,getHeight(identifier[1]));

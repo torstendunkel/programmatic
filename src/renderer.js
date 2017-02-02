@@ -90,7 +90,7 @@ ch.tam.addnexusRender = (function(){
         }
 
         // identifier must be set to load json and css
-        this.options.identifier = this.hashOptions.identifier || (this.config ? this.config.identifier : undefined) || this.settings.identifier;
+        this.options.identifier = this.options.identifier || this.hashOptions.identifier || (this.config ? this.config.identifier : undefined) || this.settings.identifier;
 
 
         // if the json is rendered into the file we do not need to load it
@@ -289,6 +289,7 @@ ch.tam.addnexusRender = (function(){
 
         if(ad.identifier !== this.options.identifier){
          this.logger("load css and json for", ad.identifier);
+         //overwrite the identifier to force the script to load css and json for the new identifier
          this.options.identifier = ad.identifier;
          this.validateOptions(function(){
              _this.addStyle();
