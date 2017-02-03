@@ -3,14 +3,20 @@ module.exports = function(config) {
         basePath: '',
         frameworks: ['jasmine'],
         files: [
-            'pages/**/*',
-            'src/**/*.js',
-            'spec/**/*.js'
+            {pattern: 'pages/**/*', included:false, served: true},
+            {pattern: 'src/renderer.js', included: true},
+            {pattern: 'spec/**/*.js', included: true}
         ],
         exclude: [
         ],
-        preprocessors: {},
-        reporters: ['dots'],
+        preprocessors: {
+            'src/**/*.js': ['coverage']
+        },
+        coverageReporter: {
+            type : 'html',
+            dir : 'coverage/'
+        },
+        reporters: ['progress', 'coverage'],
         port: 9876,
         colors: true,
         logLevel: config.LOG_INFO,

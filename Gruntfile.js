@@ -11,7 +11,8 @@ module.exports = function(grunt) {
             },
             renderer: {
                 files : {
-                    'temp/renderer.js' : ['src/renderer.js']
+                    'temp/renderer.js' : ['src/renderer.js'],
+                    'temp/starter.js' : ['src/starter.js']
                 }
             }
         },
@@ -81,11 +82,56 @@ module.exports = function(grunt) {
             build: {
                 files :'<%= pages_concat %>'
             }
+        },
+
+        aws: grunt.file.readJSON('s3key.json'), // Read the file
+
+        compress: {
+            main: {
+                options: {
+                    mode: 'gzip'
+                },
+                expand: true,
+                cwd: 'build/',
+                src: ['**/*'],
+                dest: 'temp/compressed/'
+            }
+        },
+
+
+        aws_s3: {
+            options: {
+                accessKeyId: '<%= aws.AWSAccessKeyId %>', // Use the variables
+                secretAccessKey: '<%= aws.AWSSecretKey %>', // You can also use env variables
+                region: 'eu-west-1',
+                uploadConcurrency: 20, // 5 simultaneous uploads
+                downloadConcurrency: 20 // 5 simultaneous downloads
+            },
+            deploy: {
+                options: {
+                    bucket: 'media.das.tamedia.ch',
+                    differential: true, // Only uploads the files that have changed
+                    displayChangesOnly : true
+                },
+                files: [
+                    {expand: true, cwd: 'build/', src: ['**'], dest: 'anprebid/build/'}
+                ]
+            },
+            deploy_compressed: {
+                options: {
+                    bucket: 'media.das.tamedia.ch',
+                    differential: true, // Only uploads the files that have changed
+                    displayChangesOnly : true,
+                    params: {
+                        ContentEncoding: 'gzip' // applies to all the files!
+                    }
+                },
+                files: [
+                    {expand: true, cwd: 'temp/compressed/', src: ['**'], dest: 'anprebid/build/'}
+                ]
+            }
         }
     });
-
-
-
 
     // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -93,6 +139,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-folder-list');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-aws-s3');
+    grunt.loadNpmTasks('grunt-contrib-compress');
 
 
     // Default task(s).
@@ -122,4 +170,12 @@ module.exports = function(grunt) {
         'clean:temp'
 
     ]);
+
+    grunt.registerTask('deploy', [
+        'clean:temp',
+        'compress:main',
+        'aws_s3:deploy_compressed',
+        'clean:temp'
+    ]);
+
 };

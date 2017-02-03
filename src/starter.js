@@ -1,0 +1,1 @@
+var adRenderer = new ch.tam.addnexusRender(window.renderingConfig);

@@ -1,0 +1,5 @@
+{
+  "numads" : 1,
+  "wrapper" :"<div class=\"{{identifier}}\">{{content}}</div>",
+  "template" : "<div class=\"singlebox bottom left right\" id=\"{{id}}\"><a href=\"{{href}}\" target=\"_blank\"><img class=\"adimage\" src=\"{{img}}\" alt=\"Werbung\"></a><div class=\"title\"><a href=\"{{href}}\" target=\"_blank\" style=\"color: rgb(18, 121, 183);\">{{title}}</a></div><div class=\"text\"><a href=\"{{href}}\" style=\"color: rgb(102, 102, 102);\">{{description}}</a></div><div class=\"price-tag\">{{price}}</div><div class=\"url\">{{sponsored}}</div>{{impression}}</div>"
+}

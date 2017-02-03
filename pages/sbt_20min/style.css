@@ -1,6 +1,6 @@
 @font-face {
     font-family: "BentonConSansBold";
-    src: url("https://s3-eu-west-1.amazonaws.com/booking.das.tamedia.ch/assets/benton.woff") format("woff");
+    src: url("http://s3-eu-west-1.amazonaws.com/booking.das.tamedia.ch/assets/benton.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     text-rendering: optimizeLegibility;

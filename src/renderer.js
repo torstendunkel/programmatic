@@ -20,8 +20,8 @@ ch.tam.addnexusRender = (function(){
       },
       moreText : {
           de : 'Mehr ..',
-          fr : 'plus',
-          it : 'più'
+          fr : 'Plus ..',
+          it : 'Più ..'
       },
       challengeTimeout : 400,
       masterTimeout : 2000, // time when rendering will definetly start even if not all ad-requests are resolved
@@ -76,21 +76,11 @@ ch.tam.addnexusRender = (function(){
     validateOptions: function(callback){
         var _this = this;
         //parsing the hash
-        try{
-            this.hashOptions = {};
-            var temp = this.scriptTag.src.split('#');
-            this.baseUrl = temp[0].replace('src/renderer.js','pages/'); //only for preview
-            if(temp.length > 1){
-                this.hash = temp[1];
-                this.hashOptions = JSON.parse('{"' + this.hash.replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
-            }
-        }
-        catch(e){
-            console.error("No or malformed options passed");
-        }
+       this.hashOptions = this.parseHash();
 
         // identifier must be set to load json and css
         this.options.identifier = this.options.identifier || this.hashOptions.identifier || (this.config ? this.config.identifier : undefined) || this.settings.identifier;
+
 
 
         // if the json is rendered into the file we do not need to load it
@@ -314,7 +304,7 @@ ch.tam.addnexusRender = (function(){
         }
         this.appendToBody(this.tmpl(this.options.wrapper, data));
 
-        this.initClickTracking();
+        this.initClickTracking(ad);
     },
 
     renderNativeAd: function(data){
@@ -330,7 +320,7 @@ ch.tam.addnexusRender = (function(){
             id: data.id,
             moreInTxt : this.options.moreInTxt ? moreBtn : '',
             moreOutTxt : !this.options.moreInTxt ? moreBtn : '',
-            cta: data.native.cta || ''
+            sponsored: data.native.sponsoredBy || ''
         };
 
         //add impression pixels to the native ad
@@ -353,11 +343,11 @@ ch.tam.addnexusRender = (function(){
         return this.tmpl(this.options.moreBtn,data);
     },
 
-    initClickTracking: function(){
-        for(var i=0; i<this.loadedAds.length; i++){
-            if(this.loadedAds[i].native && this.loadedAds[i].native.clickTrackers && this.loadedAds[i].native.clickTrackers.length >0){
-                for(var j=0; j<this.loadedAds[i].native.clickTrackers.length; j++){
-                    this.addClickTracking(this.settings.idPrefix + i, this.loadedAds[i].native.clickTrackers[0]);
+    initClickTracking: function(ad){
+        for(var i=0; i<ad.loadedAds.length; i++){
+            if(ad.loadedAds[i].native && ad.loadedAds[i].native.clickTrackers && ad.loadedAds[i].native.clickTrackers.length >0){
+                for(var j=0; j<ad.loadedAds[i].native.clickTrackers.length; j++){
+                    this.addClickTracking(this.settings.idPrefix + "-" +i, ad.loadedAds[i].native.clickTrackers[0]);
                 }
             }
         }
@@ -463,6 +453,8 @@ ch.tam.addnexusRender = (function(){
     },
 
     addStyle: function(){
+        this.logger("appending to head",this.baseUrl  + this.options.identifier + "/style.css");
+
         var head = window.document.getElementsByTagName('head')[0];
         var style = document.createElement('link');
         head.appendChild(style);
@@ -532,10 +524,26 @@ ch.tam.addnexusRender = (function(){
           for (var attrname in obj1) { obj3[attrname] = obj1[attrname]; }
           for (var attrname in obj2) { obj3[attrname] = obj2[attrname]; }
           return obj3;
-      }
+      },
 
+      parseHash : function(){
+          try{
+              this.hashOptions = {};
+              var temp = this.scriptTag.src.split('#');
+              this.baseUrl = temp[0].replace(/src\/renderer.js\S*/g,'pages/'); //only for preview
+
+              if(temp.length > 1){
+                  this.hash = temp[1];
+                  return JSON.parse('{"' + this.hash.replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
+              }
+          }
+          catch(e){
+              console.error("No or malformed options passed");
+          }
+          return {};
+      }
   };
   return Renderer;
 })();
+    //var adRenderer = new ch.tam.addnexusRender(window.renderingConfig);
 
-var adRenderer = new ch.tam.addnexusRender(window.renderingConfig);

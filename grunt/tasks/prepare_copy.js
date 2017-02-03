@@ -8,7 +8,7 @@ module.exports = function (grunt) {
                 var dir = folderJSON[i].location;
                 pages.push({
                     expand: true, flatten: true, filter: 'isFile',
-                    src: 'temp/renderer.js',
+                    src: ['temp/renderer.js','temp/starter.js'],
                     dest: dir
                 });
             }
