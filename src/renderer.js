@@ -56,7 +56,6 @@ ch.tam.addnexusRender = (function(){
 
         this.ads = {};
 
-
         this.validateOptions(function(){
             _this.addAppNexusLib();
             if(!_this.config){
@@ -323,6 +322,9 @@ ch.tam.addnexusRender = (function(){
             sponsored: data.native.sponsoredBy || ''
         };
 
+        obj = this.addCustomFields(obj, data);
+
+
         //add impression pixels to the native ad
         if(data.native && data.native.impressionTrackers && data.native.impressionTrackers.length >0){
            var impressionTracker = data.native.impressionTrackers;
@@ -331,6 +333,24 @@ ch.tam.addnexusRender = (function(){
             }
         }
         return this.tmpl(this.options.template, obj);
+    },
+
+
+    // this function adds data custom data defined in the options/hash/config to the render obj
+    addCustomFields: function(renderObj, dataObj){
+        if(this.options.customFields){
+            for(var i in this.options.customFields){
+                 renderObj[i] = this.options.customFields[i].split(".").reduce(this.stringToObjectPath, dataObj) || '';
+            }
+        }
+        return renderObj;
+    },
+
+    // transforms a dot notated string into an object: a.b.c returns c in the object {a:b{c:""}}
+    stringToObjectPath : function(obj,i) {
+        if(obj){
+            return obj[i]
+        }
     },
 
     renderMoreBtn: function(clickUrl){
