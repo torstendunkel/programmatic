@@ -130,7 +130,39 @@ module.exports = function(grunt) {
                     {expand: true, cwd: 'temp/compressed/', src: ['**'], dest: 'anprebid/build/'}
                 ]
             }
-        }
+        },
+        'ftp-deploy': {
+            pages: {
+                auth: {
+                    host: '30630.webhosting15.1blu.de',
+                    port: 21,
+                    authKey: 'key1'
+                },
+                src: 'pages',
+                dest: '/pages'
+            },
+            src: {
+                auth: {
+                    host: '30630.webhosting15.1blu.de',
+                    port: 21,
+                    authKey: 'key1'
+                },
+                src: 'src',
+                dest: '/src'
+            }
+        },
+
+        watch: {
+            scripts: {
+                files: ['src/*.js'],
+                tasks: ['ftp-deploy:src'],
+                options: {
+                    interrupt: true,
+                    spawn: true,
+                    debounceDelay: 250
+                },
+            },
+        },
     });
 
     // Load the plugin that provides the "uglify" task.
@@ -141,6 +173,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-aws-s3');
     grunt.loadNpmTasks('grunt-contrib-compress');
+    grunt.loadNpmTasks('grunt-ftp-deploy');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+
 
 
     // Default task(s).
@@ -176,6 +211,13 @@ module.exports = function(grunt) {
         'compress:main',
         'aws_s3:deploy_compressed',
         'clean:temp'
+    ]);
+
+    grunt.registerTask('uploadPages', [
+        'ftp-deploy:pages'
+    ]);
+    grunt.registerTask('uploadSrc', [
+        'ftp-deploy:src'
     ]);
 
 };
