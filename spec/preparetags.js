@@ -12,7 +12,7 @@ describe("testing the generation of the tags array that is passed to appnexus",f
         spyOn(ch.tam.addnexusRender.prototype,"loadJSON").and.callFake(function(url,cb){
             cb("{}");
         });
-        spyOn(ch.tam.addnexusRender.prototype,"addStyle").and.callFake(function(){
+        spyOn(ch.tam.addnexusRender.prototype,"loadStyle").and.callFake(function(){
         });
     });
 

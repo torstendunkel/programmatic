@@ -66,7 +66,7 @@ module.exports = function(grunt) {
 
         css_to_js: {
             options: {
-                regFn: 'adRenderer.css',
+                regFn: 'adRenderer.prepareStyle',
                 baseUrl : 'build',
                 tempUrl : 'temp'
             },
@@ -114,7 +114,8 @@ module.exports = function(grunt) {
                     displayChangesOnly : true
                 },
                 files: [
-                    {expand: true, cwd: 'build/', src: ['**'], dest: 'anprebid/build/'}
+                    //{expand: true, cwd: 'build/', src: ['**'], dest: 'anprebid/build/'},
+                    {expand: true, cwd: 'pages/', src: ['**'], dest: 'anprebid/pages/'}
                 ]
             },
             deploy_compressed: {
