@@ -20,24 +20,24 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">39.67% </span>
+        <span class="strong">38.55% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>96/242</span>
+        <span class='fraction'>96/249</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">38.4% </span>
+        <span class="strong">36.64% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>48/125</span>
+        <span class='fraction'>48/131</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">35.42% </span>
+        <span class="strong">34% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>17/48</span>
+        <span class='fraction'>17/50</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">38.56% </span>
+        <span class="strong">37.45% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>91/236</span>
+        <span class='fraction'>91/243</span>
       </div>
     </div>
   </div>
@@ -592,7 +592,25 @@
 547
 548
 549
-550</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+550
+551
+552
+553
+554
+555
+556
+557
+558
+559
+560
+561
+562
+563
+564
+565
+566
+567
+568</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-yes">1×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -649,7 +667,6 @@
 <span class="cline-any cline-yes">10×</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">10×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">10×</span>
 <span class="cline-any cline-yes">10×</span>
@@ -674,8 +691,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">11×</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">11×</span>
@@ -917,6 +932,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -925,6 +943,24 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1199,7 +1235,6 @@ ch.tam.addnexusRender = (function(){
 &nbsp;
         this.ads = {};
 &nbsp;
-&nbsp;
         this.validateOptions(function(){
             _this.addAppNexusLib();
             if(!_this.config){
@@ -1223,8 +1258,6 @@ ch.tam.addnexusRender = (function(){
 &nbsp;
         // identifier must be set to load json and css
         this.options.identifier = this.options.identifier || this.hashOptions.identifier || (this.config ? this.config.identifier : undefined) || this.settings.identifier;
-&nbsp;
-&nbsp;
 &nbsp;
         // if the json is rendered into the file we do not need to load it
         if(this.config){
@@ -1447,7 +1480,7 @@ ch.tam.addnexusRender = (function(){
         }
 <span class="cstat-no" title="statement not covered" >        this.appendToBody(this.tmpl(this.options.wrapper, data));</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        this.initClickTracking();</span>
+<span class="cstat-no" title="statement not covered" >        this.initClickTracking(ad);</span>
     },
 &nbsp;
     renderNativeAd: <span class="fstat-no" title="function not covered" >function(data){</span>
@@ -1463,8 +1496,11 @@ ch.tam.addnexusRender = (function(){
             id: data.id,
             moreInTxt : this.options.moreInTxt ? moreBtn : '',
             moreOutTxt : !this.options.moreInTxt ? moreBtn : '',
-            sponsored: data.native.sponsored || ''
+            sponsored: data.native.sponsoredBy || ''
         };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        obj = this.addCustomFields(obj, data);</span>
+&nbsp;
 &nbsp;
         //add impression pixels to the native ad
 <span class="cstat-no" title="statement not covered" >        if(data.native &amp;&amp; data.native.impressionTrackers &amp;&amp; data.native.impressionTrackers.length &gt;0){</span>
@@ -1474,6 +1510,24 @@ ch.tam.addnexusRender = (function(){
             }
         }
 <span class="cstat-no" title="statement not covered" >        return this.tmpl(this.options.template, obj);</span>
+    },
+&nbsp;
+&nbsp;
+    // this function adds data custom data defined in the options/hash/config to the render obj
+    addCustomFields: <span class="fstat-no" title="function not covered" >function(renderObj, dataObj){</span>
+<span class="cstat-no" title="statement not covered" >        if(this.options.customFields){</span>
+<span class="cstat-no" title="statement not covered" >            for(var i in this.options.customFields){</span>
+<span class="cstat-no" title="statement not covered" >                 renderObj[i] = this.options.customFields[i].split(".").reduce(this.stringToObjectPath, dataObj) || '';</span>
+            }
+        }
+<span class="cstat-no" title="statement not covered" >        return renderObj;</span>
+    },
+&nbsp;
+    // transforms a dot notated string into an object: a.b.c returns c in the object {a:b{c:""}}
+    stringToObjectPath : <span class="fstat-no" title="function not covered" >function(obj,i) {</span>
+<span class="cstat-no" title="statement not covered" >        if(obj){</span>
+<span class="cstat-no" title="statement not covered" >            return obj[i]</span>
+        }
     },
 &nbsp;
     renderMoreBtn: <span class="fstat-no" title="function not covered" >function(clickUrl){</span>
@@ -1486,11 +1540,11 @@ ch.tam.addnexusRender = (function(){
 <span class="cstat-no" title="statement not covered" >        return this.tmpl(this.options.moreBtn,data);</span>
     },
 &nbsp;
-    initClickTracking: <span class="fstat-no" title="function not covered" >function(){</span>
-<span class="cstat-no" title="statement not covered" >        for(var i=0; i&lt;this.loadedAds.length; i++){</span>
-<span class="cstat-no" title="statement not covered" >            if(this.loadedAds[i].native &amp;&amp; this.loadedAds[i].native.clickTrackers &amp;&amp; this.loadedAds[i].native.clickTrackers.length &gt;0){</span>
-<span class="cstat-no" title="statement not covered" >                for(var j=0; j&lt;this.loadedAds[i].native.clickTrackers.length; j++){</span>
-<span class="cstat-no" title="statement not covered" >                    this.addClickTracking(this.settings.idPrefix + i, this.loadedAds[i].native.clickTrackers[0]);</span>
+    initClickTracking: <span class="fstat-no" title="function not covered" >function(ad){</span>
+<span class="cstat-no" title="statement not covered" >        for(var i=0; i&lt;ad.loadedAds.length; i++){</span>
+<span class="cstat-no" title="statement not covered" >            if(ad.loadedAds[i].native &amp;&amp; ad.loadedAds[i].native.clickTrackers &amp;&amp; ad.loadedAds[i].native.clickTrackers.length &gt;0){</span>
+<span class="cstat-no" title="statement not covered" >                for(var j=0; j&lt;ad.loadedAds[i].native.clickTrackers.length; j++){</span>
+<span class="cstat-no" title="statement not covered" >                    this.addClickTracking(this.settings.idPrefix + "-" +i, ad.loadedAds[i].native.clickTrackers[0]);</span>
                 }
             }
         }
@@ -1696,7 +1750,7 @@ ch.tam.addnexusRender = (function(){
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Feb 02 2017 16:34:44 GMT+0100 (Mitteleuropäische Zeit)
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Feb 03 2017 16:05:40 GMT+0100 (Mitteleuropäische Zeit)
 </div>
 </div>
 <script src="../prettify.js"></script>

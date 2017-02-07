@@ -12,7 +12,7 @@ describe("testing the setting priority of the renderer options",function(){
         spyOn(ch.tam.addnexusRender.prototype,"loadJSON").and.callFake(function(url,cb){
             cb("{}");
         });
-        spyOn(ch.tam.addnexusRender.prototype,"addStyle").and.callFake(function(){
+        spyOn(ch.tam.addnexusRender.prototype,"loadStyle").and.callFake(function(){
         });
     });
 
