@@ -152,32 +152,64 @@ ch.tam.addnexusRender = (function () {
 
         generateTagArray: function (tagId, numads, prefix) {
             var arr = [];
+            var adObj;
             for (var i = 0; i < numads; i++) {
-                arr.push({
+                adObj = {
                     tagId: parseInt(tagId),
                     allowedFormats: ['native'],
                     allowSmallerSizes: true,
                     sizes: [[1, 1]],
                     targetId: prefix + i,
                     prebid: true
-                });
+                };
+                //if defined merge the global AppNexus Config to the adObj
+                if(window.anConfigAd){
+                    this.logger("merging appnexus config ad");
+                    try{
+                        adObj = this.merge(adObj,window.anConfigAd);
+                    }catch(e){
+                        console.error("could not merge appnexus config ad");
+                    }
+                }
+                // if defined merge the global AppNexuFirst Config to the first adObj
+                if(i==0 && window.anConfigFirst){
+                    try{
+                        this.logger("merging appnexus config ad for first ad");
+                        adObj = this.merge(adObj,window.anConfigFirst);
+                    }catch(e){
+                        console.error("could not merge anConfigFirst");
+                    }
+                }
+                arr.push(adObj);
                 apntag.onEvent('adAvailable', prefix + i, this.adAvailable.bind(this, prefix + "-" + i, prefix));
             }
             return arr;
         },
 
         loadAds: function (tags) {
-            this.logger("loading AST.js");
             //set global page options
-            apntag.setPageOpts({
-                member: parseInt(this.options.member) || this.settings.member,
-                user: {
-                    language: this.options.lang.toUpperCase()
+            var pageObj = {
+                member: parseInt(this.options.member) || this.settings.member
+                /*
+                 user: {
+                 language: this.options.lang ? this.options.lang.toUpperCase() : undefined
+                 }
+                 */
+            };
+            if(window.anConfigPage){
+                this.logger("merging appnexus config page");
+                try{
+                    pageObj = this.merge(pageObj,window.anConfigPage);
+                }catch(e){
+                    console.error("could not merge appnexus config page");
                 }
-            });
+            }
+            apntag.setPageOpts(pageObj);
+
             for (var i = 0; i < tags.length; i++) {
                 apntag.defineTag(tags[i]);
             }
+            this.logger("sending AST requesst");
             apntag.loadTags();
             this.registerTimeout();
         },
@@ -431,7 +463,7 @@ ch.tam.addnexusRender = (function () {
         },
 
         guessLangFromIdentifier: function (identifier) {
-            return identifier.indexOf('_DE_') !== -1 ? 'de' : identifier.indexOf('_FR_') !== -1 ? 'fr' : 'it';
+            return identifier.indexOf('_DE_') !== -1 ? 'de' : identifier.indexOf('_FR_') !== -1 ? 'fr' : identifier.indexOf('_IT_') !== -1 ? 'it' : 'de';
         },
 
         parseNumadsFromIdentifier: function (identifier) {
@@ -607,7 +639,7 @@ ch.tam.addnexusRender = (function () {
             try {
                 this.hashOptions = {};
                 var temp = this.scriptTag.src.split('#');
-                this.baseUrl = temp[0].replace(/src\/renderer.js\S*/g, 'pages/').replace(/build\/\S*/g, "pages/"); //only for preview
+                this.baseUrl = temp[0].replace(/src\/renderer.js\S*/g, 'pages/').replace(/build\/\S*/g, "pages/").replace(/stage\/\S*/g, "pages/"); //only for preview
 
                 if (temp.length > 1) {
                     this.hash = temp[1];

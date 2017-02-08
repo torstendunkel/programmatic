@@ -130,6 +130,19 @@ module.exports = function(grunt) {
                 files: [
                     {expand: true, cwd: 'temp/compressed/', src: ['**'], dest: 'anprebid/build/'}
                 ]
+            },
+            stage: {
+                options: {
+                    bucket: 'media.das.tamedia.ch',
+                    differential: true, // Only uploads the files that have changed
+                    displayChangesOnly : true,
+                    params: {
+                        ContentEncoding: 'gzip' // applies to all the files!
+                    }
+                },
+                files: [
+                    {expand: true, cwd: 'temp/compressed/', src: ['**'], dest: 'anprebid/stage/'}
+                ]
             }
         },
         'ftp-deploy': {
@@ -140,7 +153,8 @@ module.exports = function(grunt) {
                     authKey: 'key1'
                 },
                 src: 'pages',
-                dest: '/pages'
+                dest: '/pages',
+                exclusions: ['pages/preview']
             },
             src: {
                 auth: {
@@ -150,6 +164,15 @@ module.exports = function(grunt) {
                 },
                 src: 'src',
                 dest: '/src'
+            },
+            upload_testpages:{
+                auth: {
+                    host: '30630.webhosting15.1blu.de',
+                    port: 21,
+                    authKey: 'key1'
+                },
+                src: 'build/preview/',
+                dest: '/'
             }
         },
 
@@ -161,9 +184,9 @@ module.exports = function(grunt) {
                     interrupt: true,
                     spawn: true,
                     debounceDelay: 250
-                },
-            },
-        },
+                }
+            }
+        }
     });
 
     // Load the plugin that provides the "uglify" task.
@@ -178,47 +201,54 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
 
+    grunt.registerTask('build',[
+        'copy:pages',   // copies all folders below /pages to /temp
+        'folder_list',   //generates a json for the folders in /temp
+        'uglify:renderer', //uglifies the renderer.js
+        'prepare_CSS_to_JS', //creates the files' array for css_to_js task
+        'css_to_js:pages',
+        'copy_json_config', // translates the config.json to config.js and copies it to all temp folders
+        'prepare_concat', // concats the config.js, renderer.js, and style.js to one file
+        'concat:build',
+        'prepare_copy_images', // copy the images folder to all builds that have an images folder
+        'copy:images'
+    ]);
 
-    // Default task(s).
+    // Default building without deploying
     grunt.registerTask('default', [
         'clean:temp',
         'clean:build',
-
-        'copy:pages',   // copies all folders below /pages to /temp
-
-        'folder_list',   //generates a json for the folders in /temp
-
-        'uglify:renderer', //uglifies the renderer.js
-
-        'prepare_CSS_to_JS', //creates the files' array for css_to_js task
-        'css_to_js:pages',
-
-        'copy_json_config', // translates the config.json to config.js and copies it to all temp folders
-
-        'prepare_concat', // concats the config.js, renderer.js, and style.js to one file
-        'concat:build',
-
-        'prepare_copy_images', // copy the images folder to all builds that have an images folder
-        'copy:images',
-
+        'build',
         'generate_test_page', // render the preview.html
-
         'clean:temp'
 
     ]);
 
+    //building + deploy to prod
     grunt.registerTask('deploy', [
         'clean:temp',
+        'clean:build',
+        'build',
         'compress:main',
         'aws_s3:deploy_compressed',
+        'generate_test_page:build',
+        'ftp-deploy:upload_testpages',
+        'clean:temp'
+    ]);
+    //building + deploy to stage
+    grunt.registerTask('stage', [
+        'clean:temp',
+        'clean:build',
+        'build',
+        'compress:main',
+        'aws_s3:stage',
+        'generate_test_page:stage',
+        'ftp-deploy:upload_testpages',
         'clean:temp'
     ]);
 
+    //upload pages to ftp (for preview)
     grunt.registerTask('uploadPages', [
         'ftp-deploy:pages'
     ]);
-    grunt.registerTask('uploadSrc', [
-        'ftp-deploy:src'
-    ]);
-
 };

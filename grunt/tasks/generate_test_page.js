@@ -1,5 +1,7 @@
 module.exports = function(grunt) {
     var fs = require("fs");
+    var mkdirp = require('mkdirp');
+
 
     var height = {
       "minirectangle" : "120px",
@@ -45,10 +47,13 @@ module.exports = function(grunt) {
                 return (parseInt(height[i].replace("px","")) + 20) + "px";
             }
         }
-        return "600px";
+        return "200px";
     }
 
-    grunt.registerTask('generate_test_page', 'generates one Testpage where all pages are loaded', function () {
+    grunt.registerTask('generate_test_page', 'generates one Testpage where all pages are loaded', function (env) {
+
+
+        var enviroment = env ? env : "build";
 
         var done = this.async();
         var folderJSON = grunt.file.readJSON('temp/folderlist.json');
@@ -90,10 +95,10 @@ module.exports = function(grunt) {
             identifier = folderJSON[i].location;
             identifier = identifier.split('/');
             //var scriptSrc = 'build/'+identifier[1]+'/';
-            var scriptSrc = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/build/'+identifier[1]+'/index.js';
+            var scriptSrc = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/'+enviroment+'/'+identifier[1]+'/index.js';
             var templateUrl = '&lt;script src="https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/build/'+identifier[1]+'/index.js#tagid={ADD_ID}"&gt;&lt;/script&gt;';
 
-
+            var preview = "index.html#debug=1&identifier="+identifier[1];
 
             if(identifier.length === 3){
                 var pName = identifier[1].split('_');
@@ -109,7 +114,8 @@ module.exports = function(grunt) {
                     .replace(/%%ifrmID%%/g,identifier[1])
                     .replace(/%%SCRIPTSRC%%/g,scriptSrc)
                     .replace(/%%TEMPLATE_URL%%/g,templateUrl)
-                    .replace(/%%HEIGHT%%/g,getHeight(identifier[1]));
+                    .replace(/%%HEIGHT%%/g,getHeight(identifier[1]))
+                    .replace(/%%PREVIEW%%/g, preview);
                 html += htmlTmp;
 
                 if(pName && pageName !== pName && html.length > 0 && html !== ""){
@@ -123,13 +129,17 @@ module.exports = function(grunt) {
 
         //render the last page
         pagesHTML += pageWrapper.replace('%%CONTENT%%',html).replace('%%PAGENAME%%',pageName).replace(/%%ID%%/gi,pId);
-
-        fs.writeFile("preview.html", wrapper.replace('%%CONTENT%%',pagesHTML), function(err) {
-            if(err) {
-                return console.log(err);
+;
+        mkdirp('build/preview', function (err) {
+            if (err) console.error(err)
+            else {
+                fs.writeFile("build/preview/"+enviroment+".html", wrapper.replace('%%CONTENT%%',pagesHTML), function(err) {
+                    if(err) {
+                        return console.log(err);
+                    }
+                    done();
+                });
             }
-            done();
         });
     });
-
 };
