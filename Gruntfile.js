@@ -130,6 +130,19 @@ module.exports = function(grunt) {
                 files: [
                     {expand: true, cwd: 'temp/compressed/', src: ['**'], dest: 'anprebid/build/'}
                 ]
+            },
+            stage: {
+                options: {
+                    bucket: 'media.das.tamedia.ch',
+                    differential: true, // Only uploads the files that have changed
+                    displayChangesOnly : true,
+                    params: {
+                        ContentEncoding: 'gzip' // applies to all the files!
+                    }
+                },
+                files: [
+                    {expand: true, cwd: 'temp/compressed/', src: ['**'], dest: 'anprebid/stage/'}
+                ]
             }
         },
         'ftp-deploy': {
@@ -211,6 +224,13 @@ module.exports = function(grunt) {
         'clean:temp',
         'compress:main',
         'aws_s3:deploy_compressed',
+        'clean:temp'
+    ]);
+
+    grunt.registerTask('stage', [
+        'clean:temp',
+        'compress:main',
+        'aws_s3:stage',
         'clean:temp'
     ]);
 

@@ -24,33 +24,32 @@
       <file leaf-file-name="renderer.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/renderer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="304" column="32" lean-forward="true" selection-start-line="304" selection-start-column="32" selection-end-line="304" selection-end-column="32" />
+            <state relative-caret-position="425">
+              <caret line="212" column="20" lean-forward="false" selection-start-line="212" selection-start-column="20" selection-end-line="212" selection-end-column="20" />
               <folding>
-                <element signature="e#6933#7465#0" expanded="false" />
-                <element signature="e#9826#10010#0" expanded="false" />
-                <element signature="e#10058#10243#0" expanded="false" />
-                <marker date="1486387229986" expanded="true" signature="1071:1083" ph="..." />
+                <element signature="e#11190#11374#0" expanded="false" />
+                <element signature="e#11422#11607#0" expanded="false" />
+                <marker date="1486482165805" expanded="true" signature="1071:1083" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preview.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/preview.html">
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/sbt_20min/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-850">
-              <caret line="226" column="42" lean-forward="false" selection-start-line="226" selection-start-column="42" selection-end-line="226" selection-end-column="42" />
+            <state relative-caret-position="85">
+              <caret line="5" column="96" lean-forward="false" selection-start-line="5" selection-start-column="96" selection-end-line="5" selection-end-column="96" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/sbt_20min/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -59,25 +58,12 @@
       <file leaf-file-name="Gruntfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gruntfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="68" column="47" lean-forward="false" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+            <state relative-caret-position="-1469">
+              <caret line="98" column="10" lean-forward="false" selection-start-line="98" selection-start-column="10" selection-end-line="98" selection-end-column="10" />
               <folding>
                 <element signature="e#1236#1623#0" expanded="false" />
                 <element signature="e#1640#1782#0" expanded="false" />
-                <element signature="e#5412#6185#0" expanded="false" />
-                <element signature="e#6222#6333#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/ppn_sb_billboard3_DE_20min/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="110" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="110" />
-              <folding>
-                <marker date="1486376734482" expanded="true" signature="745:757" ph="..." />
+                <element signature="e#5947#6720#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -87,13 +73,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cta</find>
-      <find>cta:</find>
-      <find>rendernativ</find>
-      <find>pixel</find>
-      <find>trackingpix</find>
-      <find>trackingPixelClass</find>
-      <find>trackingPixel</find>
       <find>&quot;</find>
       <find>{{impression}</find>
       <find>impressio</find>
@@ -104,7 +83,6 @@
       <find>preren</find>
       <find>render</find>
       <find>style</find>
-      <find>loadStyle</find>
       <find>preReneredStyle</find>
       <find>loadSty</find>
       <find>checkbe</find>
@@ -116,7 +94,15 @@
       <find>initCli</find>
       <find>click</find>
       <find>impression</find>
+      <find>logger:</find>
       <find>this.logger</find>
+      <find>generateTagArray:</find>
+      <find>lang</find>
+      <find>prepa</find>
+      <find>member</find>
+      <find>build</find>
+      <find>loadStyle</find>
+      <find>compare</find>
     </findStrings>
     <replaceStrings>
       <replace>\&quot;</replace>
@@ -135,7 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_autoonline/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_DE_autoonline/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_rectangle3_IT_autoonline/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_rectangle3_FR_autoonline/style.css" />
@@ -176,15 +161,16 @@
         <option value="$PROJECT_DIR$/Karma.conf.js" />
         <option value="$PROJECT_DIR$/spec/setting_option.js" />
         <option value="$PROJECT_DIR$/spec/preparetags.js" />
-        <option value="$PROJECT_DIR$/pages/sbt_20min/style.css" />
         <option value="$PROJECT_DIR$/pages/sbt_partnerad1_tutti/template.html" />
         <option value="$PROJECT_DIR$/pages/sbt_partnerad1_tutti/style.css" />
         <option value="$PROJECT_DIR$/pages/sbt_20min/config.json" />
         <option value="$PROJECT_DIR$/pages/sbt_partnerad1_tutti/config.json" />
         <option value="$PROJECT_DIR$/.ftppass" />
         <option value="$PROJECT_DIR$/node_modules/grunt-ftp-deploy/tasks/ftp-deploy.js" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/pages/sbt_20min/style.css" />
+        <option value="$PROJECT_DIR$/build/sbt_20min/index.js" />
         <option value="$PROJECT_DIR$/src/renderer.js" />
       </list>
     </option>
@@ -199,8 +185,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="130" />
-    <option name="y" value="70" />
+    <option name="x" value="134" />
+    <option name="y" value="35" />
     <option name="width" value="1667" />
     <option name="height" value="1070" />
   </component>
@@ -246,7 +232,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -260,39 +246,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="programmatic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="programmatic" />
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="programmatic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="programmatic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ppn_sb_billboard3_DE_20min" />
+              <option name="myItemId" value="sbt_20min" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -411,12 +369,12 @@
       <workItem from="1485165723707" duration="47395000" />
       <workItem from="1485338016733" duration="25376000" />
       <workItem from="1485517110265" duration="43054000" />
-      <workItem from="1485863639292" duration="79135000" />
+      <workItem from="1485863639292" duration="91689000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266846000" />
+    <option name="totallyTimeSpent" value="279400000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -428,10 +386,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="130" y="70" width="1667" height="1070" extended-state="0" />
+    <frame x="134" y="35" width="1667" height="1070" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20245399" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31595093" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2186002" sideWeight="0.5018431" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34434968" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -439,7 +397,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32981783" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23454158" sideWeight="0.49815693" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25159913" sideWeight="0.49815693" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -461,20 +419,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_20min/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_20min/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard4_v2_DE_20min/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -718,14 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/sbt_20min/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-782">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/sbt_partnerad1_tutti/template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -746,14 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="66" column="7" lean-forward="false" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/sbt_20min/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="96" lean-forward="false" selection-start-line="5" selection-start-column="96" selection-end-line="5" selection-end-column="96" />
           <folding />
         </state>
       </provider>
@@ -828,19 +756,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-850">
           <caret line="226" column="42" lean-forward="false" selection-start-line="226" selection-start-column="42" selection-end-line="226" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="68" column="47" lean-forward="false" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
           <folding>
-            <element signature="e#1236#1623#0" expanded="false" />
-            <element signature="e#1640#1782#0" expanded="false" />
-            <element signature="e#5412#6185#0" expanded="false" />
-            <element signature="e#6222#6333#0" expanded="false" />
+            <marker date="1486482215323" expanded="true" signature="331695:331913" ph="..." />
           </folding>
         </state>
       </provider>
@@ -849,9 +766,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="110" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="110" />
-          <folding>
-            <marker date="1486376734482" expanded="true" signature="745:757" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -863,15 +778,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build/juicead1_desktop_text_DE_20min/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1469">
+          <caret line="98" column="10" lean-forward="false" selection-start-line="98" selection-start-column="10" selection-end-line="98" selection-end-column="10" />
+          <folding>
+            <element signature="e#1236#1623#0" expanded="false" />
+            <element signature="e#1640#1782#0" expanded="false" />
+            <element signature="e#5947#6720#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/sbt_20min/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="96" lean-forward="false" selection-start-line="5" selection-start-column="96" selection-end-line="5" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/sbt_20min/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/sbt_20min/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-829">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="304" column="32" lean-forward="true" selection-start-line="304" selection-start-column="32" selection-end-line="304" selection-end-column="32" />
+        <state relative-caret-position="425">
+          <caret line="212" column="20" lean-forward="false" selection-start-line="212" selection-start-column="20" selection-end-line="212" selection-end-column="20" />
           <folding>
-            <element signature="e#6933#7465#0" expanded="false" />
-            <element signature="e#9826#10010#0" expanded="false" />
-            <element signature="e#10058#10243#0" expanded="false" />
-            <marker date="1486387229986" expanded="true" signature="1071:1083" ph="..." />
+            <element signature="e#11190#11374#0" expanded="false" />
+            <element signature="e#11422#11607#0" expanded="false" />
+            <marker date="1486482165805" expanded="true" signature="1071:1083" ph="..." />
           </folding>
         </state>
       </provider>
