@@ -1,0 +1,86 @@
+@font-face {
+font-family: "Publico Headline";
+src: url("http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Medium-Web.eot");
+src: url("http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Medium-Web.eot?#iefix") format("embedded-opentype"),
+url("http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Medium-Web.woff") format("woff"),
+url("http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Medium-Web.ttf") format("truetype"),
+url("http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Medium-Web.svg") format("svg");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Publico Headline";
+src: url("http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Bold-Web.eot");
+src: url("http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Bold-Web.eot?#iefix") format("embedded-opentype"),
+url("http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Bold-Web.woff") format("woff"),
+url("http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Bold-Web.ttf") format("truetype"),
+url("http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Bold-Web.svg") format("svg");
+font-weight: bold;
+font-style: normal;
+}
+html, body {
+margin: 0;
+padding: 0;
+}
+.surroundingbox {
+overflow: hidden;
+width:100%;
+position: relative;
+}
+.innerbox {
+}
+.title {
+float: left;
+cursor:pointer;
+color : rgb(0, 122, 191);
+font-family: "Publico Headline";
+letter-spacing: -.03rem;
+margin: 0 0 .2rem;
+font-size: 22px;
+line-height: 24px;
+margin-bottom: 5px;
+}
+.title a:link, .title a:visited, .title a:active {
+font-weight: normal;
+color: black;
+text-decoration: none;
+}
+.title a:hover {
+text-decoration: underline;
+}
+.text{
+float: left;
+font-weight: lighter;
+width: 100%;
+display: block;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-size: 15px;
+line-height: 20px;
+font-family: Georgia;
+margin-bottom: 0px;
+}
+.text a:link, .text a:visited, .text a:active{
+text-decoration: none;
+color:rgb(51, 51, 51);
+}
+img.adimage{
+width: 100%;
+display: inline-block;
+float: left;
+margin: 0 0.65rem 0.75rem 0;
+}
+.caption {
+z-index: 5;
+position: absolute;
+text-align: center;
+right:0;
+width:45px;
+font-size: 10px;
+background: dodgerblue;
+color:white;
+}
+.trackingpixel{
+display:none;
+}
