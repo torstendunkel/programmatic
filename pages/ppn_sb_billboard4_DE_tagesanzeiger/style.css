@@ -1,5 +1,11 @@
 
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700);
+
+*{
+    margin:0;
+    padding:0;
+}
+
 .ppn_sb_billboard4_DE_tagesanzeiger {
     width: 640px;
     height: 350px;
@@ -40,7 +46,7 @@
     text-decoration: underline;
 }
 .ppn_sb_billboard4_DE_tagesanzeiger .text {
-    height: 80px;
+    height: 90px;
     overflow: hidden;
     text-decoration: none;
     width: 134px;

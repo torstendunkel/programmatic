@@ -1,0 +1,29 @@
+{
+  "status": "ok",
+  "version": 1,
+  "ads": [],
+  "mediated": [],
+  "native": [
+    {
+      "type": "in-feed-standard",
+      "title": "Zukunft Immobilienbranche",
+      "description": "Neue Technologien revolutionieren die Immobilienwirtschaft und führen zu neuen...",
+      "main_media": [
+        {
+          "label": "default",
+          "width": 272,
+          "height": 153,
+          "url": "https://vcdn.adnxs.com/p/creative-image/ae/0b/2f/36/ae0b2f36-cac0-4f38-8b9d-0a987945dcc3.jpg"
+        }
+      ],
+      "sponsored_by": "digital-real-estate.fh-hwz.ch",
+      "click_trackers": [
+        "https://secure-fra.adnxs.com/click?43DmV3OAC0DjcOZXc4ALQAAAAAAAAPA_43DmV3OAC0DjcOZXc4ALQDeyWxxu0dRGOZS9gdIA8leP35pYAAAAANl2owA-DgAAPg4AAAIAAACCGL0DYTgQAAYAAABVU0QAQ0hGAAEAAQARhgAAAAABAgQCAQAAAKwASCLmZwAAAAA./cnd=%21LQqvtQinlsUHEIKx9B0Y4fBAIAQoipqUOjEAAAAAAADwPw../bn=74267/"
+      ],
+      "impression_trackers": [
+        "https://secure-fra.adnxs.com/it?e=wqT_3QLLBfA8ywIAAAMA1gAFAQiPv-vEBRC35O7i4a206kYYuaj2jaiagPlXIAEqLQnjcOZXc4ALQBHjcOZXc4ALQBkAAAECCPA_IREbACkRCfBvMNntjQU4vhxAvhxIAlCCsfQdWOHwQGAGaJGMWnibxASAAQGKAQNVU0SSAQNDSEaYAQGgAQGoAQGwAQC4AQLAAQTIAQLQAQDYAQDgAQDwAQCKAld1ZignYScsIDE1NzYzMzEsIDE0ODY1NDQ3ODMpOwEdNHInLCA2MjcyNDIyNiwgPh4AJGknLCA0NjM0MDA2HADwt5IC4QEhQkRTMDB3aW5sc1VIRUlLeDlCMFlBQ0RoOEVBd0FqZ0FRQVJJdmh4UTJlMk5CVmdBWU1rRGFBQndBSGdBZ0FFQWlBRUFrQUVCbUFFQm9BRUtxQUVEc0FFQXVRSEE5ZkdvREd3TFFNRUJzY3FqZ0hlQUMwREpBZTZBQ2tDR1pnRkEyUUZqN2xwQ1B1anZQLUFCcUtRYzlRRUFBQUFBbUFLS21wUTZvQUlBdFFJQUFBQUF2UUkBG8hBd0FJQXlBSUEwQUlBMkFJQTRBSUE2QUlBLUFJQWdBTUJrQU1BbUFNQpoCMSFMUXF2dFE25AA4NGZCQUlBUW9pcHFVT2pFBVTwukFBRHdQdy4u2AL_Q-AC7IE2gAMAiAMBkAMAmAMWoAMBqgMAwAOQHMgDANIDKAgAEiQ2MTBiOTFkNy04ZjBkLTQyM2EtYTk4ZS0zMzNkYzQxZDA0YTLYAwDgAwHoAwL4AwCABACSBAQvbW9imAQAogQPMTQ1LjIzNC4yNDEuMTA5qATwVrIECggAEAAYACAAMAC4BADABADIBADSBAoxMC4xMy42OS432gQCCADgBADwBIKx9B2IBQGYBQA.&s=bfc0c7cf9dfaee08ccc7a5613ea3596c64462412"
+      ],
+      "click_url": "https://api.capturemedia.io/cl?cmid=589840fce9a597dd2af38571"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "status": "ok",
+  "version": 1,
+  "ads": [],
+  "mediated": [],
+  "native": [
+    {
+      "type": "in-feed-standard",
+      "title": "Zukunft Immobilienbranche",
+      "description": "Neue Technologien revolutionieren die Immobilienwirtschaft und führen zu neuen...",
+      "main_media": [
+        {
+          "label": "default",
+          "width": 272,
+          "height": 153,
+          "url": "http://vcdn.adnxs.com/p/creative-image/ae/0b/2f/36/ae0b2f36-cac0-4f38-8b9d-0a987945dcc3.jpg"
+        }
+      ],
+      "sponsored_by": "digital-real-estate.fh-hwz.ch",
+      "click_trackers": [
+        "http://fra1-mobile.adnxs.com/click?MXctIR-0CEAxdy0hH7QIQAAAAAAAAPA_MXctIR-0CEAxdy0hH7QIQDRCut2M5eohOZS9gdIA8lcO4ZpYAAAAANl2owA-DgAAPg4AAAIAAACCGL0DYTgQAAYAAABVU0QAQ0hGAAEAAQARhgAAAAABAgQCAQAAAKwApRt9hwAAAAA./cnd=%215QpUxginlsUHEIKx9B0Y4fBAIAQoipqQ6gwxAAAAAAAA8D8./bn=74167/"
+      ],
+      "impression_trackers": [
+        "http://fra1-mobile.adnxs.com/it?e=wqT_3QLzBfA88wIAAAMA1gAFAQiOwuvEBRC0hOntzbG59SEYuaj2jaiagPlXIAEqLQkxdy0hH7QIQBExdy0hH7QIQBkAAAECCPA_IREbACkRCfBvMNntjQU4vhxAvhxIAlCCsfQdWOHwQGAGaJGMWni3wwSAAQGKAQNVU0SSAQNDSEaYAQGgAQGoAQGwAQC4AQLAAQTIAQLQAQDYAQDgAQDwAQCKAld1ZignYScsIDE1NzYzMzEsIDE0ODY1NDUxNjYpOwEdNHInLCA2MjcyNDIyNiwgPh4AJGknLCA0NjM0MDA2HADwsZIC5QEheFRXSFhRaW5sc1VIRUlLeDlCMFlBQ0RoOEVBd0FqZ0FRQVJJdmh4UTJlMk5CVmdBWU1rRGFBQndBSGdBZ0FFQWlBRUFrQUVCbUFFQm9BRUtxQUVEc0FFQXVRRkRfaUs0eWFFSVFNRUJ5QzU2d0NDMENFREpBVmV6eU42V1F2OF8yUUZqN2xwQ1B1anZQLUFCcUtRYzlRRUFBQUFBbUFLS21wRHFES0FDQUxVQ0EBFQhMMEMBB9hBTUFDQU1nQ0FOQUNBTmdDQU9BQ0FPZ0NBUGdDQUlBREFaQURBSmdEQVEuLpoCMSE1UXBVeGdpMugAPDRmQkFJQVFvaXBxUTZnd3gFWPDdQUFBOEQ4LtgC_0PgAuyBNoADAIgDAZADAJgDFqADAaoDAMADkBzIAwDSAygIABIkNjEwYjkxZDctOGYwZC00MjNhLWE5OGUtMzMzZGM0MWQwNGEy2AMA4AMB6AMC-AMAgAQAkgQEL21vYpgEAKIEDzE0NS4yMzQuMjQxLjEwOagE9layBAoIABAAGAAgADAAuAQAwAQAyAQA0gQMMTAuMTMuNjguMjA12gQCCADgBADwBIKx9B2CBR9hbnguZnVud2l0aGJlaW5nbWVkaWF0ZWRieW1vcHViiAUBmAUA&s=8426e53c4704e4d085d39786cdf53cd2c8622f8c"
+      ],
+      "click_url": "https://api.capturemedia.io/cl?cmid=589840fce9a597dd2af38571"
+    }
+  ]
+}

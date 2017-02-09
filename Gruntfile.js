@@ -233,6 +233,7 @@ module.exports = function(grunt) {
         'aws_s3:deploy_compressed',
         'generate_test_page:build',
         'ftp-deploy:upload_testpages',
+        'ftp-deploy:src',
         'clean:temp'
     ]);
     //building + deploy to stage
@@ -244,6 +245,7 @@ module.exports = function(grunt) {
         'aws_s3:stage',
         'generate_test_page:stage',
         'ftp-deploy:upload_testpages',
+        'ftp-deploy:src',
         'clean:temp'
     ]);
 

@@ -21,6 +21,8 @@ html, body {
 .ppn_sb_monsterboard4_v2_FR_20min .title {
     cursor: pointer;
     padding: 7px 0 0;
+    height: 24px;
+    overflow: hidden;
 }
 .ppn_sb_monsterboard4_v2_FR_20min .title a:link, .ppn_sb_monsterboard4_v2_FR_20min .title a:visited, .ppn_sb_monsterboard4_v2_FR_20min .title a:active {
     color: black;
@@ -32,9 +34,9 @@ html, body {
     text-decoration: underline;
 }
 .ppn_sb_monsterboard4_v2_FR_20min .text {
-    height: 40px;
+    height: 56px;
     overflow: hidden;
-    padding: 10px 0 0;
+    padding: 3px 0 0;
     text-decoration: none;
     width: 280px;
 }

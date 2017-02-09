@@ -27,17 +27,26 @@ ch.tam.addnexusRender = (function () {
         trackingPixelClass: 'pixel',
         moreNode: 'div',
         showMore: false,
+        logging : "false", // logging via loggly
         moreInTxt: false,
         moreBtn: '<{{moreNode}} class="url"><a target="_blank" href="{{href}}">{{more}}</a></{{moreNode}}>',
         trackingPixel: '<img class="{{trackingPixelClass}}" src="{{imgSrc}}" width="0" height="0" style="display:none"/>',
         wrapper: '<div class="{{identifier}}"><div class="ppncaption">Werbung</div><div id="ppninnerbox" class="ppninnerbox">{{content}}</div><div class="tnlogo"><a href="https://goo.gl/gJLreW" target="_blank">{{admarker}}</a></div>',
         template: '<div class="singlebox bottom left right" id="{{id}}" data-href="{{href}}"><a target="_blank" href="{{href}}"><img class="adimage" alt="Werbung" src="{{img}}"/></a><div class="title"> <a target="_blank" href="{{href}}">{{title}}</a></div><div class="text"><a target="_blank" href="{{href}}">{{description}} </a>{{moreInTxt}}</div>{{moreOutTxt}}{{impression}}</div>'
-        //template : '<div class="singlebox bottom left right" id="{{id}}"><a target="_blank" href="{{href}}"><img class="adimage" alt="Werbung" src="{{img}}"/></a><div class="title"> <a target="_blank" href="{{href}}">{{title}}</a></div><div class="text"><a target="_blank" href="{{href}}">{{description}}</a></div><div class="url"><a target="_blank" href="{{href}}"></a></div>{{impression}}</div>'
+
     };
+
+    /*
+    var settingsInApp = {
+      apiEndPoint : (window.location.protocol === 'https:' ? 'https:' : 'http:') + '//mobile.adnxs.com/mob?'
+    };
+    */
 
     var Renderer = function (config) {
 
         this.logger("start");
+        //set stack for logglylog even if not enabled
+        window._LTracker = window._LTracker || [];
 
         this.config = config;
         this.init();
@@ -66,6 +75,7 @@ ch.tam.addnexusRender = (function () {
                 apntag.anq.push(function () {
                     _this.prepareTags();
                 });
+                _this.addLoggly();
             });
         },
 
@@ -91,7 +101,11 @@ ch.tam.addnexusRender = (function () {
                     try {
                         json = JSON.parse(json);
                     } catch (e) {
-                        console.error("malformed settings json!", json);
+                        _this.logglyLog({
+                                tag: "error",
+                                message: "malformed json setting"
+                            }
+                        );
                         json = {};
                     }
                     _this.setOptions(json, callback);
@@ -168,7 +182,10 @@ ch.tam.addnexusRender = (function () {
                     try{
                         adObj = this.merge(adObj,window.anConfigAd);
                     }catch(e){
-                        console.error("could not merge appnexus config ad");
+                        this.logglyLog({
+                            tag: "error",
+                            message : "could not merge appnexus config ad"
+                        });
                     }
                 }
                 // if defined merge the global AppNexuFirst Config to the first adObj
@@ -177,7 +194,10 @@ ch.tam.addnexusRender = (function () {
                         this.logger("merging appnexus config ad for first ad");
                         adObj = this.merge(adObj,window.anConfigFirst);
                     }catch(e){
-                        console.error("could not merge anConfigFirst");
+                        this.logglyLog({
+                            tag: "error",
+                            message : "could not merge anConfigFirst"
+                        });
                     }
                 }
                 arr.push(adObj);
@@ -190,18 +210,17 @@ ch.tam.addnexusRender = (function () {
             //set global page options
             var pageObj = {
                 member: parseInt(this.options.member) || this.settings.member
-                /*
-                 user: {
-                 language: this.options.lang ? this.options.lang.toUpperCase() : undefined
-                 }
-                 */
             };
             if(window.anConfigPage){
                 this.logger("merging appnexus config page");
                 try{
                     pageObj = this.merge(pageObj,window.anConfigPage);
                 }catch(e){
-                    console.error("could not merge appnexus config page");
+                    this.logglyLog({
+                        type: "error",
+                        message : "could not merge appnexus config page"
+                    });
+
                 }
             }
             apntag.setPageOpts(pageObj);
@@ -236,6 +255,15 @@ ch.tam.addnexusRender = (function () {
             this.masterTimeout = setTimeout(function () {
                 _this.logger("master timeout execeeded. Rendering all available 'main' ads.");
                 _this.checkBeforeRender(_this.ads["main"]);
+
+                _this.logglyLog({
+                   tag: "warning",
+                   message : "not all ads are rendered",
+                   adsRendered : _this.ads["main"].adsLoaded,
+                   adsRequested : _this.options.numads,
+                   adLoss :  100 - Math.floor((_this.ads["main"].adsLoaded/_this.options.numads) * 100)
+                });
+
             }, this.settings.masterTimeout);
 
         },
@@ -339,6 +367,7 @@ ch.tam.addnexusRender = (function () {
                 return;
             }
             this.logger("render "+ ad.identifier);
+
             var data = {
                 content: '',
                 identifier: ad.identifier,
@@ -356,7 +385,6 @@ ch.tam.addnexusRender = (function () {
             this.initClickTracking(ad);
 
             this.logger("Ad Render complete");
-
         },
 
         renderNativeAd: function (data) {
@@ -375,6 +403,8 @@ ch.tam.addnexusRender = (function () {
                 sponsored: data.native.sponsoredBy || ''
             };
 
+
+
             obj = this.addCustomFields(obj, data);
 
 
@@ -389,6 +419,7 @@ ch.tam.addnexusRender = (function () {
                     });
                 }
             }
+
             return this.tmpl(this.options.template, obj);
         },
 
@@ -560,7 +591,6 @@ ch.tam.addnexusRender = (function () {
             xobj.open('GET', this.baseUrl + this.options.identifier + '/' + url, true);
             xobj.onreadystatechange = function () {
                 if (xobj.readyState == 4 && xobj.status == "200") {
-                    // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
                     callback(xobj.responseText);
                 } else if (xobj.readyState == 4 && xobj.status == "404") {
                     callback("{}");
@@ -569,12 +599,47 @@ ch.tam.addnexusRender = (function () {
             xobj.send(null);
         },
 
+        addLoggly: function(){
+
+            if(!this.options.logging === "false" && !this.options.debug){
+                return;
+            }
+            // sampling 5% if not in sampling group disable loggly logging
+            if(Math.random() > 0.05 && !this.options.debug){
+                this.options.logging === "false";
+                return;
+            }
+
+            this.logger("Loggly enabled");
+
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.async = true;
+            script.src = '//cloudfront.loggly.com/js/loggly.tracker-2.1.min.js';
+            document.getElementsByTagName('head')[0].appendChild(script);
+
+            window._LTracker.push(
+                {'logglyKey': 'b0e65e43-6b7e-42e8-b0e5-a7323592ec04',
+                'sendConsoleErrors' : false,
+                'tag' : 'loggly-jslogger'
+                });
+        },
+
+        logglyLog: function(data){
+            if(data.error){
+                console.error(data.message);
+            }
+            if(!this.options.logging === "false"){
+                return;
+            }
+            data.identifier = this.options.identifier;
+            window._LTracker.push(data);
+        },
+
         addAppNexusLib: function () {
             window.apntag = window.apntag || {};
             //create a queue on the apntag object
             apntag.anq = apntag.anq || [];
-
-            if (this.options && !(this.options.debug === "true")) {
                 //load ast.js - async
                 (function () {
                     var d = document, scr = d.createElement('script'), pro = d.location.protocol,
@@ -587,14 +652,6 @@ ch.tam.addnexusRender = (function () {
                         tar.insertBefore(scr, tar.firstChild);
                     }
                 })();
-            } else {
-                //for debugging
-                apntag.anq.push = function (cb) {
-                    cb.call()
-                };
-                apntag.setPageOpts = apntag.defineTag = apntag.onEvent = apntag.loadTags = function () {
-                };
-            }
         },
 
         // This function is called with the build css in production mode
@@ -647,7 +704,10 @@ ch.tam.addnexusRender = (function () {
                 }
             }
             catch (e) {
-                console.error("No or malformed options passed");
+                this.logglyLog({
+                    tag : "error",
+                    message: "hash parsing failed"
+                })
             }
             return {};
         }
