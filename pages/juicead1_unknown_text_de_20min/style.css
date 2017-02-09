@@ -1,0 +1,65 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700);
+html, body {
+margin: 0;
+padding: 0;
+}
+.surroundingbox {
+overflow: hidden;
+height:auto;
+margin-bottom:10px;
+margin-top:10px;
+width:100%;
+position: relative;
+}
+.innerbox {
+}
+.title {
+float: left;
+cursor:pointer;
+color : rgb(0, 122, 191);
+font-family: 'Roboto Condensed', sans-serif;
+line-height: 98%;
+letter-spacing: -.03rem;
+margin: 0 0 .2rem;
+font-size: 1.2rem;
+width: 50%;
+}
+.title a:link, .title a:visited, .title a:active {
+font-weight: bold;
+color: black;
+text-decoration: none;
+}
+.title a:hover {
+text-decoration: underline;
+}
+.text{
+float: left;
+font-weight: lighter;
+display: inline-block;
+width: 50%;
+font-size: 0.75rem;
+line-height: 1.0rem;
+}
+.text a:link, .text a:visited, .text a:active{
+text-decoration: none;
+color:black;
+}
+img.adimage{
+width: 45%;
+display: inline-block;
+float: left;
+margin: 0 0.65rem 1.4rem 0;
+}
+.caption {
+z-index: 5;
+position: absolute;
+text-align: center;
+right:55%;
+width:45px;
+font-size: 10px;
+background: dodgerblue;
+color:white;
+}
+.trackingpixel{
+display:none;
+}
