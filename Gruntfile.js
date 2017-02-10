@@ -128,6 +128,7 @@ module.exports = function(grunt) {
                     }
                 },
                 files: [
+                    {expand: true, cwd: 'pages/', src: ['**'], dest: 'anprebid/pages/'},
                     {expand: true, cwd: 'temp/compressed/', src: ['**'], dest: 'anprebid/build/'}
                 ]
             },
@@ -141,6 +142,7 @@ module.exports = function(grunt) {
                     }
                 },
                 files: [
+
                     {expand: true, cwd: 'temp/compressed/', src: ['**'], dest: 'anprebid/stage/'}
                 ]
             }

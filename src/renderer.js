@@ -22,7 +22,13 @@ ch.tam.addnexusRender = (function () {
             fr: 'Plus ..',
             it: 'Più ..'
         },
-        challengeTimeout: 300,
+        sampling : {
+          main : 0.05, // main sampling all other types are multiplied with this. e.g. 5% of the users will send logs but only 10% of these 5% will send info logs
+          error : 1,
+          info : 0.00,
+          warning: 0.5
+        },
+        challengeTimeout: 500,
         masterTimeout: 2000, // time when rendering will definetly start even if not all ad-requests are resolved
         trackingPixelClass: 'pixel',
         moreNode: 'div',
@@ -47,6 +53,8 @@ ch.tam.addnexusRender = (function () {
         this.logger("start");
         //set stack for logglylog even if not enabled
         window._LTracker = window._LTracker || [];
+
+        this.startTime = new Date().getTime();
 
         this.config = config;
         this.init();
@@ -102,7 +110,7 @@ ch.tam.addnexusRender = (function () {
                         json = JSON.parse(json);
                     } catch (e) {
                         _this.logglyLog({
-                                tag: "error",
+                                type: "error",
                                 message: "malformed json setting"
                             }
                         );
@@ -183,7 +191,7 @@ ch.tam.addnexusRender = (function () {
                         adObj = this.merge(adObj,window.anConfigAd);
                     }catch(e){
                         this.logglyLog({
-                            tag: "error",
+                            type: "error",
                             message : "could not merge appnexus config ad"
                         });
                     }
@@ -195,7 +203,7 @@ ch.tam.addnexusRender = (function () {
                         adObj = this.merge(adObj,window.anConfigFirst);
                     }catch(e){
                         this.logglyLog({
-                            tag: "error",
+                            type: "error",
                             message : "could not merge anConfigFirst"
                         });
                     }
@@ -242,13 +250,17 @@ ch.tam.addnexusRender = (function () {
                 } else {
                     _this.timeoutExceeded = true;
                     _this.logger("no tag was loaded after timeout exceeded.");
-                    _this.registerMasterFallback();
+                    //_this.registerMasterFallback();
+
+                    _this.collapseParentFrame();
                 }
             }, this.settings.challengeTimeout);
         },
 
         // this will trigger the rendering of the main ad even if not all ads have responded
         // this is the worst case and will render all available main ads
+        // Disabled at the moment
+        /*
         registerMasterFallback: function () {
             var _this = this;
             this.logger("register master timeout");
@@ -257,7 +269,7 @@ ch.tam.addnexusRender = (function () {
                 _this.checkBeforeRender(_this.ads["main"]);
 
                 _this.logglyLog({
-                   tag: "warning",
+                   type: "warning",
                    message : "not all ads are rendered",
                    adsRendered : _this.ads["main"].adsLoaded,
                    adsRequested : _this.options.numads,
@@ -267,6 +279,7 @@ ch.tam.addnexusRender = (function () {
             }, this.settings.masterTimeout);
 
         },
+        */
 
         adAvailable: function (id, bucket, data) {
             this.ads[bucket].adsLoaded += 1;
@@ -310,11 +323,13 @@ ch.tam.addnexusRender = (function () {
             var highestCPM = -1;
             var bestAd;
             var tAd;
+            this.challengeWon = false;
+
             for (var i in this.ads) {
                 tAd = this.ads[i];
                 if (tAd.complete) {
                     for (var j = 0; j < this.ads[i].loadedAds.length; j++) {
-                        adCPM += parseInt(this.ads[i].loadedAds[j].cpm);
+                        adCPM += parseFloat(this.ads[i].loadedAds[j].cpm);
                     }
                     this.logger("CPM for " + this.ads[i].identifier + " " + adCPM);
 
@@ -327,6 +342,11 @@ ch.tam.addnexusRender = (function () {
                     this.logger("can not compare "+ this.ads[i].identifier +" because no or delayed response");
                 }
             }
+
+            if(bestAd.identifier !== this.options.identifier){
+                this.challengeWon = true;
+            }
+
             this.logger("highest cpm "+ bestAd.identifier + " CPM: " + highestCPM);
             this.checkBeforeRender(bestAd);
         },
@@ -338,7 +358,7 @@ ch.tam.addnexusRender = (function () {
                 clearTimeout(this.masterTimeout);
             }
 
-            if (ad.identifier !== this.options.identifier) {
+            if (this.challengeWon) {
                 this.logger("load css and json for "+ ad.identifier);
                 //overwrite the identifier to force the script to load css and json for the new identifier
                 this.options.identifier = ad.identifier;
@@ -385,6 +405,12 @@ ch.tam.addnexusRender = (function () {
             this.initClickTracking(ad);
 
             this.logger("Ad Render complete");
+            this.logglyLog({
+                type : "info",
+                renderTime : new Date().getTime() - this.startTime,
+                challenge : this.options.challenge !== undefined,
+                challengeWon : this.challengeWon
+            });
         },
 
         renderNativeAd: function (data) {
@@ -526,6 +552,25 @@ ch.tam.addnexusRender = (function () {
 
         },
 
+        collapseParentFrame : function(){
+            var type = "warning";
+            var message ="not all ads are rendered. Hide Ad Wraper";
+
+            this.logger("try to hide iframe");
+
+            try{
+                window.parent.document.getElementById(window.frameElement.id).style.height="0px";
+            }catch(e){
+                type = "error";
+                message = "can not hide iframe "
+            }
+            this.logglyLog({
+                type: "warning",
+                message : message,
+                renderTime : new Date().getTime() - this.startTime
+            });
+        },
+
         // ###########################  HELPER  ###########################
 
         addEvent: function (elem, evnt, func) {
@@ -584,6 +629,8 @@ ch.tam.addnexusRender = (function () {
         },
 
         loadJSON: function (url, callback) {
+
+            var _this = this;
             this.logger("loading json: ", url);
 
             var xobj = new XMLHttpRequest();
@@ -594,6 +641,12 @@ ch.tam.addnexusRender = (function () {
                     callback(xobj.responseText);
                 } else if (xobj.readyState == 4 && xobj.status == "404") {
                     callback("{}");
+                }else{
+                    _this.logglyLog({
+                        type : "error",
+                        message : "config.json could not loaded",
+                        jsonUrl : _this.baseUrl + _this.options.identifier + '/' + url
+                    })
                 }
             };
             xobj.send(null);
@@ -605,7 +658,7 @@ ch.tam.addnexusRender = (function () {
                 return;
             }
             // sampling 5% if not in sampling group disable loggly logging
-            if(Math.random() > 0.05 && !this.options.debug){
+            if(Math.random() > this.options.sampling.main && !this.options.debug){
                 this.options.logging === "false";
                 return;
             }
@@ -632,8 +685,23 @@ ch.tam.addnexusRender = (function () {
             if(!this.options.logging === "false"){
                 return;
             }
+
+            //extra sampling for log types when not in debug mode
+            if(!this.options.debug){
+                switch(data.type){
+                    case "info" : if(Math.random() > this.options.sampling.info){return} break;
+                    case "warning" : if(Math.random() > this.options.sampling.warning){return} break;
+                    case "error" : if(Math.random() > this.options.sampling.error){return} break;
+                    default : this.logger("loggly no type defined"); return;
+                }
+            }
+
             data.identifier = this.options.identifier;
-            window._LTracker.push(data);
+            data.userAgent = navigator.userAgent;
+            data.appType = window.anConfigAd ? window.anConfigAd.supplyType : "none";
+            data.url = window.location.href;
+            data.target = this.scriptUrl;
+            //window._LTracker.push(data);
         },
 
         addAppNexusLib: function () {
@@ -696,6 +764,9 @@ ch.tam.addnexusRender = (function () {
             try {
                 this.hashOptions = {};
                 var temp = this.scriptTag.src.split('#');
+
+                this.scriptUrl = temp;
+
                 this.baseUrl = temp[0].replace(/src\/renderer.js\S*/g, 'pages/').replace(/build\/\S*/g, "pages/").replace(/stage\/\S*/g, "pages/"); //only for preview
 
                 if (temp.length > 1) {

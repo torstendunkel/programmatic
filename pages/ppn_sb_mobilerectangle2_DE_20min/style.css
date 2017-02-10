@@ -75,7 +75,7 @@ html, body {
 }
 .ppn_sb_mobilerectangle2_DE_20min img.adimage {
     width: 120px;
-    height: 80px;
+    max-height: 80px;
     padding: 20px 15px 13px 0;
 }
 .ppn_sb_mobilerectangle2_DE_20min .ppncaption {
