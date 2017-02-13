@@ -37,7 +37,8 @@ module.exports = function(grunt) {
         "wideboard2" : "180px",
         "wideboard3" : "250px",
         "spezialfooter6" :"200px",
-        "sbt_20min" : "250px"
+        "sbt_20min" : "250px",
+        "juicead1" : "650px"
     };
 
 
@@ -121,7 +122,7 @@ module.exports = function(grunt) {
                 html += htmlTmp;
 
                 if(pName && pageName !== pName && html.length > 0 && html !== ""){
-                    pagesHTML += pageWrapper.replace('%%CONTENT%%',html).replace('%%PAGENAME%%',pageName).replace(/%%ID%%/gi,pId).replace("%%OPEN%%", pId===0?"in":"");
+                    pagesHTML += pageWrapper.replace('%%CONTENT%%',html).replace('%%PAGENAME%%',pageName).replace(/%%ID%%/gi,pId);
                     pageName = pName;
                     pId +=1;
                     html ="";

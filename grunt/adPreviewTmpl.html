@@ -10,11 +10,17 @@
     </div>
 
     <script>
-        var ifrm = document.getElementById("%%ifrmID%%");
-        ifrm = ifrm.contentWindow || ifrm.contentDocument.document || ifrm.contentDocument;
-        ifrm.document.open();
-        ifrm.document.write('<script src="%%SCRIPTSRC%%" async><\/script>');
-        ifrm.document.close();
+        var callback = function(entries, observer) {
+            var ifrm = document.getElementById("%%ifrmID%%");
+            ifrm = ifrm.contentWindow || ifrm.contentDocument.document || ifrm.contentDocument;
+            ifrm.document.open();
+            ifrm.document.write('<script src="%%SCRIPTSRC%%" async><\/script>');
+            ifrm.document.close();
+        };
+        var observer = new IntersectionObserver(callback);
+        var target = document.getElementById("%%ifrmID%%");
+        observer.observe(target);
+
     </script>
     <script>
         /*

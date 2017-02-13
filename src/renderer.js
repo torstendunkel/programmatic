@@ -23,7 +23,7 @@ ch.tam.addnexusRender = (function () {
             it: 'Più ..'
         },
         sampling : {
-          main : 0.02, // main sampling all other types are multiplied with this. e.g. 5% of the users will send logs but only 10% of these 5% will send info logs
+          main : 0.05, // main sampling all other types are multiplied with this. e.g. 5% of the users will send logs but only 10% of these 5% will send info logs
           error : 1,
           info : 0.1,
           warning: 0.2
@@ -340,6 +340,7 @@ ch.tam.addnexusRender = (function () {
                 this.challengeWon = true;
             }
 
+            bestAd.totalCpm = highestCPM;
             this.logger("highest cpm "+ bestAd.identifier + " CPM: " + highestCPM);
             this.checkBeforeRender(bestAd);
         },
@@ -400,9 +401,11 @@ ch.tam.addnexusRender = (function () {
             this.logger("Ad Render complete");
             this.logglyLog({
                 type : "info",
+                message : "elem rendered",
                 renderTime : new Date().getTime() - this.startTime,
                 challenge : this.options.challenge !== undefined,
-                challengeWon : this.challengeWon
+                challengeWon : this.challengeWon,
+                cpm : Math.floor(ad.totalCpm * 100) /100
             });
         },
 
@@ -422,10 +425,7 @@ ch.tam.addnexusRender = (function () {
                 sponsored: data.native.sponsoredBy || ''
             };
 
-
-
             obj = this.addCustomFields(obj, data);
-
 
             //add impression pixels to the native ad
             if (data.native && data.native.impressionTrackers && data.native.impressionTrackers.length > 0) {
@@ -497,11 +497,25 @@ ch.tam.addnexusRender = (function () {
 
         openUrl: function (elem, e) {
             var href = elem.getAttribute("data-href");
+
+            if(!href){
+                var links = elem.getElementsByTagName("a");
+                if(links && links[0]){
+                    href = links[0];
+                }
+            }
+
             //just prevent default if we have a href. otherwise stick to browser default behavior
             if (href) {
                 e.preventDefault();
                 window.open(href);
             }
+
+            this.logglyLog({
+                type: "info",
+                message : "elem clicked",
+                href : href
+            });
         },
 
         setTrackingPixel: function (elem, trackingUrl) {
@@ -554,7 +568,6 @@ ch.tam.addnexusRender = (function () {
             try{
                 window.parent.document.getElementById(window.frameElement.id).style.height="0px";
             }catch(e){
-                type = "error";
                 message = "can not hide iframe "
             }
             this.logglyLog({
