@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display);
 .ppn_sb_billboard4_FR_femina {
-    width: 650px;
+    width: 640px;
     height: 350px;
     overflow: hidden;
     position: relative;
@@ -15,7 +15,7 @@
 .ppn_sb_billboard4_FR_femina .ppninnerbox {
 }
 .ppn_sb_billboard4_FR_femina .singlebox {
-    width: 650px;
+    width: 640px;
     height: 87px;
     position: relative;
     background: white;

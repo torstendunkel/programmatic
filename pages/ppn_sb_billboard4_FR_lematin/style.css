@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
 
 .ppn_sb_billboard4_FR_lematin {
-    width: 650px;
+    width: 640px;
     height: 350px;
     overflow: hidden;
     background: white;
@@ -17,7 +17,7 @@
 .ppn_sb_billboard4_FR_lematin .ppninnerbox {
 }
 .ppn_sb_billboard4_FR_lematin .singlebox {
-    width: 650px;
+    width: 640px;
     height: 87px;
     position: relative;
     float: left;

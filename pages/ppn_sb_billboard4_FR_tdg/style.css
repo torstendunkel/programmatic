@@ -1,7 +1,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:700);
 .ppn_sb_billboard4_FR_tdg {
-    width: 650px;
+    width: 640px;
     height: 350px;
     overflow: hidden;
     background: white;
@@ -15,7 +15,7 @@
 .ppn_sb_billboard4_FR_tdg .ppninnerbox {
 }
 .ppn_sb_billboard4_FR_tdg .singlebox {
-    width: 650px;
+    width: 640px;
     height: 87px;
     position: relative;
     overflow: hidden;
