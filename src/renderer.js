@@ -23,10 +23,10 @@ ch.tam.addnexusRender = (function () {
             it: 'Più ..'
         },
         sampling : {
-          main : 0.05, // main sampling all other types are multiplied with this. e.g. 5% of the users will send logs but only 10% of these 5% will send info logs
+          main : 0.02, // main sampling all other types are multiplied with this. e.g. 5% of the users will send logs but only 10% of these 5% will send info logs
           error : 1,
-          info : 0.00,
-          warning: 0.5
+          info : 0.1,
+          warning: 0.2
         },
         challengeTimeout: 500,
         masterTimeout: 2000, // time when rendering will definetly start even if not all ad-requests are resolved
@@ -42,18 +42,11 @@ ch.tam.addnexusRender = (function () {
 
     };
 
-    /*
-    var settingsInApp = {
-      apiEndPoint : (window.location.protocol === 'https:' ? 'https:' : 'http:') + '//mobile.adnxs.com/mob?'
-    };
-    */
-
     var Renderer = function (config) {
 
         this.logger("start");
         //set stack for logglylog even if not enabled
         window._LTracker = window._LTracker || [];
-
         this.startTime = new Date().getTime();
 
         this.config = config;
@@ -584,7 +577,9 @@ ch.tam.addnexusRender = (function () {
         },
 
         appendToBody: function (content) {
+            //check where to render
             document.body.appendChild(this.createDomNodeFromHTML(content)[0]);
+
         },
         tmpl: function (template, data) {
             var prop, regProp, html = template;
@@ -641,7 +636,6 @@ ch.tam.addnexusRender = (function () {
                     callback(xobj.responseText);
                 } else if (xobj.readyState == 4 && xobj.status == "404") {
                     callback("{}");
-                }else{
                     _this.logglyLog({
                         type : "error",
                         message : "config.json could not loaded",
@@ -699,9 +693,11 @@ ch.tam.addnexusRender = (function () {
             data.identifier = this.options.identifier;
             data.userAgent = navigator.userAgent;
             data.appType = window.anConfigAd ? window.anConfigAd.supplyType : "none";
-            data.url = window.location.href;
-            data.target = this.scriptUrl;
-            //window._LTracker.push(data);
+            //just pass the url when warning or error
+            data.url = data.type !== "info"? window.location.href : undefined;
+            data.inIframe = this.inIframe();
+            data.target = this.scriptUrl.join("#");
+            window._LTracker.push(data);
         },
 
         addAppNexusLib: function () {
@@ -758,6 +754,14 @@ ch.tam.addnexusRender = (function () {
                 obj3[attrname] = obj2[attrname];
             }
             return obj3;
+        },
+
+        inIframe : function(){
+            try {
+                return window.self !== window.top;
+            } catch (e) {
+                return true;
+            }
         },
 
         parseHash: function () {

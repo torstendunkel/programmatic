@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text/Bild Ads</title>
+    <meta charset="utf-8"/>
+    <script>
+        var hash = document.location.hash;
+        if(hash !== ""){
+            hash += "&fromHTML=1";
+        }else{
+            hash = "#fromHTML=1";
+        }
+        document.write("<script src=\"index.js" + hash + "\"> <\/script>");
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+

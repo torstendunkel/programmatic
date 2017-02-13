@@ -97,8 +97,8 @@ module.exports = function(grunt) {
             //var scriptSrc = 'build/'+identifier[1]+'/';
             var scriptSrc = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/'+enviroment+'/'+identifier[1]+'/index.js';
             var templateUrl = '&lt;script src="https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/build/'+identifier[1]+'/index.js#tagid={ADD_ID}"&gt;&lt;/script&gt;';
-
-            var preview = "index.html#debug=1&identifier="+identifier[1];
+            var htmlView = 'http://mynewsnet.ch/anprebid/' + enviroment + "/" +identifier[1] +"/";
+            //var preview = "index.html#debug=1&identifier="+identifier[1];
 
             if(identifier.length === 3){
                 var pName = identifier[1].split('_');
@@ -115,7 +115,9 @@ module.exports = function(grunt) {
                     .replace(/%%SCRIPTSRC%%/g,scriptSrc)
                     .replace(/%%TEMPLATE_URL%%/g,templateUrl)
                     .replace(/%%HEIGHT%%/g,getHeight(identifier[1]))
-                    .replace(/%%PREVIEW%%/g, preview);
+                    .replace(/%%HTMLVIEW%%/g,htmlView)
+                    .replace(/%%HTMLVIEW2%%/g,htmlView+"#tagid={ADD_ID}");
+                    //.replace(/%%PREVIEW%%/g, preview);
                 html += htmlTmp;
 
                 if(pName && pageName !== pName && html.length > 0 && html !== ""){
@@ -129,17 +131,12 @@ module.exports = function(grunt) {
 
         //render the last page
         pagesHTML += pageWrapper.replace('%%CONTENT%%',html).replace('%%PAGENAME%%',pageName).replace(/%%ID%%/gi,pId);
-;
-        mkdirp('build/preview', function (err) {
-            if (err) console.error(err)
-            else {
-                fs.writeFile("build/preview/"+enviroment+".html", wrapper.replace('%%CONTENT%%',pagesHTML), function(err) {
-                    if(err) {
-                        return console.log(err);
-                    }
-                    done();
-                });
+
+        fs.writeFile("build/preview.html", wrapper.replace('%%CONTENT%%',pagesHTML), function(err) {
+            if(err) {
+                return console.log(err);
             }
+            done();
         });
     });
 };

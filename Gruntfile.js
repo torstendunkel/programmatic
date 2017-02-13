@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
     require('time-grunt')(grunt);
     grunt.loadTasks("grunt/tasks/");
+    var env;
 
     // Project configuration.
     grunt.initConfig({
@@ -40,6 +41,9 @@ module.exports = function(grunt) {
             },
             images : {
                 files : '<%= pages_images %>'
+            },
+            indexHTML: {
+                files : '<%= pages_indexHTML %>'
             }
         },
         folder_list: {
@@ -67,7 +71,7 @@ module.exports = function(grunt) {
         css_to_js: {
             options: {
                 regFn: 'adRenderer.prepareStyle',
-                baseUrl : 'build',
+                baseUrl :"<%= enviroment %>",
                 tempUrl : 'temp'
             },
             pages: {
@@ -175,6 +179,24 @@ module.exports = function(grunt) {
                 },
                 src: 'build/preview/',
                 dest: '/'
+            },
+            upload_newsnet_stage:{
+                auth: {
+                    host: 'mynewsnet.ch',
+                    port: 21,
+                    authKey: 'key2'
+                },
+                src: 'build/',
+                dest: '/anprebid/stage/'
+            },
+            upload_newsnet_build:{
+                auth: {
+                    host: 'mynewsnet.ch',
+                    port: 21,
+                    authKey: 'key2'
+                },
+                src: 'build/',
+                dest: '/anprebid/build/'
             }
         },
 
@@ -203,6 +225,18 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
 
+    grunt.registerTask('set_env', 'Set a config property.', function(env) {
+        var domain;
+        if (env === 'build') {
+            domain = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/build';
+        } else {
+            domain = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/stage';
+        }
+        grunt.config.set("enviroment", domain);
+        console.log("setting enviroment to ", domain)
+    });
+
+
     grunt.registerTask('build',[
         'copy:pages',   // copies all folders below /pages to /temp
         'folder_list',   //generates a json for the folders in /temp
@@ -213,7 +247,9 @@ module.exports = function(grunt) {
         'prepare_concat', // concats the config.js, renderer.js, and style.js to one file
         'concat:build',
         'prepare_copy_images', // copy the images folder to all builds that have an images folder
-        'copy:images'
+        'copy:images',
+        'prepare_copy_indexHTML',
+        'copy:indexHTML'
     ]);
 
     // Default building without deploying
@@ -228,26 +264,26 @@ module.exports = function(grunt) {
 
     //building + deploy to prod
     grunt.registerTask('deploy', [
+        'set_env:build',
         'clean:temp',
         'clean:build',
         'build',
         'compress:main',
         'aws_s3:deploy_compressed',
         'generate_test_page:build',
-        'ftp-deploy:upload_testpages',
-        'ftp-deploy:src',
+        'ftp-deploy:upload_newsnet_build',
         'clean:temp'
     ]);
     //building + deploy to stage
     grunt.registerTask('stage', [
+        'set_env:stage',
         'clean:temp',
         'clean:build',
         'build',
         'compress:main',
         'aws_s3:stage',
         'generate_test_page:stage',
-        'ftp-deploy:upload_testpages',
-        'ftp-deploy:src',
+        'ftp-deploy:upload_newsnet_stage',
         'clean:temp'
     ]);
 

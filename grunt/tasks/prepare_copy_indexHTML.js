@@ -1,20 +1,21 @@
 module.exports = function (grunt) {
     var fs = require("fs");
-    grunt.registerTask('prepare_copy', 'Copies the main JS to all subfolders', function () {
+    grunt.registerTask('prepare_copy_indexHTML', 'Copies the index.html to all build folders', function () {
         var folderJSON = grunt.file.readJSON('temp/folderlist.json');
         var pages = [];
         for (var i = 0; i < folderJSON.length; i++) {
             if (folderJSON[i].depth === 3) {
                 var dir = folderJSON[i].location;
                 pages.push({
-                    expand: true, flatten: true, filter: 'isFile',
-                    src: ['temp/renderer.js','temp/starter.js'],
-                    dest: dir
+                    expand: true, flatten: true,
+                    src: ['src/html/index.html'],
+                    dest: dir.replace('temp/','build/')
                 });
             }
         }
+
         //set variable pages so that the copy task can use it
-        grunt.config.set("pages", pages);
+        grunt.config.set("pages_indexHTML", pages);
     });
 };
 
