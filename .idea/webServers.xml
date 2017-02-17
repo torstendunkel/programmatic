@@ -10,6 +10,14 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
+      <webServer id="28df6af4-2b83-4a7b-93e0-7f1f2017f2b3" name="mynewsnet" url="http://mynewsnet.ch">
+        <fileTransfer host="mynewsnet.ch" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

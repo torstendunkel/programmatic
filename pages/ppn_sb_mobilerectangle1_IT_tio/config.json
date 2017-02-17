@@ -1,4 +1,5 @@
 {
   "showMore" : false,
-  "moreNode" : "span"
+  "moreNode" : "span",
+  "useMyAst" : true
 }

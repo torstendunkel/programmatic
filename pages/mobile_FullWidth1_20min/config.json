@@ -1,5 +1,5 @@
 {
-    "template" :  "<div class=\"tan_singlebox bottom left right\"> <a href=\"{{href}}\" target=\"_blank\"> <div class=\"tan_image\"> <img class=\"adimage\" alt=\"Werbung\" src=\"{{img}}\" /> </div> <div class=\"tan_content\"> <div class=\"tan_caption\">Sponsored Link</div> <div class=\"tan_title\"> <h5>{{title}}</h5> </div> <div class=\"tan_text\"> <p>{{description}}</p> </div> </div> </a> </div>",
+    "template" :  "<div id=\"{{id}}\" class=\"tan_singlebox bottom left right\"> <a href=\"{{href}}\" target=\"_blank\"> <div class=\"tan_image\"> <img class=\"adimage\" alt=\"Werbung\" src=\"{{img}}\" /> </div> <div class=\"tan_content\"> <div class=\"tan_caption\">Sponsored Link</div> <div class=\"tan_title\"> <h5>{{title}}</h5> </div> <div class=\"tan_text\"> <p>{{description}}</p> </div> </div> </a> </div>",
     "wrapper" : "<div class=\"tan_sb_mobilefullwidth1Ad_20min\"> <div id=\"tan_innerbox\" class=\"tan_innerbox\">{{content}}</div> </div>"
 }
 

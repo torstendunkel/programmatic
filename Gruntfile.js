@@ -8,12 +8,13 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
             options: {
-                banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+                banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd HH:MM") %> */\n'
             },
             renderer: {
                 files : {
                     'temp/renderer.js' : ['src/renderer.js'],
-                    'temp/starter.js' : ['src/starter.js']
+                    'temp/starter.js' : ['src/starter.js'],
+                    'temp/myAst.js' : ['src/myAst.js']
                 }
             }
         },
@@ -33,11 +34,20 @@ module.exports = function(grunt) {
             renderer_to_pages: {
                 files: '<%= pages %>'
             },
+
+            src : {
+                files : [
+                    {expand: true, cwd:"temp", src: ['myAst.js'], dest: 'build/src'}
+
+                ]
+            },
+
             pages : {
-                expand: true,
-                cwd: 'pages',
-                src: '**',
-                dest: 'temp/'
+
+                files : [
+                    {expand: true, cwd:"pages", src: ['**'], dest: 'temp/'}
+
+                ]
             },
             images : {
                 files : '<%= pages_images %>'
@@ -246,6 +256,7 @@ module.exports = function(grunt) {
         'copy_json_config', // translates the config.json to config.js and copies it to all temp folders
         'prepare_concat', // concats the config.js, renderer.js, and style.js to one file
         'concat:build',
+        'copy:src',  // copies the src (myAst to build folder)
         'prepare_copy_images', // copy the images folder to all builds that have an images folder
         'copy:images',
         'prepare_copy_indexHTML',
@@ -254,11 +265,12 @@ module.exports = function(grunt) {
 
     // Default building without deploying
     grunt.registerTask('default', [
+        'set_env:stage',
         'clean:temp',
         'clean:build',
         'build',
         'generate_test_page', // render the preview.html
-        'clean:temp'
+        //'clean:temp'
 
     ]);
 

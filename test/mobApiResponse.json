@@ -1,29 +1,511 @@
 {
-  "status": "ok",
-  "version": 1,
-  "ads": [],
-  "mediated": [],
-  "native": [
-    {
-      "type": "in-feed-standard",
-      "title": "Zukunft Immobilienbranche",
-      "description": "Neue Technologien revolutionieren die Immobilienwirtschaft und führen zu neuen...",
-      "main_media": [
-        {
-          "label": "default",
-          "width": 272,
-          "height": 153,
-          "url": "https://vcdn.adnxs.com/p/creative-image/ae/0b/2f/36/ae0b2f36-cac0-4f38-8b9d-0a987945dcc3.jpg"
+  "IN_CONTENT": {
+    "elementId": "div-gpt-ad-1478784417464-0",
+    "viewportSizes": [
+      {
+        "sizes": [
+          [
+            728,
+            90
+          ]
+        ],
+        "viewport": [
+          728,
+          90
+        ]
+      },
+      {
+        "sizes": [
+          [
+            580,
+            400
+          ]
+        ],
+        "viewport": [
+          580,
+          400
+        ]
+      },
+      {
+        "sizes": [
+          [
+            336,
+            280
+          ]
+        ],
+        "viewport": [
+          336,
+          280
+        ]
+      },
+      {
+        "sizes": [
+          [
+            300,
+            250
+          ]
+        ],
+        "viewport": [
+          300,
+          250
+        ]
+      },
+      {
+        "sizes": [
+          [
+            200,
+            200
+          ]
+        ],
+        "viewport": [
+          200,
+          200
+        ]
+      }
+    ],
+    "collapseBeforeAdFetch": true,
+    "adUnitPath": "/1021472/Doodle_Beta_InContent",
+    "collapse": true
+  },
+  "SKYSCRAPER_LEFT": {
+    "elementId": "div-gpt-ad-1331663301023-0",
+    "viewportSizes": [
+      {
+        "sizes": [
+          [
+            120,
+            600
+          ],
+          [
+            160,
+            600
+          ],
+          [
+            300,
+            600
+          ]
+        ],
+        "viewport": [
+          1442,
+          570
+        ]
+      },
+      {
+        "sizes": [
+          [
+            120,
+            600
+          ],
+          [
+            160,
+            600
+          ]
+        ],
+        "viewport": [
+          1164,
+          570
+        ]
+      },
+      {
+        "sizes": [
+          [
+            120,
+            600
+          ]
+        ],
+        "viewport": [
+          1084,
+          0
+        ]
+      },
+      {
+        "sizes": [],
+        "viewport": [
+          0,
+          0
+        ]
+      }
+    ],
+    "collapseBeforeAdFetch": true,
+    "adUnitPath": "/1021472/Doodle_Beta_Skyscraper_Left",
+    "collapse": true
+  },
+  "UNIFIED_INTERSTITIAL": {
+    "elementId": "div-gpt-ad-1451408806423-0",
+    "viewportSizes": [
+      {
+        "sizes": [
+          [
+            320,
+            480
+          ],
+          [
+            320,
+            416
+          ]
+        ],
+        "viewport": [
+          320,
+          530
+        ]
+      },
+      {
+        "sizes": [
+          [
+            320,
+            416
+          ]
+        ],
+        "viewport": [
+          320,
+          460
+        ]
+      }
+    ],
+    "collapseBeforeAdFetch": true,
+    "adUnitPath": "/1021472/Doodle_Unified_Interstitial",
+    "collapse": true
+  },
+  "UNIFIED_RECTANGLE": {
+    "elementId": "div-gpt-ad-1431008075310-0",
+    "viewportSizes": [
+      {
+        "sizes": [],
+        "viewport": [
+          640,
+          0
+        ]
+      },
+      {
+        "sizes": [
+          [
+            580,
+            400
+          ],
+          [
+            336,
+            280
+          ],
+          [
+            300,
+            250
+          ]
+        ],
+        "viewport": [
+          600,
+          800
+        ]
+      },
+      {
+        "sizes": [
+          [
+            336,
+            280
+          ],
+          [
+            300,
+            250
+          ]
+        ],
+        "viewport": [
+          336,
+          500
+        ]
+      },
+      {
+        "sizes": [
+          [
+            300,
+            250
+          ]
+        ],
+        "viewport": [
+          300,
+          400
+        ]
+      },
+      {
+        "sizes": [
+          [
+            200,
+            200
+          ]
+        ],
+        "viewport": [
+          200,
+          350
+        ]
+      }
+    ],
+    "collapseBeforeAdFetch": true,
+    "bids": [
+      {
+        "bidder": "appnexus",
+        "params": {
+          "placementId": "6515097"
         }
-      ],
-      "sponsored_by": "digital-real-estate.fh-hwz.ch",
-      "click_trackers": [
-        "https://secure-fra.adnxs.com/click?43DmV3OAC0DjcOZXc4ALQAAAAAAAAPA_43DmV3OAC0DjcOZXc4ALQDeyWxxu0dRGOZS9gdIA8leP35pYAAAAANl2owA-DgAAPg4AAAIAAACCGL0DYTgQAAYAAABVU0QAQ0hGAAEAAQARhgAAAAABAgQCAQAAAKwASCLmZwAAAAA./cnd=%21LQqvtQinlsUHEIKx9B0Y4fBAIAQoipqUOjEAAAAAAADwPw../bn=74267/"
-      ],
-      "impression_trackers": [
-        "https://secure-fra.adnxs.com/it?e=wqT_3QLLBfA8ywIAAAMA1gAFAQiPv-vEBRC35O7i4a206kYYuaj2jaiagPlXIAEqLQnjcOZXc4ALQBHjcOZXc4ALQBkAAAECCPA_IREbACkRCfBvMNntjQU4vhxAvhxIAlCCsfQdWOHwQGAGaJGMWnibxASAAQGKAQNVU0SSAQNDSEaYAQGgAQGoAQGwAQC4AQLAAQTIAQLQAQDYAQDgAQDwAQCKAld1ZignYScsIDE1NzYzMzEsIDE0ODY1NDQ3ODMpOwEdNHInLCA2MjcyNDIyNiwgPh4AJGknLCA0NjM0MDA2HADwt5IC4QEhQkRTMDB3aW5sc1VIRUlLeDlCMFlBQ0RoOEVBd0FqZ0FRQVJJdmh4UTJlMk5CVmdBWU1rRGFBQndBSGdBZ0FFQWlBRUFrQUVCbUFFQm9BRUtxQUVEc0FFQXVRSEE5ZkdvREd3TFFNRUJzY3FqZ0hlQUMwREpBZTZBQ2tDR1pnRkEyUUZqN2xwQ1B1anZQLUFCcUtRYzlRRUFBQUFBbUFLS21wUTZvQUlBdFFJQUFBQUF2UUkBG8hBd0FJQXlBSUEwQUlBMkFJQTRBSUE2QUlBLUFJQWdBTUJrQU1BbUFNQpoCMSFMUXF2dFE25AA4NGZCQUlBUW9pcHFVT2pFBVTwukFBRHdQdy4u2AL_Q-AC7IE2gAMAiAMBkAMAmAMWoAMBqgMAwAOQHMgDANIDKAgAEiQ2MTBiOTFkNy04ZjBkLTQyM2EtYTk4ZS0zMzNkYzQxZDA0YTLYAwDgAwHoAwL4AwCABACSBAQvbW9imAQAogQPMTQ1LjIzNC4yNDEuMTA5qATwVrIECggAEAAYACAAMAC4BADABADIBADSBAoxMC4xMy42OS432gQCCADgBADwBIKx9B2IBQGYBQA.&s=bfc0c7cf9dfaee08ccc7a5613ea3596c64462412"
-      ],
-      "click_url": "https://api.capturemedia.io/cl?cmid=589840fce9a597dd2af38571"
-    }
-  ]
+      }
+    ],
+    "adUnitPath": "/1021472/Doodle_Beta_Prestitial",
+    "collapse": true
+  },
+  "BACKGROUND": {
+    "elementId": "div-gpt-ad-1444389854204-0",
+    "viewportSizes": [
+      {
+        "sizes": [
+          [
+            1920,
+            1080
+          ]
+        ],
+        "viewport": [
+          0,
+          0
+        ]
+      }
+    ],
+    "adUnitPath": "/1021472/Doodle_Beta_Background"
+  },
+  "SKYSCRAPER": {
+    "elementId": "div-gpt-ad-1322494907436-4",
+    "viewportSizes": [
+      {
+        "sizes": [
+          [
+            120,
+            600
+          ],
+          [
+            160,
+            600
+          ],
+          [
+            300,
+            600
+          ]
+        ],
+        "viewport": [
+          1250,
+          570
+        ]
+      },
+      {
+        "sizes": [
+          [
+            120,
+            600
+          ],
+          [
+            160,
+            600
+          ]
+        ],
+        "viewport": [
+          984,
+          300
+        ]
+      }
+    ],
+    "bids": [
+      {
+        "bidder": "appnexus",
+        "params": {
+          "placementId": "6514525"
+        }
+      }
+    ],
+    "adUnitPath": "/1021472/Doodle_Beta_Skyscraper"
+  },
+  "LEADERBOARD": {
+    "elementId": "div-gpt-ad-1322494907436-2",
+    "viewportSizes": [
+      {
+        "sizes": [
+          [
+            994,
+            250
+          ],
+          [
+            970,
+            250
+          ],
+          [
+            800,
+            250
+          ],
+          [
+            930,
+            180
+          ],
+          [
+            980,
+            120
+          ],
+          [
+            994,
+            118
+          ],
+          [
+            970,
+            90
+          ],
+          [
+            728,
+            90
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "viewport": [
+          897,
+          650
+        ],
+        "description": "994x250: CH wideboard, 970x250: IAB billboard"
+      },
+      {
+        "sizes": [
+          [
+            800,
+            250
+          ],
+          [
+            728,
+            90
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "viewport": [
+          725,
+          650
+        ],
+        "description": "800x250: DE billboard"
+      },
+      {
+        "sizes": [
+          [
+            994,
+            118
+          ],
+          [
+            930,
+            180
+          ],
+          [
+            980,
+            120
+          ],
+          [
+            970,
+            90
+          ],
+          [
+            728,
+            90
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "viewport": [
+          897,
+          400
+        ],
+        "description": "994x118: CH maxiboard, 930x180: DK 'top banner', 980x120: SE/FI/NO panorama, 970x90: IAB super leaderboard"
+      },
+      {
+        "sizes": [
+          [
+            728,
+            90
+          ],
+          [
+            468,
+            60
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "viewport": [
+          728,
+          300
+        ],
+        "description": "728x90: IAB leaderboard"
+      },
+      {
+        "sizes": [
+          [
+            468,
+            60
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "viewport": [
+          468,
+          200
+        ],
+        "description": "468x60: IAB full banner"
+      },
+      {
+        "sizes": [
+          [
+            320,
+            100
+          ],
+          [
+            320,
+            50
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "viewport": [
+          320,
+          500
+        ],
+        "description": "320x100: large mobile leaderboard"
+      },
+      {
+        "sizes": [
+          [
+            320,
+            50
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "viewport": [
+          200,
+          400
+        ],
+        "description": "320x50: mobile leaderboard"
+      }
+    ],
+    "collapseBeforeAdFetch": true,
+    "bids": [
+      {
+        "bidder": "appnexus",
+        "params": {
+          "placementId": "6439046"
+        }
+      }
+    ],
+    "adUnitPath": "/1021472/Doodle_Beta_Leaderboard",
+    "collapse": true
+  }
 }

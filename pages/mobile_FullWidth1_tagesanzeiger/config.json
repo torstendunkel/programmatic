@@ -1,5 +1,5 @@
 {
-    "template" :  "<!-- Single box for each ad --> <div class=\"tan_singlebox bottom left right\"> <!-- Placeholder link around all elements --> <a href=\"{{href}}\" target=\"_blank\"> <!-- Image --> <div class=\"tan_image\"> <img class=\"adimage\" alt=\"Werbung\" src=\"{{img}}\" /> </div> <div class=\"tan_content\"> <!-- Sponsored text--> <div class=\"tan_caption\">Sponsored Link</div> <!-- Title --> <div class=\"tan_title\"> <h5>{{title}}</h5> </div> <!-- Text --> <div class=\"tan_text\"> <p>{{description}}</p> </div> </div> </a> </div> ",
+    "template" :  "<div id=\"{{id}}\" class=\"tan_singlebox bottom left right\"><a href=\"{{href}}\" target=\"_blank\"> <!-- Image --> <div class=\"tan_image\"> <img class=\"adimage\" alt=\"Werbung\" src=\"{{img}}\" /> </div> <div class=\"tan_content\"> <!-- Sponsored text--> <div class=\"tan_caption\">Sponsored Link</div> <!-- Title --> <div class=\"tan_title\"> <h5>{{title}}</h5> </div> <!-- Text --> <div class=\"tan_text\"> <p>{{description}}</p> </div> </div> </a> </div> ",
     "wrapper" : "<div class=\"tan_sb_mobilefullwidth1Ad_20min\"> <!-- The ads are inserted into this div --> <div id=\"tan_innerbox\" class=\"tan_innerbox\">{{content}}</div> </div>"
 }
 

@@ -28,8 +28,7 @@ ch.tam.addnexusRender = (function () {
           info : 0.1,
           warning: 0.2
         },
-        challengeTimeout: 500,
-        masterTimeout: 2000, // time when rendering will definetly start even if not all ad-requests are resolved
+        challengeTimeout: 1000,
         trackingPixelClass: 'pixel',
         moreNode: 'div',
         showMore: false,
@@ -44,11 +43,9 @@ ch.tam.addnexusRender = (function () {
 
     var Renderer = function (config) {
 
-        this.logger("start");
         //set stack for logglylog even if not enabled
         window._LTracker = window._LTracker || [];
         this.startTime = new Date().getTime();
-
         this.config = config;
         this.init();
     };
@@ -60,6 +57,7 @@ ch.tam.addnexusRender = (function () {
             this.settings = settings;
             this.options = {};
             this.scriptTag = document.getElementsByTagName('script');
+
             var index = this.scriptTag.length - 1;
             this.scriptTag = this.scriptTag[index];
             this.loadedAds = {};
@@ -76,6 +74,8 @@ ch.tam.addnexusRender = (function () {
                 apntag.anq.push(function () {
                     _this.prepareTags();
                 });
+
+                _this.checkForMRAID();
                 _this.addLoggly();
             });
         },
@@ -140,6 +140,7 @@ ch.tam.addnexusRender = (function () {
                 identifier: this.options.identifier,
                 numads: this.options.numads,
                 adsLoaded: 0,
+                noBid: 0,
                 loadedAds: [],
                 complete: false
             };
@@ -154,6 +155,7 @@ ch.tam.addnexusRender = (function () {
                         identifier: this.options.challenge[i],
                         numads: cNums,
                         adsLoaded: 0,
+                        noBid: 0,
                         loadedAds: [],
                         complete: false
                     };
@@ -177,6 +179,10 @@ ch.tam.addnexusRender = (function () {
                     targetId: prefix + i,
                     prebid: true
                 };
+
+
+
+
                 //if defined merge the global AppNexus Config to the adObj
                 if(window.anConfigAd){
                     this.logger("merging appnexus config ad");
@@ -188,11 +194,18 @@ ch.tam.addnexusRender = (function () {
                             message : "could not merge appnexus config ad"
                         });
                     }
+                }else if(this.options.supplyType){
+                    // in some cases we need to pass the appmode via the options and then we generate dummy app ids as well
+                    adObj.supplyType = this.options.supplyType;
                 }
+
                 // if defined merge the global AppNexuFirst Config to the first adObj
                 if(i==0 && window.anConfigFirst){
                     try{
                         this.logger("merging appnexus config ad for first ad");
+                        if(window.anConfigFirst.forceCreativeId){
+                            window.anConfigFirst.forceCreativeId = parseInt(window.anConfigFirst.forceCreativeId.match(/\d+/g)[0]);
+                        }
                         adObj = this.merge(adObj,window.anConfigFirst);
                     }catch(e){
                         this.logglyLog({
@@ -203,6 +216,9 @@ ch.tam.addnexusRender = (function () {
                 }
                 arr.push(adObj);
                 apntag.onEvent('adAvailable', prefix + i, this.adAvailable.bind(this, prefix + "-" + i, prefix));
+                apntag.onEvent('adNoBid', prefix + i, this.adNoBid.bind(this, prefix + "-" + i, prefix));
+                apntag.onEvent('adRequestFailure', prefix + i, this.handleAdError.bind(this, prefix + "-" + i, prefix));
+                apntag.onEvent('adBadRequest', prefix + i, this.handleAdError.bind(this, prefix + "-" + i, prefix));
             }
             return arr;
         },
@@ -223,7 +239,20 @@ ch.tam.addnexusRender = (function () {
                     });
 
                 }
+            }else if(this.options.supplyType){
+                // if supplytype set by options to app_mode generate dummy app ids
+                var dummyDeviceId = {
+                    device : {
+                        deviceId : {
+                            idfa : this.generateIdfa(),
+                            aaid : this.generateAaid()
+                        }
+                    }
+                };
+                pageObj = this.merge(pageObj,dummyDeviceId);
             }
+
+
             apntag.setPageOpts(pageObj);
 
             for (var i = 0; i < tags.length; i++) {
@@ -231,76 +260,54 @@ ch.tam.addnexusRender = (function () {
             }
             this.logger("sending AST requesst");
             apntag.loadTags();
-            this.registerTimeout();
         },
-
-        registerTimeout: function () {
-            var _this = this;
-            this.loadTimeout = setTimeout(function () {
-                _this.logger("load tag timeout exceeded");
-                if (_this.checkIfOneTagIsLoaded()) {
-                    _this.compareCPMs();
-                } else {
-                    _this.timeoutExceeded = true;
-                    _this.logger("no tag was loaded after timeout exceeded.");
-                    //_this.registerMasterFallback();
-
-                    _this.collapseParentFrame();
-                }
-            }, this.settings.challengeTimeout);
-        },
-
-        // this will trigger the rendering of the main ad even if not all ads have responded
-        // this is the worst case and will render all available main ads
-        // Disabled at the moment
-        /*
-        registerMasterFallback: function () {
-            var _this = this;
-            this.logger("register master timeout");
-            this.masterTimeout = setTimeout(function () {
-                _this.logger("master timeout execeeded. Rendering all available 'main' ads.");
-                _this.checkBeforeRender(_this.ads["main"]);
-
-                _this.logglyLog({
-                   type: "warning",
-                   message : "not all ads are rendered",
-                   adsRendered : _this.ads["main"].adsLoaded,
-                   adsRequested : _this.options.numads,
-                   adLoss :  100 - Math.floor((_this.ads["main"].adsLoaded/_this.options.numads) * 100)
-                });
-
-            }, this.settings.masterTimeout);
-
-        },
-        */
 
         adAvailable: function (id, bucket, data) {
             this.ads[bucket].adsLoaded += 1;
             data.id = id;
             this.ads[bucket].loadedAds.push(data);
-            //wait for all ads and then render
+            this.logger("ad available", id);
+            this.checkBucketStatus(bucket);
+        },
+
+        adNoBid: function(id, bucket){
+            this.ads[bucket].adsLoaded += 1;
+            this.ads[bucket].noBid += 1;
+            this.logger("received no bid", id);
+            this.checkBucketStatus(bucket);
+
+        },
+
+        handleAdError : function(id, bucket, adObj, adError){
+            this.logger("Ad Error received");
+            this.logglyLog({
+                type : "error",
+                message : "ad Error received.",
+                ad : adObj,
+                error : adError
+            });
+            // treat as if there where no bid for this ad
+            this.adNoBid(id,bucket);
+
+        },
+
+        checkBucketStatus: function(bucket){
             if (this.ads[bucket].adsLoaded === this.ads[bucket].numads) {
                 this.logger(bucket, "ready");
-                this.ads[bucket].complete = true;
-                //when all ads are ready or timeout is allready exceeded take the first finished ad
-                if (this.checkIfAllTagsAreLoaded() || this.timeoutExceeded) {
+                //when all requested ads are available then this bucket is complete
+                if( this.ads[bucket].noBid === 0){
+                    this.ads[bucket].complete = true;
+                }
+                //when all ads are ready compare their cpm
+                if (this.checkIfAllBucketsAreReady()) {
                     this.compareCPMs();
                 }
             }
         },
 
-        checkIfOneTagIsLoaded: function () {
+        checkIfAllBucketsAreReady: function () {
             for (var i in this.ads) {
-                if (this.ads[i].complete) {
-                    return true;
-                }
-            }
-            return false;
-        },
-
-        checkIfAllTagsAreLoaded: function () {
-            for (var i in this.ads) {
-                if (!this.ads[i].complete) {
+                if (this.ads[i].adsLoaded !== this.ads[i].numads) {
                     return false;
                 }
             }
@@ -308,10 +315,8 @@ ch.tam.addnexusRender = (function () {
         },
 
         compareCPMs: function () {
-            this.logger("compare CPMs");
-            if (this.loadTimeout) {
-                clearTimeout(this.loadTimeout);
-            }
+            this.logger("compare CPMs", this.ads);
+
             var adCPM = 0;
             var highestCPM = -1;
             var bestAd;
@@ -320,6 +325,7 @@ ch.tam.addnexusRender = (function () {
 
             for (var i in this.ads) {
                 tAd = this.ads[i];
+                // only start comparision when all ads in this bucket are sucessfully requested
                 if (tAd.complete) {
                     for (var j = 0; j < this.ads[i].loadedAds.length; j++) {
                         adCPM += parseFloat(this.ads[i].loadedAds[j].cpm);
@@ -332,25 +338,32 @@ ch.tam.addnexusRender = (function () {
                     }
 
                 } else {
-                    this.logger("can not compare "+ this.ads[i].identifier +" because no or delayed response");
+                    this.logger("can not compare "+ this.ads[i].identifier, "no ads: "+ this.ads[i].noBid, "or delayed");
                 }
             }
 
-            if(bestAd.identifier !== this.options.identifier){
-                this.challengeWon = true;
+            if(bestAd){
+                if(bestAd.identifier !== this.options.identifier){
+                    this.challengeWon = true;
+                }
+                bestAd.totalCpm = highestCPM;
+                this.logger("highest cpm "+ bestAd.identifier + " CPM: " + highestCPM);
+                this.checkBeforeRender(bestAd);
+
+            }else{
+                this.logger("no best ad available", this.ads);
+                this.collapseParentFrame();
+                return;
             }
 
-            bestAd.totalCpm = highestCPM;
-            this.logger("highest cpm "+ bestAd.identifier + " CPM: " + highestCPM);
-            this.checkBeforeRender(bestAd);
+
         },
 
         // check if the ad we want to render is the main ad. Otherwise we have to load css and config.json first
         checkBeforeRender: function (ad) {
             var _this = this;
-            if (this.masterTimeout) {
-                clearTimeout(this.masterTimeout);
-            }
+
+            ad = this.sortByCPM(ad);
 
             if (this.challengeWon) {
                 this.logger("load css and json for "+ ad.identifier);
@@ -427,6 +440,18 @@ ch.tam.addnexusRender = (function () {
 
             obj = this.addCustomFields(obj, data);
 
+            // omg we do not have an impression and click pixel
+            if(this.options.template.indexOf("{{impression}}") === -1){
+                this.logger("no impression pixel available. try creating one");
+                this.logglyLog({
+                    type: "warning",
+                    message : "template does not contain tracking pixel."
+                });
+                // render the pixel before the last div
+                this.options.template = this.options.template.replace(/<\/div>$/,"{{impression}}</div>");
+            }
+
+
             //add impression pixels to the native ad
             if (data.native && data.native.impressionTrackers && data.native.impressionTrackers.length > 0) {
                 var impressionTracker = data.native.impressionTrackers;
@@ -470,6 +495,26 @@ ch.tam.addnexusRender = (function () {
             return this.tmpl(this.options.moreBtn, data);
         },
 
+        // function sorts all ads by hightest cpm first to ensure that the best ad is at the top
+        sortByCPM : function(ad){
+
+            this.logger("sort ads by cpm");
+
+            try{
+                ad.loadedAds =  ad.loadedAds.sort(function(a,b){
+                    return b.cpm - a.cpm;
+                });
+            }catch(e){
+                this.logglyLog({
+                    type : "error",
+                    message : "can not sort by cpm",
+                    ad : ad
+                })
+            }
+            return ad;
+
+        },
+
         initClickTracking: function (ad) {
             for (var i = 0; i < ad.loadedAds.length; i++) {
                 if (ad.loadedAds[i].native && ad.loadedAds[i].native.clickTrackers && ad.loadedAds[i].native.clickTrackers.length > 0) {
@@ -486,6 +531,12 @@ ch.tam.addnexusRender = (function () {
             if (elem) {
                 this.logger("add click tracking", elem);
                 this.addEvent(elem, 'click', this.handleElemClick.bind(this, elem, trackingUrl))
+            }else{
+                this.logger("can not add click tracking!");
+                this.logglyLog({
+                    type : "error",
+                    message : "can not ad click tracking. Maybe Id is missing"
+                })
             }
         },
 
@@ -523,6 +574,12 @@ ch.tam.addnexusRender = (function () {
             if (pixel && pixel.length > 0) {
                 this.logger("tracking click", elem);
                 pixel[0].src = trackingUrl + 'timestamp=' +  Math.floor(Math.random()*1000000000);
+            }else{
+                this.logger("no tracking pixel defined");
+                this.logglyLog({
+                    type: "error",
+                    message: "Click not tracked. Can not find tracking pixel."
+                });
             }
         },
 
@@ -561,20 +618,50 @@ ch.tam.addnexusRender = (function () {
 
         collapseParentFrame : function(){
             var type = "warning";
-            var message ="not all ads are rendered. Hide Ad Wraper";
+            var message;
+            this.logger("try to hide ad");
 
-            this.logger("try to hide iframe");
-
-            try{
-                window.parent.document.getElementById(window.frameElement.id).style.height="0px";
-            }catch(e){
-                message = "can not hide iframe "
+            if(this.useMRAID){
+                if (mraid && mraid.getState() === 'loading') {
+                    mraid.addEventListener('ready', this.collapseParentFrame.bind(this));
+                    return;
+                }else if(mraid){
+                    mraid.close();
+                    message = "closing wrapper with mraid";
+                }else{
+                    type = "error";
+                    message = "MRAID not available";
+                }
+            }else if(this.inIframe()){
+                try{
+                    message = "collapsing iframe";
+                    window.parent.document.getElementById(window.frameElement.id).style.height="0px";
+                }catch(e){
+                    message = "can not hide iframe because not same origin";
+                }
+            }else{
+                message = "no iframe and no mraid available";
             }
+
             this.logglyLog({
-                type: "warning",
+                type: type,
                 message : message,
-                renderTime : new Date().getTime() - this.startTime
+                renderTime : new Date().getTime() - this.startTime,
+                adsRequested : this.options.numads,
+                adsAvailable : this.ads["main"].adsLoaded,
+                adsNotAvaible : this.options.numads - this.ads["main"].adsLoaded
             });
+        },
+
+        // checks if script should include MRAID
+        checkForMRAID : function(){
+            if(this.options.supplyType === "mobile_app" ||  (window.anConfigAd && window.anConfigAd.supplyType === "mobile_app")){
+                this.addMRAID();
+                this.useMRAID = true;
+            }else{
+                this.useMRAID = false;
+            }
+            this.logger("use MRAID",this.useMRAID);
         },
 
         // ###########################  HELPER  ###########################
@@ -675,7 +762,7 @@ ch.tam.addnexusRender = (function () {
             var script = document.createElement('script');
             script.type = 'text/javascript';
             script.async = true;
-            script.src = '//cloudfront.loggly.com/js/loggly.tracker-2.1.min.js';
+            script.src = 'https://cloudfront.loggly.com/js/loggly.tracker-2.1.min.js';
             document.getElementsByTagName('head')[0].appendChild(script);
 
             window._LTracker.push(
@@ -703,6 +790,7 @@ ch.tam.addnexusRender = (function () {
                 }
             }
 
+            // adding default values to each log
             data.identifier = this.options.identifier;
             data.userAgent = navigator.userAgent;
             data.appType = window.anConfigAd ? window.anConfigAd.supplyType : "none";
@@ -710,6 +798,8 @@ ch.tam.addnexusRender = (function () {
             data.url = data.type !== "info"? window.location.href : undefined;
             data.inIframe = this.inIframe();
             data.target = this.scriptUrl.join("#");
+            data.mraid = this.useMRAID;
+            data.mraidAvailable = typeof window.mraid !== undefined;
             window._LTracker.push(data);
         },
 
@@ -717,18 +807,34 @@ ch.tam.addnexusRender = (function () {
             window.apntag = window.apntag || {};
             //create a queue on the apntag object
             apntag.anq = apntag.anq || [];
+            var _this = this;
+
                 //load ast.js - async
                 (function () {
                     var d = document, scr = d.createElement('script'), pro = d.location.protocol,
                         tar = d.getElementsByTagName("head")[0];
                     scr.type = 'text/javascript';
                     scr.async = true;
-                    scr.src = ((pro === 'https:') ? 'https' : 'http') + '://acdn.adnxs.com/ast/ast.js';
+                    if(_this.options.useMyAst){
+                        scr.src = "https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/src/myAst.js";
+                    }else{
+                        scr.src = ((pro === 'https:') ? 'https' : 'http') + '://acdn.adnxs.com/ast/ast.js';
+                    }
                     if (!apntag.l) {
                         apntag.l = true;
                         tar.insertBefore(scr, tar.firstChild);
                     }
                 })();
+        },
+
+        addMRAID: function(){
+            this.logger("appending mraid.js to head");
+            var head = document.getElementsByTagName('head').item(0),
+                js = document.createElement('script'),
+                s = 'mraid.js';
+            js.setAttribute('type', 'text/javascript');
+            js.setAttribute('src', s);
+            head.appendChild(js);
         },
 
         // This function is called with the build css in production mode
@@ -776,6 +882,24 @@ ch.tam.addnexusRender = (function () {
                 return true;
             }
         },
+
+
+        generateIdfa : function(){
+            return this.getRandomString(8) + "-" + this.getRandomString(4)+ "-" + this.getRandomString(4)+ "-" + this.getRandomString(4) + "-" + this.getRandomString(12);
+        },
+
+        generateAaid : function(){
+            return this.getRandomString(8) + "-" + this.getRandomString(4)+ "-" + this.getRandomString(4)+ "-" + this.getRandomString(4) + "-" + this.getRandomString(12);
+        },
+
+        getRandomString: function(length){
+                var text = "";
+                var possible = "abcdef0123456789";
+                for( var i=0; i < length; i++ )
+                    text += possible.charAt(Math.floor(Math.random() * possible.length));
+                return text;
+        },
+
 
         parseHash: function () {
             try {
