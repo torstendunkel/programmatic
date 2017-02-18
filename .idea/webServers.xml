@@ -2,16 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="a7cf73db-b5f4-4294-8744-f17d759ac794" name="1blu" url="">
-        <fileTransfer host="30630.webhosting15.1blu.de" port="21" rootFolder="/www/test/">
-          <advancedOptions>
-            <advancedOptions compatibilityMode="true" dataProtectionLevel="Private" />
-          </advancedOptions>
-          <option name="port" value="21" />
-        </fileTransfer>
-      </webServer>
       <webServer id="28df6af4-2b83-4a7b-93e0-7f1f2017f2b3" name="mynewsnet" url="http://mynewsnet.ch">
-        <fileTransfer host="mynewsnet.ch" port="21">
+        <fileTransfer host="mynewsnet.ch" port="21" rootFolder="/anprebid">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

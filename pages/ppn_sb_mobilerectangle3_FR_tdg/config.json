@@ -2,5 +2,6 @@
 "showMore" : true,
 "moreNode" : "span",
 "moreInTxt" : true,
-  "more": "Plus .."
+  "more": "Plus ..",
+  "useMyAst" : true
 }

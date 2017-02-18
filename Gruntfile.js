@@ -283,7 +283,7 @@ module.exports = function(grunt) {
         'compress:main',
         'aws_s3:deploy_compressed',
         'generate_test_page:build',
-        'ftp-deploy:upload_newsnet_build',
+        //'ftp-deploy:upload_newsnet_build',
         'clean:temp'
     ]);
     //building + deploy to stage
@@ -295,7 +295,7 @@ module.exports = function(grunt) {
         'compress:main',
         'aws_s3:stage',
         'generate_test_page:stage',
-        'ftp-deploy:upload_newsnet_stage',
+        //'ftp-deploy:upload_newsnet_stage',
         'clean:temp'
     ]);
 
