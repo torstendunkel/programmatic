@@ -1,4 +1,5 @@
 {
     "template" : "<div id=\"{{id}}\" class=\"innerbox\"><div><div class=\"singlebox bottom left right\"><a href=\"{{href}}\" target=\"_blank\"><img class=\"adimage\" src=\"{{img}}\" alt=\"Werbung\"></a><div class=\"title\"><a href=\"{{href}}\" target=\"_blank\">{{title}}</a></div><div class=\"text\"><a href=\"{{href}}\" target=\"_blank\">{{description}}</a></div><a href=\"{{href}}\" target=\"_blank\"><div class=\"url\">{{sponsored}}</div></a></div></div></div>",
-    "wrapper" : "<div class=\"surroundingbox\"><div class=\"caption\">Anzeige</div>{{content}}</div>"
+    "wrapper" : "<div class=\"surroundingbox\"><div class=\"caption\">Anzeige</div>{{content}}</div>",
+    "useMyAst" : true
 }
