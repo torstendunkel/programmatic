@@ -284,7 +284,8 @@ ch.tam.addnexusRender = (function () {
                 type : "error",
                 message : "ad Error received.",
                 ad : adObj,
-                error : adError
+                error : adError,
+                customAst : this.options.useMyAst || false
             });
             // treat as if there where no bid for this ad
             this.adNoBid(id,bucket);
@@ -648,8 +649,7 @@ ch.tam.addnexusRender = (function () {
                 message : message,
                 renderTime : new Date().getTime() - this.startTime,
                 adsRequested : this.options.numads,
-                adsAvailable : this.ads["main"].adsLoaded,
-                adsNotAvaible : this.options.numads - this.ads["main"].adsLoaded
+                adsAvailable : this.options.numads - this.ads["main"].noBid
             });
         },
 
