@@ -51,9 +51,6 @@ module.exports = function(grunt) {
             },
             images : {
                 files : '<%= pages_images %>'
-            },
-            indexHTML: {
-                files : '<%= pages_indexHTML %>'
             }
         },
         folder_list: {
@@ -100,18 +97,6 @@ module.exports = function(grunt) {
 
         aws: grunt.file.readJSON('s3key.json'), // Read the file
 
-        compress: {
-            main: {
-                options: {
-                    mode: 'gzip'
-                },
-                expand: true,
-                cwd: 'build/',
-                src: ['**/*'],
-                dest: 'temp/compressed/'
-            }
-        },
-
 
         aws_s3: {
             options: {
@@ -125,25 +110,11 @@ module.exports = function(grunt) {
                 options: {
                     bucket: 'media.das.tamedia.ch',
                     differential: true, // Only uploads the files that have changed
-                    displayChangesOnly : true
-                },
-                files: [
-                    //{expand: true, cwd: 'build/', src: ['**'], dest: 'anprebid/build/'},
-                    {expand: true, cwd: 'pages/', src: ['**'], dest: 'anprebid/pages/'}
-                ]
-            },
-            deploy_compressed: {
-                options: {
-                    bucket: 'media.das.tamedia.ch',
-                    differential: true, // Only uploads the files that have changed
                     displayChangesOnly : true,
-                    params: {
-                        ContentEncoding: 'gzip' // applies to all the files!
-                    }
                 },
                 files: [
                     {expand: true, cwd: 'pages/', src: ['**'], dest: 'anprebid/pages/'},
-                    {expand: true, cwd: 'temp/compressed/', src: ['**'], dest: 'anprebid/build/'}
+                    {expand: true, cwd: 'build/', src: ['**'], dest: 'anprebid/build/'}
                 ]
             },
             stage: {
@@ -152,12 +123,12 @@ module.exports = function(grunt) {
                     differential: true, // Only uploads the files that have changed
                     displayChangesOnly : true,
                     params: {
-                        ContentEncoding: 'gzip' // applies to all the files!
+                        //ContentEncoding: 'gzip' // applies to all the files!
                     }
                 },
                 files: [
 
-                    {expand: true, cwd: 'temp/compressed/', src: ['**'], dest: 'anprebid/stage/'}
+                    {expand: true, cwd: 'build/', src: ['**'], dest: 'anprebid/stage/'}
                 ]
             }
         },
@@ -243,7 +214,7 @@ module.exports = function(grunt) {
             domain = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/stage';
         }
         grunt.config.set("enviroment", domain);
-        console.log("setting enviroment to ", domain)
+        console.log("setting enviroment to ", domain);
     });
 
 
@@ -259,8 +230,7 @@ module.exports = function(grunt) {
         'copy:src',  // copies the src (myAst to build folder)
         'prepare_copy_images', // copy the images folder to all builds that have an images folder
         'copy:images',
-        'prepare_copy_indexHTML',
-        'copy:indexHTML'
+        'generate_indexHTML'
     ]);
 
     // Default building without deploying
@@ -280,8 +250,7 @@ module.exports = function(grunt) {
         'clean:temp',
         'clean:build',
         'build',
-        'compress:main',
-        'aws_s3:deploy_compressed',
+        'aws_s3:deploy',
         'generate_test_page:build',
         'ftp-deploy:upload_newsnet_build',
         'clean:temp'
@@ -292,7 +261,6 @@ module.exports = function(grunt) {
         'clean:temp',
         'clean:build',
         'build',
-        'compress:main',
         'aws_s3:stage',
         'generate_test_page:stage',
         'ftp-deploy:upload_newsnet_stage',
