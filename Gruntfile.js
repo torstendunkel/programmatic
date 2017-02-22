@@ -34,6 +34,9 @@ module.exports = function(grunt) {
             renderer_to_pages: {
                 files: '<%= pages %>'
             },
+            jsonp: {
+                files: '<%= pages_jsonp %>'
+            },
 
             src : {
                 files : [
@@ -128,7 +131,8 @@ module.exports = function(grunt) {
                 },
                 files: [
 
-                    {expand: true, cwd: 'build/', src: ['**'], dest: 'anprebid/stage/'}
+                    {expand: true, cwd: 'build/', src: ['**'], dest: 'anprebid/stage/'},
+                    {expand: true, cwd: 'pages/', src: ['**'], dest: 'anprebid/pages/'}
                 ]
             }
         },
@@ -225,6 +229,8 @@ module.exports = function(grunt) {
         'prepare_CSS_to_JS', //creates the files' array for css_to_js task
         'css_to_js:pages',
         'copy_json_config', // translates the config.json to config.js and copies it to all temp folders
+        'prepare_copy_jsonp', // prepares the jsonp config copy
+        'copy:jsonp',
         'prepare_concat', // concats the config.js, renderer.js, and style.js to one file
         'concat:build',
         'copy:src',  // copies the src (myAst to build folder)
@@ -263,7 +269,7 @@ module.exports = function(grunt) {
         'build',
         'aws_s3:stage',
         'generate_test_page:stage',
-        'ftp-deploy:upload_newsnet_stage',
+        //'ftp-deploy:upload_newsnet_stage',
         'clean:temp'
     ]);
 

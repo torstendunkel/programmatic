@@ -1,5 +1,11 @@
 
-@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
 .ppn_sb_mobilerectangle2_IT_tio {
     height: 250px;
     width: 300px;
