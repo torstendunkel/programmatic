@@ -31,6 +31,7 @@ module.exports = function(grunt) {
         },
 
         copy: {
+
             renderer_to_pages: {
                 files: '<%= pages %>'
             },
@@ -116,7 +117,6 @@ module.exports = function(grunt) {
                     displayChangesOnly : true,
                 },
                 files: [
-                    {expand: true, cwd: 'pages/', src: ['**'], dest: 'anprebid/pages/'},
                     {expand: true, cwd: 'build/', src: ['**'], dest: 'anprebid/build/'}
                 ]
             },
@@ -131,8 +131,7 @@ module.exports = function(grunt) {
                 },
                 files: [
 
-                    {expand: true, cwd: 'build/', src: ['**'], dest: 'anprebid/stage/'},
-                    {expand: true, cwd: 'pages/', src: ['**'], dest: 'anprebid/pages/'}
+                    {expand: true, cwd: 'build/', src: ['**'], dest: 'anprebid/stage/'}
                 ]
             }
         },
@@ -218,6 +217,8 @@ module.exports = function(grunt) {
             domain = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/stage';
         }
         grunt.config.set("enviroment", domain);
+        grunt.config.set("env", env);
+
         console.log("setting enviroment to ", domain);
     });
 
@@ -231,6 +232,7 @@ module.exports = function(grunt) {
         'copy_json_config', // translates the config.json to config.js and copies it to all temp folders
         'prepare_copy_jsonp', // prepares the jsonp config copy
         'copy:jsonp',
+        'insert_version',
         'prepare_concat', // concats the config.js, renderer.js, and style.js to one file
         'concat:build',
         'copy:src',  // copies the src (myAst to build folder)
@@ -246,7 +248,7 @@ module.exports = function(grunt) {
         'clean:build',
         'build',
         'generate_test_page', // render the preview.html
-        //'clean:temp'
+        'clean:temp'
 
     ]);
 

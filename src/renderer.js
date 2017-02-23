@@ -6,6 +6,9 @@ ch.tam.addnexusRender = (function () {
     "use strict";
 
     var settings = {
+        version : '%%VERSION%%',  // filled by grunt
+        environment : '%%ENVIRONMENT%%', // filled by grunt
+        scriptBase : '%%SCRIPTBASE%%', // filled by grunt
         identifier: 'ppn_sb_billboard3_DE_20min', //fallback
         member: 3646, // fallback variables
         numads: 4, // fallback variables
@@ -65,8 +68,12 @@ ch.tam.addnexusRender = (function () {
             this.adsLoaded = {};
             this.adBuckets = {};
             this.adErrors = [];
+            this.logs = [];
 
             this.ads = {};
+
+
+            this.logger("start renderer");
 
             this.validateOptions(function () {
                 _this.addAppNexusLib();
@@ -193,8 +200,6 @@ ch.tam.addnexusRender = (function () {
                     targetId: prefix + i,
                     prebid: true
                 };
-
-
 
 
                 //if defined merge the global AppNexus Config to the adObj
@@ -750,7 +755,7 @@ ch.tam.addnexusRender = (function () {
 
         loadStyle: function (cb) {
             var _this = this;
-            this.logger("appending to head", this.baseUrl + this.options.identifier + "/style.css");
+            this.logger("appending to head", this.options.scriptBase + '/' + this.options.identifier + "/style.css");
 
             if(this.preReneredStyle){
                 this.removeElement(this.preReneredStyle);
@@ -763,7 +768,7 @@ ch.tam.addnexusRender = (function () {
             head.appendChild(style);
             style.setAttribute('rel', 'stylesheet');
             style.setAttribute('type', 'text/css');
-            style.setAttribute('href', this.baseUrl + this.options.identifier + '/style.css');
+            style.setAttribute('href', this.options.scriptBase + "/" + this.options.identifier + '/style.css');
 
             style.onload = function () {
                 _this.styleLoaded = true;
@@ -781,19 +786,27 @@ ch.tam.addnexusRender = (function () {
             this.logger("loading json: ", url);
 
             var xobj = new XMLHttpRequest();
+            var href = this.options.scriptBase +  '/' + this.options.identifier + '/' + url;
 
-            var href = this.baseUrl + this.options.identifier + '/' + url;
+            var timeout = setTimeout(function(){
+                _this.logger("Timeout exceeded");
+                _this.loadConfigWithJSONP("timeout");
+            },3000);
 
             xobj.open('GET', href , true);
             xobj.onreadystatechange = function () {
+                if(xobj.readyState === 4){
+                    clearTimeout(timeout);
+                }
                 if (xobj.readyState == 4 && xobj.status == "200") {
                     callback(xobj.responseText);
                 }else if(xobj.readyState == 4 && xobj.status != "200"){
                     _this.loadConfigWithJSONP(xobj.status);
                 }
             };
-
             xobj.send(null);
+
+
         },
 
 
@@ -802,7 +815,7 @@ ch.tam.addnexusRender = (function () {
             var script = document.createElement('script');
             script.type = 'text/javascript';
             script.async = true;
-            script.src = this.basePath + this.enviroment + '/' + this.options.identifier + '/' +this.options.jsonpUrl;
+            script.src = this.options.scriptBase + '/' + this.options.identifier + '/' +this.options.jsonpUrl;
             document.getElementsByTagName('head')[0].appendChild(script);
 
 
@@ -823,6 +836,7 @@ ch.tam.addnexusRender = (function () {
             }
             // sampling 5% if not in sampling group disable loggly logging
             if(Math.random() > this.options.sampling.main && !this.options.debug){
+                this.logger("logging disabled");
                 this.options.logging = "false";
                 return;
             }
@@ -873,7 +887,9 @@ ch.tam.addnexusRender = (function () {
             data.target = this.scriptUrl.join("#");
             data.mraid = this.useMRAID;
             data.referrer = document.referrer;
-            data.mraidAvailable = typeof window.mraid !== undefined;
+            data.mraidAvailable = typeof window.mraid !== "undefined" && typeof window.mraid.getVersion === "function";
+            data.version = this.options.version;
+            data.environment = this.options.environment;
             window._LTracker.push(data);
         },
 
@@ -929,6 +945,9 @@ ch.tam.addnexusRender = (function () {
         },
 
         logger: function () {
+            //save all logs
+            this.logs.push(arguments);
+
             if (this.options && this.options.debug) {
                 var t = this.lastTs ?  new Date().getTime() - this.lastTs : undefined;
                 this.totalTime = this.totalTime !== undefined ? this.totalTime+t : 0;
@@ -984,14 +1003,7 @@ ch.tam.addnexusRender = (function () {
             try {
                 this.hashOptions = {};
                 var temp = this.scriptTag.src.split('#');
-
                 this.scriptUrl = temp;
-
-
-                this.enviroment = temp[0].indexOf("/build/") !== -1 ? "build" : "stage";
-                this.baseUrl = temp[0].replace(/build\/\S*/g, "pages/").replace(/stage\/\S*/g, "pages/"); //only for preview
-                this.basePath = temp[0].replace(/build\/\S*/g, "").replace(/stage\/\S*/g, "");
-
 
                 if (temp.length > 1) {
                     this.hash = temp[1];
