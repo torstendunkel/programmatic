@@ -4,3 +4,4 @@ build
 temp
 .idea/workspace.xmlgrunt
 s3key.json
+.ftppass
