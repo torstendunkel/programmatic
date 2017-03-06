@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: #fff2d3;
 }
 
 html {
@@ -10,7 +11,7 @@ html {
 }
 
 body {
-    width: 100%;
+    width: 700px;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     height: 114px;
 }
