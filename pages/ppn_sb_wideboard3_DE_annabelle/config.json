@@ -1,0 +1,7 @@
+{
+    "template" : "<div class=\"singlebox bottom left right\"><a target=\"_blank\" href=\"{{href}}\"><img class=\"adimage\" alt=\"Werbung\" src=\"{{img}}\"/></a><div class=\"title\"><a target=\"_blank\" href=\"{{href}}\">{{title}}</a></div><div class=\"text\"><a target=\"_blank\" href=\"{{href}}\">{{description}}</a></div><div class=\"url\"><a target=\"_blank\" href=\"{{href}}\">{{moreInTxt}}</a></div></div><div class=\"tnlogo\" style=\"position: absolute; bottom:0; left:0; width:100%; height:15px\">{{impression}}</div>",
+    "wrapper" : "<div class=\"ppn_sb_wideboard3_DE_annabelle\"><div id=\"{{id}}\" class=\"ppninnerbox\"><div class=\"ppncaption\"></div>{{content}}</div></div>",
+    "showMore" : true,
+    "moreNode" : "div",
+    "moreInTxt" : true
+}
