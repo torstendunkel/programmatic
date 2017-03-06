@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #fff2d3;
 }
 
 html {
@@ -18,6 +17,12 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.sbt_partnerad1_tutti{
+    height : 100%;
+    background-color: #fff2d3;
+
 }
 
 .adimage {

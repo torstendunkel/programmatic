@@ -186,7 +186,7 @@ module.exports = function(grunt) {
 
         watch: {
             dev: {
-                files: ['src/*.js','pages/**/*'],
+                files: ['src/*.js','pages/**'],
                 tasks: ['dev'],
                 options: {
                     interrupt: true,

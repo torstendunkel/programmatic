@@ -54,7 +54,23 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="890">
               <caret line="300" column="2" lean-forward="false" selection-start-line="300" selection-start-column="2" selection-end-line="300" selection-end-column="2" />
-              <folding />
+              <folding>
+                <marker date="1488803490000" expanded="true" signature="33:8771" ph="{...}" />
+                <marker date="1488803490000" expanded="true" signature="171:5690" ph="{...}" />
+                <marker date="1488803490000" expanded="true" signature="5406:5684" ph="{...}" />
+                <marker date="1488803490000" expanded="true" signature="5425:5674" ph="{...}" />
+                <marker date="1488803490000" expanded="true" signature="5532:5660" ph="{...}" />
+                <marker date="1488803490000" expanded="true" signature="6241:6752" ph="{...}" />
+                <marker date="1488803490000" expanded="true" signature="6292:6398" ph="{...}" />
+                <marker date="1488803490000" expanded="true" signature="6423:6529" ph="{...}" />
+                <marker date="1488803490000" expanded="true" signature="6561:6602" ph="{...}" />
+                <marker date="1488803490000" expanded="true" signature="6788:7632" ph="[...]" />
+                <marker date="1488803490000" expanded="true" signature="7712:7885" ph="[...]" />
+                <marker date="1488803490000" expanded="true" signature="7954:8173" ph="[...]" />
+                <marker date="1488803490000" expanded="true" signature="8241:8459" ph="[...]" />
+                <marker date="1488803490000" expanded="true" signature="8541:8575" ph="[...]" />
+                <marker date="1488803490000" expanded="true" signature="8651:8764" ph="[...]" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,8 +78,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/sbt_partnerad1_tutti/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+            <state relative-caret-position="375">
+              <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -473,12 +489,12 @@
       <workItem from="1487923782835" duration="835000" />
       <workItem from="1488196547027" duration="3735000" />
       <workItem from="1488527721837" duration="5193000" />
-      <workItem from="1488791878043" duration="7073000" />
+      <workItem from="1488791878043" duration="7727000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="522138000" />
+    <option name="totallyTimeSpent" value="522792000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -876,14 +892,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="890">
           <caret line="300" column="2" lean-forward="false" selection-start-line="300" selection-start-column="2" selection-end-line="300" selection-end-column="2" />
-          <folding />
+          <folding>
+            <marker date="1488803490000" expanded="true" signature="33:8771" ph="{...}" />
+            <marker date="1488803490000" expanded="true" signature="171:5690" ph="{...}" />
+            <marker date="1488803490000" expanded="true" signature="5406:5684" ph="{...}" />
+            <marker date="1488803490000" expanded="true" signature="5425:5674" ph="{...}" />
+            <marker date="1488803490000" expanded="true" signature="5532:5660" ph="{...}" />
+            <marker date="1488803490000" expanded="true" signature="6241:6752" ph="{...}" />
+            <marker date="1488803490000" expanded="true" signature="6292:6398" ph="{...}" />
+            <marker date="1488803490000" expanded="true" signature="6423:6529" ph="{...}" />
+            <marker date="1488803490000" expanded="true" signature="6561:6602" ph="{...}" />
+            <marker date="1488803490000" expanded="true" signature="6788:7632" ph="[...]" />
+            <marker date="1488803490000" expanded="true" signature="7712:7885" ph="[...]" />
+            <marker date="1488803490000" expanded="true" signature="7954:8173" ph="[...]" />
+            <marker date="1488803490000" expanded="true" signature="8241:8459" ph="[...]" />
+            <marker date="1488803490000" expanded="true" signature="8541:8575" ph="[...]" />
+            <marker date="1488803490000" expanded="true" signature="8651:8764" ph="[...]" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/sbt_partnerad1_tutti/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        <state relative-caret-position="375">
+          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding />
         </state>
       </provider>
