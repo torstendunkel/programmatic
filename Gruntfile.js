@@ -185,9 +185,9 @@ module.exports = function(grunt) {
         },
 
         watch: {
-            scripts: {
-                files: ['src/*.js'],
-                tasks: ['ftp-deploy:src'],
+            dev: {
+                files: ['src/*.js','pages/**/*'],
+                tasks: ['dev'],
                 options: {
                     interrupt: true,
                     spawn: true,
@@ -213,9 +213,14 @@ module.exports = function(grunt) {
         var domain;
         if (env === 'build') {
             domain = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/build';
-        } else {
+        } else if(env === 'stage'){
             domain = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/stage';
         }
+        else if (env === 'dev'){
+            domain = 'pages';
+        }
+
+
         grunt.config.set("enviroment", domain);
         grunt.config.set("env", env);
 
@@ -271,7 +276,7 @@ module.exports = function(grunt) {
         'build',
         'aws_s3:stage',
         'generate_test_page:stage',
-        //'ftp-deploy:upload_newsnet_stage',
+        'ftp-deploy:upload_newsnet_stage',
         'clean:temp'
     ]);
 
@@ -279,4 +284,18 @@ module.exports = function(grunt) {
     grunt.registerTask('uploadPages', [
         'ftp-deploy:pages'
     ]);
+
+
+
+    //upload pages to ftp (for preview)
+    grunt.registerTask('dev', [
+        'set_env:dev',
+        'clean:temp',
+        'clean:build',
+        'build',
+        'clean:temp'
+    ]);
+
+
+
 };

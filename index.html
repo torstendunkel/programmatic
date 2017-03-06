@@ -4,8 +4,17 @@
     <meta charset="utf-8"/>
     <script>
         var hash = document.location.hash;
-        document.write("<script src=\"src/renderer.js" + hash + "\"> <\/script>");
-        setTimeout(function(){var adRenderer = new ch.tam.addnexusRender();},100);
+
+        try{
+            hashObj = JSON.parse('{"' + hash.replace('#','').replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"') + '"}')
+        }catch(e){
+            hashObj = {
+                identifier : "ppn_sb_billboard3_DE_20min"
+            };
+        }
+        document.write('<link rel="stylesheet" href="build/' + hashObj.identifier + '/style.css"> <\/link>');
+        document.write("<script src=\"build/" + hashObj.identifier + "/index.js#" + hash + "\"> <\/script>");
+
     </script>
 </head>
 <body>

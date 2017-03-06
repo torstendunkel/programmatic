@@ -1,7 +1,9 @@
 *.idea
+.idea
 node_modules
 build
 temp
 .idea/workspace.xmlgrunt
 s3key.json
 .ftppass
+npm-debug.log

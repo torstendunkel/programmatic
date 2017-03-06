@@ -32,7 +32,6 @@ ch.tam.addnexusRender = (function () {
           info : 0.1,
           warning: 0.2
         },
-        challengeTimeout: 1000,
         trackingPixelClass: 'pixel',
         moreNode: 'div',
         showMore: false,
@@ -87,6 +86,33 @@ ch.tam.addnexusRender = (function () {
                 _this.checkForMRAID();
                 _this.addLoggly();
             });
+
+            //register fallback timer
+            this.checkAstLoaded();
+
+        },
+
+
+        // to get better results in android app try to load the ast again if it is not loaded after a timeout.
+        // Sometimes the js is not executed for no reason.
+        checkAstLoaded: function(){
+            var _this = this;
+            setTimeout(function(){
+                if(!apntag.loaded){
+                    // maybe use different ast and try again
+                    _this.options.useMyAst = true;
+                    _this.astFallbackTriggered = true;
+                    apntag.l = false;
+                    _this.addAppNexusLib();
+
+                    _this.logglyLog({
+                       type : "warning",
+                       message : "AST not loaded. Try to load again with different AST"
+                    },true);
+                }
+
+          },3000);
+
         },
 
         // validates the options object to check if ads can be requested and rendered
@@ -186,6 +212,15 @@ ch.tam.addnexusRender = (function () {
             }
             this.logger("tags defined",tags);
             this.loadAds(tags);
+
+
+            if(this.astFallbackTriggered){
+                this.logglyLog({
+                    type : "warning",
+                    message : "AST loaded with second try."
+                });
+            }
+
         },
 
         generateTagArray: function (tagId, numads, prefix) {
@@ -318,13 +353,6 @@ ch.tam.addnexusRender = (function () {
                 //when all ads are ready compare their cpm
                 if (this.checkIfAllBucketsAreReady()) {
                     this.compareCPMs();
-
-
-                    // this might be because of adblock
-                    if(this.adErrors.length > 0){
-                        this.checkForBlock();
-                    }
-
                 }
             }
         },
@@ -383,11 +411,35 @@ ch.tam.addnexusRender = (function () {
 
             }else{
                 this.logger("no best ad available", this.ads);
-                this.collapseParentFrame();
+
+                if(this.options.passback){
+                    this.handlePassback();
+                }else{
+                    this.collapseParentFrame();
+                }
+            }
+        },
+
+
+        handlePassback: function(){
+            if(this.inIframe()){
+                this.logglyLog({
+                    type : "warning",
+                    message : "can not show ad",
+                    info : "redirecting to passback",
+                    passbackUrl : this.options.passback
+                });
+                //CU
+                window.location.href = this.options.passback;
+            }else{
+                this.logglyLog({
+                    type : "error",
+                    message : "Passback defined but not in iframe"
+                })
             }
 
-
         },
+
 
         // check if the ad we want to render is the main ad. Otherwise we have to load css and config.json first
         checkBeforeRender: function (ad) {
@@ -660,7 +712,10 @@ ch.tam.addnexusRender = (function () {
 
         collapseParentFrame : function(){
             var type = "warning";
-            var message;
+            var message = "can not show ad";
+            var reason = "not enough ads for rendering";
+            var info;
+
             this.logger("try to hide ad");
 
             if(this.useMRAID){
@@ -669,32 +724,36 @@ ch.tam.addnexusRender = (function () {
                     return;
                 }else if(mraid){
                     mraid.close();
-                    message = "closing wrapper with mraid";
+                    info = "closing wrapper with mraid";
                 }else{
                     type = "error";
-                    message = "MRAID not available";
+                    info = "MRAID not available";
                 }
             }else if(this.inIframe()){
                 try{
-                    message = "collapsing iframe";
+                    info = "collapsing iframe";
                     window.parent.document.getElementById(window.frameElement.id).style.height="0px";
                 }catch(e){
-                    message = "can not hide iframe because not same origin";
+                    info = "can not hide iframe because not same origin";
                 }
             }else{
-                message = "no iframe and no mraid available";
+                info = "no iframe and no mraid available";
             }
 
-            // if ad errors are present we dont need to send log because an error was allready sent
-            if(this.adErrors.length === 0){
-                this.logglyLog({
-                    type: type,
-                    message : message,
-                    renderTime : new Date().getTime() - this.startTime,
-                    adsRequested : this.options.numads,
-                    adsAvailable : this.options.numads - this.ads["main"].noBid
-                });
+            // in case of ad errors there is probably an adblock active
+            if(this.adErrors.length !== 0){
+                reason = "add errors received";
             }
+
+            this.logglyLog({
+                type: type,
+                message : message,
+                info : info,
+                reason: reason,
+                renderTime : new Date().getTime() - this.startTime,
+                adsRequested : this.options.numads,
+                adsAvailable : this.options.numads - this.ads["main"].noBid
+            });
         },
 
         // checks if script should include MRAID
@@ -786,7 +845,7 @@ ch.tam.addnexusRender = (function () {
             this.logger("loading json: ", url);
 
             var xobj = new XMLHttpRequest();
-            var href = this.options.scriptBase +  '/' + this.options.identifier + '/' + url;
+            var href = this.settings.scriptBase +  '/' + this.options.identifier + '/' + url;
 
             var timeout = setTimeout(function(){
                 _this.logger("Timeout exceeded");
@@ -815,7 +874,7 @@ ch.tam.addnexusRender = (function () {
             var script = document.createElement('script');
             script.type = 'text/javascript';
             script.async = true;
-            script.src = this.options.scriptBase + '/' + this.options.identifier + '/' +this.options.jsonpUrl;
+            script.src = this.settings.scriptBase + '/' + this.options.identifier + '/' +this.options.jsonpUrl;
             document.getElementsByTagName('head')[0].appendChild(script);
 
 

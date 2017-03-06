@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="28df6af4-2b83-4a7b-93e0-7f1f2017f2b3" name="mynewsnet" url="http://mynewsnet.ch/anprebid">
+      <webServer id="28df6af4-2b83-4a7b-93e0-7f1f2017f2b3" name="mynewsnet" url="">
         <fileTransfer host="mynewsnet.ch" port="21" rootFolder="/anprebid">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
