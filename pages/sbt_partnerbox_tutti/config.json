@@ -3,6 +3,7 @@
   "customFields" : {
     "price" : "price"
   },
-  "wrapper" :"<div><script> (function(){ if(document.referrer.indexOf('//www.') === -1){ try{ document.body.className = 'mobile'; }catch(e){} }else if(document.referrer === \"\"){ document.body.className = 'mobile app'; } })(); </script> <div class=\"container\">{{content}}</div></div>",
-  "template" : " <a class=\"mb_link mb_cf\" href=\"{{href}}\" target=\"_blank\">{{impression}} <img class=\"mb_img\" src=\"{{img}}\" width=\"70\" height=\"70\"> <div class=\"mb_box\"> <h1 class=\"mb_head\">{{title}}</h1> <p class=\"mb_text\">{{description}}</p> <em class=\"mb_address\">{{href}}</em> </div> </a>"
+  "wrapper" :"<div><div class=\"container\">{{content}}</div></div>",
+  "template" : "<a class=\"mb_link mb_cf\" href=\"{{href}}\" target=\"_blank\">{{impression}} <img class=\"mb_img\" src=\"{{img}}\" height=\"70\"> <div class=\"mb_box\"> <h1 class=\"mb_head\">{{title}}</h1> <p class=\"mb_text\">{{description}}</p> <em class=\"mb_address\">{{sponsored}}</em> </div> </a>",
+  "script" : "var ref; try{ ref = window.parent.document.location.href; }catch(e){ ref = document.referrer; } var height; if(ref.indexOf('/www.') !== -1){ bodyClass = \"desktop\"; height = \"90px\"; }else if(ref.indexOf('/m.') !== -1){ bodyClass = \"mobile\"; height = \"70px\"; }else{ bodyClass = \"mobile app\"; height = \"70px\"; } document.body.className=bodyClass; try{ window.parent.document.getElementById(window.frameElement.id).style.height=height; window.parent.document.getElementById(window.frameElement.id).style.width=\"100%\"; }catch(e){}"
 }
