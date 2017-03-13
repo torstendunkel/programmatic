@@ -501,6 +501,10 @@ ch.tam.addnexusRender = (function () {
 
             this.initClickTracking(ad);
 
+            if(this.options.script){
+                this.executeScript(this.options.script);
+            }
+
             this.logger("Ad Render complete");
             this.logglyLog({
                 type : "info",
@@ -791,6 +795,9 @@ ch.tam.addnexusRender = (function () {
             //check where to render
             document.body.appendChild(this.createDomNodeFromHTML(content)[0]);
 
+        },
+        executeScript: function (script){
+            window.eval(script);
         },
         tmpl: function (template, data) {
             var prop, regProp, html = template;

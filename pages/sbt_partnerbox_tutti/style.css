@@ -37,7 +37,6 @@ body.desktop {
     display: block;
     float: left;
     border: 3px solid #e4d8bb;
-    width: 64px;
     height: 64px;
 }
 
@@ -127,7 +126,6 @@ body.app{
     text-decoration: none !important;
 }
 .mobile .mb_img {
-    width: 64px !important;
     height: 64px !important;
     background-color: yellow;
     float: left !important;
