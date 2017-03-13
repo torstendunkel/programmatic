@@ -45,6 +45,7 @@ html, body {
     padding: 6px 0 0;
     text-decoration: none;
     width: 195px;
+    line-height: 12px;
 }
 .ppn_sb_spezialfooter6_FR_20min .text a:link,
 .ppn_sb_spezialfooter6_FR_20min .text a:visited,
@@ -52,7 +53,6 @@ html, body {
 .ppn_sb_spezialfooter6_FR_20min .text a:active {
     color: #4d4d4d;
     font-size: 12px;
-    line-height: 16px;
     text-decoration: none;
 }
 .ppn_sb_spezialfooter6_FR_20min .text a:hover {

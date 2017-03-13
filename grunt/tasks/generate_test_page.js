@@ -98,7 +98,7 @@ module.exports = function(grunt) {
             //var scriptSrc = 'build/'+identifier[1]+'/';
             var scriptSrc = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/'+enviroment+'/'+identifier[1]+'/index.js';
             var templateUrl = '&lt;script src="https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/build/'+identifier[1]+'/index.js#tagid={ADD_ID}"&gt;&lt;/script&gt;';
-            var htmlView = 'http://mynewsnet.ch/anprebid/' + enviroment + "/" +identifier[1] +"/";
+            var htmlView = 'https://d1rkf0bq85yx06.cloudfront.net/anprebid/' + enviroment + "/" +identifier[1] +"/index.html";
             //var preview = "index.html#debug=1&identifier="+identifier[1];
 
             if(identifier.length === 3){

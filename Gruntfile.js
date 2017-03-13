@@ -107,8 +107,8 @@ module.exports = function(grunt) {
                 accessKeyId: '<%= aws.AWSAccessKeyId %>', // Use the variables
                 secretAccessKey: '<%= aws.AWSSecretKey %>', // You can also use env variables
                 region: 'eu-west-1',
-                uploadConcurrency: 20, // 5 simultaneous uploads
-                downloadConcurrency: 20 // 5 simultaneous downloads
+                uploadConcurrency: 20,
+                downloadConcurrency: 20
             },
             deploy: {
                 options: {
@@ -135,6 +135,7 @@ module.exports = function(grunt) {
                 ]
             }
         },
+        /*
         'ftp-deploy': {
             pages: {
                 auth: {
@@ -183,7 +184,7 @@ module.exports = function(grunt) {
                 dest: '/anprebid/build/'
             }
         },
-
+        */
         watch: {
             dev: {
                 files: ['src/*.js','pages/**'],
@@ -263,9 +264,9 @@ module.exports = function(grunt) {
         'clean:temp',
         'clean:build',
         'build',
-        'aws_s3:deploy',
         'generate_test_page:build',
-        'ftp-deploy:upload_newsnet_build',
+        'aws_s3:deploy',
+        //'ftp-deploy:upload_newsnet_build',
         'clean:temp'
     ]);
     //building + deploy to stage
@@ -274,9 +275,9 @@ module.exports = function(grunt) {
         'clean:temp',
         'clean:build',
         'build',
-        'aws_s3:stage',
         'generate_test_page:stage',
-        'ftp-deploy:upload_newsnet_stage',
+        'aws_s3:stage',
+        //'ftp-deploy:upload_newsnet_stage',
         'clean:temp'
     ]);
 

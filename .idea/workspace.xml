@@ -21,30 +21,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="renderer.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="renderer.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/renderer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3540">
-              <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+            <state relative-caret-position="-333">
+              <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding>
-                <element signature="e#29949#30259#0" expanded="false" />
-                <element signature="e#30472#30801#0" expanded="false" />
-                <element signature="e#30851#30984#0" expanded="false" />
-                <element signature="e#37400#37752#0" expanded="false" />
-                <element signature="e#37872#38285#0" expanded="false" />
-                <element signature="e#38330#38427#0" expanded="false" />
-                <marker date="1488794081000" expanded="true" signature="1444:1456" ph="..." />
+                <element signature="e#29777#30087#0" expanded="false" />
+                <element signature="e#30300#30629#0" expanded="false" />
+                <element signature="e#30679#30812#0" expanded="false" />
+                <element signature="e#30848#31701#0" expanded="false" />
+                <element signature="e#37245#37597#0" expanded="false" />
+                <element signature="e#37717#38130#0" expanded="false" />
+                <element signature="e#38175#38272#0" expanded="false" />
+                <marker date="1489392958000" expanded="true" signature="1444:1456" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -52,74 +43,90 @@
       <file leaf-file-name="Gruntfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gruntfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="890">
-              <caret line="300" column="2" lean-forward="false" selection-start-line="300" selection-start-column="2" selection-end-line="300" selection-end-column="2" />
+            <state relative-caret-position="252">
+              <caret line="227" column="19" lean-forward="false" selection-start-line="227" selection-start-column="16" selection-end-line="227" selection-end-column="19" />
               <folding>
-                <marker date="1488803490000" expanded="true" signature="33:8771" ph="{...}" />
-                <marker date="1488803490000" expanded="true" signature="171:5690" ph="{...}" />
-                <marker date="1488803490000" expanded="true" signature="5406:5684" ph="{...}" />
-                <marker date="1488803490000" expanded="true" signature="5425:5674" ph="{...}" />
-                <marker date="1488803490000" expanded="true" signature="5532:5660" ph="{...}" />
-                <marker date="1488803490000" expanded="true" signature="6241:6752" ph="{...}" />
-                <marker date="1488803490000" expanded="true" signature="6292:6398" ph="{...}" />
-                <marker date="1488803490000" expanded="true" signature="6423:6529" ph="{...}" />
-                <marker date="1488803490000" expanded="true" signature="6561:6602" ph="{...}" />
-                <marker date="1488803490000" expanded="true" signature="6788:7632" ph="[...]" />
-                <marker date="1488803490000" expanded="true" signature="7712:7885" ph="[...]" />
-                <marker date="1488803490000" expanded="true" signature="7954:8173" ph="[...]" />
-                <marker date="1488803490000" expanded="true" signature="8241:8459" ph="[...]" />
-                <marker date="1488803490000" expanded="true" signature="8541:8575" ph="[...]" />
-                <marker date="1488803490000" expanded="true" signature="8651:8764" ph="[...]" />
+                <element signature="e#3923#5357#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/sbt_partnerad1_tutti/style.css">
+      <file leaf-file-name="generate_test_page.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grunt/tasks/generate_test_page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+            <state relative-caret-position="214">
+              <caret line="100" column="24" lean-forward="false" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/juicead1_default/template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="insert_env_vars.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grunt/tasks/insert_env_vars.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="67" lean-forward="false" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/juicead1_android_video_DE_20min/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_immo/style.css">
+      <file leaf-file-name="pageWrapper.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grunt/pageWrapper.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adPreviewTmpl.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grunt/adPreviewTmpl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_FR_20min/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="47" column="19" lean-forward="false" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_FR_24heures/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="44" column="44" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_DE_20min/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="48" column="18" lean-forward="false" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="preview.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/preview.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/html/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -129,24 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>baseUrl</find>
-      <find>basePath</find>
-      <find>loadJSON</find>
-      <find>ENVIRONMET</find>
-      <find>scriptbase%</find>
-      <find>jsonp</find>
-      <find>page</find>
-      <find>style</find>
-      <find>%%SCRIPTBASE%%</find>
-      <find>loading json</find>
-      <find>head</find>
-      <find>appnexus</find>
-      <find>checkForMRAID</find>
-      <find>adErrors</find>
-      <find>useMyAst</find>
-      <find>astFallbackTriggered</find>
-      <find>aderr</find>
-      <find>checkForBlock</find>
       <find>addAppNex</find>
       <find>coll</find>
       <find>collapseParentFrame</find>
@@ -159,6 +148,24 @@
       <find>set_env</find>
       <find>scriptbase</find>
       <find>parseHASH</find>
+      <find>addClickTracking</find>
+      <find>this.ads</find>
+      <find>render:</find>
+      <find>shrink</find>
+      <find>comparec</find>
+      <find>evgrunt</find>
+      <find>http:</find>
+      <find>https:</find>
+      <find>function r(e) {</find>
+      <find>0.6</find>
+      <find>https</find>
+      <find>redirect</find>
+      <find>handlePassback</find>
+      <find>useMyAs</find>
+      <find>useM</find>
+      <find>logglylog</find>
+      <find>log</find>
+      <find>astFallbackTriggered</find>
     </findStrings>
     <replaceStrings>
       <replace>\&quot;</replace>
@@ -192,19 +199,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/juicead1_android_video_RO_20min/style.css" />
-        <option value="$PROJECT_DIR$/pages/juicead1_default/style.css" />
-        <option value="$PROJECT_DIR$/pages/juicead1_desktop_text_DE_20min/style.css" />
-        <option value="$PROJECT_DIR$/pages/juicead1_desktop_video_DE_bernerzeitung/style.css" />
-        <option value="$PROJECT_DIR$/pages/juicead1_desktop_video_DE_derbund/style.css" />
-        <option value="$PROJECT_DIR$/pages/juicead1_desktop_video_DE_tagesanzeiger/style.css" />
-        <option value="$PROJECT_DIR$/pages/juicead1_desktop_video_ro_24heures/style.css" />
-        <option value="$PROJECT_DIR$/pages/juicead1_desktop_video_RO_tgd/style.css" />
-        <option value="$PROJECT_DIR$/pages/juicead1_ios_text_DE_20min/style.css" />
-        <option value="$PROJECT_DIR$/pages/juicead1_ios_text_DE_bazonline/style.css" />
-        <option value="$PROJECT_DIR$/pages/juicead1_ios_text_DE_bernerzeitung/style.css" />
-        <option value="$PROJECT_DIR$/pages/juicead1_ios_text_DE_derbund/style.css" />
-        <option value="$PROJECT_DIR$/pages/juicead1_ios_text_DE_tagesanzeiger/style.css" />
         <option value="$PROJECT_DIR$/pages/juicead1_ios_text_RO_20min.1/style.css" />
         <option value="$PROJECT_DIR$/pages/juicead1_ios_video_DE_20min/style.css" />
         <option value="$PROJECT_DIR$/pages/juicead1_ios_video_DE_bazonline/style.css" />
@@ -236,13 +230,26 @@
         <option value="$PROJECT_DIR$/build/juicead1_android_text_DE_20min/index.js" />
         <option value="$PROJECT_DIR$/.ftppass" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/renderer.js" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pages/juicead1_android_video_DE_20min/style.css" />
         <option value="$PROJECT_DIR$/build/juicead1_default/index.html" />
         <option value="$PROJECT_DIR$/pages/juicead1_default/template.html" />
         <option value="$PROJECT_DIR$/pages/sbt_partnerad1_tutti/style.css" />
+        <option value="$PROJECT_DIR$/build/juicead1_android_text_DE_bazonline/index.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.html" />
+        <option value="$USER_HOME$/Desktop/inapptest.html" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_immostreet/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_FR_immostreet/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_immostreet/style.css" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.js" />
+        <option value="$USER_HOME$/Desktop/Text_Bild Ads.htm" />
+        <option value="$PROJECT_DIR$/src/myAst.js" />
+        <option value="$PROJECT_DIR$/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/grunt/tasks/generate_test_page.js" />
+        <option value="$PROJECT_DIR$/grunt/adPreviewTmpl.html" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_FR_20min/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_DE_20min/style.css" />
+        <option value="$PROJECT_DIR$/src/renderer.js" />
       </list>
     </option>
   </component>
@@ -278,7 +285,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -315,25 +321,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sbt_partnerad1_tutti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="programmatic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="programmatic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="html" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -350,14 +342,97 @@
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="juicead1_default" />
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_spezialfooter6_FR_24heures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_spezialfooter6_FR_20min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ppn_sb_spezialfooter6_DE_20min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grunt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grunt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -489,12 +564,16 @@
       <workItem from="1487923782835" duration="835000" />
       <workItem from="1488196547027" duration="3735000" />
       <workItem from="1488527721837" duration="5193000" />
-      <workItem from="1488791878043" duration="7727000" />
+      <workItem from="1488791878043" duration="9979000" />
+      <workItem from="1488877908386" duration="6310000" />
+      <workItem from="1488959422611" duration="1453000" />
+      <workItem from="1489053558389" duration="4631000" />
+      <workItem from="1489389493912" duration="3474000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="522792000" />
+    <option name="totallyTimeSpent" value="540912000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -507,16 +586,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1363" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2918455" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23709293" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14614774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30268198" sideWeight="0.50394946" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32981783" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20692368" sideWeight="0.49605057" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36113298" sideWeight="0.49605057" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -542,146 +621,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/juicead1_ios_video_RO_20min/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/juicead1_ios_video_RO_tagesanzeiger/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/juicead1_mweb_text_de_20min/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/juicead1_mweb_text_de_bernerzeitung/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="72" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/juicead1_mweb_text_ro_20min/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/juicead1_mweb_text_ro_derbund/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/juicead1_android_text_DE_bernerzeitung/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/juicead1_desktop_text_DE_tagesanzeiger/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_20min/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilehalfpage4_DE_20min/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="66" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/juicead1_desktop_text_DE_bernerzeitung/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_annabelle/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="41" lean-forward="false" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_contentboard2_DE_derbund/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_rectangle3_FR_lematin/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_20min/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/juicead1_android_text_DE_20min/config_jsonp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/juicead1_android_text_RO_20min/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="1" column="16079" lean-forward="false" selection-start-line="1" selection-start-column="16074" selection-end-line="1" selection-end-column="16079" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/ppn_sb_mobilerectangle2_DE_20min/config_jsonp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_20min/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_20min/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -727,13 +666,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/juicead1_android_text_DE_20min/config.js" />
-    <entry file="file://$PROJECT_DIR$/grunt/tasks/generate_test_page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="58" column="8" lean-forward="false" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grunt/tasks/prepare_copy.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -780,7 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -788,7 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -796,7 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -804,7 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,15 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grunt/tasks/insert_env_vars.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="67" lean-forward="false" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -828,23 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="140" lean-forward="false" selection-start-line="1" selection-start-column="140" selection-end-line="1" selection-end-column="140" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3540">
-          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-          <folding>
-            <element signature="e#29949#30259#0" expanded="false" />
-            <element signature="e#30472#30801#0" expanded="false" />
-            <element signature="e#30851#30984#0" expanded="false" />
-            <element signature="e#37400#37752#0" expanded="false" />
-            <element signature="e#37872#38285#0" expanded="false" />
-            <element signature="e#38330#38427#0" expanded="false" />
-            <marker date="1488794081000" expanded="true" signature="1444:1456" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -852,7 +754,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/juicead1_default/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/juicead1_android_text_DE_bazonline/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="631" lean-forward="false" selection-start-line="0" selection-start-column="597" selection-end-line="0" selection-end-column="631" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -860,6 +782,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/sbt_partnerad1_tutti/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_rectangle3_IT_autoonline/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_rectangle3_IT_autoonline/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/juicead1_default/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grunt/tasks/insert_env_vars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="67" lean-forward="false" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -872,51 +829,172 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/juicead1_default/index.html">
+    <entry file="file://$USER_HOME$/Desktop/inapptest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="525">
+          <caret line="35" column="46" lean-forward="false" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_IT_immostreet/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="30" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/juicead1_default/template.html">
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_FR_immostreet/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_leaderboard3_DE_immostreet/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Text_Bild Ads.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10470">
+          <caret line="698" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1526" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <marker date="1489054250000" expanded="true" signature="25214:25423" ph="..." />
+            <marker date="1489054250000" expanded="true" signature="63099:63195" ph="..." />
+            <marker date="1489054250000" expanded="true" signature="63234:63253" ph="..." />
+            <marker date="1489054250000" expanded="true" signature="63264:63270" ph=" " />
+            <marker date="1489054250000" expanded="true" signature="63304:63316" ph="..." />
+            <marker date="1489054250000" expanded="true" signature="64262:64313" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myAst.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="43" lean-forward="false" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grunt/pageWrapper.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grunt/tasks/generate_test_page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="100" column="24" lean-forward="false" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grunt/adPreviewTmpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/preview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="223" column="31" lean-forward="true" selection-start-line="223" selection-start-column="31" selection-end-line="223" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_FR_24heures/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="44" column="44" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_FR_20min/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="47" column="19" lean-forward="false" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_DE_20min/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="48" column="18" lean-forward="false" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="890">
-          <caret line="300" column="2" lean-forward="false" selection-start-line="300" selection-start-column="2" selection-end-line="300" selection-end-column="2" />
+        <state relative-caret-position="252">
+          <caret line="227" column="19" lean-forward="false" selection-start-line="227" selection-start-column="16" selection-end-line="227" selection-end-column="19" />
           <folding>
-            <marker date="1488803490000" expanded="true" signature="33:8771" ph="{...}" />
-            <marker date="1488803490000" expanded="true" signature="171:5690" ph="{...}" />
-            <marker date="1488803490000" expanded="true" signature="5406:5684" ph="{...}" />
-            <marker date="1488803490000" expanded="true" signature="5425:5674" ph="{...}" />
-            <marker date="1488803490000" expanded="true" signature="5532:5660" ph="{...}" />
-            <marker date="1488803490000" expanded="true" signature="6241:6752" ph="{...}" />
-            <marker date="1488803490000" expanded="true" signature="6292:6398" ph="{...}" />
-            <marker date="1488803490000" expanded="true" signature="6423:6529" ph="{...}" />
-            <marker date="1488803490000" expanded="true" signature="6561:6602" ph="{...}" />
-            <marker date="1488803490000" expanded="true" signature="6788:7632" ph="[...]" />
-            <marker date="1488803490000" expanded="true" signature="7712:7885" ph="[...]" />
-            <marker date="1488803490000" expanded="true" signature="7954:8173" ph="[...]" />
-            <marker date="1488803490000" expanded="true" signature="8241:8459" ph="[...]" />
-            <marker date="1488803490000" expanded="true" signature="8541:8575" ph="[...]" />
-            <marker date="1488803490000" expanded="true" signature="8651:8764" ph="[...]" />
+            <element signature="e#3923#5357#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/sbt_partnerad1_tutti/style.css">
+    <entry file="file://$PROJECT_DIR$/src/renderer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="-333">
+          <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding>
+            <element signature="e#29777#30087#0" expanded="false" />
+            <element signature="e#30300#30629#0" expanded="false" />
+            <element signature="e#30679#30812#0" expanded="false" />
+            <element signature="e#30848#31701#0" expanded="false" />
+            <element signature="e#37245#37597#0" expanded="false" />
+            <element signature="e#37717#38130#0" expanded="false" />
+            <element signature="e#38175#38272#0" expanded="false" />
+            <marker date="1489392958000" expanded="true" signature="1444:1456" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

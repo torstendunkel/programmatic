@@ -99,8 +99,6 @@ ch.tam.addnexusRender = (function () {
             var _this = this;
             setTimeout(function(){
                 if(!apntag.loaded){
-                    // maybe use different ast and try again
-                    _this.options.useMyAst = true;
                     _this.astFallbackTriggered = true;
                     apntag.l = false;
                     _this.addAppNexusLib();
@@ -773,8 +771,7 @@ ch.tam.addnexusRender = (function () {
             this.logglyLog({
                 type : "info",
                 message : "ad errors received",
-                errors : this.adErrors,
-                customAst : this.options.useMyAst || false
+                errors : this.adErrors
             })
         },
 
@@ -923,8 +920,17 @@ ch.tam.addnexusRender = (function () {
                 return;
             }
 
+
             // with this param once set you can log all events in this session from now on
             this.forceSession = this.forceSession ? true : forceLog;
+            // log the first occurrence as the normal event and all following as type followup to do better analysis
+            if(this.forceSession){
+                if(this.followUp){
+                    data.type = "followup";
+                }
+                this.followUp = true;
+            }
+
 
             //extra sampling for log types when not in debug mode
             if(!this.options.debug && !this.forceSession){
@@ -940,8 +946,8 @@ ch.tam.addnexusRender = (function () {
             data.identifier = this.options.identifier;
             data.userAgent = navigator.userAgent;
             data.appType = window.anConfigAd ? window.anConfigAd.supplyType : "none";
-            //just pass the url when warning or error
-            data.url = data.type !== "info"? window.location.href : undefined;
+            // just pass the url when warning or error
+            data.url = window.location.href;
             data.inIframe = this.inIframe();
             data.target = this.scriptUrl.join("#");
             data.mraid = this.useMRAID;
@@ -964,11 +970,7 @@ ch.tam.addnexusRender = (function () {
                         tar = d.getElementsByTagName("head")[0];
                     scr.type = 'text/javascript';
                     scr.async = true;
-                    if(_this.options.useMyAst){
-                        scr.src = ((pro === 'https:') ? 'https' : 'http') + '://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/src/myAst.js';
-                    }else{
-                        scr.src = ((pro === 'https:') ? 'https' : 'http') + '://acdn.adnxs.com/ast/ast.js';
-                    }
+                    scr.src = ((pro === 'https:') ? 'https' : 'http') + '://acdn.adnxs.com/ast/ast.js';
                     if (!apntag.l) {
                         apntag.l = true;
                         tar.insertBefore(scr, tar.firstChild);

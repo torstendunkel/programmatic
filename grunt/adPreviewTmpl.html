@@ -16,21 +16,13 @@
             ifrm.document.open();
             ifrm.document.write('<script src="%%SCRIPTSRC%%" async><\/script>');
             ifrm.document.close();
+
+
         };
         var observer = new IntersectionObserver(callback);
         var target = document.getElementById("%%ifrmID%%");
         observer.observe(target);
 
-    </script>
-    <script>
-        /*
-        setTimeout(function () {
-            for (var i = 0; i < json.tags.length; i++) {
-                document.getElementById("%%ifrmID%%").contentWindow.adRenderer.adAvailable("ad" + i,"main", {native: json.tags[i].ads["0"].rtb.native.native["0"]});
-            }
-        }, 2000);
-
-        */
     </script>
     </li>
 
