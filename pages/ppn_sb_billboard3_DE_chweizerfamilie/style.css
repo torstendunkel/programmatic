@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+
+.ppn_sb_rectangle1_DE_chweizerfamilie {
+    width: 994px;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: white;
+    position: relative;
+    border-bottom: 1px solid #DEE4E8;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_rectangle1_DE_chweizerfamilie .ppninnerbox {
+    width: 994px;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: white;
+    position: relative;
+}
+.ppn_sb_rectangle1_DE_chweizerfamilie .singlebox {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    float: left;
+    margin: 0;
+    margin-right: 46px;
+    padding: 0;
+    overflow: hidden;
+    background: white;
+    position: relative;
+}
+.ppn_sb_rectangle1_DE_chweizerfamilie .singlebox:last-child {
+  margin: 0;
+}
+.ppn_sb_rectangle1_DE_chweizerfamilie .title {
+    cursor: pointer;
+    width: 290px;
+    max-height: 20px;
+    overflow: hidden;
+    margin: 180px 10px 5px 10px;
+    color: #4A4A4A;
+    font: 600 16px/20px 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+}
+.ppn_sb_rectangle1_DE_chweizerfamilie .title a:link, .ppn_sb_rectangle1_DE_chweizerfamilie .title a:visited, .ppn_sb_rectangle1_DE_chweizerfamilie .title a:active {
+    color: #4A4A4A;
+    text-decoration: none;
+}
+.ppn_sb_rectangle1_DE_chweizerfamilie .title a:hover {
+    color: #DE232B;
+    text-decoration: none;
+}
+.ppn_sb_rectangle1_DE_chweizerfamilie .text {
+    cursor: pointer;
+    position: relative;
+    float: left;
+    width: 280px;
+    max-height: 30px;
+    overflow: hidden;
+    margin: 1px 10px;
+    color: #4A4A4A;
+    font: 400 11px/15px 'Poppins', sans-serif;
+    text-transform: none;
+    text-align: left;
+}
+.ppn_sb_rectangle1_DE_chweizerfamilie .text a:link, .ppn_sb_rectangle1_DE_chweizerfamilie .text a:visited, .ppn_sb_rectangle1_DE_chweizerfamilie .text a:hover, .ppn_sb_rectangle1_DE_chweizerfamilie .text a:active {
+    color: #4A4A4A;
+    text-decoration: none;
+}
+.ppn_sb_rectangle1_DE_chweizerfamilie .text a:hover {
+    color: #4A4A4A;
+    text-decoration: none;
+}
+.ppn_sb_rectangle1_DE_chweizerfamilie .text span.url {
+	 cursor: pointer;
+   display: inline;
+   color: #4A4A4A;
+   font: 600 12px/15px 'Poppins', sans-serif;
+   text-align: left;
+}
+.ppn_sb_rectangle1_DE_chweizerfamilie .url a, .ppn_sb_rectangle1_DE_chweizerfamilie .url a:link, .ppn_sb_rectangle1_DE_chweizerfamilie .url a:visited, .ppn_sb_rectangle1_DE_chweizerfamilie .url a:hover, .ppn_sb_rectangle1_DE_chweizerfamilie .url a:active {
+    color: #DE232B;
+    text-decoration: none;
+}
+.ppn_sb_rectangle1_DE_chweizerfamilie .url a:hover {
+    color: #DE232B;
+    text-decoration: none;
+}
+.ppn_sb_rectangle1_DE_chweizerfamilie .adimage {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float: left;
+}
+.ppn_sb_rectangle1_DE_chweizerfamilie img.adimage {
+	width: 300px;
+	height: 168px;
+	margin: 0px;
+  border-bottom: 4px solid #DE232B;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ppn_sb_rectangle1_DE_chweizerfamilie .ppncaption {
+    display: none;
+}
+.ppn_sb_rectangle1_DE_chweizerfamilie .tnlogo > a{
+  position: absolute;
+	right: 0;
+	bottom: -1px;
+  padding: 2px 3px 1px 3px;
+	background: white;
+  border: 1px solid #DEE4E8;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+	font: 600 8px/8px 'Poppins', sans-serif;
+	color: #DEE4E8;
+	text-decoration: none;
+  text-transform: uppercase;
+}
+.ppn_sb_rectangle1_DE_chweizerfamilie  tnlogo{
+position: absolute; bottom:0; left:0; width:100%; height:15px;
+}
