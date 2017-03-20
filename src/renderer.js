@@ -30,7 +30,7 @@ ch.tam.addnexusRender = (function () {
           main : 0.05, // main sampling all other types are multiplied with this. e.g. 5% of the users will send logs but only 10% of these 5% will send info logs
           error : 1,
           info : 0.1,
-          warning: 0.2
+          warning: 0.1
         },
         trackingPixelClass: 'pixel',
         moreNode: 'div',

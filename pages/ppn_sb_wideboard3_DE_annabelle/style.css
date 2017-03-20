@@ -31,7 +31,7 @@
   color: #1f1f1f;
 	font: 600 16px/20px 'Poppins', sans-serif;
 	text-align: center;
-  padding-top: 13px;
+  padding-top: 3px;
 }
 .ppn_sb_wideboard3_DE_annabelle .title a:link, .ppn_sb_wideboard3_DE_annabelle .title a:visited, .ppn_sb_wideboard3_DE_annabelle .title a:active {
   color: #1f1f1f;
@@ -44,13 +44,13 @@
 .ppn_sb_wideboard3_DE_annabelle .text {
 	cursor: pointer;
 	max-width: 270px;
-  max-height: 34px;
+  max-height: 48px;
   overflow: hidden;
 	margin: 0 auto;
   color: #1f1f1f;
-	font: normal 12px/16px Times, Georgia, serif;
+	font: normal 15px/16px Times, Georgia, serif;
 	text-align: center;
-	padding-top: 5px;
+	padding-top: 3px;
 }
 .ppn_sb_wideboard3_DE_annabelle .text a:link, .ppn_sb_wideboard3_DE_annabelle .text a:visited, .ppn_sb_wideboard3_DE_annabelle .text a:hover, .ppn_sb_wideboard3_DE_annabelle .text a:active {
   color: #1f1f1f;
@@ -70,7 +70,7 @@
   font: 600 12px/16px 'Poppins',sans-serif;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 5px;
+  padding-top: 2px;
 }
 .ppn_sb_wideboard3_DE_annabelle .url a, .ppn_sb_wideboard3_DE_annabelle .url a:link, .ppn_sb_wideboard3_DE_annabelle .url a:visited, .ppn_sb_wideboard3_DE_annabelle .url a:hover, .ppn_sb_wideboard3_DE_annabelle .url a:active {
   color: #ff1e55;
