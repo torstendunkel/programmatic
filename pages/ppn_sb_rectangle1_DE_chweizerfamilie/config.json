@@ -1,6 +1,8 @@
 {
-"showMore" : true,
-"moreNode" : "span",
-"moreInTxt" : true,
-"more": "MEHR >"
+    "template" : "<div class=\"singlebox bottom left right\"> <a target=\"_blank\" href=\"{{href}}\"> <img class=\"adimage\" alt=\"Werbung\" src=\"{{img}}\" /> </a> <div class=\"title\"> <a target=\"_blank\" href=\"{{href}}\">{{title}}</a> </div> <div class=\"text\"> <a target=\"_blank\" href=\"{{href}}\">{{description}}</a> <span class=\"url\"><a target=\"_blank\" href=\"{{href}}\">MEHR ></a></span> </div> </div>",
+    "wrapper" : "<div class=\"ppn_sb_rectangle1_DE_chweizerfamilie\"> <div class=\"ppncaption\">Werbung</div> <div id=\"innerbox\" class=\"ppninnerbox\">{{content}}</div> <div class=\"tnlogo\"> <a href=\"{{href}}\" target=\"_blank\">Anzeige</a> </div> </div>",
+    "showMore" : true,
+    "moreNode" : "span",
+    "moreInTxt" : true,
+    "more": "MEHR >"
 }

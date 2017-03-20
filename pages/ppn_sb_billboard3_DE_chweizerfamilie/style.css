@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
 
-.ppn_sb_rectangle1_DE_chweizerfamilie {
+.ppn_sb_billboard3_DE_chweizerfamilie {
     width: 994px;
     height: 250px;
     margin: 0;
@@ -13,7 +13,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-.ppn_sb_rectangle1_DE_chweizerfamilie .ppninnerbox {
+.ppn_sb_billboard3_DE_chweizerfamilie .ppninnerbox {
     width: 994px;
     height: 250px;
     margin: 0;
@@ -22,7 +22,7 @@
     background: white;
     position: relative;
 }
-.ppn_sb_rectangle1_DE_chweizerfamilie .singlebox {
+.ppn_sb_billboard3_DE_chweizerfamilie .singlebox {
     width: 300px;
     height: 250px;
     position: relative;
@@ -34,10 +34,10 @@
     background: white;
     position: relative;
 }
-.ppn_sb_rectangle1_DE_chweizerfamilie .singlebox:last-child {
+.ppn_sb_billboard3_DE_chweizerfamilie .singlebox:last-child {
   margin: 0;
 }
-.ppn_sb_rectangle1_DE_chweizerfamilie .title {
+.ppn_sb_billboard3_DE_chweizerfamilie .title {
     cursor: pointer;
     width: 290px;
     max-height: 20px;
@@ -48,15 +48,15 @@
     text-transform: uppercase;
     text-align: left;
 }
-.ppn_sb_rectangle1_DE_chweizerfamilie .title a:link, .ppn_sb_rectangle1_DE_chweizerfamilie .title a:visited, .ppn_sb_rectangle1_DE_chweizerfamilie .title a:active {
+.ppn_sb_billboard3_DE_chweizerfamilie .title a:link, .ppn_sb_billboard3_DE_chweizerfamilie .title a:visited, .ppn_sb_billboard3_DE_chweizerfamilie .title a:active {
     color: #4A4A4A;
     text-decoration: none;
 }
-.ppn_sb_rectangle1_DE_chweizerfamilie .title a:hover {
+.ppn_sb_billboard3_DE_chweizerfamilie .title a:hover {
     color: #DE232B;
     text-decoration: none;
 }
-.ppn_sb_rectangle1_DE_chweizerfamilie .text {
+.ppn_sb_billboard3_DE_chweizerfamilie .text {
     cursor: pointer;
     position: relative;
     float: left;
@@ -69,36 +69,36 @@
     text-transform: none;
     text-align: left;
 }
-.ppn_sb_rectangle1_DE_chweizerfamilie .text a:link, .ppn_sb_rectangle1_DE_chweizerfamilie .text a:visited, .ppn_sb_rectangle1_DE_chweizerfamilie .text a:hover, .ppn_sb_rectangle1_DE_chweizerfamilie .text a:active {
+.ppn_sb_billboard3_DE_chweizerfamilie .text a:link, .ppn_sb_billboard3_DE_chweizerfamilie .text a:visited, .ppn_sb_billboard3_DE_chweizerfamilie .text a:hover, .ppn_sb_billboard3_DE_chweizerfamilie .text a:active {
     color: #4A4A4A;
     text-decoration: none;
 }
-.ppn_sb_rectangle1_DE_chweizerfamilie .text a:hover {
+.ppn_sb_billboard3_DE_chweizerfamilie .text a:hover {
     color: #4A4A4A;
     text-decoration: none;
 }
-.ppn_sb_rectangle1_DE_chweizerfamilie .text span.url {
+.ppn_sb_billboard3_DE_chweizerfamilie .text span.url {
 	 cursor: pointer;
    display: inline;
    color: #4A4A4A;
    font: 600 12px/15px 'Poppins', sans-serif;
    text-align: left;
 }
-.ppn_sb_rectangle1_DE_chweizerfamilie .url a, .ppn_sb_rectangle1_DE_chweizerfamilie .url a:link, .ppn_sb_rectangle1_DE_chweizerfamilie .url a:visited, .ppn_sb_rectangle1_DE_chweizerfamilie .url a:hover, .ppn_sb_rectangle1_DE_chweizerfamilie .url a:active {
+.ppn_sb_billboard3_DE_chweizerfamilie .url a, .ppn_sb_billboard3_DE_chweizerfamilie .url a:link, .ppn_sb_billboard3_DE_chweizerfamilie .url a:visited, .ppn_sb_billboard3_DE_chweizerfamilie .url a:hover, .ppn_sb_billboard3_DE_chweizerfamilie .url a:active {
     color: #DE232B;
     text-decoration: none;
 }
-.ppn_sb_rectangle1_DE_chweizerfamilie .url a:hover {
+.ppn_sb_billboard3_DE_chweizerfamilie .url a:hover {
     color: #DE232B;
     text-decoration: none;
 }
-.ppn_sb_rectangle1_DE_chweizerfamilie .adimage {
+.ppn_sb_billboard3_DE_chweizerfamilie .adimage {
     margin: 0;
     padding: 0;
     border: 0;
     float: left;
 }
-.ppn_sb_rectangle1_DE_chweizerfamilie img.adimage {
+.ppn_sb_billboard3_DE_chweizerfamilie img.adimage {
 	width: 300px;
 	height: 168px;
 	margin: 0px;
@@ -107,10 +107,10 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-.ppn_sb_rectangle1_DE_chweizerfamilie .ppncaption {
+.ppn_sb_billboard3_DE_chweizerfamilie .ppncaption {
     display: none;
 }
-.ppn_sb_rectangle1_DE_chweizerfamilie .tnlogo > a{
+.ppn_sb_billboard3_DE_chweizerfamilie .tnlogo > a{
   position: absolute;
 	right: 0;
 	bottom: -1px;
@@ -125,6 +125,6 @@
 	text-decoration: none;
   text-transform: uppercase;
 }
-.ppn_sb_rectangle1_DE_chweizerfamilie  tnlogo{
+.ppn_sb_billboard3_DE_chweizerfamilie  tnlogo{
 position: absolute; bottom:0; left:0; width:100%; height:15px;
 }
