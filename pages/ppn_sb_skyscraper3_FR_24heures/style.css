@@ -1,14 +1,12 @@
 
 .ppn_sb_skyscraper3_FR_24heures {
     width: 160px;
-    height: 600px;
     overflow: hidden;
     background: rgb(239, 239, 239);
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
 }
 .ppn_sb_skyscraper3_FR_24heures .ppninnerbox {
-    height: 585px;
     width: 150px;
     float: left;
     margin-top: 15px;

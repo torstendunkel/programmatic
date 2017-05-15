@@ -1,5 +1,10 @@
 {
   "showMore" : true,
   "moreNode" : "span",
-  "moreInTxt" : true
+  "moreInTxt" : true,
+  "fallBackLayout" : {
+    "1" : "ppn_sb_skyscraper3_DE_immo",
+    "2" : "ppn_sb_skyscraper3_DE_immo",
+    "3" : "ppn_sb_skyscraper3_DE_immo"
+  }
 }

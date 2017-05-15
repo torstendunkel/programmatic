@@ -2,5 +2,10 @@
   "showMore" : true,
   "moreNode" : "span",
   "moreInTxt" : true,
-  "more" : "Mehr  <span class=\"white\">+</span>"
+  "more" : "Mehr  <span class=\"white\">+</span>",
+  "minNumAds" : 1,
+  "fallBackLayout" : {
+    "1" : "ppn_sb_skyscraper3_FR_ghi",
+    "2" : "ppn_sb_skyscraper3_FR_ghi"
+  }
 }

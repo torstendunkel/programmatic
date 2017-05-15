@@ -2,5 +2,11 @@
   "showMore" : true,
   "moreNode" : "div",
   "moreInTxt" : false,
-  "more" : "► Plus"
+  "more" : "► Plus",
+  "minNumAds" : 1,
+  "fallBackLayout" : {
+    "1" : "ppn_sb_skyscraper3_FR_24heures",
+    "2" : "ppn_sb_skyscraper3_FR_24heures",
+    "3" : "ppn_sb_skyscraper3_FR_24heures"
+  }
 }

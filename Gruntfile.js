@@ -31,6 +31,14 @@ module.exports = function(grunt) {
         },
 
         copy: {
+            renderer : {
+                files : [
+                    {expand: true, cwd:"src", src: ['*.js'], dest: 'temp/'}
+
+                ]
+
+
+            },
 
             renderer_to_pages: {
                 files: '<%= pages %>'
@@ -40,10 +48,7 @@ module.exports = function(grunt) {
             },
 
             src : {
-                files : [
-                    {expand: true, cwd:"temp", src: ['myAst.js'], dest: 'build/src'}
 
-                ]
             },
 
             pages : {
@@ -247,6 +252,24 @@ module.exports = function(grunt) {
         'generate_indexHTML'
     ]);
 
+    grunt.registerTask('build_stage',[
+        'copy:pages',   // copies all folders below /pages to /temp
+        'folder_list',   //generates a json for the folders in /temp
+        'copy:renderer',
+        'prepare_CSS_to_JS', //creates the files' array for css_to_js task
+        'css_to_js:pages',
+        'copy_json_config', // translates the config.json to config.js and copies it to all temp folders
+        'prepare_copy_jsonp', // prepares the jsonp config copy
+        'copy:jsonp',
+        'insert_version',
+        'prepare_concat', // concats the config.js, renderer.js, and style.js to one file
+        'concat:build',
+        'copy:src',  // copies the src (myAst to build folder)
+        'prepare_copy_images', // copy the images folder to all builds that have an images folder
+        'copy:images',
+        'generate_indexHTML'
+    ]);
+
     // Default building without deploying
     grunt.registerTask('default', [
         'set_env:stage',
@@ -274,10 +297,9 @@ module.exports = function(grunt) {
         'set_env:stage',
         'clean:temp',
         'clean:build',
-        'build',
+        'build_stage',
         'generate_test_page:stage',
         'aws_s3:stage',
-        //'ftp-deploy:upload_newsnet_stage',
         'clean:temp'
     ]);
 

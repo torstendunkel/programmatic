@@ -65,6 +65,7 @@ ch.tam.addnexusRender = (function () {
             this.scriptTag = this.scriptTag[index];
             this.loadedAds = {};
             this.adsLoaded = {};
+            this.loadedCreatives = [];
             this.adBuckets = {};
             this.adErrors = [];
             this.logs = [];
@@ -98,14 +99,39 @@ ch.tam.addnexusRender = (function () {
         checkAstLoaded: function(){
             var _this = this;
             setTimeout(function(){
-                if(!apntag.loaded){
+                if(!_this.astFallbackTriggered && !apntag.loaded){
                     _this.astFallbackTriggered = true;
+
+                    //force all following logs do be done as "followup"
+                    _this.forceSession = _this.followUp = true;
+
                     apntag.l = false;
                     _this.addAppNexusLib();
 
+
+                    // do not log this case... only log the following action (adblocked or loaded at seconds time) to save some requests
+                    /*
                     _this.logglyLog({
                        type : "warning",
-                       message : "AST not loaded. Try to load again with different AST"
+                       message : "AST not loaded. Try to load again"
+                    },true);
+                    */
+
+                    _this.checkAstLoaded();
+
+                }
+
+                else if(_this.astFallbackTriggered && apntag.loaded){
+                        _this.logglyLog({
+                            type : "warning",
+                            message : "AST loaded with second try."
+                        },true);
+                }
+
+                else if(_this.astFallbackTriggered){
+                    _this.logglyLog({
+                        type : "warning",
+                        message : "AST adblocked."
                     },true);
                 }
 
@@ -211,14 +237,6 @@ ch.tam.addnexusRender = (function () {
             this.logger("tags defined",tags);
             this.loadAds(tags);
 
-
-            if(this.astFallbackTriggered){
-                this.logglyLog({
-                    type : "warning",
-                    message : "AST loaded with second try."
-                });
-            }
-
         },
 
         generateTagArray: function (tagId, numads, prefix) {
@@ -267,10 +285,14 @@ ch.tam.addnexusRender = (function () {
                     }
                 }
                 arr.push(adObj);
-                apntag.onEvent('adAvailable', prefix + i, this.adAvailable.bind(this, prefix + "-" + i, prefix));
-                apntag.onEvent('adNoBid', prefix + i, this.adNoBid.bind(this, prefix + "-" + i, prefix));
-                apntag.onEvent('adRequestFailure', prefix + i, this.handleAdError.bind(this, prefix + "-" + i, prefix));
-                apntag.onEvent('adBadRequest', prefix + i, this.handleAdError.bind(this, prefix + "-" + i, prefix));
+
+                if(!this.secondTry){
+                    apntag.onEvent('adAvailable', prefix + i, this.adAvailable.bind(this, prefix + "-" + i, prefix));
+                    apntag.onEvent('adNoBid', prefix + i, this.adNoBid.bind(this, prefix + "-" + i, prefix));
+                    apntag.onEvent('adRequestFailure', prefix + i, this.handleAdError.bind(this, prefix + "-" + i, prefix));
+                    apntag.onEvent('adBadRequest', prefix + i, this.handleAdError.bind(this, prefix + "-" + i, prefix));
+                }
+
             }
             return arr;
         },
@@ -315,11 +337,19 @@ ch.tam.addnexusRender = (function () {
         },
 
         adAvailable: function (id, bucket, data) {
-            this.ads[bucket].adsLoaded += 1;
-            data.id = id;
-            this.ads[bucket].loadedAds.push(data);
-            this.logger("ad available", id);
-            this.checkBucketStatus(bucket);
+            // when this template has a fallbackLayout we can check for doublicate creatives and treat them like nobids
+            if(this.options.fallBackLayout && this.loadedCreatives.indexOf(data.creativeId) !== -1){
+                this.douplicateFound = true;
+                this.logger("douplicate ad found", data.creativeId);
+                this.adNoBid(id,bucket);
+            }else{
+                this.loadedCreatives.push(data.creativeId);
+                this.ads[bucket].adsLoaded += 1;
+                data.id = id;
+                this.ads[bucket].loadedAds.push(data);
+                this.logger("ad available", id);
+                this.checkBucketStatus(bucket);
+            }
         },
 
         adNoBid: function(id, bucket){
@@ -345,9 +375,16 @@ ch.tam.addnexusRender = (function () {
             if (this.ads[bucket].adsLoaded === this.ads[bucket].numads) {
                 this.logger(bucket, "ready");
                 //when all requested ads are available then this bucket is complete
-                if( this.ads[bucket].noBid === 0){
+                if(this.ads[bucket].noBid === 0){
                     this.ads[bucket].complete = true;
                 }
+                //also allow some "main" ads to render even if not ads are loaded (needs to be defined in the config.json)
+                else if(bucket === "main" && (this.ads[bucket].numads - this.ads[bucket].noBid ) > 0){
+                    var adsAvailable = this.ads[bucket].numads - this.ads[bucket].noBid;
+                    this.ads[bucket].complete = this.checkLayoutSwitch(this.ads[bucket], adsAvailable);
+                }
+
+
                 //when all ads are ready compare their cpm
                 if (this.checkIfAllBucketsAreReady()) {
                     this.compareCPMs();
@@ -364,58 +401,153 @@ ch.tam.addnexusRender = (function () {
             return true;
         },
 
+
+        /*
+        check in config if a different layout is available for the ammount of available ads
+        */
+        checkLayoutSwitch: function(bucket, adsAvailable){
+            if(this.options.fallBackLayout && this.options.fallBackLayout[adsAvailable]){
+                bucket.identifier = this.options.fallBackLayout[adsAvailable];
+                var message = "Not enough ads";
+                if(this.douplicateFound){
+                    message = "Douplicate creatives";
+                }
+                this.logger("switching layout to",bucket.identifier,message);
+                this.logglyLog({
+                    type : "info",
+                    message : "Layout changed:" + message
+                });
+
+                this.layoutSwitched = true;
+
+                return true;
+            }
+            return false;
+        },
+
+
+        // this function will compare the loaded ads. The prio is the following:
+        // 1. Main ad (identifier)
+        // 2. Ad with the lowest ammount of loaded ads
+        // 3. Highest CPM
         compareCPMs: function () {
             this.logger("compare CPMs", this.ads);
 
             var adCPM;
             var highestCPM = -1;
+            var currentLowestAdNum = 100; //prefer the campaign with the lowest num of ads (start with 100 so that the first loaded ad will be below this value)
             var bestAd;
             var tAd;
             this.challengeWon = false;
+            //only for logging
+            this.challengeData = {};
 
+            var preferredAd;
+            var sencond_preferredAd;
 
             for (var i in this.ads) {
                 adCPM = 0;
                 if(this.ads.hasOwnProperty(i)) {
                     tAd = this.ads[i];
                     // only start comparision when all ads in this bucket are sucessfully requested
+                    this.challengeData[this.ads[i].identifier] = [];
                     if (tAd.complete) {
-                        for (var j = 0; j < this.ads[i].loadedAds.length; j++) {
 
+                        var loadedAds = this.ads[i].numads;
+
+                        for (var j = 0; j < this.ads[i].loadedAds.length; j++) {
+                            this.challengeData[this.ads[i].identifier].push(this.ads[i].loadedAds[j].cpm);
                             this.logger("CPM for single ad", this.ads[i].identifier, j, this.ads[i].loadedAds[j].cpm);
                             adCPM += parseFloat(this.ads[i].loadedAds[j].cpm);
 
                         }
-                        this.logger("CPM for " + this.ads[i].identifier + " " + adCPM);
 
+                        tAd.totalCPM = adCPM;
+
+                        // this is the best ad (highest CPM) but maybe we have some preferred ads
                         if (adCPM > highestCPM) {
                             highestCPM = adCPM;
-                            bestAd = this.ads[i];
+                            bestAd = tAd;
                         }
 
+                        // save the main ad if data available
+                        if(i === "main"){
+                            preferredAd = tAd;
+                        }else if(currentLowestAdNum > loadedAds){
+                            currentLowestAdNum = loadedAds;
+                            sencond_preferredAd = tAd;
+                        }
+
+
                     } else {
+                        this.challengeData[this.ads[i].identifier].push("no data received");
                         this.logger("can not compare " + this.ads[i].identifier, "no ads: " + this.ads[i].noBid, "or delayed");
                     }
                 }
             }
 
             if(bestAd){
+                //always use the prefered ad when available
+                if(preferredAd){
+                    bestAd = preferredAd;
+                    this.logger("preferred Ad available. Ignore CPM Comparision");
+                }else if(sencond_preferredAd){
+                    bestAd = sencond_preferredAd;
+                    this.logger("2nd preferred Ad available. Ignore CPM Comparision");
+                }
+                else{
+                    this.logger("preferred and 2nd preferred Ad not available use challenge ads instead");
+                }
+
                 if(bestAd.identifier !== this.options.identifier){
                     this.challengeWon = true;
                 }
-                bestAd.totalCpm = highestCPM;
-                this.logger("highest cpm "+ bestAd.identifier + " CPM: " + highestCPM);
+                this.logger("Selected Ad: "+ bestAd.identifier + " CPM: ", bestAd.totalCPM);
                 this.checkBeforeRender(bestAd);
 
             }else{
                 this.logger("no best ad available", this.ads);
-
                 if(this.options.passback){
                     this.handlePassback();
                 }else{
-                    this.collapseParentFrame();
+
+                    if(this.secondTry){
+                        this.collapseParentFrame();
+                    }else{
+                        this.secondTry = true;
+                        this.tryToLoadAdsAgain();
+                    }
                 }
             }
+        },
+
+
+        tryToLoadAdsAgain: function(){
+            this.logger("No Ads for rendering available try a senconds time");
+
+            /*
+            this.logglyLog({
+                type : "info",
+                message : "no ads available: try seconds time"
+            },true);
+            */
+            //force all following logs do be done as "followup"
+            _this.forceSession = _this.followUp = true;
+
+
+            this.loadedAds = {};
+            this.adsLoaded = {};
+            this.loadedCreatives = [];
+            this.adBuckets = {};
+            this.adErrors = [];
+            this.logs = [];
+            this.ads = {};
+
+            this.options.challenge = this.options.challenge.join(",");
+            this.options.ctagid = this.options.ctagid.join(",");
+
+            this.prepareTags();
+
         },
 
 
@@ -491,6 +623,9 @@ ch.tam.addnexusRender = (function () {
                 admarker: this.options.adMarker[this.options.lang]
             };
 
+
+            this.adDataLog = [];
+
             for (var i = 0; i < ad.loadedAds.length; i++) {
                 data.content += this.renderNativeAd(ad.loadedAds[i]);
             }
@@ -509,10 +644,15 @@ ch.tam.addnexusRender = (function () {
             this.logglyLog({
                 type : "info",
                 message : "elem rendered",
+                renderedAds : ad.loadedAds.length,
+                adData : this.adDataLog,
                 renderTime : new Date().getTime() - this.startTime,
                 challenge : this.options.challenge !== undefined,
                 challengeWon : this.challengeWon,
-                cpm : Math.floor(ad.totalCpm * 100) /100
+                challengeData : this.challengeData ? this.challengeData : "no data available",
+                cpm : (Math.floor(ad.totalCPM * 100) /100),
+                secondTry : this.secondTry || false,
+                layoutSwitch: this.layoutSwitched || false // says that ad was only rendered because of layoutswitch
             });
         },
 
@@ -531,6 +671,16 @@ ch.tam.addnexusRender = (function () {
                 moreOutTxt: !this.options.moreInTxt ? moreBtn : '',
                 sponsored: data.native.sponsoredBy || ''
             };
+
+            // logging only
+            this.adDataLog.push({
+                title : obj.title,
+                description : obj.description,
+                img : obj.img,
+                href : obj.href,
+                createive : data.creativeId
+            });
+
 
             obj = this.addCustomFields(obj, data);
 
@@ -615,14 +765,13 @@ ch.tam.addnexusRender = (function () {
             for (var i = 0; i < ad.loadedAds.length; i++) {
                 if (ad.loadedAds[i].native && ad.loadedAds[i].native.clickTrackers && ad.loadedAds[i].native.clickTrackers.length > 0) {
                     for (var j = 0; j < ad.loadedAds[i].native.clickTrackers.length; j++) {
-                        this.addClickTracking(ad.loadedAds[i].id, ad.loadedAds[i].native.clickTrackers[0]);
+                        this.addClickTracking(ad.loadedAds[i].id, ad.loadedAds[i].native.clickTrackers[j]);
                     }
                 }
             }
         },
 
         addClickTracking: function (id, trackingUrl) {
-            // find all a-tag in the specified ad and add event listener to them
             var elem = document.getElementById(id);
             if (elem) {
                 this.logger("add click tracking", elem);
@@ -637,7 +786,7 @@ ch.tam.addnexusRender = (function () {
         },
 
         handleElemClick: function (elem, trackingUrl, e) {
-            this.setTrackingPixel(elem, trackingUrl);
+            this.setTrackingPixel(trackingUrl);
             this.openUrl(elem, e);
         },
 
@@ -665,18 +814,8 @@ ch.tam.addnexusRender = (function () {
             });
         },
 
-        setTrackingPixel: function (elem, trackingUrl) {
-            var pixel = elem.getElementsByClassName(this.settings.trackingPixelClass);
-            if (pixel && pixel.length > 0) {
-                this.logger("tracking click", elem);
-                pixel[0].src = trackingUrl + 'timestamp=' +  Math.floor(Math.random()*1000000000);
-            }else{
-                this.logger("no tracking pixel defined");
-                this.logglyLog({
-                    type: "error",
-                    message: "Click not tracked. Can not find tracking pixel."
-                });
-            }
+        setTrackingPixel: function (trackingUrl) {
+            (new Image()).src = trackingUrl;
         },
 
         guessLangFromIdentifier: function (identifier) {
@@ -754,7 +893,8 @@ ch.tam.addnexusRender = (function () {
                 reason: reason,
                 renderTime : new Date().getTime() - this.startTime,
                 adsRequested : this.options.numads,
-                adsAvailable : this.options.numads - this.ads["main"].noBid
+                adsAvailable : this.options.numads - this.ads["main"].noBid,
+                secondTry : this.secondTry || false
             });
         },
 
@@ -958,7 +1098,7 @@ ch.tam.addnexusRender = (function () {
             data.inIframe = this.inIframe();
             data.target = this.scriptUrl.join("#");
             data.mraid = this.useMRAID;
-            data.referrer = document.referrer;
+            data.referrer = document.referrer.replace();
             data.mraidAvailable = typeof window.mraid !== "undefined" && typeof window.mraid.getVersion === "function";
             data.version = this.options.version;
             data.environment = this.options.environment;

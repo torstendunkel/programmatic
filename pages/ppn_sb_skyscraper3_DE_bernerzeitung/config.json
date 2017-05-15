@@ -2,5 +2,11 @@
   "showMore" : true,
   "moreNode" : "div",
   "moreInTxt" : false,
-  "more" : "► Mehr"
+  "more" : "► Mehr",
+  "minNumAds" : 1,
+  "fallBackLayout" : {
+    "1" : "ppn_sb_skyscraper3_DE_bernerzeitung",
+    "2" : "ppn_sb_skyscraper3_DE_bernerzeitung",
+    "3" : "ppn_sb_skyscraper3_DE_bernerzeitung"
+  }
 }

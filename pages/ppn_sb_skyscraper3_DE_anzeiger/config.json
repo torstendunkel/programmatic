@@ -1,5 +1,11 @@
 {
   "showMore" : true,
   "moreNode" : "span",
-  "moreInTxt" : true
+  "moreInTxt" : true,
+  "minNumAds" : 1,
+  "fallBackLayout" : {
+    "1" : "ppn_sb_skyscraper3_DE_anzeiger",
+    "2" : "ppn_sb_skyscraper3_DE_anzeiger",
+    "3" : "ppn_sb_skyscraper3_DE_anzeiger"
+  }
 }

@@ -1,5 +1,10 @@
 {
   "showMore" : false,
   "moreNode" : "div",
-  "moreInTxt" : false
+  "moreInTxt" : false,
+  "minNumAds" : 1,
+  "fallBackLayout" : {
+    "1" : "ppn_sb_skyscraper3_FR_immostreet",
+    "2" : "ppn_sb_skyscraper3_FR_immostreet"
+  }
 }

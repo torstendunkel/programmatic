@@ -1,5 +1,9 @@
 {
   "showMore" : true,
   "moreInTxt" : false,
-  "moreNode" :"div"
+  "moreNode" :"div",
+  "fallBackLayout" : {
+    "2" : "ppn_sb_billboard2_FR_lematin",
+    "3" : "ppn_sb_billboard2_FR_lematin"
+  }
 }

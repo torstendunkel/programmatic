@@ -1,5 +1,11 @@
 {
   "showMore" : true,
   "moreNode" : "div",
-  "moreInTxt" : false
+  "moreInTxt" : false,
+  "minNumAds" : 1,
+  "fallBackLayout" : {
+    "1" : "ppn_sb_skyscraper3_DE_alleimmobilien",
+    "2" : "ppn_sb_skyscraper3_DE_alleimmobilien",
+    "3" : "ppn_sb_skyscraper3_DE_alleimmobilien"
+  }
 }

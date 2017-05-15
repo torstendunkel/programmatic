@@ -10,7 +10,6 @@
   width: 994px;
   height: 250px;
   overflow: hidden;
-  border-bottom: 1px solid #1f1f1f;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -44,7 +43,7 @@
 .ppn_sb_wideboard3_DE_annabelle .text {
 	cursor: pointer;
 	max-width: 270px;
-  max-height: 48px;
+  max-height: 65px;
   overflow: hidden;
 	margin: 0 auto;
   color: #1f1f1f;

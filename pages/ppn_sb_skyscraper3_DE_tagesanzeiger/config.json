@@ -1,5 +1,7 @@
 {
   "showMore" : true,
   "moreNode" : "span",
-  "moreInTxt" : true
+  "moreInTxt" : true,
+
+  "minNumAds" : 1
 }

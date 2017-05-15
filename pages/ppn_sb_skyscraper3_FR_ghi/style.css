@@ -2,7 +2,6 @@
 
 .ppn_sb_skyscraper3_FR_ghi {
   width: 160px;
-  height: 600px;
   overflow: hidden;
   background: #FAFAFA;
   font-family: 'Open Sans', sans-serif;
@@ -15,7 +14,6 @@
 }
 .ppn_sb_skyscraper3_FR_ghi .ppninnerbox {
   width: 140px;
-  height: 600px;
   margin: 0 10px;
   border: none;
   overflow: hidden;
