@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+
+
+body{
+    margin:0;
+}
+
+.ppn_sb_monsterboard1_FR_20min {
+    width: 468px;
+    height: 400px;
+    overflow: hidden;
+    background: white;
+    position: relative;
+    font-family: 'Roboto',sans-serif;
+    cursor: pointer;
+    border: 1px solid #f1f2f2;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-bottom: 1px solid black;
+}
+.ppn_sb_monsterboard1_FR_20min .ppninnerbox {
+    width: 468px;
+    height: 400px;
+    overflow: hidden;
+    background: #F5F5F5;
+}
+.ppn_sb_monsterboard1_FR_20min .singlebox {
+    width: 468px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    border: none;
+}
+.ppn_sb_monsterboard1_FR_20min .title {
+    margin: 10px 10px 5px 10px;
+    max-height: 22px;
+    overflow: hidden;
+    font: 900 22px/22px 'Roboto',sans-serif;
+    text-align: left;
+    border: none;
+
+}
+.ppn_sb_monsterboard1_FR_20min .title a:link, .ppn_sb_monsterboard1_FR_20min .title a:visited, .ppn_sb_monsterboard1_FR_20min .title a:active, .ppn_sb_monsterboard1_FR_20min .title a:hover {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_monsterboard1_FR_20min .text {
+    margin: 0 10px;
+    max-height: 32px;
+    overflow: hidden;
+    font: 400 15px/16px 'Roboto',sans-serif;
+    text-align: left;
+    border: none;
+}
+.ppn_sb_monsterboard1_FR_20min .text a:link, .ppn_sb_monsterboard1_FR_20min .text a:visited, .ppn_sb_monsterboard1_FR_20min .text a:hover, .ppn_sb_monsterboard1_FR_20min .text a:active, .ppn_sb_monsterboard1_FR_20min .text a:hover {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_monsterboard1_FR_20min .adimage {
+    border-width: 0;
+    width: 468px;
+}
+.ppn_sb_monsterboard1_FR_20min .ppncaption {
+    display: none;
+}
+
+
+.ppn_sb_monsterboard1_FR_20min .tnlogo{
+    background: url(http://media.das.tamedia.ch/images/top_bar.gif) top repeat-x;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+}
+
+.ppn_sb_monsterboard1_FR_20min .tnlogo > a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #333333;
+    padding: 3px 4px;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}

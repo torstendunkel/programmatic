@@ -1,0 +1,10 @@
+{
+
+  "showMore" : false,
+  "moreNode" : "div",
+  "moreInTxt" : false,
+  "fallBackLayout" : {
+    "1" : "ppn_sb_monsterboard1_FR_20min",
+    "2" : "ppn_sb_monsterboard2_FR_20min"
+  }
+}
