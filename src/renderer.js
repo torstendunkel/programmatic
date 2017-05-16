@@ -215,6 +215,7 @@ ch.tam.addnexusRender = (function () {
                 loadedAds: [],
                 complete: false
             };
+            this.loadedCreatives["main"] = [];
 
             //if challenges available get challengers ads array
             if (this.options.challenge && this.options.ctagid) {
@@ -230,6 +231,8 @@ ch.tam.addnexusRender = (function () {
                         loadedAds: [],
                         complete: false
                     };
+
+                    this.loadedCreatives["challenge" + i] = [];
                 }
                 this.options.challengeNumAds = this.parseNumadsFromIdentifier(this.options.challenge);
                 tags = tags.concat(this.generateTagArray(this.options.ctagid, this.options.challengeNumAds, "challenge"));
@@ -332,18 +335,25 @@ ch.tam.addnexusRender = (function () {
             for (var i = 0; i < tags.length; i++) {
                 apntag.defineTag(tags[i]);
             }
-            this.logger("sending AST requesst");
+            this.logger("sending AST request");
             apntag.loadTags();
         },
 
         adAvailable: function (id, bucket, data) {
-            // when this template has a fallbackLayout we can check for doublicate creatives and treat them like nobids
-            if(this.options.fallBackLayout && this.loadedCreatives.indexOf(data.creativeId) !== -1){
-                this.douplicateFound = true;
+
+            var handleAsNobid = false;
+            // check for duplicates
+            if(this.loadedCreatives[bucket].indexOf(data.creativeId) !== -1){
+                this.ads[bucket].duplicatesFound = true;
                 this.logger("douplicate ad found", data.creativeId);
+                handleAsNobid = true;
+            }
+
+            // when this template has a fallbackLayout we can treat duplicates as nobids
+            if(this.options.fallBackLayout && handleAsNobid){
                 this.adNoBid(id,bucket);
             }else{
-                this.loadedCreatives.push(data.creativeId);
+                this.loadedCreatives[bucket].push(data.creativeId);
                 this.ads[bucket].adsLoaded += 1;
                 data.id = id;
                 this.ads[bucket].loadedAds.push(data);
@@ -379,9 +389,9 @@ ch.tam.addnexusRender = (function () {
                     this.ads[bucket].complete = true;
                 }
                 //also allow some "main" ads to render even if not ads are loaded (needs to be defined in the config.json)
-                else if(bucket === "main" && (this.ads[bucket].numads - this.ads[bucket].noBid ) > 0){
+                else if((this.ads[bucket].numads - this.ads[bucket].noBid ) > 0){
                     var adsAvailable = this.ads[bucket].numads - this.ads[bucket].noBid;
-                    this.ads[bucket].complete = this.checkLayoutSwitch(this.ads[bucket], adsAvailable);
+                    this.ads[bucket].complete = this.checkLayoutSwitch(bucket, adsAvailable);
                 }
 
 
@@ -407,18 +417,23 @@ ch.tam.addnexusRender = (function () {
         */
         checkLayoutSwitch: function(bucket, adsAvailable){
             if(this.options.fallBackLayout && this.options.fallBackLayout[adsAvailable]){
-                bucket.identifier = this.options.fallBackLayout[adsAvailable];
+
+                var oldIdentifier = this.ads[bucket].identifier;
+
+                this.ads[bucket].identifier = this.options.fallBackLayout[adsAvailable];
                 var message = "Not enough ads";
-                if(this.douplicateFound){
+                if(this.ads[bucket].duplicatesFound){
                     message = "Douplicate creatives";
                 }
-                this.logger("switching layout to",bucket.identifier,message);
+                this.logger("switching from",oldIdentifier,"to layout",this.ads[bucket].identifier,message);
                 this.logglyLog({
                     type : "info",
-                    message : "Layout changed:" + message
+                    message : "Layout changed:" + message,
+                    oldLayout : oldIdentifier,
+                    newLayout : this.ads[bucket].identifier
                 });
 
-                this.layoutSwitched = true;
+                this.ads[bucket].layoutSwitched = true;
 
                 return true;
             }
@@ -652,7 +667,8 @@ ch.tam.addnexusRender = (function () {
                 challengeData : this.challengeData ? this.challengeData : "no data available",
                 cpm : (Math.floor(ad.totalCPM * 100) /100),
                 secondTry : this.secondTry || false,
-                layoutSwitch: this.layoutSwitched || false // says that ad was only rendered because of layoutswitch
+                layoutSwitch: ad.layoutSwitched || false, // says that ad was only rendered because of layoutswitch
+                duplicates : ad.duplicatesFound || false
             });
         },
 
@@ -678,7 +694,7 @@ ch.tam.addnexusRender = (function () {
                 description : obj.description,
                 img : obj.img,
                 href : obj.href,
-                createive : data.creativeId
+                creative : data.creativeId
             });
 
 
@@ -707,6 +723,9 @@ ch.tam.addnexusRender = (function () {
                     });
                 }
             }
+
+            // add the creative id
+            this.options.template = this.options.template.replace(/<div/,'<div data-creative-id="'+ data.creativeId +'"');
 
             return this.tmpl(this.options.template, obj);
         },
@@ -1102,6 +1121,10 @@ ch.tam.addnexusRender = (function () {
             data.mraidAvailable = typeof window.mraid !== "undefined" && typeof window.mraid.getVersion === "function";
             data.version = this.options.version;
             data.environment = this.options.environment;
+
+            var customer  =this.options.identifier.split('_');
+            data.customer = customer[customer.length-1].replace('.','');
+
             window._LTracker.push(data);
         },
 

@@ -2,5 +2,10 @@
   "showMore" : true,
   "moreNode" : "div",
   "moreInTxt" : false,
-    "more" : "► Plus"
+  "more" : "► Plus",
+  "fallBackLayout" : {
+    "3" : "ppn_sb_billboard3_FR_20min",
+    "4" : "ppn_sb_billboard3_FR_20min",
+    "5" : "ppn_sb_billboard3_FR_20min"
+  }
 }

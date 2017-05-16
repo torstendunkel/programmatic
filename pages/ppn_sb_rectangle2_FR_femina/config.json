@@ -2,9 +2,8 @@
   "showMore" : true,
   "moreNode" : "span",
   "moreInTxt" : true,
-
+  "more" : "Mehr",
   "fallBackLayout" : {
-    "2" : "ppn_sb_rectangle2_DE_bernerzeitung"
+    "1" : "ppn_sb_rectangle1_FR_femina"
   }
-
 }

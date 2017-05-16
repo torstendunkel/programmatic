@@ -2,5 +2,9 @@
   "showMore" : true,
   "moreNode" : "span",
   "moreInTxt" : true,
-  "more" : "Mehr"
+  "more" : "Mehr",
+  "fallBackLayout" : {
+    "1" : "ppn_sb_rectangle1_FR_femina",
+    "2" : "ppn_sb_rectangle2_FR_femina"
+  }
 }
