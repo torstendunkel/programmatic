@@ -2,36 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecada909-ba54-4aca-bdc5-42610f8039de" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_schweizerfamilie/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_schweizerfamilie/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_schweizerfamilie/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_wideboard3_DE_annabelle/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_wideboard3_v2_DE_annabelle/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_wideboard3_v2_DE_annabelle/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_wideboard3_v2_DE_annabelle/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/juicead1_desktop_video_RO_tgd/style.css" afterPath="$PROJECT_DIR$/pages/juicead1_desktop_video_RO_tgd/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/juicead1_desktop_video_ro_24heures/style.css" afterPath="$PROJECT_DIR$/pages/juicead1_desktop_video_ro_24heures/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_minirectangle1_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_minirectangle1_FR_lematin/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_rectangle1_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_rectangle1_FR_lematin/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_billboard2_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_billboard2_FR_lematin/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_chweizerfamilie/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_chweizerfamilie/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_billboard4_DE_derbund/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_billboard4_DE_derbund/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_lematin/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_tdg/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_tdg/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_contentboard2_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_contentboard2_FR_lematin/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_contentboard2_FR_tdg/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_contentboard2_FR_tdg/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_lematin/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_tdg/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_tdg/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_rectangel3_FR_tdg/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangel3_FR_tdg/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_FR_tdg/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_FR_tdg/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_FR_lematin/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_lematin/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_tdg/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_tdg/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_spezialcomments3_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_spezialcomments3_FR_lematin/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_spezialcomments3_FR_tdg/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_spezialcomments3_FR_tdg/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_FR_lematin/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_tdg/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_tdg/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/juicead1_android_text_DE_bazonline/style.css" afterPath="$PROJECT_DIR$/pages/juicead1_android_text_DE_bazonline/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/juicead1_android_text_DE_derbund/style.css" afterPath="$PROJECT_DIR$/pages/juicead1_android_text_DE_derbund/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/juicead1_android_text_DE_tagesanzeiger/style.css" afterPath="$PROJECT_DIR$/pages/juicead1_android_text_DE_tagesanzeiger/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/juicead1_android_video_DE_bazonline/style.css" afterPath="$PROJECT_DIR$/pages/juicead1_android_video_DE_bazonline/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/juicead1_android_video_DE_bernerzeitung/style.css" afterPath="$PROJECT_DIR$/pages/juicead1_android_video_DE_bernerzeitung/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/juicead1_android_video_DE_derbund/style.css" afterPath="$PROJECT_DIR$/pages/juicead1_android_video_DE_derbund/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/juicead1_android_video_DE_tagesanzeiger/style.css" afterPath="$PROJECT_DIR$/pages/juicead1_android_video_DE_tagesanzeiger/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/juicead1_desktop_video_DE_20min/style.css" afterPath="$PROJECT_DIR$/pages/juicead1_desktop_video_DE_20min/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/juicead1_ios_video_DE_bazonline/style.css" afterPath="$PROJECT_DIR$/pages/juicead1_ios_video_DE_bazonline/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/juicead1_mweb_text_de_bernerzeitung/style.css" afterPath="$PROJECT_DIR$/pages/juicead1_mweb_text_de_bernerzeitung/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/juicead1_mweb_video_de_bernerzeitung/style.css" afterPath="$PROJECT_DIR$/pages/juicead1_mweb_video_de_bernerzeitung/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/juicead1_unknown_text_de_bernerzeitung/style.css" afterPath="$PROJECT_DIR$/pages/juicead1_unknown_text_de_bernerzeitung/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/juicead1_unknown_video_de_bernerzeitung/style.css" afterPath="$PROJECT_DIR$/pages/juicead1_unknown_video_de_bernerzeitung/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,10 +36,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Gruntfile.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Gruntfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gruntfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
+            <state relative-caret-position="542">
               <caret line="284" column="29" lean-forward="false" selection-start-line="284" selection-start-column="29" selection-end-line="284" selection-end-column="29" />
               <folding />
             </state>
@@ -64,10 +47,10 @@
         </entry>
       </file>
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/juicead1_desktop_text_fr_24heures/style.css">
+        <entry file="file://$PROJECT_DIR$/pages/juicead1_android_text_DE_tagesanzeiger/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="83" column="19" lean-forward="false" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
+            <state relative-caret-position="266">
+              <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="121" />
               <folding />
             </state>
           </provider>
@@ -113,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/juicead1_android_text_DE_bazonline/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+            <state relative-caret-position="885">
+              <caret line="59" column="1" lean-forward="false" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -157,7 +140,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>layoutSwitched</find>
       <find>elem render</find>
       <find>douplicateFound</find>
       <find>duplicat</find>
@@ -187,6 +169,7 @@
       <find>https://fonts.googleapis.com/css?family=Playfair+Display:700</find>
       <find>http://fonts.googleapis.com/css?family=Playfair+Display:700</find>
       <find>http://</find>
+      <find>http://media.das.tamedia.ch/images/20min_werbung.gif</find>
     </findStrings>
     <replaceStrings>
       <replace>\&quot;</replace>
@@ -218,6 +201,7 @@
       <replace>https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/assets/bilan/img/ppnlematin-mehr.gif</replace>
       <replace>https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/assets/24heures/img/nn_publicite.gif</replace>
       <replace>https://fonts.googleapis.com/css?family=Playfair+Display:700</replace>
+      <replace>https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/assets/tagesanzeiger/img/20min_werbung.gif</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_mobilerectangle1_DE_derbund</dir>
@@ -236,7 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Desktop/vast.xml" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_monsterboard3_v2_DE_20min/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_monsterboard3_v2_FR_20min/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_monsterboard4_v2_DE_20min/style.css" />
@@ -287,6 +270,7 @@
         <option value="$PROJECT_DIR$/pages/ppn_sb_billboard4_DE_derbund/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_spezialcomments3_FR_tdg/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_FR_lematin/style.css" />
+        <option value="$PROJECT_DIR$/pages/juicead1_android_text_DE_bazonline/style.css" />
       </list>
     </option>
   </component>
@@ -594,12 +578,12 @@
       <workItem from="1499084239602" duration="1991000" />
       <workItem from="1499088230615" duration="978000" />
       <workItem from="1499151618222" duration="295000" />
-      <workItem from="1499176862120" duration="1333000" />
+      <workItem from="1499176862120" duration="1530000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="669336000" />
+    <option name="totallyTimeSpent" value="669533000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -612,7 +596,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1337" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -620,7 +603,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35421687" sideWeight="0.49605057" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35421687" sideWeight="0.49605057" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2918455" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20214456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -650,7 +633,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/ppn_sb_leaderboard3_DE_immostreet/style.css" />
     <entry file="file://$PROJECT_DIR$/build/ppn_sb_leaderboard3_FR_immostreet/index.js" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_26.html" />
     <entry file="file://$PROJECT_DIR$/build/ppn_sb_leaderboard3_DE_immostreet/index.js" />
@@ -920,14 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/juicead1_android_text_DE_bazonline/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_tdg/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -962,8 +936,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
+        <state relative-caret-position="542">
           <caret line="284" column="29" lean-forward="false" selection-start-line="284" selection-start-column="29" selection-end-line="284" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/juicead1_android_text_DE_tagesanzeiger/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/juicead1_android_text_DE_bazonline/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="1" lean-forward="false" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
           <folding />
         </state>
       </provider>
