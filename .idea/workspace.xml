@@ -1,10 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecada909-ba54-4aca-bdc5-42610f8039de" name="Default" comment="" />
+    <list default="true" id="ecada909-ba54-4aca-bdc5-42610f8039de" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_schweizerfamilie/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_schweizerfamilie/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_schweizerfamilie/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_wideboard3_DE_annabelle/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_wideboard3_v2_DE_annabelle/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_wideboard3_v2_DE_annabelle/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ppn_sb_wideboard3_v2_DE_annabelle/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/juicead1_desktop_video_RO_tgd/style.css" afterPath="$PROJECT_DIR$/pages/juicead1_desktop_video_RO_tgd/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/juicead1_desktop_video_ro_24heures/style.css" afterPath="$PROJECT_DIR$/pages/juicead1_desktop_video_ro_24heures/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_minirectangle1_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_minirectangle1_FR_lematin/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_rectangle1_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_rectangle1_FR_lematin/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_billboard2_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_billboard2_FR_lematin/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_chweizerfamilie/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_chweizerfamilie/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_billboard4_DE_derbund/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_billboard4_DE_derbund/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_lematin/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_tdg/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_tdg/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_contentboard2_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_contentboard2_FR_lematin/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_contentboard2_FR_tdg/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_contentboard2_FR_tdg/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_lematin/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_tdg/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_tdg/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_rectangel3_FR_tdg/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangel3_FR_tdg/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_FR_tdg/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_FR_tdg/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle3_FR_lematin/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_lematin/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_tdg/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_tdg/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_spezialcomments3_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_spezialcomments3_FR_lematin/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_spezialcomments3_FR_tdg/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_spezialcomments3_FR_tdg/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_FR_lematin/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_tdg/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_tdg/style.css" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
+    <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,51 +53,102 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="renderer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/renderer.js">
+      <file leaf-file-name="Gruntfile.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gruntfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="250" column="34" lean-forward="false" selection-start-line="250" selection-start-column="20" selection-end-line="250" selection-end-column="34" />
-              <folding>
-                <marker date="1494937101000" expanded="true" signature="1444:1456" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="astloader.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nodetest/astloader.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="387">
+              <caret line="284" column="29" lean-forward="false" selection-start-line="284" selection-start-column="29" selection-end-line="284" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nodetest/appnexus-lib/index.js">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/juicead1_desktop_text_fr_24heures/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+            <state relative-caret-position="301">
+              <caret line="83" column="19" lean-forward="false" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myAst.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nodetest/appnexus-lib/myAst.js">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_minirectangle1_FR_lematin/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="200" column="118" lean-forward="false" selection-start-line="200" selection-start-column="118" selection-end-line="200" selection-end-column="118" />
-              <folding>
-                <marker date="1494943837000" expanded="true" signature="25165:25374" ph="..." />
-                <marker date="1494943837000" expanded="true" signature="63033:63129" ph="..." />
-                <marker date="1494943837000" expanded="true" signature="63168:63187" ph="..." />
-                <marker date="1494943837000" expanded="true" signature="63198:63204" ph=" " />
-                <marker date="1494943837000" expanded="true" signature="63238:63250" ph="..." />
-                <marker date="1494943837000" expanded="true" signature="64196:64247" ph="..." />
-              </folding>
+            <state relative-caret-position="743">
+              <caret line="81" column="20" lean-forward="false" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_billboard4_DE_derbund/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_spezialcomments3_FR_tdg/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_FR_lematin/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/juicead1_android_text_DE_bazonline/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_tdg/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="72" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/juicead1_desktop_video_ro_24heures/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="68" column="23" lean-forward="false" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="116" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/juicead1_desktop_video_RO_tgd/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,19 +157,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>page</find>
-      <find>loggly</find>
-      <find>prepare</find>
-      <find>loadedCreatives</find>
-      <find>fallbacklay</find>
-      <find>.title</find>
-      <find>adavaila</find>
-      <find>this.ads[bucket].duplicatesFound</find>
-      <find>this.ads[bucket].duplicatesF</find>
-      <find>check</find>
-      <find>checkLayoutSwitch</find>
-      <find>bucket</find>
-      <find>.text</find>
       <find>layoutSwitched</find>
       <find>elem render</find>
       <find>douplicateFound</find>
@@ -104,6 +174,19 @@
       <find>debugTurnedOn</find>
       <find>prepareTa</find>
       <find>defineTag</find>
+      <find>ppn_sb_wideboard3_DE_annabelle</find>
+      <find>folderlist</find>
+      <find>config</find>
+      <find>pages</find>
+      <find>http:</find>
+      <find>http://media.das.tamedia.ch/images/ppnlematin-mehr.gif</find>
+      <find>h</find>
+      <find>http</find>
+      <find>http:/</find>
+      <find>http://media.das.tamedia.ch/images/nn_publicite.gif</find>
+      <find>https://fonts.googleapis.com/css?family=Playfair+Display:700</find>
+      <find>http://fonts.googleapis.com/css?family=Playfair+Display:700</find>
+      <find>http://</find>
     </findStrings>
     <replaceStrings>
       <replace>\&quot;</replace>
@@ -131,15 +214,19 @@
       <replace>https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/images/ppnimmostreet-arrow.gif</replace>
       <replace>ppn_sb_rectangle2_DE_bernerzeitung</replace>
       <replace>ppn_sb_rectangle2_FR_femina</replace>
+      <replace>ppn_sb_wideboard3_v2_DE_annabelle</replace>
+      <replace>https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/assets/bilan/img/ppnlematin-mehr.gif</replace>
+      <replace>https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/assets/24heures/img/nn_publicite.gif</replace>
+      <replace>https://fonts.googleapis.com/css?family=Playfair+Display:700</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_mobilerectangle1_DE_derbund</dir>
       <dir>C:\Users\anej\Documents\GitHub\programmatic\pages</dir>
       <dir>C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_spezialfooter6_DE_20min</dir>
       <dir>C:\Users\anej\Documents\GitHub\programmatic</dir>
-      <dir>$PROJECT_DIR$/pages</dir>
       <dir>$PROJECT_DIR$/build/ppn_sb_leaderboard3_DE_immostreet</dir>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/pages</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -149,26 +236,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_DE_bernerzeitung/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_DE_derbund/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_DE_homegate/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_DE_immostreet/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_24heures/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_alleimmobilien/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_autoonline/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_ghi/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_homegate/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_immo/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_immostreet/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_lematin/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_tdg/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_IT_alleimmobilien/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_IT_autoonline/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_IT_homegate/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_IT_immo/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_IT_immostreet/config.json" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_18.js" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_19.js" />
         <option value="$USER_HOME$/Desktop/vast.xml" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_monsterboard3_v2_DE_20min/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_monsterboard3_v2_FR_20min/style.css" />
@@ -196,10 +263,30 @@
         <option value="$PROJECT_DIR$/pages/ppn_sb_rectangle2_FR_femina/config.json" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_rectangle2_FR_femina/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_FR_20min/config.json" />
-        <option value="$PROJECT_DIR$/src/renderer.js" />
         <option value="$PROJECT_DIR$/nodetest/astloader.js" />
         <option value="$PROJECT_DIR$/nodetest/appnexus-lib/index.js" />
         <option value="$PROJECT_DIR$/nodetest/appnexus-lib/myAst.js" />
+        <option value="$PROJECT_DIR$/src/renderer.js" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_wideboard3_v2_DE_annabelle/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_schweizerfamilie/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_rectangle1_FR_lematin/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_contentboard2_FR_lematin/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_contentboard2_FR_tdg/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_lematin/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_tdg/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_rectangel3_FR_tdg/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_rectangle1_FR_tdg/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_rectangle3_FR_lematin/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_lematin/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_tdg/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_spezialcomments3_FR_lematin/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_tdg/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_minirectangle1_FR_lematin/style.css" />
+        <option value="$PROJECT_DIR$/pages/juicead1_desktop_video_RO_tgd/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_tdg/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_billboard4_DE_derbund/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_spezialcomments3_FR_tdg/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_FR_lematin/style.css" />
       </list>
     </option>
   </component>
@@ -215,7 +302,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="2560" />
-    <option name="height" value="1363" />
+    <option name="height" value="1337" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -235,6 +322,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -271,7 +360,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nodetest" />
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -285,11 +374,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nodetest" />
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="appnexus-lib" />
+              <option name="myItemId" value="juicead1_desktop_text_fr_24heures" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -303,14 +392,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
+              <option name="myItemId" value="grunt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grunt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -330,13 +435,6 @@
     <property name="editor.config.accepted" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/node_modules/appnexus-lib" />
-      <recent name="$PROJECT_DIR$/pages/" />
-      <recent name="$PROJECT_DIR$/pages/ppn_sb_monsterboard3_v2_DE_20min" />
-      <recent name="$PROJECT_DIR$/pages" />
-      <recent name="$PROJECT_DIR$/pages/ppn_sb_monsterboard4_v2_DE_20min" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/nodetest" />
       <recent name="$PROJECT_DIR$" />
@@ -344,12 +442,41 @@
       <recent name="C:\Users\anej\Documents\GitHub\programmatic\grunt" />
       <recent name="C:\Users\anej\Documents\GitHub\programmatic\test" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/node_modules/appnexus-lib" />
+      <recent name="$PROJECT_DIR$/pages/" />
+      <recent name="$PROJECT_DIR$/pages/ppn_sb_monsterboard3_v2_DE_20min" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ApexTest" factoryName="Apex Test">
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
@@ -462,11 +589,17 @@
       <workItem from="1493205284549" duration="13025000" />
       <workItem from="1493792329042" duration="41627000" />
       <workItem from="1494851329776" duration="13967000" />
+      <workItem from="1498812747057" duration="832000" />
+      <workItem from="1499080151760" duration="891000" />
+      <workItem from="1499084239602" duration="1991000" />
+      <workItem from="1499088230615" duration="978000" />
+      <workItem from="1499151618222" duration="295000" />
+      <workItem from="1499176862120" duration="1333000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="663016000" />
+    <option name="totallyTimeSpent" value="669336000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -478,26 +611,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1363" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="23" width="2560" height="1337" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2918455" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19261318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30268198" sideWeight="0.50394946" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32981783" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35421687" sideWeight="0.49605057" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2918455" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20214456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3855232" sideWeight="0.49605057" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34062928" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34303698" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -514,275 +650,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_ghi/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_homegate/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_immo/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_immostreet/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_lematin/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_tdg/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_skyscraper3_IT_alleimmobilien/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_skyscraper3_IT_autoonline/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_skyscraper3_IT_homegate/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_skyscraper3_IT_immo/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_skyscraper3_IT_immostreet/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_18.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="94" column="45" lean-forward="false" selection-start-line="94" selection-start-column="45" selection-end-line="94" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/tt.js" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_19.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/vast.xml" />
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard3_v2_DE_20min/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="38" column="21" lean-forward="false" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard3_v2_FR_20min/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="926">
-          <caret line="87" column="33" lean-forward="false" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard4_v2_DE_20min/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="926">
-          <caret line="88" column="33" lean-forward="false" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard4_v2_FR_20min/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/starter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard1_DE_20min/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard1_FR_20min/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard2_FR_20min/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard2_DE_20min/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard4_v2_DE_20min/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="42" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard4_v2_FR_20min/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard3_v2_FR_20min/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="34" lean-forward="false" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard1_FR_20min/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard1_DE_20min/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_billboard2_FR_lematin/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard3_DE_20min/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_lematin/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/ppn_sb_leaderboard3_DE_immostreet/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="67" column="21" lean-forward="false" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/ppn_sb_leaderboard3_FR_immostreet/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_26.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/ppn_sb_leaderboard3_DE_immostreet/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1019">
-          <caret line="2" column="1744" lean-forward="false" selection-start-line="2" selection-start-column="1744" selection-end-line="2" selection-end-column="1744" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/build/ppn_sb_leaderboard3_DE_immostreet/style.css" />
+    <entry file="file://$PROJECT_DIR$/build/ppn_sb_leaderboard3_FR_immostreet/index.js" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_26.html" />
+    <entry file="file://$PROJECT_DIR$/build/ppn_sb_leaderboard3_DE_immostreet/index.js" />
     <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard3_v2_DE_20min/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="8" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_lematin/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_27.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_27.html" />
     <entry file="file://$PROJECT_DIR$/pages/ppn_sb_rectangle3_DE_bernerzeitung/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -790,7 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -798,7 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -806,7 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="50" column="49" lean-forward="false" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -822,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -830,56 +708,263 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/grunt-string-replace/LICENSE-MIT" />
+    <entry file="file://$PROJECT_DIR$/nodetest/appnexus-lib/index.js" />
+    <entry file="file://$PROJECT_DIR$/nodetest/astloader.js" />
+    <entry file="file://$PROJECT_DIR$/nodetest/appnexus-lib/myAst.js" />
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_wideboard3_DE_annabelle/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/grunt-string-replace/LICENSE-MIT">
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_wideboard3_v2_DE_annabelle/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="1365">
+          <caret line="91" column="15" lean-forward="false" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ppn_sb_halfpage2_FR_bilan/style.css" />
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_schweizerfamilie/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ppn_sb_halfpage2_FR_bilan/config.json" />
+    <entry file="file://$PROJECT_DIR$/ppn_sb_halfpage2_FR_bilan/index.html" />
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_schweizerfamilie/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="14" lean-forward="false" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grunt/tasks/copy_json_config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="2" lean-forward="true" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grunt/tasks/insert_env_vars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grunt/tasks/prepare_copy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="250" column="34" lean-forward="false" selection-start-line="250" selection-start-column="20" selection-end-line="250" selection-end-column="34" />
+        <state relative-caret-position="230">
+          <caret line="277" column="64" lean-forward="false" selection-start-line="277" selection-start-column="64" selection-end-line="277" selection-end-column="64" />
           <folding>
-            <marker date="1494937101000" expanded="true" signature="1444:1456" ph="..." />
+            <marker date="1498807985000" expanded="true" signature="1444:1456" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nodetest/appnexus-lib/index.js">
+    <entry file="file://$PROJECT_DIR$/pages/ppn_rectangle1_FR_lematin/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        <state relative-caret-position="15">
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nodetest/astloader.js">
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_lematin/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="263">
+          <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nodetest/appnexus-lib/myAst.js">
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_contentboard2_FR_lematin/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="200" column="118" lean-forward="false" selection-start-line="200" selection-start-column="118" selection-end-line="200" selection-end-column="118" />
-          <folding>
-            <marker date="1494943837000" expanded="true" signature="25165:25374" ph="..." />
-            <marker date="1494943837000" expanded="true" signature="63033:63129" ph="..." />
-            <marker date="1494943837000" expanded="true" signature="63168:63187" ph="..." />
-            <marker date="1494943837000" expanded="true" signature="63198:63204" ph=" " />
-            <marker date="1494943837000" expanded="true" signature="63238:63250" ph="..." />
-            <marker date="1494943837000" expanded="true" signature="64196:64247" ph="..." />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_contentboard2_FR_tdg/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_lematin/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_tdg/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_rectangel3_FR_tdg/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_rectangle1_FR_tdg/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_rectangle3_FR_lematin/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_lematin/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_skyscraper3_FR_tdg/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_spezialcomments3_FR_lematin/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_tdg/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/juicead1_desktop_text_fr_24heures/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="83" column="19" lean-forward="false" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_minirectangle1_FR_lematin/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="81" column="20" lean-forward="false" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/juicead1_desktop_video_ro_24heures/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="68" column="23" lean-forward="false" selection-start-line="68" selection-start-column="23" selection-end-line="68" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/juicead1_desktop_video_RO_tgd/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/juicead1_android_text_DE_bazonline/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_tdg/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="72" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_billboard4_DE_derbund/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_spezialcomments3_FR_tdg/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_spezialfooter6_FR_lematin/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="284" column="29" lean-forward="false" selection-start-line="284" selection-start-column="29" selection-end-line="284" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>

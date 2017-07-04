@@ -62,7 +62,7 @@
     text-transform: uppercase;
     text-align: left;
     padding-left: 15px;
-    background: url("http://media.das.tamedia.ch/images/ppnlematin-mehr.gif")left center no-repeat;
+    background: url("https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/assets/bilan/img/ppnlematin-mehr.gif")left center no-repeat;
     background-position: left center;
     background-size: 10px;
 }

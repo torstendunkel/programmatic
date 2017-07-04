@@ -1,5 +1,5 @@
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
 .ppn_sb_mobilerectangle2_FR_lematin {
     width: 300px;
     height: 250px;
@@ -64,7 +64,7 @@
     text-transform: uppercase;
     text-align: left;
     padding-left: 15px;
-    background: url("http://media.das.tamedia.ch/images/ppnlematin-mehr.gif")left center no-repeat;
+    background: url("https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/assets/bilan/img/ppnlematin-mehr.gif")left center no-repeat;
     background-position: left center;
     background-size: 10px;
 }

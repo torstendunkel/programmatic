@@ -8,7 +8,7 @@
     overflow: hidden;
     background: white;
     position: relative;
-    border-top: 1px solid #000;
+    border-bottom: 1px solid #DEE4E8;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -35,7 +35,7 @@
     position: relative;
 }
 .ppn_sb_billboard3_DE_schweizerfamilie .singlebox:last-child {
-  margin: 0;
+    margin: 0;
 }
 .ppn_sb_billboard3_DE_schweizerfamilie .title {
     cursor: pointer;
@@ -78,11 +78,11 @@
     text-decoration: none;
 }
 .ppn_sb_billboard3_DE_schweizerfamilie .text span.url {
-	 cursor: pointer;
-   display: inline;
-   color: #4A4A4A;
-   font: 600 12px/15px 'Poppins', sans-serif;
-   text-align: left;
+    cursor: pointer;
+    display: inline;
+    color: #4A4A4A;
+    font: 600 12px/15px 'Poppins', sans-serif;
+    text-align: left;
 }
 .ppn_sb_billboard3_DE_schweizerfamilie .url a, .ppn_sb_billboard3_DE_schweizerfamilie .url a:link, .ppn_sb_billboard3_DE_schweizerfamilie .url a:visited, .ppn_sb_billboard3_DE_schweizerfamilie .url a:hover, .ppn_sb_billboard3_DE_schweizerfamilie .url a:active {
     color: #DE232B;
@@ -102,28 +102,26 @@
 	width: 300px;
 	height: 168px;
 	margin: 0px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    border-bottom: 4px solid #DE232B;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .ppn_sb_billboard3_DE_schweizerfamilie .ppncaption {
     display: none;
 }
 .ppn_sb_billboard3_DE_schweizerfamilie .tnlogo > a{
-  position: absolute;
+    position: absolute;
 	right: 0;
-	top: -1px;
-  padding: 2px 3px 1px 3px;
+	bottom: -1px;
+    padding: 2px 3px 1px 3px;
 	background: white;
-  border: 1px solid #000;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    border: 1px solid #DEE4E8;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 	font: 600 8px/8px 'Poppins', sans-serif;
-	color: #000;
+	color: #DEE4E8;
 	text-decoration: none;
-  text-transform: uppercase;
-}
-.ppn_sb_billboard3_DE_schweizerfamilie  tnlogo{
-position: absolute; bottom:0; left:0; width:100%; height:15px;
+    text-transform: uppercase;
 }
