@@ -547,7 +547,7 @@ ch.tam.addnexusRender = (function () {
             },true);
             */
             //force all following logs do be done as "followup"
-            _this.forceSession = _this.followUp = true;
+            this.forceSession = this.followUp = true;
 
 
             this.loadedAds = {};
@@ -558,8 +558,8 @@ ch.tam.addnexusRender = (function () {
             this.logs = [];
             this.ads = {};
 
-            this.options.challenge = this.options.challenge.join(",");
-            this.options.ctagid = this.options.ctagid.join(",");
+            this.options.challenge = this.options.challenge ? this.options.challenge.join(",") : this.options.challenge;
+            this.options.ctagid = this.options.ctagid ? this.options.ctagid.join(",")  : this.options.ctagid;
 
             this.prepareTags();
 
@@ -670,6 +670,8 @@ ch.tam.addnexusRender = (function () {
                 layoutSwitch: ad.layoutSwitched || false, // says that ad was only rendered because of layoutswitch
                 duplicates : ad.duplicatesFound || false
             });
+
+            window.dispatchEvent(new Event('resize'));
         },
 
         renderNativeAd: function (data) {
@@ -678,8 +680,8 @@ ch.tam.addnexusRender = (function () {
 
             var obj = {
                 title: data.native.title,
-                img: data.native.mainMedia[0].url,
-                description: data.native.description,
+                img: data.native.image.url,
+                description: data.native.body,
                 href: data.native.clickUrl,
                 impression: '',
                 id: data.id,
