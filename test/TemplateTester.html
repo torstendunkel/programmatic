@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        .form-style-8{
+            font-family: 'Open Sans Condensed', arial, sans;
+            width: 500px;
+            padding: 30px;
+            background: #FFFFFF;
+            margin: 50px auto;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+            -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+            -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+        }
+        .form-style-8 h2{
+            background: #4D4D4D;
+            text-transform: uppercase;
+            font-family: 'Open Sans Condensed', sans-serif;
+            color: #797979;
+            font-size: 18px;
+            font-weight: 100;
+            padding: 20px;
+            margin: -30px -30px 30px -30px;
+        }
+        .form-style-8 input[type="text"],
+        .form-style-8 input[type="date"],
+        .form-style-8 input[type="datetime"],
+        .form-style-8 input[type="email"],
+        .form-style-8 input[type="number"],
+        .form-style-8 input[type="search"],
+        .form-style-8 input[type="time"],
+        .form-style-8 input[type="url"],
+        .form-style-8 input[type="password"],
+        .form-style-8 textarea,
+        .form-style-8 select
+        {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            outline: none;
+            display: block;
+            width: 100%;
+            padding: 7px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            background: transparent;
+            margin-bottom: 10px;
+            font: 16px Arial, Helvetica, sans-serif;
+            height: 45px;
+        }
+        .form-style-8 textarea{
+            height: 100px;
+            overflow: hidden;
+        }
+        .form-style-8 input[type="button"],
+        .form-style-8 input[type="submit"]{
+            -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+            -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+            box-shadow: inset 0px 1px 0px 0px #45D6D6;
+            background-color: #2CBBBB;
+            border: 1px solid #27A0A0;
+            display: inline-block;
+            cursor: pointer;
+            color: #FFFFFF;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 14px;
+            padding: 8px 18px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .form-style-8 input[type="button"]:hover,
+        .form-style-8 input[type="submit"]:hover {
+            background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+            background-color:#34CACA;
+        }
+
+
+
+
+        #preview {
+            position: relative;
+            width: 100%;
+            height: 0;
+
+        }
+
+        #preview iframe {
+            position: absolute;
+            resize: both;
+            overflow: auto;
+            margin-left: 50%;
+            transform:translateX(-50%);
+        }
+
+    </style>
+
+    <script>
+
+        var lastId;
+        preparePreview = function(){
+
+            var frame = document.getElementById(lastId);
+
+            if(frame){
+                document.getElementById("preview").removeChild(frame);
+            }
+
+            lastId = "preview_"+Math.floor(Math.random() * 1000000);
+            frame = document.createElement("iframe");
+            frame.setAttribute("id",lastId);
+            frame.scrolling="no";
+
+            frame.frameBorder="none";
+            document.getElementById("preview").appendChild(frame);
+            frame.onload = function(){
+                setTimeout(function(){
+                    renderTemplate(ifrm);
+                },100)
+
+            };
+
+            var ifrm = frame.contentWindow;
+            var content = "<html><head><meta charset=\"UTF-8\"/><script src='demoRenderer.js'><\/script><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><\/head><body ><\/body></html>";
+
+            ifrm.document.write(content);
+            ifrm.document.close();
+
+
+
+
+        };
+
+        renderTemplate = function(ifrm){
+
+            var renderer = ifrm.ch.tam.addnexusRender;
+            var renderConfig = {};
+
+            renderConfig.ads = Object.assign({},ifrm.demoAd);
+            renderConfig.ads.identifier = document.getElementById("identifier").value;
+            renderConfig.identifier = renderConfig.ads.identifier;
+            renderConfig.ads.numads = ifrm.ch.tam.addnexusRender.prototype.parseNumadsFromIdentifier(renderConfig.ads.identifier);
+            renderConfig.ads.loadedAds = renderConfig.ads.loadedAds.slice(0,renderConfig.ads.numads);
+            renderConfig.numads = renderConfig.ads.numads;
+
+
+            var style = document.getElementById("css").value;
+
+            if(style.length>0){
+                var css = document.createElement("style");
+            }
+
+            renderConfig.css = document.getElementById("css").value;
+
+            var json = document.getElementById("json").value;
+            if(json.length > 0){
+                try{
+                    json = JSON.parse(json);
+                    renderConfig = Object.assign({},renderConfig,json);
+                }catch(e){
+
+                }
+            }
+
+            try{
+                data = {
+                    identifier :renderConfig.identifier,
+                    css : renderConfig.css,
+                    json : json.length > 0 ? JSON.stringify(json) : null
+                };
+                sessionStorage.setItem("temp", JSON.stringify(data));
+            }
+            catch(e){}
+
+
+            ifrm.adRenderer = new renderer(renderConfig);
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+
+
+<div class="form-style-8">
+    <h2>Text/image render preview</h2>
+    <form onsubmit="preparePreview()">
+        <input type="text" name="field1" placeholder="template identifier (folder name)" id="identifier"/>
+
+        <textarea placeholder="Style (from style.css)" id="css"></textarea>
+        <textarea placeholder="Config JSON (from config.json)" id="json"></textarea>
+        <input type="button" value="Render template" onclick="preparePreview()"/>
+    </form>
+</div>
+
+
+<div id="preview">
+
+</div>
+
+
+
+<script>
+
+    try{
+        var json = JSON.parse(sessionStorage.getItem("temp"));
+        document.getElementById("identifier").value = json.identifier || "";
+        document.getElementById("css").value = json.css.length > 0 ? json.css : null;
+        document.getElementById("json").value = json.json.length > 0 ? json.json :null;
+
+    }catch(e){}
+
+</script>
+
+
+</body>
+
+</html>
