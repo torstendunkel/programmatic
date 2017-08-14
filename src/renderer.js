@@ -671,7 +671,8 @@ ch.tam.addnexusRender = (function () {
                 duplicates : ad.duplicatesFound || false
             });
 
-            window.dispatchEvent(new Event('resize'));
+
+            this.addResizeTrigger();
         },
 
         renderNativeAd: function (data) {
@@ -761,6 +762,24 @@ ch.tam.addnexusRender = (function () {
 
             return this.tmpl(this.options.moreBtn, data);
         },
+
+        // function will fake resize to force dfp (if used) to fit the adslot to the correct size
+            addResizeTrigger: function(){
+
+            var imgs = document.getElementsByTagName('img');
+            window.dispatchEvent(new Event('resize'));
+
+            if(imgs && imgs.length > 0){
+               for(var i=0; i < imgs.length; i++){
+                   if(imgs[i].className.indexOf("adimage") !== -1){
+                       imgs[i].onload = function(){
+                           window.dispatchEvent(new Event('resize'));
+                       }
+                   }
+               }
+            }
+        },
+
 
         // function sorts all ads by hightest cpm first to ensure that the best ad is at the top
         sortByCPM : function(ad){
