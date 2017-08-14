@@ -1,4 +1,6 @@
-
+body{
+    margin:0;
+}
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 .ppn_sb_mobilerectangle2_FR_tdg {
     width: 300px;
@@ -12,6 +14,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 .ppn_sb_mobilerectangle2_FR_tdg .singlebox {
     width: 300px;

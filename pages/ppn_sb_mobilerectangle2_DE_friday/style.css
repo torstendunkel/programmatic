@@ -1,4 +1,6 @@
-
+body{
+    margin:0;
+}
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:700italic,700);
 .ppn_sb_mobilerectangle2_DE_friday {
     width: 300px;
@@ -10,6 +12,7 @@
     position: relative;
     cursor: pointer;
     border: none;
+    margin: 0 auto;
 }
 .ppn_sb_mobilerectangle2_DE_friday .ppninnerbox {
     width: 300px;

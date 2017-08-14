@@ -1,5 +1,10 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:700);
+
+body{
+    margin:0;
+}
+
 .ppn_sb_mobilerectangle1_IT_tio {
     width: 300px;
     height: 250px;
@@ -12,6 +17,7 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    margin: 0 auto;
 }
 .ppn_sb_mobilerectangle1_IT_tio .ppninnerbox {
     width: 300px;

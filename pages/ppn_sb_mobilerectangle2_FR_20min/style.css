@@ -1,4 +1,6 @@
-
+body{
+    margin:0;
+}
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 html, body {
     margin: 0;
@@ -12,6 +14,7 @@ html, body {
     background: #F5F5F5;
     padding-top: 4px;
     position: relative;
+    margin: 0 auto;
 }
 .ppn_sb_mobilerectangle2_FR_20min .singlebox {
     border-bottom: 1px solid #999999;

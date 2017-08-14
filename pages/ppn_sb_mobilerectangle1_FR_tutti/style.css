@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-
+body{
+  margin:0;
+}
 .ppn_sb_mobilerectangle1_FR_tutti {
   width: 300px;
   height: 250px;
@@ -10,6 +12,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 .ppn_sb_mobilerectangle1_FR_tutti .ppninnerbox {
 	width: 300px;

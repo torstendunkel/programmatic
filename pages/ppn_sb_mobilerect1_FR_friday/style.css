@@ -1,4 +1,6 @@
-
+body{
+    margin:0;
+}
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:700italic,700);
 .ppn_sb_mobilerect1_FR_friday {
     width: 300px;
@@ -14,7 +16,8 @@
     border: 1px solid #F8F6EF;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 .ppn_sb_mobilerect1_FR_friday .ppninnerbox {
     width: 300px;

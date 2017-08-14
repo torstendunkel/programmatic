@@ -1,4 +1,6 @@
-
+body{
+    margin:0;
+}
 @import url(https://fonts.googleapis.com/css?family=Poppins:700|Quantico);
 .ppn_sb_mobilerectangle1_DE_tilllate {
     width: 300px;
@@ -8,6 +10,7 @@
     color: white;
     position: relative;
     cursor: pointer;
+    margin: 0 auto;
 }
 .ppn_sb_mobilerectangle1_DE_tilllate .ppninnerbox {
     width: 300px;

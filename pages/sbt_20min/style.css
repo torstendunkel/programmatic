@@ -6,6 +6,10 @@
     text-rendering: optimizeLegibility;
 }
 
+body{
+    margin :0px;
+}
+
 .tm-sb-content {
     font-family: Georgia, "Times New Roman", Times, serif!important;
     width: 300px;
@@ -18,6 +22,7 @@
     overflow: hidden;
     text-align: left;
     cursor: pointer;
+    margin : 0 auto;
 }
 
 .tm-sb-content a {
