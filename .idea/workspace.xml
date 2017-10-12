@@ -2,47 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecada909-ba54-4aca-bdc5-42610f8039de" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/TemplateTester.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/demoRenderer.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/fullwidth1_DE_20min/config.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/fullwidth1_DE_20min/images/640x360px.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/fullwidth1_DE_20min/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/fullwidth1_DE_20min/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/mobApiResponse.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/mobApiResponse2.json" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/v_ga_monsterboard1_DE_20min/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/v_ga_monsterboard1_DE_20min/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/v_ga_monsterboard1_DE_20min/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/v_ga_monsterboard1_FR_20min/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/v_ga_monsterboard1_FR_20min/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/v_ga_monsterboard1_FR_20min/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/v_ga_monsterboard2_FR_20min/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/v_ga_monsterboard2_FR_20min/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/v_ga_monsterboard2_FR_20min/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerect1_DE_friday/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerect1_DE_friday/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerect1_FR_friday/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerect1_FR_friday/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerect1_v2_DE_tagesanzeiger/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerect1_v2_DE_tagesanzeiger/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_20min/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_20min/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_basler/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_basler/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_bernerzeitung/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_bernerzeitung/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_derbund/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_derbund/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_tilllate/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_tilllate/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_tutti/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_tutti/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_20min/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_20min/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_24heures/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_24heures/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_bilan/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_bilan/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_lematin/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_tdg/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_tdg/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_tilllate/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_tilllate/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_tutti/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_tutti/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_IT_tio/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_IT_tio/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_IT_tutti/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_IT_tutti/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_20min/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_20min/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_baslerzeitung/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_baslerzeitung/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_bernerzeitung/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_bernerzeitung/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_derbund/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_derbund/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_friday/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_friday/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_tagesanzeiger/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_tagesanzeiger/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_20min/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_20min/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_24heures/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_24heures/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_friday/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_friday/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_lematin/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_lematin/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_tdg/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_tdg/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_IT_tio/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_IT_tio/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/sbt_20min/style.css" afterPath="$PROJECT_DIR$/pages/sbt_20min/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ppn_sb_rectangle2_DE_bernerzeitung/style.css" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle2_DE_bernerzeitung/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/sbt_partnerad1_tutti/style.css" afterPath="$PROJECT_DIR$/pages/sbt_partnerad1_tutti/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer.js" afterPath="$PROJECT_DIR$/src/renderer.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -65,70 +36,99 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TemplateTester.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/TemplateTester.html">
+      <file leaf-file-name="renderer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/renderer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+            <state relative-caret-position="329">
+              <caret line="576" column="89" lean-forward="false" selection-start-line="576" selection-start-column="89" selection-end-line="576" selection-end-column="89" />
               <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#326#704#0" expanded="false" />
-                <element signature="e#729#1030#0" expanded="false" />
+                <marker date="1507815638000" expanded="true" signature="1445:1457" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_20min/config.json">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/h_monsterboard2_DE_20min/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/v_ga_monsterboard1_FR_20min/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scratch_34.html" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_34.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="106" column="7" lean-forward="false" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="43" lean-forward="false" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2265">
+              <caret line="151" column="40" lean-forward="false" selection-start-line="151" selection-start-column="40" selection-end-line="151" selection-end-column="40" />
+              <folding>
+                <element signature="n#style#0;n#section#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="starter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/starter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scratch_17.js" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_17.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="1866" lean-forward="false" selection-start-line="1" selection-start-column="1862" selection-end-line="1" selection-end-column="1866" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/juicead1_android_text_DE_bernerzeitung/style.css">
+        <entry file="file://$PROJECT_DIR$/pages/v_ga_monsterboard1_FR_20min/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="1380">
+              <caret line="92" column="18" lean-forward="false" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/juicead1_android_text_DE_bernerzeitung/config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demoRenderer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/demoRenderer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3525">
-              <caret line="235" column="73" lean-forward="false" selection-start-line="235" selection-start-column="73" selection-end-line="235" selection-end-column="73" />
-              <folding>
-                <marker date="1501847930000" expanded="true" signature="5482:5494" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="renderer.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/renderer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="833" column="24" lean-forward="true" selection-start-line="833" selection-start-column="24" selection-end-line="833" selection-end-column="24" />
-              <folding>
-                <marker date="1502703175000" expanded="true" signature="1444:1456" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -137,41 +137,38 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fullwidth1_DE_tagesanzeiger</find>
-      <find>flex</find>
-      <find>adi</find>
-      <find>loadstyle</find>
-      <find>render</find>
-      <find>render(</find>
-      <find>guessLangFromIdentifier</find>
-      <find>parse</find>
-      <find>style</find>
-      <find>scriptbase</find>
-      <find>createEl</find>
-      <find>preReneredStyle</find>
-      <find>loadStyle</find>
-      <find>prepareStyle</find>
-      <find>resize</find>
+      <find>AnzeigePublicité</find>
+      <find>loggly</find>
+      <find>submit</find>
       <find>clicktag</find>
-      <find>impression</find>
-      <find>clicktr</find>
-      <find>loadJSON</find>
-      <find>jsonp</find>
-      <find>with json</find>
-      <find>loadConfigWithJSONP</find>
-      <find>// if the json is rendered into the file we do not need to load it</find>
-      <find>setopti</find>
-      <find>textarea</find>
-      <find>callbackAfterOptionsAssign</find>
-      <find>iframe</find>
-      <find>render:</find>
-      <find>addResizeTr</find>
-      <find>trackingp</find>
+      <find>images</find>
+      <find>window.open</find>
+      <find>resize</find>
+      <find>geo</find>
+      <find>title</find>
+      <find>v_ga_monsterboard2_DE_20min</find>
+      <find>v_ga_monsterboard1_DE_20min</find>
+      <find>can not show</find>
+      <find>mraid</find>
+      <find>checkForMRAID</find>
+      <find>useMRAID</find>
+      <find>render</find>
+      <find>window.anConfigFirst</find>
+      <find>dnt</find>
+      <find>hyphens</find>
+      <find>wrap</find>
+      <find>hyph</find>
+      <find>prebid</find>
+      <find>config</find>
+      <find>text-dec</find>
+      <find>hash</find>
+      <find>creativeid</find>
+      <find>anConfigFirst</find>
+      <find>click</find>
+      <find>losleg</find>
+      <find>secondtry</find>
     </findStrings>
     <replaceStrings>
-      <replace>https://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Bold-Web.ttf</replace>
-      <replace>https://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Bold-Web.svg</replace>
-      <replace>https://fonts.googleapis.com/css?family=Patua+One|Fjord+One</replace>
       <replace>https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans</replace>
       <replace>https://fonts.googleapis.com/css?family=Bree+Serif</replace>
       <replace>ppn_sb_monsterboard3_v2_DE_20min</replace>
@@ -199,6 +196,9 @@
       <replace>fullwidth1_FR_lematin</replace>
       <replace>fullwidth1_DE_bazonline</replace>
       <replace>fullwidth1_FR_tdg</replace>
+      <replace>v_ga_monsterboard2_FR_20min</replace>
+      <replace>v_ga_monsterboard1_DE_20min</replace>
+      <replace>v_ga_monsterboard1_FR_20min</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_mobilerectangle1_DE_derbund</dir>
@@ -217,31 +217,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_20min/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_24heures/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_bilan/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_lematin/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_tdg/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_tilllate/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_tutti/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_IT_tio/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_IT_tutti/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_20min/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_baslerzeitung/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_bernerzeitung/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_derbund/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_friday/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_tagesanzeiger/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_20min/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_24heures/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_friday/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_lematin/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_tdg/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_IT_tio/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerect1_v2_DE_tagesanzeiger/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerect1_FR_friday/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilerect1_DE_friday/style.css" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_11.js" />
         <option value="$PROJECT_DIR$/pages/fullwidth1_DE_bazonline/style.css" />
         <option value="$PROJECT_DIR$/pages/fullwidth1_DE_bernerzeitung/style.css" />
         <option value="$PROJECT_DIR$/pages/fullwidth1_DE_derbund/style.css" />
@@ -267,6 +242,31 @@
         <option value="$PROJECT_DIR$/src/demoRenderer.js" />
         <option value="$PROJECT_DIR$/test/TemplateTester.html" />
         <option value="$PROJECT_DIR$/test/demoRenderer.js" />
+        <option value="$PROJECT_DIR$/pages/h_ga_monsterboard2_DE_20min/config.json" />
+        <option value="$PROJECT_DIR$/pages/h_monsterboard2_DE_20min/config.json" />
+        <option value="$PROJECT_DIR$/pages/v_monsterboard2_DE_20min/config.json" />
+        <option value="$PROJECT_DIR$/pages/sbt_partnerad1_tutti/style.css" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_rectangle2_DE_bernerzeitung/style.css" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_15.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_22.html" />
+        <option value="$USER_HOME$/Desktop/index2.html" />
+        <option value="$USER_HOME$/Downloads/BernerZeitung_Set_final/300x250/lesestuecke_rot/index.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_27.html" />
+        <option value="$PROJECT_DIR$/build/v_ga_monsterboard2_DE_20min/style.css" />
+        <option value="$PROJECT_DIR$/pages/v_ga_monsterboard2_DE_20min/config.json" />
+        <option value="$PROJECT_DIR$/pages/v_ga_monsterboard1_FR_20min/config.json" />
+        <option value="$PROJECT_DIR$/pages/v_ga_monsterboard2_FR_20min/config.json" />
+        <option value="$PROJECT_DIR$/pages/v_ga_monsterboard2_DE_20min/style.css" />
+        <option value="$PROJECT_DIR$/pages/v_ga_monsterboard1_FR_20min/style.css" />
+        <option value="$PROJECT_DIR$/pages/v_ga_monsterboard2_FR_20min/style.css" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_17.js" />
+        <option value="$PROJECT_DIR$/pages/v_ga_monsterboard1_DE_20min/style.css" />
+        <option value="$PROJECT_DIR$/pages/v_monsterboard2_DE_20min/style.css" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_35.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_34.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/index.html" />
+        <option value="$USER_HOME$/Desktop/index.html" />
+        <option value="$USER_HOME$/Downloads/Rabattcorner_300x250/Rabattcorner_300x250.html" />
         <option value="$PROJECT_DIR$/src/renderer.js" />
       </list>
     </option>
@@ -283,7 +283,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="2560" />
-    <option name="height" value="1337" />
+    <option name="height" value="1334" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -303,7 +303,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -313,20 +313,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="programmatic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="programmatic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="programmatic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -357,22 +343,8 @@
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="programmatic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="programmatic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="juicead1_android_text_DE_bernerzeitung" />
+              <option name="myItemId" value="v_monsterboard2_DE_20min" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -390,13 +362,99 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="fullwidth1_DE_20min" />
+              <option name="myItemId" value="v_ga_monsterboard2_FR_20min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v_ga_monsterboard2_DE_20min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v_ga_monsterboard1_FR_20min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v_ga_monsterboard1_DE_20min" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="h_monsterboard2_DE_20min" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -407,7 +465,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="nodejs_interpreter_path" value="H:/dev/node/node" />
     <property name="js-jscs-nodeInterpreter" value="H:\dev\node\node.exe" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="JavaScript&#10;HTML" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="HTML&#10;JavaScript" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
@@ -416,19 +474,19 @@
     <property name="editor.config.accepted" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/test" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$USER_HOME$/Desktop" />
+      <recent name="$APPLICATION_CONFIG_DIR$/scratches" />
+      <recent name="$PROJECT_DIR$/pages/" />
+      <recent name="$PROJECT_DIR$/pages/v_ga_monsterboard2_DE_20min" />
       <recent name="$PROJECT_DIR$/pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages" />
+      <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$/nodetest" />
       <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\anej\Documents\GitHub\programmatic\src\html" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/pages" />
-      <recent name="$USER_HOME$/Desktop" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/node_modules/appnexus-lib" />
-      <recent name="$PROJECT_DIR$/pages/" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -599,12 +657,37 @@
       <workItem from="1501682418884" duration="2461000" />
       <workItem from="1501764203324" duration="2943000" />
       <workItem from="1501771099516" duration="15360000" />
-      <workItem from="1502702233779" duration="1434000" />
+      <workItem from="1502702233779" duration="2513000" />
+      <workItem from="1502712302265" duration="9000" />
+      <workItem from="1502715263328" duration="1681000" />
+      <workItem from="1502889629321" duration="848000" />
+      <workItem from="1502894257893" duration="2184000" />
+      <workItem from="1504189132500" duration="2597000" />
+      <workItem from="1504273142948" duration="2095000" />
+      <workItem from="1504593384814" duration="741000" />
+      <workItem from="1504768588330" duration="4412000" />
+      <workItem from="1504789655641" duration="1861000" />
+      <workItem from="1505381011481" duration="4430000" />
+      <workItem from="1505464555319" duration="2618000" />
+      <workItem from="1505478092720" duration="739000" />
+      <workItem from="1505487654549" duration="5083000" />
+      <workItem from="1505821014015" duration="680000" />
+      <workItem from="1505894917402" duration="361000" />
+      <workItem from="1505977673268" duration="293000" />
+      <workItem from="1505997288775" duration="2716000" />
+      <workItem from="1506085506938" duration="1039000" />
+      <workItem from="1506349772373" duration="1547000" />
+      <workItem from="1506524599370" duration="83000" />
+      <workItem from="1506598443376" duration="673000" />
+      <workItem from="1506927284045" duration="433000" />
+      <workItem from="1507556919872" duration="6884000" />
+      <workItem from="1507637731478" duration="3490000" />
+      <workItem from="1507806430511" duration="5859000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="727915000" />
+    <option name="totallyTimeSpent" value="782350000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -616,8 +699,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1337" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="2560" height="1334" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -625,9 +707,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2313253" sideWeight="0.49605057" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2721417" sideWeight="0.49605057" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2918455" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30063543" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36457506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24980143" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -655,315 +737,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_derbund/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_friday/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_DE_tagesanzeiger/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_20min/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_24heures/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_friday/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_lematin/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_FR_tdg/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerectangle2_IT_tio/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerect1_v2_DE_tagesanzeiger/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerect1_FR_friday/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerect1_DE_friday/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_11.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="164" column="29" lean-forward="true" selection-start-line="164" selection-start-column="29" selection-end-line="164" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_mobilerect1_DE_friday/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_bernerzeitung/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="146" column="28" lean-forward="false" selection-start-line="146" selection-start-column="28" selection-end-line="146" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_derbund/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="146" column="28" lean-forward="false" selection-start-line="146" selection-start-column="28" selection-end-line="146" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_FR_20min/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="944">
-          <caret line="125" column="20" lean-forward="false" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_FR_24heures/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="146" column="28" lean-forward="false" selection-start-line="146" selection-start-column="28" selection-end-line="146" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_FR_lematin/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
-          <caret line="125" column="22" lean-forward="false" selection-start-line="125" selection-start-column="22" selection-end-line="125" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_FR_tdg/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="128" column="21" lean-forward="false" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_FR_20min/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_bernerzeitung/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_bazonline/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="87" lean-forward="false" selection-start-line="32" selection-start-column="87" selection-end-line="32" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_derbund/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_bernerzeitung/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_derbund/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_FR_24heures/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_FR_lematin/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_FR_tdg/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/starter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="45" lean-forward="false" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_tagesanzeiger/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="3" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_tagesanzeiger/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_20min/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="46" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="127" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_20min/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="71" lean-forward="true" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/9545_DE_MB2/scripts/Main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="914">
-          <caret line="64" column="17" lean-forward="true" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/9545_DE_MB2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_tagesanzeiger/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_tagesanzeiger/index2.html" />
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_billboard3_FR_20min/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_billboard4_DE_20min/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_billboard4_FR_tdg/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_bazonline/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="29" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_bazonline/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="132" column="20" lean-forward="true" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/fullwidth1_DE_20min/config_jsonp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="82" lean-forward="false" selection-start-line="0" selection-start-column="82" selection-end-line="0" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/fullwidth1_DE_20min/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -971,9 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3525">
           <caret line="235" column="73" lean-forward="false" selection-start-line="235" selection-start-column="73" selection-end-line="235" selection-end-column="73" />
-          <folding>
-            <marker date="1501847930000" expanded="true" signature="5482:5494" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -981,7 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -989,7 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -997,29 +769,336 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/TemplateTester.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
+        <state relative-caret-position="600">
           <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/v_monsterboard2_DE_20min/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="587" lean-forward="false" selection-start-line="3" selection-start-column="587" selection-end-line="3" selection-end-column="587" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/h_monsterboard2_DE_20min/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="587" lean-forward="false" selection-start-line="3" selection-start-column="587" selection-end-line="3" selection-end-column="587" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/h_ga_monsterboard2_DE_20min/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="600" lean-forward="false" selection-start-line="3" selection-start-column="600" selection-end-line="3" selection-end-column="600" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/v_ga_monsterboard2_DE_20min/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_rectangle2_DE_bernerzeitung/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/h_ga_monsterboard2_DE_20min/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_15.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1974">
+          <caret line="330" column="9" lean-forward="false" selection-start-line="330" selection-start-column="9" selection-end-line="330" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_16.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_22.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/greenlife_320_160/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/sbt_partnerad1_tutti/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="79" column="17" lean-forward="false" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/BernerZeitung_Set_final/300x250/lesestuecke_rot/tamedia_newsletterbanner_lesestuecke_rot_300x250.html" />
+    <entry file="file://$PROJECT_DIR$/pages/v_ga_monsterboard2_FR_20min/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="47" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="14" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/BernerZeitung_Set_final/300x250/lesestuecke_rot/index.html" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_27.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1820" lean-forward="false" selection-start-line="0" selection-start-column="1820" selection-end-line="0" selection-end-column="1820" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/h_ga_monsterboard2_DE_20min/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/v_ga_monsterboard2_DE_20min/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="99" column="9" lean-forward="false" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/v_ga_monsterboard1_DE_20min/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/v_ga_monsterboard1_FR_20min/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="600" lean-forward="false" selection-start-line="3" selection-start-column="600" selection-end-line="3" selection-end-column="600" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/v_ga_monsterboard2_FR_20min/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/juicead1_ios_text_DE_20min/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/v_ga_monsterboard2_DE_20min/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard2_DE_20min/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard1_DE_20min/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/v_ga_monsterboard1_FR_20min/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="1330" column="1794" lean-forward="false" selection-start-line="1330" selection-start-column="1787" selection-end-line="1330" selection-end-column="1794" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/v_ga_monsterboard2_FR_20min/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="41" column="12" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/v_ga_monsterboard2_FR_20min/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="91" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/v_ga_monsterboard1_DE_20min/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/v_ga_monsterboard1_FR_20min/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_17.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="1866" lean-forward="false" selection-start-line="1" selection-start-column="1862" selection-end-line="1" selection-end-column="1866" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/v_monsterboard2_DE_20min/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="87" column="16" lean-forward="false" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/v_ga_monsterboard2_DE_20min/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="92" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/v_ga_monsterboard1_FR_20min/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="92" column="18" lean-forward="false" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_35.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/starter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Rabattcorner_300x250/Rabattcorner_300x250.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="76" column="35" lean-forward="false" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Rabattcorner_300x250/Rabattcorner_300x250.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="136" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="136" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_34.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="106" column="7" lean-forward="false" selection-start-line="106" selection-start-column="7" selection-end-line="106" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#326#704#0" expanded="false" />
-            <element signature="e#729#1030#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2265">
+          <caret line="151" column="40" lean-forward="false" selection-start-line="151" selection-start-column="40" selection-end-line="151" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#section#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="43" lean-forward="false" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="833" column="24" lean-forward="true" selection-start-line="833" selection-start-column="24" selection-end-line="833" selection-end-column="24" />
+        <state relative-caret-position="329">
+          <caret line="576" column="89" lean-forward="false" selection-start-line="576" selection-start-column="89" selection-end-line="576" selection-end-column="89" />
           <folding>
-            <marker date="1502703175000" expanded="true" signature="1444:1456" ph="..." />
+            <marker date="1507815638000" expanded="true" signature="1445:1457" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/h_monsterboard2_DE_20min/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/v_ga_monsterboard1_FR_20min/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

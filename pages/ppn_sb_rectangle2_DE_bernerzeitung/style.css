@@ -23,6 +23,14 @@
     font: bold 12px/14px Arial, Helvetica, sans-serif;
     text-align: left;
     padding-top: 3px;
+
+
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+
 }
 .ppn_sb_rectangle2_DE_bernerzeitung .title a:link, .ppn_sb_rectangle2_DE_bernerzeitung .title a:visited, .ppn_sb_rectangle2_DE_bernerzeitung .title a:active {
     color : rgb(51, 51, 51);

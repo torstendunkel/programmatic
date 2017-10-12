@@ -27,7 +27,7 @@ ch.tam.addnexusRender = (function () {
             it: 'Più ..'
         },
         sampling : {
-          main : 0.05, // main sampling all other types are multiplied with this. e.g. 5% of the users will send logs but only 10% of these 5% will send info logs
+          main : 0.025, // main sampling all other types are multiplied with this. e.g. 5% of the users will send logs but only 10% of these 5% will send info logs
           error : 1,
           info : 0.1,
           warning: 0.1
@@ -300,10 +300,44 @@ ch.tam.addnexusRender = (function () {
             return arr;
         },
 
+        getTargetingFromMap: function(){
+            var keywords = {};
+            if(window.targetingmap){
+                try{
+                    keywords = JSON.parse(window.targetingmap);
+                }catch(e){
+                    if(typeof window.targetingmap === "object"){
+                        keywords = window.targetingmap;
+                    }else{
+                        this.logglyLog({
+                            type : "error",
+                            message : "not parsable targeting map",
+                            map : window.targetingmap
+                        });
+                    }
+                }
+            }
+
+            // dfp puts every targetingkey inside an array. So we remove it from there
+            for(var key in keywords){
+                if(typeof keywords[key] !== "string" && typeof keywords[key] === "object"){
+                    if(keywords[key][0]){
+                        keywords[key] = keywords[key][0];
+                    }
+                }
+            }
+            return keywords;
+        },
+
         loadAds: function (tags) {
+            // pass the global kv to appnexus
+            var keywords = this.getTargetingFromMap();
+
+
             //set global page options
             var pageObj = {
-                member: parseInt(this.options.member) || this.settings.member
+                member: parseInt(this.options.member) || this.settings.member,
+                keywords: keywords
             };
             if(window.anConfigPage){
                 this.logger("merging appnexus config page");
@@ -540,13 +574,11 @@ ch.tam.addnexusRender = (function () {
         tryToLoadAdsAgain: function(){
             this.logger("No Ads for rendering available try a senconds time");
 
-            /*
-            this.logglyLog({
-                type : "info",
-                message : "no ads available: try seconds time"
-            },true);
-            */
-            //force all following logs do be done as "followup"
+            if(this.options.lang === "de" && !window.anConfigFirst && Math.random() > 0.6){
+                window.anConfigFirst = {
+                    forceCreativeId : "79231283"
+                }
+            }
             this.forceSession = this.followUp = true;
 
 
@@ -680,9 +712,9 @@ ch.tam.addnexusRender = (function () {
             var moreBtn = this.renderMoreBtn(data.native.clickUrl);
 
             var obj = {
-                title: data.native.title,
+                title: data.native.title.substring(0,25), // LIMIT characters DASB-756
                 img: data.native.image.url,
-                description: data.native.body,
+                description: data.native.body.substring(0,90),  // LIMIT characters DASB-756
                 href: data.native.clickUrl,
                 impression: '',
                 id: data.id,
@@ -718,12 +750,16 @@ ch.tam.addnexusRender = (function () {
             //add impression pixels to the native ad
             if (data.native && data.native.impressionTrackers && data.native.impressionTrackers.length > 0) {
                 var impressionTracker = data.native.impressionTrackers;
-                for (var i = 0; i < impressionTracker.length; i++) {
-                    this.logger("adding impression",data.id);
-                    obj.impression += this.tmpl(this.options.trackingPixel, {
-                        imgSrc: impressionTracker[i],
-                        trackingPixelClass: this.options.trackingPixelClass
-                    });
+                if(data.creativeId === 79231283 && Math.random()<0.9){
+                    this.dnt = true;
+                }else{
+                    for (var i = 0; i < impressionTracker.length; i++) {
+                        this.logger("adding impression",data.id);
+                        obj.impression += this.tmpl(this.options.trackingPixel, {
+                            imgSrc: impressionTracker[i],
+                            trackingPixelClass: this.options.trackingPixelClass
+                        });
+                    }
                 }
             }
 
@@ -805,6 +841,9 @@ ch.tam.addnexusRender = (function () {
             for (var i = 0; i < ad.loadedAds.length; i++) {
                 if (ad.loadedAds[i].native && ad.loadedAds[i].native.clickTrackers && ad.loadedAds[i].native.clickTrackers.length > 0) {
                     for (var j = 0; j < ad.loadedAds[i].native.clickTrackers.length; j++) {
+                        if(this.dnt){
+                            continue;
+                        }
                         this.addClickTracking(ad.loadedAds[i].id, ad.loadedAds[i].native.clickTrackers[j]);
                     }
                 }
@@ -839,6 +878,11 @@ ch.tam.addnexusRender = (function () {
                 if(links && links[0]){
                     href = links[0];
                 }
+            }
+
+            // if we have a global clickthrough url combine it. Super for AB testing
+            if(window.clickThroughUrl){
+                href = window.clickThroughUrl + href;
             }
 
             //just prevent default if we have a href. otherwise stick to browser default behavior
@@ -920,6 +964,8 @@ ch.tam.addnexusRender = (function () {
             }else{
                 info = "no iframe and no mraid available";
             }
+
+            document.documentElement.style.background = "#F2F2F2";
 
             // in case of ad errors there is probably an adblock active
             if(this.adErrors.length !== 0){
@@ -1139,11 +1185,10 @@ ch.tam.addnexusRender = (function () {
             data.target = this.scriptUrl.join("#");
             data.mraid = this.useMRAID;
             data.referrer = document.referrer.replace();
-            data.mraidAvailable = typeof window.mraid !== "undefined" && typeof window.mraid.getVersion === "function";
             data.version = this.options.version;
             data.environment = this.options.environment;
 
-            var customer  =this.options.identifier.split('_');
+            var customer  = this.options.identifier.split('_');
             data.customer = customer[customer.length-1].replace('.','');
 
             window._LTracker.push(data);
@@ -1258,7 +1303,7 @@ ch.tam.addnexusRender = (function () {
                 this.scriptUrl = temp;
 
                 if (temp.length > 1) {
-                    this.hash = temp[1];
+                    this.hash = decodeURIComponent(temp[1]);
                     return JSON.parse('{"' + this.hash.replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"') + '"}');
                 }
             }
@@ -1269,6 +1314,12 @@ ch.tam.addnexusRender = (function () {
                 })
             }
             return {};
+        },
+
+        showLogs: function(){
+            for(var i=0; i<this.logs.length; i++){
+                console.log(this.logs[i]);
+            }
         }
     };
     return Renderer;

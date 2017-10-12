@@ -75,6 +75,10 @@ div.singlebox {
     color: #666;
 }
 
+
+.url{
+    display:none;
+}
 .price-tag {
     position: absolute;
     right: 0;
