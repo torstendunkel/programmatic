@@ -110,13 +110,7 @@ ch.tam.addnexusRender = (function () {
 
 
                     // do not log this case... only log the following action (adblocked or loaded at seconds time) to save some requests
-                    /*
-                    _this.logglyLog({
-                       type : "warning",
-                       message : "AST not loaded. Try to load again"
-                    },true);
-                    */
-
+                    _this.logger("AST not loaded. Try to load again");
                     _this.checkAstLoaded();
 
                 }
@@ -290,10 +284,13 @@ ch.tam.addnexusRender = (function () {
                 arr.push(adObj);
 
                 if(!this.secondTry){
+                    this.logger("add AST events");
                     apntag.onEvent('adAvailable', prefix + i, this.adAvailable.bind(this, prefix + "-" + i, prefix));
                     apntag.onEvent('adNoBid', prefix + i, this.adNoBid.bind(this, prefix + "-" + i, prefix));
                     apntag.onEvent('adRequestFailure', prefix + i, this.handleAdError.bind(this, prefix + "-" + i, prefix));
                     apntag.onEvent('adBadRequest', prefix + i, this.handleAdError.bind(this, prefix + "-" + i, prefix));
+                    apntag.onEvent('adError', prefix + i, this.handleAdError.bind(this, prefix + "-" + i, prefix));
+
                 }
 
             }
@@ -574,7 +571,7 @@ ch.tam.addnexusRender = (function () {
         tryToLoadAdsAgain: function(){
             this.logger("No Ads for rendering available try a senconds time");
 
-            if(this.options.lang === "de" && !window.anConfigFirst && Math.random() > 0.6){
+            if(this.options.lang === "de" && !window.anConfigFirst && Math.random() > 0.8){
                 window.anConfigFirst = {
                     forceCreativeId : "79231283"
                 }
