@@ -7,3 +7,4 @@ temp
 s3key.json
 .ftppass
 npm-debug.log
+.idea/workspace.xml
