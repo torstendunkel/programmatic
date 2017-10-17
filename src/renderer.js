@@ -129,7 +129,7 @@ ch.tam.addnexusRender = (function () {
                     },true);
                 }
 
-          },3000);
+          },10000);
 
         },
 
@@ -284,7 +284,6 @@ ch.tam.addnexusRender = (function () {
                 arr.push(adObj);
 
                 if(!this.secondTry){
-                    this.logger("add AST events");
                     apntag.onEvent('adAvailable', prefix + i, this.adAvailable.bind(this, prefix + "-" + i, prefix));
                     apntag.onEvent('adNoBid', prefix + i, this.adNoBid.bind(this, prefix + "-" + i, prefix));
                     apntag.onEvent('adRequestFailure', prefix + i, this.handleAdError.bind(this, prefix + "-" + i, prefix));
@@ -697,7 +696,8 @@ ch.tam.addnexusRender = (function () {
                 cpm : (Math.floor(ad.totalCPM * 100) /100),
                 secondTry : this.secondTry || false,
                 layoutSwitch: ad.layoutSwitched || false, // says that ad was only rendered because of layoutswitch
-                duplicates : ad.duplicatesFound || false
+                duplicates : ad.duplicatesFound || false,
+                topAst : this.useTopAst || false
             });
 
 
@@ -1192,23 +1192,34 @@ ch.tam.addnexusRender = (function () {
         },
 
         addAppNexusLib: function () {
+
+            //check if we can access the parent ast.js
+            try{
+                if(top && top.apntag){
+                    window.apntag = top.apntag;
+                    this.useTopAst = true;
+                    this.logger("use top AST.js");
+                }
+            }catch(e){ }
+
+
             window.apntag = window.apntag || {};
             //create a queue on the apntag object
             apntag.anq = apntag.anq || [];
-            var _this = this;
-
-                //load ast.js - async
-                (function () {
-                    var d = document, scr = d.createElement('script'), pro = d.location.protocol,
-                        tar = d.getElementsByTagName("head")[0];
-                    scr.type = 'text/javascript';
-                    scr.async = true;
-                    scr.src = ((pro === 'https:') ? 'https' : 'http') + '://acdn.adnxs.com/ast/ast.js';
-                    if (!apntag.l) {
-                        apntag.l = true;
-                        tar.insertBefore(scr, tar.firstChild);
-                    }
-                })();
+                if(!this.useTopAst){
+                    //load ast.js - async
+                    (function () {
+                        var d = document, scr = d.createElement('script'), pro = d.location.protocol,
+                            tar = d.getElementsByTagName("head")[0];
+                        scr.type = 'text/javascript';
+                        scr.async = true;
+                        scr.src = ((pro === 'https:') ? 'https' : 'http') + '://acdn.adnxs.com/ast/ast.js';
+                        if (!apntag.l) {
+                            apntag.l = true;
+                            tar.insertBefore(scr, tar.firstChild);
+                        }
+                    })();
+                }
         },
 
         addMRAID: function(){
