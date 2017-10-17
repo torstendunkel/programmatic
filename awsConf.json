@@ -1,0 +1,11 @@
+{
+  "region" : "eu-central-1",
+  "livePath" : "anprebid/build/",
+  "stagePath":"anprebid/stage/",
+  "bucket" : "media.das.tamedia.ch",
+  "cloudFront" : {
+      "distributionId" : "E11I2WDHLNXEL4"
+
+  }
+
+}

@@ -1,7 +1,13 @@
+
+const fs = require('fs');
+
 module.exports = function(grunt) {
     require('time-grunt')(grunt);
     grunt.loadTasks("grunt/tasks/");
     var env;
+
+
+    const awsConfig = JSON.parse(fs.readFileSync('awsConf.json', 'utf8'));
 
     // Project configuration.
     grunt.initConfig({
@@ -140,56 +146,47 @@ module.exports = function(grunt) {
                 ]
             }
         },
-        /*
-        'ftp-deploy': {
-            pages: {
-                auth: {
-                    host: '30630.webhosting15.1blu.de',
-                    port: 21,
-                    authKey: 'key1'
-                },
-                src: 'pages',
-                dest: '/pages',
-                exclusions: ['pages/preview']
+
+        // cache invalidation
+        cloudfront: {
+            options: {
+                region:awsConfig.region, // your AWS region
+                distributionId:awsConfig.cloudFront.distributionId, // DistributionID where files are stored
+                listInvalidations:false, // if you want to see the status of invalidations
+                listDistributions:false, // if you want to see your distributions list in the console
             },
-            src: {
-                auth: {
-                    host: '30630.webhosting15.1blu.de',
-                    port: 21,
-                    authKey: 'key1'
+
+            prod: {
+                options: {
+                    credentials : {
+                        accessKeyId : '<%= aws.AWSAccessKeyId %>',
+                        secretAccessKey : '<%= aws.AWSSecretKey %>'
+                    },
+                    distributionId: awsConfig.cloudFront.distributionId
                 },
-                src: 'src',
-                dest: '/src'
+                CallerReference: Date.now().toString(),
+                Paths: {
+                    Quantity: 1,
+                    Items: [ '/' + awsConfig.livePath + "*" ]
+                }
             },
-            upload_testpages:{
-                auth: {
-                    host: '30630.webhosting15.1blu.de',
-                    port: 21,
-                    authKey: 'key1'
+            stage: {
+                options: {
+                    credentials : {
+                        accessKeyId : '<%= aws.AWSAccessKeyId %>',
+                        secretAccessKey : '<%= aws.AWSSecretKey %>'
+                    },
+                    distributionId: awsConfig.cloudFront.distributionId
                 },
-                src: 'build/preview/',
-                dest: '/'
-            },
-            upload_newsnet_stage:{
-                auth: {
-                    host: 'mynewsnet.ch',
-                    port: 21,
-                    authKey: 'key2'
-                },
-                src: 'build/',
-                dest: '/anprebid/stage/'
-            },
-            upload_newsnet_build:{
-                auth: {
-                    host: 'mynewsnet.ch',
-                    port: 21,
-                    authKey: 'key2'
-                },
-                src: 'build/',
-                dest: '/anprebid/build/'
+                CallerReference: Date.now().toString(),
+                Paths: {
+                    Quantity: 1,
+                    Items: [ '/' + awsConfig.stagePath + "*" ]
+                }
             }
         },
-        */
+
+
         watch: {
             dev: {
                 files: ['src/*.js','pages/**'],
@@ -213,14 +210,14 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-ftp-deploy');
     grunt.loadNpmTasks('grunt-contrib-watch');
-
+    grunt.loadNpmTasks('grunt-cloudfront');
 
     grunt.registerTask('set_env', 'Set a config property.', function(env) {
         var domain;
         if (env === 'build') {
-            domain = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/build';
+            domain = 'https://d1rkf0bq85yx06.cloudfront.net/anprebid/build';
         } else if(env === 'stage'){
-            domain = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/stage';
+            domain = 'https://d1rkf0bq85yx06.cloudfront.net/anprebid/stage';
         }
         else if (env === 'dev'){
             domain = 'pages';
@@ -289,7 +286,7 @@ module.exports = function(grunt) {
         'build',
         'generate_test_page:build',
         'aws_s3:deploy',
-        //'ftp-deploy:upload_newsnet_build',
+        'cloudfront:prod',
         'clean:temp'
     ]);
     //building + deploy to stage
@@ -300,6 +297,7 @@ module.exports = function(grunt) {
         'build_stage',
         'generate_test_page:stage',
         'aws_s3:stage',
+        'cloudfront:stage',
         'clean:temp'
     ]);
 
