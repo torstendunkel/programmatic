@@ -19,7 +19,8 @@ ch.tam.addnexusRender = (function () {
         adMarker: {
             de: 'Anzeige',
             fr: 'Publicité',
-            it: 'Pubblicità'
+            it: 'Pubblicità',
+            en : 'Sponsored'
         },
         moreText: {
             de: 'Mehr ..',
@@ -255,6 +256,9 @@ ch.tam.addnexusRender = (function () {
                     this.logger("merging appnexus config ad");
                     try{
                         adObj = this.merge(adObj,window.anConfigAd);
+                        if(typeof this.getForcedAds === "function"){
+                            adObj = this.merge(adObj,this.getForcedAds());
+                        }
                     }catch(e){
                         this.logglyLog({
                             type: "error",
@@ -270,7 +274,7 @@ ch.tam.addnexusRender = (function () {
                 if(i==0 && window.anConfigFirst){
                     try{
                         this.logger("merging appnexus config ad for first ad");
-                        if(window.anConfigFirst.forceCreativeId){
+                        if(window.anConfigFirst.forceCreativeId && typeof window.anConfigFirst.forceCreativeId !== "number"){
                             window.anConfigFirst.forceCreativeId = parseInt(window.anConfigFirst.forceCreativeId.match(/\d+/g)[0]);
                         }
                         adObj = this.merge(adObj,window.anConfigFirst);
@@ -556,9 +560,16 @@ ch.tam.addnexusRender = (function () {
                     this.handlePassback();
                 }else{
 
-                    if(this.secondTry){
+                    if(this.secondTry && this.thirdTry){
                         this.collapseParentFrame();
-                    }else{
+                    }
+                    //choose some fallbacks
+                    else if(this.secondTry){
+                        this.thirdTry = true;
+                        this.tryToLoadFallback();
+                    }
+                    // try again
+                    else{
                         this.secondTry = true;
                         this.tryToLoadAdsAgain();
                     }
@@ -566,18 +577,9 @@ ch.tam.addnexusRender = (function () {
             }
         },
 
-
         tryToLoadAdsAgain: function(){
             this.logger("No Ads for rendering available try a senconds time");
-
-            if(this.options.lang === "de" && !window.anConfigFirst && Math.random() > 0.8){
-                window.anConfigFirst = {
-                    forceCreativeId : "79231283"
-                }
-            }
             this.forceSession = this.followUp = true;
-
-
             this.loadedAds = {};
             this.adsLoaded = {};
             this.loadedCreatives = [];
@@ -588,7 +590,38 @@ ch.tam.addnexusRender = (function () {
 
             this.options.challenge = this.options.challenge ? this.options.challenge.join(",") : this.options.challenge;
             this.options.ctagid = this.options.ctagid ? this.options.ctagid.join(",")  : this.options.ctagid;
+            this.prepareTags();
+        },
 
+        tryToLoadFallback: function(){
+
+            this.logger("No Ads for rendering available force fallback");
+            this.forceSession = this.followUp = true;
+            this.loadedAds = {};
+            this.adsLoaded = {};
+            this.loadedCreatives = [];
+            this.adBuckets = {};
+            this.adErrors = [];
+            this.logs = [];
+            this.ads = {};
+
+            var forceAds = {
+                de : ["63342611","63342512","63340022","62795713","79231283" ,"80556425"],
+                fr : ["64423481","64423485","64423489","62796458"],
+                it : ["62807264"],
+                en : ["63342611","64423485","62807264","62795713"]
+            };
+            window.anConfigAd = {};
+            this.getForcedAds = function(){
+                var ads = forceAds[this.options.lang];
+                var r = Math.round(Math.random() * (ads.length-1));
+                return {
+                    forceCreativeId : ads.splice(r,1)[0]
+                }
+            };
+
+            this.options.challenge = this.options.challenge ? this.options.challenge.join(",") : this.options.challenge;
+            this.options.ctagid = this.options.ctagid ? this.options.ctagid.join(",")  : this.options.ctagid;
             this.prepareTags();
 
         },
@@ -695,6 +728,7 @@ ch.tam.addnexusRender = (function () {
                 challengeData : this.challengeData ? this.challengeData : "no data available",
                 cpm : (Math.floor(ad.totalCPM * 100) /100),
                 secondTry : this.secondTry || false,
+                forcedFallback : this.thirdTry || false,
                 layoutSwitch: ad.layoutSwitched || false, // says that ad was only rendered because of layoutswitch
                 duplicates : ad.duplicatesFound || false,
                 topAst : this.useTopAst || false
@@ -900,7 +934,16 @@ ch.tam.addnexusRender = (function () {
         },
 
         guessLangFromIdentifier: function (identifier) {
-            return identifier.indexOf('_DE_') !== -1 ? 'de' : identifier.indexOf('_FR_') !== -1 ? 'fr' : identifier.indexOf('_IT_') !== -1 ? 'it' : 'de';
+            var tLang = identifier.toLowerCase();
+            var lang = "en";
+            if(tLang.indexOf("_fr_") !== -1 || tLang.indexOf("_ro_") !== -1){
+                lang = "fr";
+            }else if(tLang.indexOf("_it_") !== -1){
+                lang = "it";
+            }else if(tLang.indexOf("_de_") !== -1){
+                lang = "de";
+            }
+            return lang;
         },
 
         parseNumadsFromIdentifier: function (identifier) {

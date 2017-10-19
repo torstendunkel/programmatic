@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+body{
+  margin: 0 auto;
+  padding: 0;
+  width: 470px;
+  height: 400px;
+  overflow: hidden;
+}
+.h_ga_monsterboard2GR_DE_20min {
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  width: 470px;
+  height: 400px;
+  overflow: hidden;
+  background-color: white;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+}
+.h_ga_monsterboard2GR_DE_20min .ppncaption {
+  display: none;
+}
+.h_ga_monsterboard2GR_DE_20min .ppninnerbox {
+  width: 100%;
+  height: 100%;
+  border: none;
+  overflow: hidden;
+}
+.h_ga_monsterboard2GR_DE_20min .singlebox {
+  width: 100%;
+  height: 190px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.h_ga_monsterboard2GR_DE_20min .singlebox:first-child {
+  margin-bottom: 20px;
+}
+.h_ga_monsterboard2GR_DE_20min .image {
+  position: relative;
+  height: 110px;
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+.h_ga_monsterboard2GR_DE_20min .image .adimage-back,
+.h_ga_monsterboard2GR_DE_20min .image .adimage{
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+.h_ga_monsterboard2GR_DE_20min .image img.adimage-back{
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+.h_ga_monsterboard2GR_DE_20min .image .adimage{
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: 100%;
+  width: auto; 
+}
+.h_ga_monsterboard2GR_DE_20min .caption,
+.h_ga_monsterboard2GR_DE_20min .title {
+  width: 50%;
+  float: right;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.h_ga_monsterboard2GR_DE_20min .caption{
+  padding: 10px 15px 0 15px;  
+}
+.h_ga_monsterboard2GR_DE_20min .caption > span{
+  font: bold 11px/13px Arial, sans-serif;
+  background-color: darkgreen;
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+.h_ga_monsterboard2GR_DE_20min .title {
+	padding: 5px 15px;
+  max-height: 72px;
+  font: 700 26px/32px 'Roboto Condensed', sans-serif;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  text-align: left;
+  color: #222;
+  -webkit-word-wrap: break-word;
+  -moz-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.h_ga_monsterboard2GR_DE_20min .title a:link,
+.h_ga_monsterboard2GR_DE_20min .title a:visited,
+.h_ga_monsterboard2GR_DE_20min .title a:active,
+.h_ga_monsterboard2GR_DE_20min .title a:hover{
+	text-decoration: none;
+  color: #222;
+}
+.h_ga_monsterboard2GR_DE_20min .text {
+	display: inline-block;
+  width: 100%;
+	margin: 0;
+	padding: 15px;
+  box-sizing: border-box;
+  font: normal 16px/22px Georgia, serif;
+  text-decoration: none;
+  text-align: left;
+  color: #555;
+}
+.h_ga_monsterboard2GR_DE_20min .text a:link, 
+.h_ga_monsterboard2GR_DE_20min .text a:visited, 
+.h_ga_monsterboard2GR_DE_20min .text a:hover, 
+.h_ga_monsterboard2GR_DE_20min .text a:active, 
+.h_ga_monsterboard2GR_DE_20min .text a:hover {
+  text-decoration: none;
+  color: #555;
+}
+.h_ga_monsterboard2GR_DE_20min .tnlogo {
+	display: none;
+}

@@ -1,0 +1,5 @@
+{
+  "showMore" : false,
+  "moreInTxt" : false,
+  "template" : "<div class=\"singlebox bottom left right\" id=\"{{id}}\" data-href=\"{{href}}\"><div class=\"image\"><a target=\"_blank\" href=\"{{href}}\" class=\"adimage-back\"><img class=\"adimage-back\" alt=\"Werbung\" src=\"{{img}}\"/></a><a target=\"_blank\" href=\"{{href}}\" class=\"adimage\"><img class=\"adimage\" alt=\"Werbung\" src=\"{{img}}\"/></a></div><div class=\"caption\"><span>Anzeige</span></div><div class=\"title\"><a target=\"_blank\" href=\"{{href}}\">{{title}}</a></div><div class=\"text\"><a target=\"_blank\" href=\"{{href}}\">{{description}}</a></div>{{impression}}</div>"
+}

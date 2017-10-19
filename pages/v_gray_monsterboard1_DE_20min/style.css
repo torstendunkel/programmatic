@@ -6,7 +6,7 @@ body{
   height: 400px;
   overflow: hidden;
 }
-.v_ga_monsterboard1_DE_20min {
+.v_gray_monsterboard1_DE_20min {
   margin: 0 auto;
   padding: 0;
   border: none;
@@ -15,17 +15,18 @@ body{
   overflow: hidden;
   background-color: white;
   font-family: 'Roboto Condensed', Arial, sans-serif;
+  background: #E3E3E3;
 }
-.v_ga_monsterboard1_DE_20min .ppncaption {
+.v_gray_monsterboard1_DE_20min .ppncaption {
   display: none;
 }
-.v_ga_monsterboard1_DE_20min .ppninnerbox {
+.v_gray_monsterboard1_DE_20min .ppninnerbox {
   width: 100%;
   height: 100%;
   border: none;
   overflow: hidden;
 }
-.v_ga_monsterboard1_DE_20min .singlebox {
+.v_gray_monsterboard1_DE_20min .singlebox {
   width: 470px;
   height: 100%;
   margin: 0;
@@ -33,51 +34,50 @@ body{
   overflow: hidden;
   float: left;
 }
-.v_ga_monsterboard1_DE_20min .singlebox:first-child {
+.v_gray_monsterboard1_DE_20min .singlebox:first-child {
   margin-right: 10px;
 }
-.v_ga_monsterboard1_DE_20min .image {
+.v_gray_monsterboard1_DE_20min .image {
   position: relative;
   height: 230px;
   width: 100%;
   float: left;
   overflow: hidden;
 }
-.v_ga_monsterboard1_DE_20min .image .adimage-back,
-.v_ga_monsterboard1_DE_20min .image .adimage{
+.v_gray_monsterboard1_DE_20min .image .adimage-back,
+.v_gray_monsterboard1_DE_20min .image .adimage{
   display: inline-block;
   width: 100%;
   height: auto;
 }
-.v_ga_monsterboard1_DE_20min .image img.adimage-back{
+.v_gray_monsterboard1_DE_20min .image img.adimage-back{
   -webkit-filter: blur(3px);
   filter: blur(3px);
 }
-.v_ga_monsterboard1_DE_20min .image .adimage{
+.v_gray_monsterboard1_DE_20min .image .adimage{
   position: absolute;
   top: 0;
   left: 15px;
   height: 100%;
   width: auto; 
 }
-.v_ga_monsterboard1_DE_20min .caption,
-.v_ga_monsterboard1_DE_20min .title,
-.v_ga_monsterboard1_DE_20min .text {
+.v_gray_monsterboard1_DE_20min .caption,
+.v_gray_monsterboard1_DE_20min .title,
+.v_gray_monsterboard1_DE_20min .text {
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
 }
-.v_ga_monsterboard1_DE_20min .caption{
+.v_gray_monsterboard1_DE_20min .caption{
   padding: 15px 15px 0 15px;  
 }
-.v_ga_monsterboard1_DE_20min .caption > span{
+.v_gray_monsterboard1_DE_20min .caption > span{
   font: bold 11px/13px Arial, sans-serif;
-  background-color: #EFC235;
-  color: white;
+  color: #222;
   padding: 2px 4px;
   border-radius: 3px;
 }
-.v_ga_monsterboard1_DE_20min .title {
+.v_gray_monsterboard1_DE_20min .title {
 	padding: 10px 15px;
   font: 700 40px/32px 'Roboto Condensed', sans-serif;
   line-height : 110%;
@@ -94,14 +94,14 @@ body{
 
 
 }
-.v_ga_monsterboard1_DE_20min .title a:link,
-.v_ga_monsterboard1_DE_20min .title a:visited,
-.v_ga_monsterboard1_DE_20min .title a:active,
-.v_ga_monsterboard1_DE_20min .title a:hover{
+.v_gray_monsterboard1_DE_20min .title a:link,
+.v_gray_monsterboard1_DE_20min .title a:visited,
+.v_gray_monsterboard1_DE_20min .title a:active,
+.v_gray_monsterboard1_DE_20min .title a:hover{
 	text-decoration: none;
   color: #222;
 }
-.v_ga_monsterboard1_DE_20min .text {
+.v_gray_monsterboard1_DE_20min .text {
 	margin: 0;
 	padding: 10px 15px;
   box-sizing: border-box;
@@ -110,14 +110,14 @@ body{
   text-align: left;
   color: #555;
 }
-.v_ga_monsterboard1_DE_20min .text a:link, 
-.v_ga_monsterboard1_DE_20min .text a:visited, 
-.v_ga_monsterboard1_DE_20min .text a:hover, 
-.v_ga_monsterboard1_DE_20min .text a:active, 
-.v_ga_monsterboard1_DE_20min .text a:hover  {
+.v_gray_monsterboard1_DE_20min .text a:link, 
+.v_gray_monsterboard1_DE_20min .text a:visited, 
+.v_gray_monsterboard1_DE_20min .text a:hover, 
+.v_gray_monsterboard1_DE_20min .text a:active, 
+.v_gray_monsterboard1_DE_20min .text a:hover  {
   text-decoration: none;
   color: #555;
 }
-.v_ga_monsterboard1_DE_20min .tnlogo {
+.v_gray_monsterboard1_DE_20min .tnlogo {
 	display: none;
 }
