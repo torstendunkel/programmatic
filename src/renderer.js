@@ -270,6 +270,12 @@ ch.tam.addnexusRender = (function () {
                     adObj.supplyType = this.options.supplyType;
                 }
 
+                if(this.options.forceCreativeId){
+                    window.anConfigFirst = {
+                        forceCreativeId: this.options.forceCreativeId
+                    }
+                }
+
                 // if defined merge the global AppNexuFirst Config to the first adObj
                 if(i==0 && window.anConfigFirst){
                     try{
@@ -579,7 +585,7 @@ ch.tam.addnexusRender = (function () {
 
         tryToLoadAdsAgain: function(){
             this.logger("No Ads for rendering available try a senconds time");
-            this.forceSession = this.followUp = true;
+            // this.forceSession = this.followUp = true;
             this.loadedAds = {};
             this.adsLoaded = {};
             this.loadedCreatives = [];
@@ -596,7 +602,7 @@ ch.tam.addnexusRender = (function () {
         tryToLoadFallback: function(){
 
             this.logger("No Ads for rendering available force fallback");
-            this.forceSession = this.followUp = true;
+            // this.forceSession = this.followUp = true;
             this.loadedAds = {};
             this.adsLoaded = {};
             this.loadedCreatives = [];
@@ -728,12 +734,14 @@ ch.tam.addnexusRender = (function () {
                 challengeData : this.challengeData ? this.challengeData : "no data available",
                 cpm : (Math.floor(ad.totalCPM * 100) /100),
                 secondTry : this.secondTry || false,
-                forcedFallback : this.thirdTry || false,
+                forcedFallback : this.thirdTry ? "true" : "false",
                 layoutSwitch: ad.layoutSwitched || false, // says that ad was only rendered because of layoutswitch
                 duplicates : ad.duplicatesFound || false,
                 topAst : this.useTopAst || false
             });
 
+
+            document.documentElement.setAttribute("lang", this.options.lang);
 
             this.addResizeTrigger();
         },

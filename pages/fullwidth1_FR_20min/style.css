@@ -126,3 +126,7 @@ body{
 .fullwidth1_FR_20min .tnlogo {
 	display: none;
 }
+
+.fullwidth1_FR_20min .headline {
+	font-size: 1.4rem;
+}
