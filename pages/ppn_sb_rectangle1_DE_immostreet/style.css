@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
 
 .ppn_sb_rectangle1_DE_immostreet {
     width: 300px;
@@ -62,7 +62,7 @@
     height: 30px;
     right: 0px;
     top: 168px;
-    background: url("http://media.das.tamedia.ch/images/ppnimmostreet-arrow-l.gif")left center no-repeat;
+    background: url("https://d1rkf0bq85yx06.cloudfront.net/images/ppnimmostreet-arrow-l.gif")left center no-repeat;
 }
 .ppn_sb_rectangle1_DE_immostreet .url a, .ppn_sb_rectangle1_DE_immostreet .url a:link, .ppn_sb_rectangle1_DE_immostreet .url a:visited, .ppn_sb_rectangle1_DE_immostreet .url a:hover, .ppn_sb_rectangle1_DE_immostreet .url a:active {
 }

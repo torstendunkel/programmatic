@@ -606,7 +606,7 @@ ch.tam.addnexusRender = (function () {
             this.ads = {};
 
             var forceAds = {
-                de : ["63342611","63342512","63340022","62795713","79231283" ,"80556425"],
+                de : ["63342611","63342512","63340022","62795713","79231283"],
                 fr : ["64423481","64423485","64423489","62796458"],
                 it : ["62807264"],
                 en : ["63342611","64423485","62807264","62795713"]
@@ -785,6 +785,12 @@ ch.tam.addnexusRender = (function () {
                     this.dnt = true;
                 }else{
                     for (var i = 0; i < impressionTracker.length; i++) {
+
+                        // when we force a creative we need to remove the test=1 param to count correctly
+                        if(this.thirdTry){
+                            impressionTracker[i] = impressionTracker[i].replace("&test=1","");
+                        }
+
                         this.logger("adding impression",data.id);
                         obj.impression += this.tmpl(this.options.trackingPixel, {
                             imgSrc: impressionTracker[i],
@@ -930,6 +936,12 @@ ch.tam.addnexusRender = (function () {
         },
 
         setTrackingPixel: function (trackingUrl) {
+
+            // when we force a creative we need to remove the test=1 param to count correctly
+            if(this.thirdTry){
+                trackingUrl = trackingUrl.replace("./bn=0/test=1/","");
+            }
+
             (new Image()).src = trackingUrl;
         },
 
@@ -1007,11 +1019,6 @@ ch.tam.addnexusRender = (function () {
 
             document.documentElement.style.background = "#F2F2F2";
 
-            // in case of ad errors there is probably an adblock active
-            if(this.adErrors.length !== 0){
-                reason = "add errors received";
-            }
-
             this.logglyLog({
                 type: type,
                 message : message,
@@ -1020,7 +1027,8 @@ ch.tam.addnexusRender = (function () {
                 renderTime : new Date().getTime() - this.startTime,
                 adsRequested : this.options.numads,
                 adsAvailable : this.options.numads - this.ads["main"].noBid,
-                secondTry : this.secondTry || false
+                secondTry : this.secondTry || false,
+                forcedFallback : this.thirdTry || false
             });
         },
 
