@@ -4,6 +4,7 @@
   "moreNode" : "div",
   "moreInTxt" : false,
   "fallBackLayout" : {
-    "3" : "ppn_sb_monsterboard2_IT_tio"
+    "3" : "ppn_sb_monsterboard3_IT_tio",
+    "2" : "ppn_sb_monsterboard2_IT_tio"
   }
 }
