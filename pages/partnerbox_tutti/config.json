@@ -1,0 +1,13 @@
+{
+  "wrapper" :"<div class=\"container {{identifier}}\">{{content}}</div>",
+  "template" : "<a class=\"mb_link mb_cf\" href=\"{{href}}\" target=\"_blank\"><img class=\"mb_img\" src=\"{{img}}\" height=\"70\"><div class=\"mb_box\"> <h1 class=\"mb_head\">{{title}}</h1><p class=\"mb_text\">{{description}}{{moreInTxt}}</p></div>{{impression}}</a>",
+  "script" : " var ref; try { ref = window.parent.document.location.href; } catch (e) { ref = document.referrer; } var height; if (ref.indexOf('/www.') !== -1) { bodyClass = 'desktop'; height = '90px'; } else if (ref.indexOf('/m.') !== -1) { bodyClass = 'mobile'; height = '70px'; } else { bodyClass = 'mobile app'; height = '70px'; } document.body.className = bodyClass; try { window.parent.document.getElementById(window.frameElement.id).style.height = height; window.parent.document.getElementById(window.frameElement.id).style.width = '100%'; } catch (e) {}",
+  "numads" : 1,
+  "showMore" : true,
+  "moreInTxt" : true,
+  "moreNode" : "span",
+  "moreBtn": "<{{moreNode}} class='url'>{{more}}</{{moreNode}}>"
+}
+
+
+

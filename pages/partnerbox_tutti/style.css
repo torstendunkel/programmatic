@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body.desktop {
+    width: 308px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.desktop .mb_cf:before, .mb_cf:after {
+    content: "";
+    display: table;
+}
+
+.desktop .mb_cf:after {
+    clear: both;
+}
+
+.desktop .mb_link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: left;
+    outline: 0;
+    padding-left : 5px;
+    padding-right: 0px;
+}
+
+.desktop .mb_img {
+    display: block;
+    float: left;
+    border: 3px solid #e4d8bb;
+    height: 64px;
+}
+
+.desktop .mb_box {
+    display: block;
+    float: left;
+    padding: 0 0 0 5px;
+    margin: 0;
+    width: 173px;
+    color: #3A3A3A;
+}
+
+.desktop .mb_head {
+    font-family: "Helvetica Rounded LT Std", "Arial Rounded MT Bold", "Arial Rounded MT", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.desktop .mb_head, .desktop .mb_text, .desktop .mb_address {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    line-height: 15px;
+}
+
+.desktop .mb_head, .desktop .mb_address {
+    font-style: normal;
+    font-size: 14px;
+    display: block;
+}
+
+.desktop .mb_address {
+    line-height: 13px;
+    font-size: 14px;
+    color: #426897;
+}
+
+.desktop .mb_head:hover,.desktop .mb_address:hover {
+    text-decoration: underline;
+}
+
+.desktop .mb_text {
+    height: 55px;
+    color: #666666;
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+.url {
+    margin-left: 5px;
+    color: #426897;
+}
+
+body.mobile{
+    font-family: helvetica, arial, sans-serif !important;
+}
+
+body.app{
+    margin-top:0px;
+}
+
+
+.mobile  .mb_head{
+    color: black;
+    font-weight: 500;
+    margin: 0px !important;
+    padding: 0px !important;
+    line-height: 18px;
+    font-size:16px;
+}
+.mobile .mb_text{
+    color: #666666;
+}
+.mobile .mb_address{
+    text-decoration: none;
+    color: #70a8e8;
+    font-style: normal;
+}
+.mobile .container{
+    width: 100% !important;
+    text-align: left;
+    display: block;
+    min-height: 70px;
+}
+.mobile a .mb_text {
+    vertical-align: middle !important;
+    font-size:16px;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+}
+.mobile a{
+    text-decoration: none !important;
+}
+.mobile .mb_img {
+    height: 64px !important;
+    background-color: yellow;
+    float: left !important;
+    border: 1px solid #f2f2f2;
+    margin-right: 5px;
+}
