@@ -25,7 +25,8 @@ ch.tam.addnexusRender = (function () {
         moreText: {
             de: 'Mehr ..',
             fr: 'Plus ..',
-            it: 'Più ..'
+            it: 'Più ..',
+            en: 'More ..'
         },
         sampling : {
           main : 0.025, // main sampling all other types are multiplied with this. e.g. 5% of the users will send logs but only 10% of these 5% will send info logs
@@ -612,9 +613,9 @@ ch.tam.addnexusRender = (function () {
             this.ads = {};
 
             var forceAds = {
-                de : ["63342611","63342512","63340022","62795713","79231283"],
-                fr : ["64423481","64423485","64423489","62796458"],
-                it : ["62807264"],
+                de : ["63342611","63342512","63340022","62795713","63342611","63342512","63340022","62795713","62857807","62857205","62856916","62856899","62786656"],
+                fr : ["64423481","64423485","64423489","62796458","64423491","62795860"],
+                it : ["62807264","62807321"],
                 en : ["63342611","64423485","62807264","62795713"]
             };
             window.anConfigAd = {};

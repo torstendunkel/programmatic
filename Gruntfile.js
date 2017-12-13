@@ -301,10 +301,6 @@ module.exports = function(grunt) {
         'clean:temp'
     ]);
 
-    //upload pages to ftp (for preview)
-    grunt.registerTask('uploadPages', [
-        'ftp-deploy:pages'
-    ]);
 
 
 
