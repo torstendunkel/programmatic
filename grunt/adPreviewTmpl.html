@@ -6,22 +6,25 @@
             <span>HTML-View: <a href="%%HTMLVIEW%%">%%HTMLVIEW2%%</a></span>
         </div>
     <div class="panel-body">
-        <iframe id="%%ifrmID%%" width="1010px" height="%%HEIGHT%%" srolling="no" frameborder="0" style="overflow:hidden"></iframe>
+        <iframe id="%%ifrmID%%" width="%%WIDTH%%" height="%%HEIGHT%%" srolling="no" frameborder="0" style="overflow:hidden"></iframe>
     </div>
 
     <script>
-        var callback = function(entries, observer) {
-            var ifrm = document.getElementById("%%ifrmID%%");
-            ifrm = ifrm.contentWindow || ifrm.contentDocument.document || ifrm.contentDocument;
-            ifrm.document.open();
-            ifrm.document.write('<script src="%%SCRIPTSRC%%" async><\/script>');
-            ifrm.document.close();
+        window["observer_"+"%%ifrmID%%"] = new IntersectionObserver(function(entries, observer) {
 
+            if (entries[0].intersectionRatio > 0) {
+                var ifrm = document.getElementById("%%ifrmID%%");
+                ifrm = ifrm.contentWindow || ifrm.contentDocument.document || ifrm.contentDocument;
+                ifrm.document.open();
+                ifrm.document.write('<script src="%%SCRIPTSRC%%" async><\/script>');
+                ifrm.document.close();
+                console.log("render %%ifrmID%%");
+                observer.unobserve(entries[0].target);
+            }
+        });
 
-        };
-        var observer = new IntersectionObserver(callback);
-        var target = document.getElementById("%%ifrmID%%");
-        observer.observe(target);
+        window["target_"+"%%ifrmID%%"] = document.getElementById("%%ifrmID%%");
+        window["observer_"+"%%ifrmID%%"].observe(window["target_"+"%%ifrmID%%"]);
 
     </script>
     </li>

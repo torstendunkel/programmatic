@@ -4,8 +4,8 @@ module.exports = function(grunt) {
 
 
     var height = {
-      "minirectangle" : "120px",
-      "mobilehalfpage" : "600px",
+        "minirectangle" : "120px",
+        "mobilehalfpage" : "600px",
         "rectangle" : "250px",
         "billboard3" : "350px",
         "billboard4" : "348px",
@@ -15,15 +15,18 @@ module.exports = function(grunt) {
         "largerect" : "180px",
         "leaderboard" : "190px",
         "mobilebanner" : "75px",
+        "mobilerectangle3" : "500px",
         "mobilerectangle2" : "250px",
         "mobilerectangle1" : "250px",
-        "mobilerectangle3" : "500px",
+        "mobilehalfpage2" : "300px",
         "mobilerect1" : "250px",
         "mobilesmallrectangle1" : "160px",
         "mobilewideboard1" : "318px",
+        "monsterboard1" : "396px",
         "monsterboard2" : "396px",
         "monsterboard3" : "270px",
         "monsterboard4" : "468px",
+        "monsterboard" : "300px",
         "rectangel3" : "468px",
         "rectangle1" : "468px",
         "rectangle2" : "468px",
@@ -38,9 +41,14 @@ module.exports = function(grunt) {
         "wideboard3" : "250px",
         "spezialfooter6" :"200px",
         "sbt_20min" : "250px",
-        "juicead1" : "650px"
+        "juicead1" : "120px",
+        "fullwidth1" : "140px"
     };
 
+    var width = {
+        "juicead1" : "300px",
+        "fullwidth1" : "430px"
+    }
 
     function getHeight(identifier){
         for(var i in height){
@@ -49,6 +57,15 @@ module.exports = function(grunt) {
             }
         }
         return "200px";
+    }
+
+    function getWidth(identifier){
+        for(var i in width){
+            if(identifier.indexOf(i) !== -1){
+                return (parseInt(width[i].replace("px","")) + 20) + "px";
+            }
+        }
+        return "100%";
     }
 
     grunt.registerTask('generate_test_page', 'generates one Testpage where all pages are loaded', function (env) {
@@ -96,8 +113,8 @@ module.exports = function(grunt) {
             identifier = folderJSON[i].location;
             identifier = identifier.split('/');
             //var scriptSrc = 'build/'+identifier[1]+'/';
-            var scriptSrc = 'https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/'+enviroment+'/'+identifier[1]+'/index.js';
-            var templateUrl = '&lt;script src="https://s3-eu-west-1.amazonaws.com/media.das.tamedia.ch/anprebid/build/'+identifier[1]+'/index.js#tagid={ADD_ID}"&gt;&lt;/script&gt;';
+            var scriptSrc = ' https://d1rkf0bq85yx06.cloudfront.net/anprebid/'+enviroment+'/'+identifier[1]+'/index.js';
+            var templateUrl = '&lt;script src="https://d1rkf0bq85yx06.cloudfront.net/anprebid/build/'+identifier[1]+'/index.js#tagid={ADD_ID}"&gt;&lt;/script&gt;';
             var htmlView = 'https://d1rkf0bq85yx06.cloudfront.net/anprebid/' + enviroment + "/" +identifier[1] +"/index.html";
             //var preview = "index.html#debug=1&identifier="+identifier[1];
 
@@ -109,23 +126,36 @@ module.exports = function(grunt) {
                     pageName = pName;
                 }
 
-                htmlTmp = template
-                    .replace(/%%HEADER%%/g,identifier[1])
-                    .replace('%%ID%%',pId)
-                    .replace(/%%ifrmID%%/g,identifier[1])
-                    .replace(/%%SCRIPTSRC%%/g,scriptSrc)
-                    .replace(/%%TEMPLATE_URL%%/g,templateUrl)
-                    .replace(/%%HEIGHT%%/g,getHeight(identifier[1]))
-                    .replace(/%%HTMLVIEW%%/g,htmlView)
-                    .replace(/%%HTMLVIEW2%%/g,htmlView+"#tagid={ADD_ID}");
-                    //.replace(/%%PREVIEW%%/g, preview);
-                html += htmlTmp;
-
                 if(pName && pageName !== pName && html.length > 0 && html !== ""){
                     pagesHTML += pageWrapper.replace('%%CONTENT%%',html).replace('%%PAGENAME%%',pageName).replace(/%%ID%%/gi,pId);
                     pageName = pName;
                     pId +=1;
+
+                    htmlTmp = template
+                        .replace(/%%HEADER%%/g,identifier[1])
+                        .replace('%%ID%%',pId)
+                        .replace(/%%ifrmID%%/g,identifier[1])
+                        .replace(/%%SCRIPTSRC%%/g,scriptSrc)
+                        .replace(/%%TEMPLATE_URL%%/g,templateUrl)
+                        .replace(/%%HEIGHT%%/g,getHeight(identifier[1]))
+                        .replace(/%%WIDTH%%/g,getWidth(identifier[1]))
+                        .replace(/%%HTMLVIEW%%/g,htmlView)
+                        .replace(/%%HTMLVIEW2%%/g,htmlView+"#tagid={ADD_ID}");
+                    html += htmlTmp;
+
                     html ="";
+                }else{
+                    htmlTmp = template
+                        .replace(/%%HEADER%%/g,identifier[1])
+                        .replace('%%ID%%',pId)
+                        .replace(/%%ifrmID%%/g,identifier[1])
+                        .replace(/%%SCRIPTSRC%%/g,scriptSrc)
+                        .replace(/%%TEMPLATE_URL%%/g,templateUrl)
+                        .replace(/%%HEIGHT%%/g,getHeight(identifier[1]))
+                        .replace(/%%WIDTH%%/g,getWidth(identifier[1]))
+                        .replace(/%%HTMLVIEW%%/g,htmlView)
+                        .replace(/%%HTMLVIEW2%%/g,htmlView+"#tagid={ADD_ID}");
+                    html += htmlTmp;
                 }
             }
         }
