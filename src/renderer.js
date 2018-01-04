@@ -613,7 +613,7 @@ ch.tam.addnexusRender = (function () {
             this.ads = {};
 
             var forceAds = {
-                de : ["63342611","63342512","63340022","62795713","63342611","63342512","63340022","62795713","62857807","62857205","62856916","62856899","62786656"],
+                de : ["63342611","63342512","63340022","62795713","62857807","62857205","62856916","62856899","62786656"],
                 fr : ["64423481","64423485","64423489","62796458","64423491","62795860"],
                 it : ["62807264","62807321"],
                 en : ["63342611","64423485","62807264","62795713"]
@@ -790,22 +790,18 @@ ch.tam.addnexusRender = (function () {
             //add impression pixels to the native ad
             if (data.native && data.native.impressionTrackers && data.native.impressionTrackers.length > 0) {
                 var impressionTracker = data.native.impressionTrackers;
-                if(data.creativeId === 79231283 && Math.random()<0.9){
-                    this.dnt = true;
-                }else{
-                    for (var i = 0; i < impressionTracker.length; i++) {
+                for (var i = 0; i < impressionTracker.length; i++) {
 
-                        // when we force a creative we need to remove the test=1 param to count correctly
-                        if(this.thirdTry){
-                            impressionTracker[i] = impressionTracker[i].replace("&test=1","");
-                        }
-
-                        this.logger("adding impression",data.id);
-                        obj.impression += this.tmpl(this.options.trackingPixel, {
-                            imgSrc: impressionTracker[i],
-                            trackingPixelClass: this.options.trackingPixelClass
-                        });
+                    // when we force a creative we need to remove the test=1 param to count correctly
+                    if(this.thirdTry){
+                        impressionTracker[i] = impressionTracker[i].replace("&test=1","");
                     }
+
+                    this.logger("adding impression",data.id);
+                    obj.impression += this.tmpl(this.options.trackingPixel, {
+                        imgSrc: impressionTracker[i],
+                        trackingPixelClass: this.options.trackingPixelClass
+                    });
                 }
             }
 
