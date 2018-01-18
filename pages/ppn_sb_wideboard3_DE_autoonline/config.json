@@ -1,0 +1,9 @@
+{
+  "showMore" : true,
+  "moreNode" : "div",
+  "moreInTxt" : false,
+  "fallBackLayout" : {
+    "1" : "ppn_sb_monsterboard2_DE_autoonline",
+    "2" : "ppn_sb_monsterboard1_DE_autoonline"
+  }
+}

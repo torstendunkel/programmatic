@@ -1,0 +1,107 @@
+
+.ppn_sb_halfpage2_DE_autoonline {
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    background: white;
+    position: relative;
+    border: 2px solid rgb(222, 222, 222);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.ppn_sb_halfpage2_DE_autoonline .ppninnerbox {
+    width: 300px;
+    height: 600px;
+}
+.ppn_sb_halfpage2_DE_autoonline .singlebox {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    float: left;
+    border-top: 2px solid rgb(222, 222, 222);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ppn_sb_halfpage2_DE_autoonline .singlebox:first-child {
+    border: none;
+}
+.ppn_sb_halfpage2_DE_autoonline .title {
+    cursor: pointer;
+    width: 280px;
+    margin: 0px 0px 10px 10px;
+    overflow: hidden;
+    color: rgb(242, 148, 0);
+    font: bold 16px/18px Arial, sans-serif;
+    text-align: left;
+}
+.ppn_sb_halfpage2_DE_autoonline .title a:link, .ppn_sb_halfpage2_DE_autoonline .title a:visited, .ppn_sb_halfpage2_DE_autoonline .title a:active {
+    color : rgb(242, 148, 0);
+    text-decoration: none;
+}
+.ppn_sb_halfpage2_DE_autoonline .title a:hover {
+    color : rgb(242, 148, 0);
+    text-decoration: underline;
+}
+.ppn_sb_halfpage2_DE_autoonline .text {
+    cursor: pointer;
+    width: 280px;
+    margin-left: 10px;
+    padding-top: 5px;
+    color: rgb(51, 51, 51);
+    font: normal 14px/16px Arial, sans-serif;
+    text-align: left;
+}
+.ppn_sb_halfpage2_DE_autoonline .text a:link, .ppn_sb_halfpage2_DE_autoonline .text a:visited, .ppn_sb_halfpage2_DE_autoonline .text a:hover, .ppn_sb_halfpage2_DE_autoonline .text a:active {
+    color : rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_halfpage2_DE_autoonline .text a:hover {
+    color : rgb(51, 51, 51);
+    text-decoration: none;
+}
+.ppn_sb_halfpage2_DE_autoonline .url {
+    cursor: pointer;
+    overflow: hidden;
+    color: rgb(242, 148, 0);
+    font: normal 12px/14px Arial, sans-serif;
+    text-align: left;
+}
+.ppn_sb_halfpage2_DE_autoonline .url a, .ppn_sb_halfpage2_DE_autoonline .url a:link, .ppn_sb_halfpage2_DE_autoonline .url a:visited, .ppn_sb_halfpage2_DE_autoonline .url a:hover, .ppn_sb_halfpage2_DE_autoonline .url a:active {
+    color: rgb(242, 148, 0);
+    text-decoration: none;
+}
+.ppn_sb_halfpage2_DE_autoonline .url a:hover {
+    color: rgb(242, 148, 0);
+    text-decoration: underline;
+}
+.ppn_sb_halfpage2_DE_autoonline .adimage {
+    border-width: 0;
+    position: relative;
+    float: left;
+}
+.ppn_sb_halfpage2_DE_autoonline img.adimage {
+    width: 280px;
+    margin: 10px 10px 10px 10px;
+}
+.ppn_sb_halfpage2_DE_autoonline .ppncaption {
+    display: none;
+}
+.ppn_sb_halfpage2_DE_autoonline .tnlogo{
+    border-top: 2px solid rgb(222, 222, 222);
+    border-left: 2px solid rgb(222, 222, 222);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: right;
+    padding: 2px;
+    position: absolute; bottom:0; right:0; max-width:100px;
+}
+.ppn_sb_halfpage2_DE_autoonline .tnlogo > a{
+    font: bold 9px/9px Arial, sans-serif;
+    text-align: right;
+    text-decoration: none;
+    color: rgb(222, 222, 222);
+}
