@@ -3,7 +3,7 @@
   "moreNode" : "span",
   "moreInTxt" : true,
   "fallBackLayout" : {
-    "1" : "ppn_sb_halfpage2_DE_autoonline",
-    "2" : "ppn_sb_halfpage1_DE_autoonline"
+    "1" : "ppn_sb_halfpage1_DE_autoonline",
+    "2" : "ppn_sb_halfpage2_DE_autoonline"
   }
 }
