@@ -1,0 +1,9 @@
+{
+  "showMore" : true,
+  "moreNode" : "span",
+  "moreInTxt" : true,
+  "minNumAds" : 1,
+  "fallBackLayout" : {
+    "1" : "ppn_sb_halfpage1_DE_autoonline"
+  }
+}
