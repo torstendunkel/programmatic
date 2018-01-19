@@ -266,6 +266,14 @@ ch.tam.addnexusRender = (function () {
                             message : "could not merge appnexus config ad"
                         });
                     }
+
+                    this.logglyLog({
+                        type: "info",
+                        message : "merging anConfigAd",
+                        adconfig : window.anConfigAd
+                    });
+
+
                 }else if(this.options.supplyType){
                     // in some cases we need to pass the appmode via the options and then we generate dummy app ids as well
                     adObj.supplyType = this.options.supplyType;
@@ -291,6 +299,13 @@ ch.tam.addnexusRender = (function () {
                             message : "could not merge anConfigFirst"
                         });
                     }
+
+                    this.logglyLog({
+                        type: "info",
+                        message : "merging adConfigFirst",
+                        adconfig : window.anConfigFirst
+                    });
+
                 }
                 arr.push(adObj);
 
