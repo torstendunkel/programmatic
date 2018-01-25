@@ -628,10 +628,10 @@ ch.tam.addnexusRender = (function () {
             this.ads = {};
 
             var forceAds = {
-                de : ["63342611","63342512","63340022","62795713","62857807","62857205","62856916","62856899","62786656"],
+                de : ["63342611","63342512","63340022","62795713","62786656"],
                 fr : ["64423481","64423485","64423489","62796458","64423491","62795860"],
-                it : ["62807264","62807321"],
-                en : ["63342611","64423485","62807264","62795713"]
+                it : [],
+                en : ["63342611","64423485","62795713"]
             };
             window.anConfigAd = {};
             this.getForcedAds = function(){
@@ -1050,6 +1050,11 @@ ch.tam.addnexusRender = (function () {
                 secondTry : this.secondTry || false,
                 forcedFallback : this.thirdTry || false
             });
+
+            if(typeof window.noAdCallback === "function"){
+                window.noAdCallback.call();
+            }
+
         },
 
         // checks if script should include MRAID
