@@ -77,7 +77,7 @@ html, body {
     display: none;
 }
 .ppn_sb_monsterboard3_FR_20min .tnlogo{
-    background: url('https://d1rkf0bq85yx06.cloudfront.net/images/more.gif') top repeat-x;
+    border-top: 4px solid black;
     position: absolute; top:0; left:0; width:100%;height: 10px;
 }
 .ppn_sb_monsterboard3_FR_20min .tnlogo > a{

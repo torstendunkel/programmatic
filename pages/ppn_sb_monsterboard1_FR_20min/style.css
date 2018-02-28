@@ -68,7 +68,7 @@ body{
 
 
 .ppn_sb_monsterboard1_FR_20min .tnlogo{
-    background: url(https://d1rkf0bq85yx06.cloudfront.net/images/more.gif) top repeat-x;
+    border-top: 4px solid black;
     position: absolute;
     top: 0;
     left: 0;
