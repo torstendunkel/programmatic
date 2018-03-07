@@ -68,7 +68,7 @@ body{
   box-sizing: border-box;
 }
 .v_ga_monsterboard1BL_FR_20min .caption{
-  padding: 15px 15px 0 15px;  
+  padding: 10px 10px 0 15px;
 }
 .v_ga_monsterboard1BL_FR_20min .caption > span{
   font: bold 11px/13px Arial, sans-serif;
@@ -78,7 +78,7 @@ body{
   border-radius: 3px;
 }
 .v_ga_monsterboard1BL_FR_20min .title {
-	padding: 10px 15px;
+	padding: 0px 15px;
   font: 700 40px/32px 'Roboto Condensed', sans-serif;
   line-height : 110%;
   text-transform: none;
