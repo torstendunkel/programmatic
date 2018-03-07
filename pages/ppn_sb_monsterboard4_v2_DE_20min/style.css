@@ -79,7 +79,7 @@ html, body {
     display: none;
 }
 .ppn_sb_monsterboard4_v2_DE_20min .tnlogo{
-    background: url('http://media.das.tamedia.ch/images/top_bar.gif') top repeat-x;
+    border-top: 4px solid black;
     position: absolute;
     top:0;
     left:0;
