@@ -5,6 +5,7 @@ fullwidth1_DE_derbund
 fullwidth1_DE_tagesanzeiger
 fullwidth1_FR_lematin
 fullwidth1_FR_tdg
+fullwidth1_DE_tutti
 h_ga_monsterboard2_DE_20min
 h_ga_monsterboard2_FR_20min
 h_ga_monsterboard2BL_DE_20min
