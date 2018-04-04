@@ -58,6 +58,7 @@ a:hover {
 	background-color: #e6f5fc;
 	line-height: normal;
 	box-sizing: border-box;
+	cursor :pointer;
 }
 
 
