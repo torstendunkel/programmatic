@@ -265,7 +265,8 @@ module.exports = function(grunt) {
         'copy:src',  // copies the src (myAst to build folder)
         'prepare_copy_images', // copy the images folder to all builds that have an images folder
         'copy:images',
-        'generate_indexHTML'
+        'generate_indexHTML',
+        'generate_IframeCreator'
     ]);
 
     // Default building without deploying
@@ -300,9 +301,9 @@ module.exports = function(grunt) {
         'clean:build',
         'build_stage',
         'generate_test_page:stage',
-        'aws_s3:stage',
-        'cloudfront:stage',
-        'clean:temp'
+        //'aws_s3:stage',
+        //'cloudfront:stage',
+        //'clean:temp'
     ]);
 
 
