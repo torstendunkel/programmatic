@@ -74,7 +74,7 @@ text-decoration: underline;
 .text{
 float: left;
 font-weight: lighter;
-width: 100%;
+width: 50%;
 display: block;
 -webkit-margin-after: 1em;
 -webkit-margin-start: 0px;
@@ -88,22 +88,23 @@ text-decoration: none;
 color:rgb(51, 51, 51);
 }
 img.adimage{
-width: 100%;
+width: 45%;
 display: inline-block;
 float: left;
 margin: 0 0.65rem 0.75rem 0;
 margin-bottom: 12px;
 }
 .caption {
-z-index: 5;
-position: absolute;
-text-align: center;
-right:0;
-width:45px;
-font-size: 10px;
-background: dodgerblue;
-color:white;
+    z-index: 5;
+    position: absolute;
+    text-align: center;
+    right: 55%;
+    width: 45px;
+    font-size: 10px;
+    background: dodgerblue;
+    color: white;
 }
+
 .trackingpixel{
 display:none;
 }

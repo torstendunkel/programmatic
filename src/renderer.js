@@ -48,6 +48,10 @@ ch.tam.addnexusRender = (function () {
 
     var Renderer = function (config) {
 
+        //TODO: remove this when apn bug fixed
+        document.head.appendChild(this.prepareStyle("style",'iframe[tabindex="-1"]{display:none}'));
+
+
         //set stack for logglylog even if not enabled
         window._LTracker = window._LTracker || [];
         this.startTime = new Date().getTime();
@@ -1319,6 +1323,7 @@ ch.tam.addnexusRender = (function () {
                 style.appendChild(document.createTextNode(css));
             }
             this.preReneredStyle = style;
+            return style;
         },
 
         removeElement: function (element) {
