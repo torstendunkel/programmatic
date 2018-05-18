@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ecada909-ba54-4aca-bdc5-42610f8039de" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/juicead1_desktop_text_RO_20min/style.css" afterPath="$PROJECT_DIR$/pages/juicead1_desktop_text_RO_20min/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer.js" afterPath="$PROJECT_DIR$/src/renderer.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,33 +25,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="renderer.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="renderer.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/renderer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="51" column="42" lean-forward="false" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+            <state relative-caret-position="380">
+              <caret line="664" column="80" lean-forward="false" selection-start-line="664" selection-start-column="80" selection-end-line="664" selection-end-column="80" />
               <folding>
-                <marker date="1524742225859" expanded="true" signature="1502:1514" ph="..." />
+                <marker date="1526634667336" expanded="true" signature="1502:1514" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/juicead1_desktop_text_RO_20min/template.html">
+      <file leaf-file-name="scratch_142.html" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_142.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/juicead1_desktop_text_DE_20min/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="1" />
+            <state relative-caret-position="570">
+              <caret line="38" column="7" lean-forward="false" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -71,7 +60,7 @@
       <file leaf-file-name="Gruntfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gruntfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-80">
+            <state relative-caret-position="3735">
               <caret line="249" column="32" lean-forward="false" selection-start-line="249" selection-start-column="32" selection-end-line="249" selection-end-column="32" />
               <folding />
             </state>
@@ -122,8 +111,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pagewrapper</find>
-      <find>fullwi</find>
       <find>http://media.das.tamedia.ch/images/more.gif</find>
       <find>62857807</find>
       <find>.load</find>
@@ -152,6 +139,8 @@
       <find>style</find>
       <find>prepareStyle</find>
       <find>caption</find>
+      <find>passback</find>
+      <find>handlePassback</find>
     </findStrings>
     <replaceStrings>
       <replace>fullwidth1_DE_derbund</replace>
@@ -202,7 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pages/ppn_sb_monsterboard3_IT_tio/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_monsterboard4_DE_20min/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_monsterboard4_FR_20min/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_monsterboard4_IT_tio/style.css" />
@@ -251,8 +239,9 @@
         <option value="$PROJECT_DIR$/pages/ppn_sb_mobilesmallrectangle1_DE_tutti/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_mobilesmallrectangle1_FR_tutti/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_mobilesmallrectangle1_IT_tutti/style.css" />
-        <option value="$PROJECT_DIR$/src/renderer.js" />
         <option value="$PROJECT_DIR$/pages/juicead1_desktop_text_RO_20min/style.css" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_142.html" />
+        <option value="$PROJECT_DIR$/src/renderer.js" />
       </list>
     </option>
   </component>
@@ -489,10 +478,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="nodejs_interpreter_path" value="H:/dev/node/node" />
     <property name="js-jscs-nodeInterpreter" value="H:\dev\node\node.exe" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="JSON&#10;JavaScript&#10;HTML" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="HTML&#10;JSON&#10;JavaScript" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
@@ -752,12 +741,14 @@
       <workItem from="1523952881168" duration="961000" />
       <workItem from="1523962981957" duration="2115000" />
       <workItem from="1524741738758" duration="2159000" />
-      <workItem from="1525271895682" duration="637000" />
+      <workItem from="1525271895682" duration="2618000" />
+      <workItem from="1525778685353" duration="390000" />
+      <workItem from="1526633594758" duration="1075000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="902478000" />
+    <option name="totallyTimeSpent" value="905924000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -770,7 +761,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="266" y="31" width="2133" height="1326" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -778,9 +768,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981783" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36061588" sideWeight="0.49605057" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36061588" sideWeight="0.49605057" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2918455" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26542324" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27020565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940759" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -832,13 +822,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard3_v2_FR_20min/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" column="32" lean-forward="false" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/ppn_sb_monsterboard4_v2_DE_20min/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1200">
@@ -1141,27 +1124,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="51" column="42" lean-forward="false" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
-          <folding>
-            <marker date="1524742225859" expanded="true" signature="1502:1514" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/juicead1_desktop_text_DE_20min/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
+        <state relative-caret-position="3735">
           <caret line="249" column="32" lean-forward="false" selection-start-line="249" selection-start-column="32" selection-end-line="249" selection-end-column="32" />
           <folding />
         </state>
@@ -1171,15 +1143,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="105" column="1" lean-forward="true" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/juicead1_desktop_text_RO_20min/template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        <state relative-caret-position="255">
+          <caret line="17" column="45" lean-forward="true" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_142.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="7" lean-forward="false" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="664" column="80" lean-forward="false" selection-start-line="664" selection-start-column="80" selection-end-line="664" selection-end-column="80" />
+          <folding>
+            <marker date="1526634667336" expanded="true" signature="1502:1514" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

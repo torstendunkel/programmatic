@@ -144,7 +144,7 @@ ch.tam.addnexusRender = (function () {
         // 1. settings by hash
         // 2. settings by json or inline rendered
         // 3. default settings
-        validateOptions: function (callback) {
+            validateOptions: function (callback) {
             var _this = this;
             //parsing the hash
             this.hashOptions = this.parseHash();
@@ -662,7 +662,7 @@ ch.tam.addnexusRender = (function () {
                     passbackUrl : this.options.passback
                 });
                 //CU
-                window.location.href = this.options.passback;
+                window.location.href = decodeURIComponent(this.options.passback);
             }else{
                 this.logglyLog({
                     type : "error",
