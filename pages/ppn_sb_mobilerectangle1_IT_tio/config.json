@@ -1,5 +1,6 @@
 {
-  "showMore" : false,
-  "moreNode" : "span",
-  "useMyAst" : true
+  "showMore": false,
+  "moreNode": "span",
+  "useMyAst": true,
+  "passback": "https://s3-eu-west-1.amazonaws.com/templates.das.tamedia.ch/01_universal/programmatic/tio/index.html"
 }
