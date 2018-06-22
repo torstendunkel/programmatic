@@ -293,8 +293,6 @@ module.exports = function(grunt) {
         'clean:temp'
     ]);
 
-
-
     //building + deploy to stage
     grunt.registerTask('stage', [
         'set_env:stage',
@@ -307,17 +305,14 @@ module.exports = function(grunt) {
         'clean:temp'
     ]);
 
-
-
-
     //upload pages to ftp (for preview)
-    grunt.registerTask('dev', [
-        'set_env:dev',
-        'clean:temp',
-        'clean:build',
-        'build',
-        'clean:temp'
-    ]);
+  grunt.registerTask('dev', [
+    'set_env:dev',
+    'clean:temp',
+    'clean:build',
+    'build',
+    'clean:temp'
+  ]);
 
 
 

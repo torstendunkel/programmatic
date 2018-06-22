@@ -117,7 +117,7 @@ module.exports = function(grunt) {
             var templateUrl = '&lt;script src="https://d1rkf0bq85yx06.cloudfront.net/anprebid/build/'+identifier[1]+'/index.js#tagid={ADD_ID}"&gt;&lt;/script&gt;';
             var htmlView = 'https://d1rkf0bq85yx06.cloudfront.net/anprebid/' + enviroment + "/" +identifier[1] +"/index.html";
             //var preview = "index.html#debug=1&identifier="+identifier[1];
-
+          
             if(identifier.length === 3){
                 var pName = identifier[1].split('_');
                 pName = pName[pName.length - 1].length < 3 ? pName[pName.length - 2] : pName[pName.length - 1];
@@ -145,7 +145,8 @@ module.exports = function(grunt) {
 
                     html ="";
                 }else{
-                    htmlTmp = template
+
+                  htmlTmp = template
                         .replace(/%%HEADER%%/g,identifier[1])
                         .replace('%%ID%%',pId)
                         .replace(/%%ifrmID%%/g,identifier[1])

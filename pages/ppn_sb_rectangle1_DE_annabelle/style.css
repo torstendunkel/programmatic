@@ -31,7 +31,7 @@
     text-decoration: none;
 }
 .ppn_sb_rectangle1_DE_annabelle .title a:hover {
-    color: rgb(68, 170, 128);
+    color: #ff1e55;
     text-decoration: none;
 }
 .ppn_sb_rectangle1_DE_annabelle .text {
@@ -56,12 +56,12 @@
 .ppn_sb_rectangle1_DE_annabelle .text span.url {
     cursor: pointer;
     display: inline;
-    color: rgb(68, 170, 128);
+    color: #ff1e55;
     font: Italic 12px/14px "Times New Roman", Times, serif;
     text-align: left;
 }
 .ppn_sb_rectangle1_DE_annabelle .url a, .ppn_sb_rectangle1_DE_annabelle .url a:link, .ppn_sb_rectangle1_DE_annabelle .url a:visited, .ppn_sb_rectangle1_DE_annabelle .url a:hover, .ppn_sb_rectangle1_DE_annabelle .url a:active {
-    color : rgb(68, 170, 128);
+    color : #ff1e55;
     text-decoration: underline;
 }
 .ppn_sb_rectangle1_DE_annabelle .url a:hover {

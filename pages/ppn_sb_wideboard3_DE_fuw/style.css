@@ -1,23 +1,25 @@
-
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
-.ppn_sb_wideboard3_FR_bilan {
+
+.ppn_sb_wideboard3_DE_fuw {
     width: 994px;
     height: 255px;
     overflow: hidden;
     background: #fdfdfa;
     position: relative;
     cursor: pointer;
-    border-top: 5px solid #d41317;
+    border-top: 5px solid #333333;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-.ppn_sb_wideboard3_FR_bilan .ppninnerbox {
+
+.ppn_sb_wideboard3_DE_fuw .ppninnerbox {
     width: 994px;
     height: 250px;
     overflow: hidden;
 }
-.ppn_sb_wideboard3_FR_bilan .singlebox {
+
+.ppn_sb_wideboard3_DE_fuw .singlebox {
     width: 320px;
     height: 250px;
     margin-right: 17px;
@@ -25,33 +27,37 @@
     position: relative;
     float: left;
     border: none;
-    border-bottom: 1px dotted #444444;
+    border-bottom: 1px dotted #333333;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box
 }
-.ppn_sb_wideboard3_FR_bilan .singlebox:last-child {
+
+.ppn_sb_wideboard3_DE_fuw .singlebox:last-child {
     margin-right: 0;
 }
-.ppn_sb_wideboard3_FR_bilan .title, .ppn_sb_wideboard3_FR_bilan .title a:link, .ppn_sb_wideboard3_FR_bilan .title a:visited, .ppn_sb_wideboard3_FR_bilan .title a:active {
+
+.ppn_sb_wideboard3_DE_fuw .title, .ppn_sb_wideboard3_DE_fuw .title a:link, .ppn_sb_wideboard3_DE_fuw .title a:visited, .ppn_sb_wideboard3_DE_fuw .title a:active {
     font: normal 20px/22px Georgia, serif;
     margin: 6px 2px;
     max-height: 25px;
     overflow: hidden;
     border: none;
     padding: 0;
-    color: #444444;
+    color: #333;
     text-align: left;
     text-decoration: none;
     float: left;
 }
-.ppn_sb_wideboard3_FR_bilan .title a:hover {
-    color: #d41317;
+
+.ppn_sb_wideboard3_DE_fuw .title a:hover {
+    color: #333;
     text-decoration: none;
 }
-.ppn_sb_wideboard3_FR_bilan .text {
+
+.ppn_sb_wideboard3_DE_fuw .text {
     cursor: pointer;
-    color: #444444;
+    color: #333;
     font: normal 12px/17px Georgia, serif;
     text-align: left;
     max-height: 68px;
@@ -61,60 +67,76 @@
     text-decoration: none;
     float: left;
 }
-.ppn_sb_wideboard3_FR_bilan .text a:link, .ppn_sb_wideboard3_FR_bilan .text a:visited, .ppn_sb_wideboard3_FR_bilan .text a:hover, .ppn_sb_wideboard3_FR_bilan .text a:active {
-    color: #444444;
+
+.ppn_sb_wideboard3_DE_fuw .text a:link, .ppn_sb_wideboard3_DE_fuw .text a:visited, .ppn_sb_wideboard3_DE_fuw .text a:hover, .ppn_sb_wideboard3_DE_fuw .text a:active {
+    color: #333;
     text-decoration: none;
 }
-.ppn_sb_wideboard3_FR_bilan .text a:hover {
-    color: #d41317;
+
+.ppn_sb_wideboard3_DE_fuw .text a:hover {
+    color: #333;
     text-decoration: none;
 }
-.ppn_sb_wideboard3_FR_bilan .text span.url {
+
+.ppn_sb_wideboard3_DE_fuw .text span.url {
     cursor: pointer;
     display: inline;
-    color: #d41317;
+    color: #12398e;
     font: 700 12px/17px 'Open Sans', sans-serif;
     text-transform: uppercase;
     text-align: left;
 }
-.ppn_sb_wideboard3_FR_bilan .url a, .ppn_sb_wideboard3_FR_bilan .url a:link, .ppn_sb_wideboard3_FR_bilan .url a:visited, .ppn_sb_wideboard3_FR_bilan .url a:hover, .ppn_sb_wideboard3_FR_bilan .url a:active, .ppn_sb_wideboard3_FR_bilan .text span.url a:hover {
-    color: #d41317;
+
+.ppn_sb_wideboard3_DE_fuw .url a, .ppn_sb_wideboard3_DE_fuw .url a:link, .ppn_sb_wideboard3_DE_fuw .url a:visited, .ppn_sb_wideboard3_DE_fuw .url a:hover, .ppn_sb_wideboard3_DE_fuw .url a:active, .ppn_sb_wideboard3_DE_fuw .text span.url a:hover {
+    color: #12398e;
     text-decoration: none;
 }
-.ppn_sb_wideboard3_FR_bilan .singlebox > a{
+
+.ppn_sb_wideboard3_DE_fuw .singlebox > a {
     width: 320px;
     height: 168px;
-    background-color: #d41317;
+    background-color: #12398e;
     opacity: 1;
     float: left;
 }
-.ppn_sb_wideboard3_FR_bilan img.adimage {
+
+.ppn_sb_wideboard3_DE_fuw img.adimage {
     width: 320px;
     height: 168px;
     opacity: 1;
 }
-.ppn_sb_wideboard3_FR_bilan img.adimage:hover {
+
+.ppn_sb_wideboard3_DE_fuw img.adimage:hover {
     opacity: 0.85;
 }
-.ppn_sb_wideboard3_FR_bilan .ppncaption {
+
+.ppn_sb_wideboard3_DE_fuw .ppncaption {
     display: none;
 }
-.ppn_sb_wideboard3_FR_bilan .ppnlogo{
+
+.ppn_sb_wideboard3_DE_fuw .ppnlogo {
     position: absolute;
     top: 0;
     right: 0;
 }
-.ppn_sb_wideboard3_FR_bilan .tnlogo {
-    position: absolute; top:0; left:0; width:100%; height:15px;
+
+.ppn_sb_wideboard3_DE_fuw .tnlogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
 }
-.ppn_sb_wideboard3_FR_bilan .tnlogo > a{
+
+.ppn_sb_wideboard3_DE_fuw .tnlogo > a {
     position: absolute;
     right: 0;
     top: 0;
     padding: 0px 4px 4px 4px;
-    background: #d41317;
+    background: #333333;
     font: 700 9px/9px 'Open Sans', sans-serif;
     color: white;
     text-decoration: none;
     border: none;
 }
+

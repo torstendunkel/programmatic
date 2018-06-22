@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+
+.ppn_sb_wideboard3_DE_schweizerfamilie {
+    width: 994px;
+    height: 250px;
+    overflow: hidden;
+    background: white;
+    color: black;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    border: none;
+}
+
+.ppn_sb_wideboard3_DE_schweizerfamilie .ppninnerbox {
+    width: 994px;
+    height: 250px;
+    border: none;
+    overflow: hidden;
+    border-top: 1px solid #DE232B;
+    border-bottom: 1px solid #DE232B;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ppn_sb_wideboard3_DE_schweizerfamilie .singlebox {
+    width: 331px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    border: none;
+}
+
+.ppn_sb_wideboard3_DE_schweizerfamilie .title {
+
+    cursor: pointer;
+    width: 290px;
+    max-height: 28px;
+    overflow: hidden;
+    margin: 180px 10px 5px 10px;
+    color: #4A4A4A;
+    font: 600 16px/20px 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+
+}
+
+.ppn_sb_wideboard3_DE_schweizerfamilie .title a:hover,
+.ppn_sb_wideboard3_DE_schweizerfamilie .title a:link,
+.ppn_sb_wideboard3_DE_schweizerfamilie .title a:visited,
+.ppn_sb_wideboard3_DE_schweizerfamilie .title a:active {
+    text-decoration: none;
+    color: #DE232B;
+}
+
+.ppn_sb_wideboard3_DE_schweizerfamilie .title a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.ppn_sb_wideboard3_DE_schweizerfamilie .text {
+    cursor: pointer;
+    position: relative;
+    float: left;
+    width: 280px;
+    max-height: 45px;
+    overflow: hidden;
+    margin: 1px 10px;
+    color: #4A4A4A;
+    font: 400 11px/15px 'Poppins', sans-serif;
+    text-transform: none;
+    text-align: left;
+}
+
+.ppn_sb_wideboard3_DE_schweizerfamilie .text a:link,
+.ppn_sb_wideboard3_DE_schweizerfamilie .text a:visited,
+.ppn_sb_wideboard3_DE_schweizerfamilie .text a:hover,
+.ppn_sb_wideboard3_DE_schweizerfamilie .text a:active,
+.ppn_sb_wideboard3_DE_schweizerfamilie .text a:hover {
+    text-decoration: none;
+    color: #4A4A4A;
+}
+
+.ppn_sb_wideboard3_DE_schweizerfamilie .url > a,
+.ppn_sb_wideboard3_DE_schweizerfamilie .url > a:link,
+.ppn_sb_wideboard3_DE_schweizerfamilie .url > a:visited,
+.ppn_sb_wideboard3_DE_schweizerfamilie .url > a:hover,
+.ppn_sb_wideboard3_DE_schweizerfamilie .url > a:active,
+.ppn_sb_wideboard3_DE_schweizerfamilie .url > a:hover {
+    cursor: pointer;
+    display: inline;
+    color: #DE232B;
+    font: 600 12px/15px 'Poppins', sans-serif;
+    text-align: left;
+}
+
+.ppn_sb_wideboard3_DE_schweizerfamilie .url > a:hover {
+    color: #DE232B;
+}
+
+.ppn_sb_wideboard3_DE_schweizerfamilie .adimage {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-width: 0;
+    width: 300px;
+    height: 168px;
+    z-index: 1;
+    border-bottom: 4px solid #DE232B;
+}
+
+.ppn_sb_wideboard3_DE_schweizerfamilie .ppncaption {
+    display: none;
+}
+
+.ppn_sb_wideboard3_DE_schweizerfamilie .tnlogo > a {
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #DE232B;
+    padding: 3px 4px;
+    font: 700 10px/10px 'Merriweather', serif;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.ppn_sb_wideboard3_DE_schweizerfamilie .tnlogo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 100px;
+    height: 15px;
+}
