@@ -1,5 +1,7 @@
 {
   "showMore" : true,
   "moreNode" : "div",
-  "moreInTxt" : false
+  "moreInTxt" : false,
+  "more" : "Mehr..."
+
 }

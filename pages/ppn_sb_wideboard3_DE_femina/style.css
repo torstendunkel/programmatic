@@ -1,89 +1,98 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 
-.ppn_sb_wideboard3_DE_femina{
-  width: 994px;
-  height: 250px;
-  overflow: hidden;
-  background: white;
-  color: black;
-  text-align: left;
-  position: relative;
-  cursor: pointer;
-  border: none;
+.ppn_sb_wideboard3_DE_femina {
+    width: 994px;
+    height: 250px;
+    overflow: hidden;
+    background: white;
+    color: black;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    border: none;
 }
-.maincontainer{
-  float: left;
-  inline-size: 0%;
-  clear: both;
-  kerning: 0cm;
-  text-align: center;
 
-  empty-cells: hide;
-  unicode-bidi: bidi-override;
-  caption-side: bottom;
-  height: 0%;
+.maincontainer {
+    float: left;
+    inline-size: 0%;
+    clear: both;
+    kerning: 0cm;
+    text-align: center;
+
+    empty-cells: hide;
+    unicode-bidi: bidi-override;
+    caption-side: bottom;
+    height: 0%;
 }
+
 .ppn_sb_wideboard3_DE_femina .ppninnerbox {
-  width: 994px;
-  height: 250px;
-  border: none;
-  overflow: hidden;
-	border-top: 1px solid #0073b7;
-	border-bottom: 1px solid #0073b7;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    width: 994px;
+    height: 250px;
+    border: none;
+    overflow: hidden;
+    border-bottom: 1px dotted #444444;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 .ppn_sb_wideboard3_DE_femina .singlebox {
-  width: 331px;
-  height: 250px;
-  overflow: hidden;
-  position: relative;
-  float: left;
-  border: none;
+    width: 331px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    border: none;
 }
+
 .ppn_sb_wideboard3_DE_femina .title {
-	margin: 156px 20px 5px 0px;
-	max-height: 28px;
-	overflow: hidden;
-	border: none;
-	padding: 0px;
-	font: 700 18px/28px 'Merriweather', serif;
-	font-style: normal;
-	text-transform: none;
-	text-decoration: none;
-	text-align: left;
-	color: #0073b7;
-	border: none;
+    margin: 156px 20px 5px 0px;
+    max-height: 28px;
+    overflow: hidden;
+    border: none;
+    padding: 0px;
+    font: 400 17px/20px 'Playfair Display', serif;
+    font-style: normal;
+    text-transform: none;
+    text-decoration: none;
+    text-align: left;
+    color: #0073b7;
+    border: none;
 }
+
 .ppn_sb_wideboard3_DE_femina .title a:hover,
 .ppn_sb_wideboard3_DE_femina .title a:link,
 .ppn_sb_wideboard3_DE_femina .title a:visited,
-.ppn_sb_wideboard3_DE_femina .title a:active{
-  text-decoration: none;
-  color: #000000;
+.ppn_sb_wideboard3_DE_femina .title a:active {
+    text-decoration: none;
+    color: #000000;
 }
-.ppn_sb_wideboard3_DE_femina .title a:hover{
-  text-decoration: none;
-  color: black;
+
+.ppn_sb_wideboard3_DE_femina .title a:hover {
+    text-decoration: none;
+    color: black;
 }
+
 .ppn_sb_wideboard3_DE_femina .text {
     text-decoration: none;
     cursor: pointer;
-    color: rgb(51,51,51);
-    font: 400 12px/18px 'Open Sans',sans-serif;
+    color: rgb(51, 51, 51);
+    font: 400 12px/18px 'Open Sans', sans-serif;
     text-align: left;
     padding-top: 6px;
     width: 270px;
 }
+
 .ppn_sb_wideboard3_DE_femina .text a:link,
 .ppn_sb_wideboard3_DE_femina .text a:visited,
 .ppn_sb_wideboard3_DE_femina .text a:hover,
 .ppn_sb_wideboard3_DE_femina .text a:active,
-.ppn_sb_wideboard3_DE_femina .text a:hover  {
-	text-decoration: none;
-  color: black;
+.ppn_sb_wideboard3_DE_femina .text a:hover {
+    text-decoration: none;
+    color: black;
 }
+
 .ppn_sb_wideboard3_DE_femina .url > a,
 .ppn_sb_wideboard3_DE_femina .url > a:link,
 .ppn_sb_wideboard3_DE_femina .url > a:visited,
@@ -93,37 +102,45 @@
     padding: 0;
     cursor: pointer;
     display: inline;
-    color: rgb(239,61,82);
-    font: 700 12px/18px 'Open Sans',sans-serif;
+    color: rgb(239, 61, 82);
+    font: 700 12px/18px 'Open Sans', sans-serif;
     text-align: left;
 }
-.ppn_sb_wideboard3_DE_femina .url > a:hover{
-  color: black;
+
+.ppn_sb_wideboard3_DE_femina .url > a:hover {
+    color: black;
 }
+
 .ppn_sb_wideboard3_DE_femina .adimage {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-width: 0;
-  width: 260px;
-  height: 146px;
-  z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-width: 0;
+    width: 260px;
+    height: 146px;
+    z-index: 1;
 }
+
 .ppn_sb_wideboard3_DE_femina .ppncaption {
-  display: none;
+    display: none;
 }
-.ppn_sb_wideboard3_DE_femina .tnlogo > a{
-	border: none;
-	position: absolute;
-	right: 0;
-	top: 0;
-	background: #0073b7;
-	padding: 3px 4px;
-	font: 700 10px/10px 'Merriweather', serif;
-	text-align: center;
-	color: white;
-	text-decoration: none;
+
+.ppn_sb_wideboard3_DE_femina .tnlogo > a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 4px;
+    background: #d41317;
+    font: 700 10px/10px 'Open Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    border: none;
 }
-.ppn_sb_wideboard3_DE_femina .tnlogo{
-    position: absolute; bottom:0; right:0; max-width:100px; height:15px;
+
+.ppn_sb_wideboard3_DE_femina .tnlogo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 100px;
+    height: 15px;
 }

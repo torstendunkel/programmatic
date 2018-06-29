@@ -4,7 +4,6 @@
     width: 994px;
     height: 255px;
     overflow: hidden;
-    background: #fdfdfa;
     position: relative;
     cursor: pointer;
     border-top: 5px solid #333333;
@@ -40,7 +39,7 @@
 .ppn_sb_wideboard3_DE_fuw .title, .ppn_sb_wideboard3_DE_fuw .title a:link, .ppn_sb_wideboard3_DE_fuw .title a:visited, .ppn_sb_wideboard3_DE_fuw .title a:active {
     font: normal 20px/22px Georgia, serif;
     margin: 6px 2px;
-    max-height: 25px;
+    max-height: 29px;
     overflow: hidden;
     border: none;
     padding: 0;

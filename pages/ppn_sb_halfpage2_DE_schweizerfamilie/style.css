@@ -7,7 +7,7 @@
     background: #fdfdfa;
     position: relative;
     cursor: pointer;
-    border-top: 5px solid #DE232B;
+    border-top: 1px solid #DEE4E8;
     border-bottom: 1px dotted #DE232B;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -129,12 +129,16 @@
 .ppn_sb_halfpage2_DE_schweizerfamilie .tnlogo > a {
     position: absolute;
     right: 0;
-    top: 0;
-    padding: 0px 4px 4px 4px;
-    background: #DE232B;
-    font: 700 10px/10px 'Open Sans', sans-serif;
-    color: white;
+    top: 0px;
+    padding: 2px 3px 1px 3px;
+    background: white;
+    border: 1px solid #DEE4E8;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #DEE4E8;
     text-decoration: none;
-    border: none;
+    text-transform: uppercase;
+    font: 700 10px/10px 'Open Sans', sans-serif;
 }
 

@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:600');
+@import url(https://fonts.googleapis.com/css?family=Patua+One|Fjord+One);
 
 .ppn_sb_halfpage2_DE_annabelle {
     width: 300px;
     height: 600px;
     overflow: hidden;
-    background: #fdfdfa;
     position: relative;
     cursor: pointer;
-    border-top: 5px solid #ff1e55;
+    border-top: 5px solid #000000;
     border-bottom: 1px dotted #444444;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -37,7 +36,7 @@
 }
 
 .ppn_sb_halfpage2_DE_annabelle .title, .ppn_sb_halfpage2_DE_annabelle .title a:link, .ppn_sb_halfpage2_DE_annabelle .title a:visited, .ppn_sb_halfpage2_DE_annabelle .title a:active {
-    font: 600 16px/20px 'Poppins', sans-serif;
+    font: normal 16px/20px 'Patua One',serif;
     margin: 198px 2px 5px 2px;
     max-height: 24px;
     overflow: hidden;
@@ -55,7 +54,7 @@
 
 .ppn_sb_halfpage2_DE_annabelle .text {
     color: #1f1f1f;
-    font: normal 15px/16px Times, Georgia, serif;
+    font:  normal 13px/16px 'Fjord One', serif;
     margin: 5px 2px;
     text-align: left;
     max-height: 60px;
@@ -76,8 +75,8 @@
     cursor: pointer;
     display: inline;
     color: #ff1e55;
-    font: 600 12px/16px 'Poppins', sans-serif;
-    text-transform: uppercase;
+    font: Italic 12px/14px "Times New Roman",Times,serif;
+    text-transform: none;
     text-align: left;
 }
 
@@ -129,7 +128,7 @@
     right: 0;
     top: 0;
     padding: 0px 4px 4px 4px;
-    background: #ff1e55;
+    background: #000000;
     font: 700 10px/10px 'Open Sans', sans-serif;
     color: white;
     text-decoration: none;

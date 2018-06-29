@@ -17,8 +17,8 @@
     height: 250px;
     border: none;
     overflow: hidden;
-    border-top: 1px solid #DE232B;
-    border-bottom: 1px solid #DE232B;
+    border-top: 1px solid #DEE4E8;
+    border-bottom: 1px solid #DEE4E8;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -52,7 +52,7 @@
 .ppn_sb_wideboard3_DE_schweizerfamilie .title a:visited,
 .ppn_sb_wideboard3_DE_schweizerfamilie .title a:active {
     text-decoration: none;
-    color: #DE232B;
+    color: #4A4A4A;
 }
 
 .ppn_sb_wideboard3_DE_schweizerfamilie .title a:hover {
@@ -116,16 +116,19 @@
 }
 
 .ppn_sb_wideboard3_DE_schweizerfamilie .tnlogo > a {
-    border: none;
     position: absolute;
     right: 0;
-    top: 0;
-    background: #DE232B;
-    padding: 3px 4px;
-    font: 700 10px/10px 'Merriweather', serif;
-    text-align: center;
-    color: white;
+    top: 0px;
+    padding: 2px 3px 1px 3px;
+    background: white;
+    border: 1px solid #DEE4E8;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #DEE4E8;
     text-decoration: none;
+    text-transform: uppercase;
+    font: 700 10px/10px 'Open Sans', sans-serif;
 }
 
 .ppn_sb_wideboard3_DE_schweizerfamilie .tnlogo {
