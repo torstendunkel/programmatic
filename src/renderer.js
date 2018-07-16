@@ -1036,6 +1036,16 @@ ch.tam.addnexusRender = (function () {
                     window.parent.document.getElementById(window.frameElement.id).style.height="0px";
                 }catch(e){
                     info = "can not hide iframe because not same origin";
+                    var totmConnect = document.createElement('script');
+                    totmConnect.src="https://tdn.da-services.ch/libs/totmConnect.js";
+                    document.body.appendChild(totmConnect);
+                    totmConnect.onload= function(){
+                      connector.push({close:true});
+                    };
+                    setTimeout(() => {window.connector.push({close:true})},500);
+
+
+
                 }
             }else{
                 info = "no iframe and no mraid available";
