@@ -1034,17 +1034,15 @@ ch.tam.addnexusRender = (function () {
                 try{
                     info = "collapsing iframe";
                     window.parent.document.getElementById(window.frameElement.id).style.height="0px";
-                }catch(e){
-                    info = "can not hide iframe because not same origin";
                     var totmConnect = document.createElement('script');
                     totmConnect.src="https://tdn.da-services.ch/libs/totmConnect.js";
                     document.body.appendChild(totmConnect);
-                    totmConnect.onload= function(){
-                      connector.push({close:true});
+                    totmConnect.onload = function(){
+                        window.connector.push({close:true});
                     };
-                    setTimeout(() => {window.connector.push({close:true})},500);
-
-
+                    setTimeout(function(){window.connector.push({close:true})},500);
+                }catch(e){
+                    info = "can not hide iframe because not same origin";
 
                 }
             }else{
