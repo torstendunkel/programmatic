@@ -86,12 +86,26 @@ ch.tam.addnexusRender = (function () {
                 if (!_this.config) {
                     _this.loadStyle();
                 }
-                apntag.anq.push(function () {
-                    _this.prepareTags();
-                });
 
-                _this.checkForMRAID();
-                _this.addLoggly();
+                // load dummy data for development
+                if(_this.options.demo){
+                    _this.loadJSON('../../dummy.json', function(data){
+                        var data  = JSON.parse(data);
+                        data.identifier = _this.options.identifier;
+                        _this.render(data);
+                    });
+                    _this.loadStyle();
+                }else{
+                    apntag.anq.push(function () {
+                        _this.prepareTags();
+                    });
+                    _this.checkForMRAID();
+                    _this.addLoggly();
+                }
+
+
+
+
             });
 
             //register fallback timer
@@ -632,10 +646,10 @@ ch.tam.addnexusRender = (function () {
             this.ads = {};
 
             var forceAds = {
-                de: ["63342611", "63342512", "63340022", "62786656"],
-                fr: ["64423481", "64423485", "64423489"],
+                de: [],
+                fr: [],
                 it: [],
-                en: ["63342611", "64423485"]
+                en: []
             };
             window.anConfigAd = {};
             this.getForcedAds = function () {
