@@ -6,21 +6,21 @@ ch.tam.addnexusRender = (function () {
     "use strict";
 
     var settings = {
-        version : '%%VERSION%%',  // filled by grunt
-        environment : '%%ENVIRONMENT%%', // filled by grunt
-        scriptBase : '%%SCRIPTBASE%%', // filled by grunt
+        version: '%%VERSION%%',  // filled by grunt
+        environment: '%%ENVIRONMENT%%', // filled by grunt
+        scriptBase: '%%SCRIPTBASE%%', // filled by grunt
         identifier: 'ppn_sb_billboard3_DE_20min', //fallback
         member: 3646, // fallback variables
         numads: 4, // fallback variables
         tagid: 9518829, // fallback variables
         jsonUrl: 'config.json',
-        jsonpUrl : 'config_jsonp.js',
+        jsonpUrl: 'config_jsonp.js',
         idPrefix: 'main',
         adMarker: {
             de: 'Anzeige',
             fr: 'Publicité',
             it: 'Pubblicità',
-            en : 'Sponsored'
+            en: 'Sponsored'
         },
         moreText: {
             de: 'Mehr ..',
@@ -28,16 +28,16 @@ ch.tam.addnexusRender = (function () {
             it: 'Più ..',
             en: 'More ..'
         },
-        sampling : {
-          main : 0.025, // main sampling all other types are multiplied with this. e.g. 5% of the users will send logs but only 10% of these 5% will send info logs
-          error : 1,
-          info : 0.1,
-          warning: 0.1
+        sampling: {
+            main: 0.025, // main sampling all other types are multiplied with this. e.g. 5% of the users will send logs but only 10% of these 5% will send info logs
+            error: 1,
+            info: 0.1,
+            warning: 0.1
         },
         trackingPixelClass: 'pixel',
         moreNode: 'div',
         showMore: false,
-        logging : "true", // logging via loggly
+        logging: "true", // logging via loggly
         moreInTxt: false,
         moreBtn: '<{{moreNode}} class="url"><a target="_blank" href="{{href}}">{{more}}</a></{{moreNode}}>',
         trackingPixel: '<img class="{{trackingPixelClass}}" src="{{imgSrc}}" width="0" height="0" style="display:none"/>',
@@ -49,7 +49,7 @@ ch.tam.addnexusRender = (function () {
     var Renderer = function (config) {
 
         //TODO: remove this when apn bug fixed
-        document.head.appendChild(this.prepareStyle("style",'iframe[tabindex="-1"]{display:none}'));
+        document.head.appendChild(this.prepareStyle("style", 'iframe[tabindex="-1"]{display:none}'));
 
 
         //set stack for logglylog even if not enabled
@@ -102,10 +102,10 @@ ch.tam.addnexusRender = (function () {
 
         // to get better results in android app try to load the ast again if it is not loaded after a timeout.
         // Sometimes the js is not executed for no reason.
-        checkAstLoaded: function(){
+        checkAstLoaded: function () {
             var _this = this;
-            setTimeout(function(){
-                if(!_this.astFallbackTriggered && !apntag.loaded){
+            setTimeout(function () {
+                if (!_this.astFallbackTriggered && !apntag.loaded) {
                     _this.astFallbackTriggered = true;
 
                     //force all following logs do be done as "followup"
@@ -121,21 +121,21 @@ ch.tam.addnexusRender = (function () {
 
                 }
 
-                else if(_this.astFallbackTriggered && apntag.loaded){
-                        _this.logglyLog({
-                            type : "warning",
-                            message : "AST loaded with second try."
-                        },true);
-                }
-
-                else if(_this.astFallbackTriggered){
+                else if (_this.astFallbackTriggered && apntag.loaded) {
                     _this.logglyLog({
-                        type : "warning",
-                        message : "AST adblocked."
-                    },true);
+                        type: "warning",
+                        message: "AST loaded with second try."
+                    }, true);
                 }
 
-          },10000);
+                else if (_this.astFallbackTriggered) {
+                    _this.logglyLog({
+                        type: "warning",
+                        message: "AST adblocked."
+                    }, true);
+                }
+
+            }, 10000);
 
         },
 
@@ -144,7 +144,7 @@ ch.tam.addnexusRender = (function () {
         // 1. settings by hash
         // 2. settings by json or inline rendered
         // 3. default settings
-            validateOptions: function (callback) {
+        validateOptions: function (callback) {
             var _this = this;
             //parsing the hash
             this.hashOptions = this.parseHash();
@@ -185,19 +185,19 @@ ch.tam.addnexusRender = (function () {
             this.options.identifier = tidentifier;
 
 
-            if(jsonp){
+            if (jsonp) {
                 this.logger("Options loaded with jsonp");
                 this.logglyLog({
                     type: "info",
-                    message : "config loaded via jsonp"
+                    message: "config loaded via jsonp"
                 })
             }
 
 
             if (typeof callback === "function") {
-                this.logger("Options set to",_this.options);
+                this.logger("Options set to", _this.options);
                 callback.call();
-            }else if(typeof this.callbackAfterOptionsAssign === 'function'){
+            } else if (typeof this.callbackAfterOptionsAssign === 'function') {
                 this.callbackAfterOptionsAssign.call(this);
             }
         },
@@ -237,7 +237,7 @@ ch.tam.addnexusRender = (function () {
                 this.options.challengeNumAds = this.parseNumadsFromIdentifier(this.options.challenge);
                 tags = tags.concat(this.generateTagArray(this.options.ctagid, this.options.challengeNumAds, "challenge"));
             }
-            this.logger("tags defined",tags);
+            this.logger("tags defined", tags);
             this.loadAds(tags);
 
         },
@@ -257,63 +257,63 @@ ch.tam.addnexusRender = (function () {
 
 
                 //if defined merge the global AppNexus Config to the adObj
-                if(window.anConfigAd){
+                if (window.anConfigAd) {
                     this.logger("merging appnexus config ad");
-                    try{
-                        adObj = this.merge(adObj,window.anConfigAd);
-                        if(typeof this.getForcedAds === "function"){
-                            adObj = this.merge(adObj,this.getForcedAds());
+                    try {
+                        adObj = this.merge(adObj, window.anConfigAd);
+                        if (typeof this.getForcedAds === "function") {
+                            adObj = this.merge(adObj, this.getForcedAds());
                         }
-                    }catch(e){
+                    } catch (e) {
                         this.logglyLog({
                             type: "error",
-                            message : "could not merge appnexus config ad"
+                            message: "could not merge appnexus config ad"
                         });
                     }
 
                     this.logglyLog({
                         type: "info",
-                        message : "merging anConfigAd",
-                        adconfig : window.anConfigAd
+                        message: "merging anConfigAd",
+                        adconfig: window.anConfigAd
                     });
 
 
-                }else if(this.options.supplyType){
+                } else if (this.options.supplyType) {
                     // in some cases we need to pass the appmode via the options and then we generate dummy app ids as well
                     adObj.supplyType = this.options.supplyType;
                 }
 
-                if(this.options.forceCreativeId){
+                if (this.options.forceCreativeId) {
                     window.anConfigFirst = {
                         forceCreativeId: this.options.forceCreativeId
                     }
                 }
 
                 // if defined merge the global AppNexuFirst Config to the first adObj
-                if(i==0 && window.anConfigFirst){
-                    try{
+                if (i == 0 && window.anConfigFirst) {
+                    try {
                         this.logger("merging appnexus config ad for first ad");
-                        if(window.anConfigFirst.forceCreativeId && typeof window.anConfigFirst.forceCreativeId !== "number"){
+                        if (window.anConfigFirst.forceCreativeId && typeof window.anConfigFirst.forceCreativeId !== "number") {
                             window.anConfigFirst.forceCreativeId = parseInt(window.anConfigFirst.forceCreativeId.match(/\d+/g)[0]);
                         }
-                        adObj = this.merge(adObj,window.anConfigFirst);
-                    }catch(e){
+                        adObj = this.merge(adObj, window.anConfigFirst);
+                    } catch (e) {
                         this.logglyLog({
                             type: "error",
-                            message : "could not merge anConfigFirst"
+                            message: "could not merge anConfigFirst"
                         });
                     }
 
                     this.logglyLog({
                         type: "info",
-                        message : "merging adConfigFirst",
-                        adconfig : window.anConfigFirst
+                        message: "merging adConfigFirst",
+                        adconfig: window.anConfigFirst
                     });
 
                 }
                 arr.push(adObj);
 
-                if(!this.secondTry){
+                if (!this.secondTry) {
                     apntag.onEvent('adAvailable', prefix + i, this.adAvailable.bind(this, prefix + "-" + i, prefix));
                     apntag.onEvent('adNoBid', prefix + i, this.adNoBid.bind(this, prefix + "-" + i, prefix));
                     apntag.onEvent('adRequestFailure', prefix + i, this.handleAdError.bind(this, prefix + "-" + i, prefix));
@@ -326,28 +326,28 @@ ch.tam.addnexusRender = (function () {
             return arr;
         },
 
-        getTargetingFromMap: function(){
+        getTargetingFromMap: function () {
             var keywords = {};
-            if(window.targetingmap){
-                try{
+            if (window.targetingmap) {
+                try {
                     keywords = JSON.parse(window.targetingmap);
-                }catch(e){
-                    if(typeof window.targetingmap === "object"){
+                } catch (e) {
+                    if (typeof window.targetingmap === "object") {
                         keywords = window.targetingmap;
-                    }else{
+                    } else {
                         this.logglyLog({
-                            type : "error",
-                            message : "not parsable targeting map",
-                            map : window.targetingmap
+                            type: "error",
+                            message: "not parsable targeting map",
+                            map: window.targetingmap
                         });
                     }
                 }
             }
 
             // dfp puts every targetingkey inside an array. So we remove it from there
-            for(var key in keywords){
-                if(typeof keywords[key] !== "string" && typeof keywords[key] === "object"){
-                    if(keywords[key][0]){
+            for (var key in keywords) {
+                if (typeof keywords[key] !== "string" && typeof keywords[key] === "object") {
+                    if (keywords[key][0]) {
                         keywords[key] = keywords[key][0];
                     }
                 }
@@ -365,28 +365,28 @@ ch.tam.addnexusRender = (function () {
                 member: parseInt(this.options.member) || this.settings.member,
                 keywords: keywords
             };
-            if(window.anConfigPage){
+            if (window.anConfigPage) {
                 this.logger("merging appnexus config page");
-                try{
-                    pageObj = this.merge(pageObj,window.anConfigPage);
-                }catch(e){
+                try {
+                    pageObj = this.merge(pageObj, window.anConfigPage);
+                } catch (e) {
                     this.logglyLog({
                         type: "error",
-                        message : "could not merge appnexus config page"
+                        message: "could not merge appnexus config page"
                     });
 
                 }
-            }else if(this.options.supplyType){
+            } else if (this.options.supplyType) {
                 // if supplytype set by options to app_mode generate dummy app ids
                 var dummyDeviceId = {
-                    device : {
-                        deviceId : {
-                            idfa : this.generateIdfa(),
-                            aaid : this.generateAaid()
+                    device: {
+                        deviceId: {
+                            idfa: this.generateIdfa(),
+                            aaid: this.generateAaid()
                         }
                     }
                 };
-                pageObj = this.merge(pageObj,dummyDeviceId);
+                pageObj = this.merge(pageObj, dummyDeviceId);
             }
 
 
@@ -403,16 +403,16 @@ ch.tam.addnexusRender = (function () {
 
             var handleAsNobid = false;
             // check for duplicates
-            if(this.loadedCreatives[bucket].indexOf(data.creativeId) !== -1){
+            if (this.loadedCreatives[bucket].indexOf(data.creativeId) !== -1) {
                 this.ads[bucket].duplicatesFound = true;
                 this.logger("douplicate ad found", data.creativeId);
                 handleAsNobid = true;
             }
 
             // when this template has a fallbackLayout we can treat duplicates as nobids
-            if(this.options.fallBackLayout && handleAsNobid){
-                this.adNoBid(id,bucket);
-            }else{
+            if (this.options.fallBackLayout && handleAsNobid) {
+                this.adNoBid(id, bucket);
+            } else {
                 this.loadedCreatives[bucket].push(data.creativeId);
                 this.ads[bucket].adsLoaded += 1;
                 data.id = id;
@@ -422,7 +422,7 @@ ch.tam.addnexusRender = (function () {
             }
         },
 
-        adNoBid: function(id, bucket){
+        adNoBid: function (id, bucket) {
             this.ads[bucket].adsLoaded += 1;
             this.ads[bucket].noBid += 1;
             this.logger("received no bid", id);
@@ -431,25 +431,25 @@ ch.tam.addnexusRender = (function () {
         },
 
         // ad Errors normally only appear when blocked by adblocker
-        handleAdError : function(id, bucket, adError){
+        handleAdError: function (id, bucket, adError) {
             this.logger("Ad Error received");
             this.adErrors.push(adError);
 
 
             // treat as if there where no bid for this ad
-            this.adNoBid(id,bucket);
+            this.adNoBid(id, bucket);
 
         },
 
-        checkBucketStatus: function(bucket){
+        checkBucketStatus: function (bucket) {
             if (this.ads[bucket].adsLoaded === this.ads[bucket].numads) {
                 this.logger(bucket, "ready");
                 //when all requested ads are available then this bucket is complete
-                if(this.ads[bucket].noBid === 0){
+                if (this.ads[bucket].noBid === 0) {
                     this.ads[bucket].complete = true;
                 }
                 //also allow some "main" ads to render even if not ads are loaded (needs to be defined in the config.json)
-                else if((this.ads[bucket].numads - this.ads[bucket].noBid ) > 0){
+                else if ((this.ads[bucket].numads - this.ads[bucket].noBid ) > 0) {
                     var adsAvailable = this.ads[bucket].numads - this.ads[bucket].noBid;
                     this.ads[bucket].complete = this.checkLayoutSwitch(bucket, adsAvailable);
                 }
@@ -464,7 +464,7 @@ ch.tam.addnexusRender = (function () {
 
         checkIfAllBucketsAreReady: function () {
             for (var i in this.ads) {
-                if(this.ads.hasOwnProperty(i) && this.ads[i].adsLoaded !== this.ads[i].numads){
+                if (this.ads.hasOwnProperty(i) && this.ads[i].adsLoaded !== this.ads[i].numads) {
                     return false;
                 }
             }
@@ -473,24 +473,24 @@ ch.tam.addnexusRender = (function () {
 
 
         /*
-        check in config if a different layout is available for the ammount of available ads
-        */
-        checkLayoutSwitch: function(bucket, adsAvailable){
-            if(this.options.fallBackLayout && this.options.fallBackLayout[adsAvailable]){
+         check in config if a different layout is available for the ammount of available ads
+         */
+        checkLayoutSwitch: function (bucket, adsAvailable) {
+            if (this.options.fallBackLayout && this.options.fallBackLayout[adsAvailable]) {
 
                 var oldIdentifier = this.ads[bucket].identifier;
 
                 this.ads[bucket].identifier = this.options.fallBackLayout[adsAvailable];
                 var message = "Not enough ads";
-                if(this.ads[bucket].duplicatesFound){
+                if (this.ads[bucket].duplicatesFound) {
                     message = "Douplicate creatives";
                 }
-                this.logger("switching from",oldIdentifier,"to layout",this.ads[bucket].identifier,message);
+                this.logger("switching from", oldIdentifier, "to layout", this.ads[bucket].identifier, message);
                 this.logglyLog({
-                    type : "info",
-                    message : "Layout changed:" + message,
-                    oldLayout : oldIdentifier,
-                    newLayout : this.ads[bucket].identifier
+                    type: "info",
+                    message: "Layout changed:" + message,
+                    oldLayout: oldIdentifier,
+                    newLayout: this.ads[bucket].identifier
                 });
 
                 this.ads[bucket].layoutSwitched = true;
@@ -522,7 +522,7 @@ ch.tam.addnexusRender = (function () {
 
             for (var i in this.ads) {
                 adCPM = 0;
-                if(this.ads.hasOwnProperty(i)) {
+                if (this.ads.hasOwnProperty(i)) {
                     tAd = this.ads[i];
                     // only start comparision when all ads in this bucket are sucessfully requested
                     this.challengeData[this.ads[i].identifier] = [];
@@ -546,9 +546,9 @@ ch.tam.addnexusRender = (function () {
                         }
 
                         // save the main ad if data available
-                        if(i === "main"){
+                        if (i === "main") {
                             preferredAd = tAd;
-                        }else if(currentLowestAdNum > loadedAds){
+                        } else if (currentLowestAdNum > loadedAds) {
                             currentLowestAdNum = loadedAds;
                             sencond_preferredAd = tAd;
                         }
@@ -561,41 +561,41 @@ ch.tam.addnexusRender = (function () {
                 }
             }
 
-            if(bestAd){
+            if (bestAd) {
                 //always use the prefered ad when available
-                if(preferredAd){
+                if (preferredAd) {
                     bestAd = preferredAd;
                     this.logger("preferred Ad available. Ignore CPM Comparision");
-                }else if(sencond_preferredAd){
+                } else if (sencond_preferredAd) {
                     bestAd = sencond_preferredAd;
                     this.logger("2nd preferred Ad available. Ignore CPM Comparision");
                 }
-                else{
+                else {
                     this.logger("preferred and 2nd preferred Ad not available use challenge ads instead");
                 }
 
-                if(bestAd.identifier !== this.options.identifier){
+                if (bestAd.identifier !== this.options.identifier) {
                     this.challengeWon = true;
                 }
-                this.logger("Selected Ad: "+ bestAd.identifier + " CPM: ", bestAd.totalCPM);
+                this.logger("Selected Ad: " + bestAd.identifier + " CPM: ", bestAd.totalCPM);
                 this.checkBeforeRender(bestAd);
 
-            }else{
+            } else {
                 this.logger("no best ad available", this.ads);
-                if(this.options.passback){
+                if (this.options.passback) {
                     this.handlePassback();
-                }else{
+                } else {
 
-                    if(this.secondTry && this.thirdTry){
+                    if (this.secondTry && this.thirdTry) {
                         this.collapseParentFrame();
                     }
                     //choose some fallbacks
-                    else if(this.secondTry){
+                    else if (this.secondTry) {
                         this.thirdTry = true;
                         this.tryToLoadFallback();
                     }
                     // try again
-                    else{
+                    else {
                         this.secondTry = true;
                         this.tryToLoadAdsAgain();
                     }
@@ -603,7 +603,7 @@ ch.tam.addnexusRender = (function () {
             }
         },
 
-        tryToLoadAdsAgain: function(){
+        tryToLoadAdsAgain: function () {
             this.logger("No Ads for rendering available try a senconds time");
             // this.forceSession = this.followUp = true;
             this.loadedAds = {};
@@ -615,11 +615,11 @@ ch.tam.addnexusRender = (function () {
             this.ads = {};
 
             this.options.challenge = this.options.challenge ? this.options.challenge.join(",") : this.options.challenge;
-            this.options.ctagid = this.options.ctagid ? this.options.ctagid.join(",")  : this.options.ctagid;
+            this.options.ctagid = this.options.ctagid ? this.options.ctagid.join(",") : this.options.ctagid;
             this.prepareTags();
         },
 
-        tryToLoadFallback: function(){
+        tryToLoadFallback: function () {
 
             this.logger("No Ads for rendering available force fallback");
             // this.forceSession = this.followUp = true;
@@ -632,41 +632,41 @@ ch.tam.addnexusRender = (function () {
             this.ads = {};
 
             var forceAds = {
-                de : ["63342611","63342512","63340022","62786656"],
-                fr : ["64423481","64423485","64423489"],
-                it : [],
-                en : ["63342611","64423485"]
+                de: ["63342611", "63342512", "63340022", "62786656"],
+                fr: ["64423481", "64423485", "64423489"],
+                it: [],
+                en: ["63342611", "64423485"]
             };
             window.anConfigAd = {};
-            this.getForcedAds = function(){
+            this.getForcedAds = function () {
                 var ads = forceAds[this.options.lang];
-                var r = Math.round(Math.random() * (ads.length-1));
+                var r = Math.round(Math.random() * (ads.length - 1));
                 return {
-                    forceCreativeId : ads.splice(r,1)[0]
+                    forceCreativeId: ads.splice(r, 1)[0]
                 }
             };
 
             this.options.challenge = this.options.challenge ? this.options.challenge.join(",") : this.options.challenge;
-            this.options.ctagid = this.options.ctagid ? this.options.ctagid.join(",")  : this.options.ctagid;
+            this.options.ctagid = this.options.ctagid ? this.options.ctagid.join(",") : this.options.ctagid;
             this.prepareTags();
 
         },
 
 
-        handlePassback: function(){
-            if(this.inIframe()){
+        handlePassback: function () {
+            if (this.inIframe()) {
                 this.logglyLog({
-                    type : "warning",
-                    message : "can not show ad",
-                    info : "redirecting to passback",
-                    passbackUrl : this.options.passback
+                    type: "warning",
+                    message: "can not show ad",
+                    info: "redirecting to passback",
+                    passbackUrl: this.options.passback
                 });
                 //CU
                 window.location.href = decodeURIComponent(this.options.passback);
-            }else{
+            } else {
                 this.logglyLog({
-                    type : "error",
-                    message : "Passback defined but not in iframe"
+                    type: "error",
+                    message: "Passback defined but not in iframe"
                 })
             }
 
@@ -680,15 +680,15 @@ ch.tam.addnexusRender = (function () {
             ad = this.sortByCPM(ad);
 
             if (this.challengeWon) {
-                this.logger("load css and json for "+ ad.identifier);
+                this.logger("load css and json for " + ad.identifier);
                 //overwrite the identifier to force the script to load css and json for the new identifier
                 this.options.identifier = ad.identifier;
                 this.config = undefined;
                 // wait until new style is loaded and than render
 
 
-                this.callbackAfterOptionsAssign = function(){
-                    _this.loadStyle(function(){
+                this.callbackAfterOptionsAssign = function () {
+                    _this.loadStyle(function () {
                         _this.logger("new style loaded for " + _this.options.identifier);
                         _this.render(ad);
                     });
@@ -700,7 +700,7 @@ ch.tam.addnexusRender = (function () {
             // in this case we can render directly because style is available because in production it is rendered into the content, we just have to add it
             // here we are ignoring the case (only in preview) that the main css is loaded via http and slower than the appnexus response
             else {
-                if(this.preReneredStyle){
+                if (this.preReneredStyle) {
                     document.head.appendChild(this.preReneredStyle);
                 }
                 this.render(ad);
@@ -708,16 +708,16 @@ ch.tam.addnexusRender = (function () {
         },
 
         render: function (ad) {
-            if(this.isRendered){
+            if (this.isRendered) {
                 this.logger("rendering invoked multiple time. Ingoring multiple rendring.");
                 this.logglyLog({
-                   type : "warning",
-                   message : "rendering invoked multiple times"
+                    type: "warning",
+                    message: "rendering invoked multiple times"
                 });
 
                 return;
             }
-            this.logger("render "+ ad.identifier);
+            this.logger("render " + ad.identifier);
 
             var data = {
                 content: '',
@@ -734,30 +734,30 @@ ch.tam.addnexusRender = (function () {
             this.appendToBody(this.tmpl(this.options.wrapper, data));
 
             // just to be safe ;) Necessary for IE in challenge mode load event is fired twice..
-            this.isRendered  = true;
+            this.isRendered = true;
 
             this.initClickTracking(ad);
 
-            if(this.options.script){
+            if (this.options.script) {
                 this.executeScript(this.options.script);
             }
 
             this.logger("Ad Render complete");
             this.logglyLog({
-                type : "info",
-                message : "elem rendered",
-                renderedAds : ad.loadedAds.length,
-                adData : this.adDataLog,
-                renderTime : new Date().getTime() - this.startTime,
-                challenge : this.options.challenge !== undefined,
-                challengeWon : this.challengeWon,
-                challengeData : this.challengeData ? this.challengeData : "no data available",
-                cpm : (Math.floor(ad.totalCPM * 100) /100),
-                secondTry : this.secondTry || false,
-                forcedFallback : this.thirdTry ? "true" : "false",
+                type: "info",
+                message: "elem rendered",
+                renderedAds: ad.loadedAds.length,
+                adData: this.adDataLog,
+                renderTime: new Date().getTime() - this.startTime,
+                challenge: this.options.challenge !== undefined,
+                challengeWon: this.challengeWon,
+                challengeData: this.challengeData ? this.challengeData : "no data available",
+                cpm: (Math.floor(ad.totalCPM * 100) / 100),
+                secondTry: this.secondTry || false,
+                forcedFallback: this.thirdTry ? "true" : "false",
                 layoutSwitch: ad.layoutSwitched || false, // says that ad was only rendered because of layoutswitch
-                duplicates : ad.duplicatesFound || false,
-                topAst : this.useTopAst || false
+                duplicates: ad.duplicatesFound || false,
+                topAst: this.useTopAst || false
             });
 
 
@@ -771,9 +771,9 @@ ch.tam.addnexusRender = (function () {
             var moreBtn = this.renderMoreBtn(data.native.clickUrl);
 
             var obj = {
-                title: data.native.title.substring(0,25), // LIMIT characters DASB-756
+                title: data.native.title.substring(0, 25), // LIMIT characters DASB-756
                 img: data.native.image.url,
-                description: data.native.body.substring(0,90),  // LIMIT characters DASB-756
+                description: data.native.body.substring(0, 90),  // LIMIT characters DASB-756
                 href: data.native.clickUrl,
                 impression: '',
                 id: data.id,
@@ -784,25 +784,25 @@ ch.tam.addnexusRender = (function () {
 
             // logging only
             this.adDataLog.push({
-                title : obj.title,
-                description : obj.description,
-                img : obj.img,
-                href : obj.href,
-                creative : data.creativeId
+                title: obj.title,
+                description: obj.description,
+                img: obj.img,
+                href: obj.href,
+                creative: data.creativeId
             });
 
 
             obj = this.addCustomFields(obj, data);
 
             // omg we do not have an impression and click pixel
-            if(this.options.template.indexOf("{{impression}}") === -1){
+            if (this.options.template.indexOf("{{impression}}") === -1) {
                 this.logger("no impression pixel available. try creating one");
                 this.logglyLog({
                     type: "warning",
-                    message : "template does not contain tracking pixel."
+                    message: "template does not contain tracking pixel."
                 });
                 // render the pixel before the last div
-                this.options.template = this.options.template.replace(/<\/div>$/,"{{impression}}</div>");
+                this.options.template = this.options.template.replace(/<\/div>$/, "{{impression}}</div>");
             }
 
 
@@ -812,11 +812,11 @@ ch.tam.addnexusRender = (function () {
                 for (var i = 0; i < impressionTracker.length; i++) {
 
                     // when we force a creative we need to remove the test=1 param to count correctly
-                    if(this.thirdTry){
-                        impressionTracker[i] = impressionTracker[i].replace("&test=1","");
+                    if (this.thirdTry) {
+                        impressionTracker[i] = impressionTracker[i].replace("&test=1", "");
                     }
 
-                    this.logger("adding impression",data.id);
+                    this.logger("adding impression", data.id);
                     obj.impression += this.tmpl(this.options.trackingPixel, {
                         imgSrc: impressionTracker[i],
                         trackingPixelClass: this.options.trackingPixelClass
@@ -825,7 +825,7 @@ ch.tam.addnexusRender = (function () {
             }
 
             // add the creative id
-            this.options.template = this.options.template.replace(/<div/,'<div data-creative-id="'+ data.creativeId +'"');
+            this.options.template = this.options.template.replace(/<div/, '<div data-creative-id="' + data.creativeId + '"');
 
             return this.tmpl(this.options.template, obj);
         },
@@ -835,7 +835,7 @@ ch.tam.addnexusRender = (function () {
         addCustomFields: function (renderObj, dataObj) {
             if (this.options.customFields) {
                 for (var i in this.options.customFields) {
-                    if(this.options.customFields.hasOwnProperty(i)){
+                    if (this.options.customFields.hasOwnProperty(i)) {
                         renderObj[i] = this.options.customFields[i].split(".").reduce(this.stringToObjectPath, dataObj) || '';
                     }
                 }
@@ -861,37 +861,37 @@ ch.tam.addnexusRender = (function () {
         },
 
         // function will fake resize to force dfp (if used) to fit the adslot to the correct size
-            addResizeTrigger: function(){
+        addResizeTrigger: function () {
 
             var imgs = document.getElementsByTagName('img');
             window.dispatchEvent(new Event('resize'));
 
-            if(imgs && imgs.length > 0){
-               for(var i=0; i < imgs.length; i++){
-                   if(imgs[i].className.indexOf("adimage") !== -1){
-                       imgs[i].onload = function(){
-                           window.dispatchEvent(new Event('resize'));
-                       }
-                   }
-               }
+            if (imgs && imgs.length > 0) {
+                for (var i = 0; i < imgs.length; i++) {
+                    if (imgs[i].className.indexOf("adimage") !== -1) {
+                        imgs[i].onload = function () {
+                            window.dispatchEvent(new Event('resize'));
+                        }
+                    }
+                }
             }
         },
 
 
         // function sorts all ads by hightest cpm first to ensure that the best ad is at the top
-        sortByCPM : function(ad){
+        sortByCPM: function (ad) {
 
             this.logger("sort ads by cpm");
 
-            try{
-                ad.loadedAds =  ad.loadedAds.sort(function(a,b){
+            try {
+                ad.loadedAds = ad.loadedAds.sort(function (a, b) {
                     return b.cpm - a.cpm;
                 });
-            }catch(e){
+            } catch (e) {
                 this.logglyLog({
-                    type : "error",
-                    message : "can not sort by cpm",
-                    ad : ad
+                    type: "error",
+                    message: "can not sort by cpm",
+                    ad: ad
                 })
             }
             return ad;
@@ -902,7 +902,7 @@ ch.tam.addnexusRender = (function () {
             for (var i = 0; i < ad.loadedAds.length; i++) {
                 if (ad.loadedAds[i].native && ad.loadedAds[i].native.clickTrackers && ad.loadedAds[i].native.clickTrackers.length > 0) {
                     for (var j = 0; j < ad.loadedAds[i].native.clickTrackers.length; j++) {
-                        if(this.dnt){
+                        if (this.dnt) {
                             continue;
                         }
                         this.addClickTracking(ad.loadedAds[i].id, ad.loadedAds[i].native.clickTrackers[j]);
@@ -916,11 +916,11 @@ ch.tam.addnexusRender = (function () {
             if (elem) {
                 this.logger("add click tracking", elem);
                 this.addEvent(elem, 'click', this.handleElemClick.bind(this, elem, trackingUrl))
-            }else{
+            } else {
                 this.logger("can not add click tracking!");
                 this.logglyLog({
-                    type : "error",
-                    message : "can not ad click tracking. Maybe Id is missing"
+                    type: "error",
+                    message: "can not ad click tracking. Maybe Id is missing"
                 })
             }
         },
@@ -934,15 +934,15 @@ ch.tam.addnexusRender = (function () {
         openUrl: function (elem, e) {
             var href = elem.getAttribute("data-href");
 
-            if(!href){
+            if (!href) {
                 var links = elem.getElementsByTagName("a");
-                if(links && links[0]){
+                if (links && links[0]) {
                     href = links[0];
                 }
             }
 
             // if we have a global clickthrough url combine it. Super for AB testing
-            if(window.clickThroughUrl){
+            if (window.clickThroughUrl) {
                 href = window.clickThroughUrl + href;
             }
 
@@ -954,16 +954,16 @@ ch.tam.addnexusRender = (function () {
 
             this.logglyLog({
                 type: "info",
-                message : "elem clicked",
-                href : href
+                message: "elem clicked",
+                href: href
             });
         },
 
         setTrackingPixel: function (trackingUrl) {
 
             // when we force a creative we need to remove the test=1 param to count correctly
-            if(this.thirdTry){
-                trackingUrl = trackingUrl.replace("./bn=0/test=1/","");
+            if (this.thirdTry) {
+                trackingUrl = trackingUrl.replace("./bn=0/test=1/", "");
             }
 
             (new Image()).src = trackingUrl;
@@ -972,11 +972,11 @@ ch.tam.addnexusRender = (function () {
         guessLangFromIdentifier: function (identifier) {
             var tLang = identifier.toLowerCase();
             var lang = "en";
-            if(tLang.indexOf("_fr_") !== -1 || tLang.indexOf("_ro_") !== -1){
+            if (tLang.indexOf("_fr_") !== -1 || tLang.indexOf("_ro_") !== -1) {
                 lang = "fr";
-            }else if(tLang.indexOf("_it_") !== -1){
+            } else if (tLang.indexOf("_it_") !== -1) {
                 lang = "it";
-            }else if(tLang.indexOf("_de_") !== -1){
+            } else if (tLang.indexOf("_de_") !== -1) {
                 lang = "de";
             }
             return lang;
@@ -1011,81 +1011,80 @@ ch.tam.addnexusRender = (function () {
 
         },
 
-        collapseParentFrame : function(){
+        collapseParentFrame: function () {
             var type = "warning";
             var message = "can not show ad";
             var reason = "not enough ads for rendering";
             var info;
 
             this.logger("try to hide ad");
-
-            if(this.useMRAID){
-                if (mraid && mraid.getState() === 'loading') {
-                    mraid.addEventListener('ready', this.collapseParentFrame.bind(this));
-                    return;
-                }else if(mraid){
-                    mraid.close();
-                    info = "closing wrapper with mraid";
-                }else{
-                    type = "error";
-                    info = "MRAID not available";
-                }
-            }else if(this.inIframe()){
+            /*
+             if(this.useMRAID){
+             if (mraid && mraid.getState() === 'loading') {
+             mraid.addEventListener('ready', this.collapseParentFrame.bind(this));
+             return;
+             }else if(mraid){
+             mraid.close();
+             info = "closing wrapper with mraid";
+             }else{
+             type = "error";
+             info = "MRAID not available";
+             }
+             }
+             */
+            if(this.useMRAID || this.inIframe()) {
                 var totmConnect = document.createElement('script');
-                totmConnect.src="https://tdn.da-services.ch/libs/totmConnect.js";
+                totmConnect.src = "https://tdn.da-services.ch/libs/totmConnect.js";
                 document.body.appendChild(totmConnect);
-                totmConnect.onload = function(){
-                    window.connector.push({close:true});
+                totmConnect.onload = function () {
+                    window.connector.push({close: true});
                 };
-                try{
-                    info = "collapsing iframe";
-                    window.parent.document.getElementById(window.frameElement.id).style.height="0px";
-                }catch(e){
-                    info = "can not hide iframe because not same origin";
-
-                }
-            }else{
-                info = "no iframe and no mraid available";
             }
 
+            try {
+                info = "collapsing iframe";
+                window.parent.document.getElementById(window.frameElement.id).style.height = "0px";
+            } catch (e) {
+                info = "can not hide iframe because not same origin";
+            }
             document.documentElement.style.background = "#F2F2F2";
 
             this.logglyLog({
                 type: type,
-                message : message,
-                info : info,
+                message: message,
+                info: info,
                 reason: reason,
-                renderTime : new Date().getTime() - this.startTime,
-                adsRequested : this.options.numads,
-                adsAvailable : this.options.numads - this.ads["main"].noBid,
-                secondTry : this.secondTry || false,
-                forcedFallback : this.thirdTry || false
+                renderTime: new Date().getTime() - this.startTime,
+                adsRequested: this.options.numads,
+                adsAvailable: this.options.numads - this.ads["main"].noBid,
+                secondTry: this.secondTry || false,
+                forcedFallback: this.thirdTry || false
             });
 
-            if(typeof window.noAdCallback === "function"){
+            if (typeof window.noAdCallback === "function") {
                 window.noAdCallback.call();
             }
 
         },
 
         // checks if script should include MRAID
-        checkForMRAID : function(){
-            if(this.options.supplyType === "mobile_app" ||  (window.anConfigAd && window.anConfigAd.supplyType === "mobile_app")){
+        checkForMRAID: function () {
+            if (this.options.supplyType === "mobile_app" || (window.anConfigAd && window.anConfigAd.supplyType === "mobile_app")) {
                 this.addMRAID();
                 this.useMRAID = true;
-            }else{
+            } else {
                 this.useMRAID = false;
             }
-            this.logger("use MRAID",this.useMRAID);
+            this.logger("use MRAID", this.useMRAID);
         },
 
 
         // function checks if error occur because of adblock or something else
-        checkForBlock: function(){
+        checkForBlock: function () {
             this.logglyLog({
-                type : "info",
-                message : "ad errors received",
-                errors : this.adErrors
+                type: "info",
+                message: "ad errors received",
+                errors: this.adErrors
             })
         },
 
@@ -1106,7 +1105,7 @@ ch.tam.addnexusRender = (function () {
             document.body.appendChild(this.createDomNodeFromHTML(content)[0]);
 
         },
-        executeScript: function (script){
+        executeScript: function (script) {
             window.eval(script);
         },
         tmpl: function (template, data) {
@@ -1130,7 +1129,7 @@ ch.tam.addnexusRender = (function () {
             var _this = this;
             this.logger("appending to head", this.options.scriptBase + '/' + this.options.identifier + "/style.css");
 
-            if(this.preReneredStyle){
+            if (this.preReneredStyle) {
                 this.removeElement(this.preReneredStyle);
             }
 
@@ -1145,12 +1144,11 @@ ch.tam.addnexusRender = (function () {
 
             style.onload = function () {
                 _this.styleLoaded = true;
-                if(typeof cb === "function"){
+                if (typeof cb === "function") {
                     cb.call(_this);
                 }
             }
         },
-
 
 
         loadJSON: function (url, callback) {
@@ -1159,21 +1157,21 @@ ch.tam.addnexusRender = (function () {
             this.logger("loading json: ", url);
 
             var xobj = new XMLHttpRequest();
-            var href = this.settings.scriptBase +  '/' + this.options.identifier + '/' + url;
+            var href = this.settings.scriptBase + '/' + this.options.identifier + '/' + url;
 
-            var timeout = setTimeout(function(){
+            var timeout = setTimeout(function () {
                 _this.logger("Timeout exceeded");
                 _this.loadConfigWithJSONP("timeout");
-            },3000);
+            }, 3000);
 
-            xobj.open('GET', href , true);
+            xobj.open('GET', href, true);
             xobj.onreadystatechange = function () {
-                if(xobj.readyState === 4){
+                if (xobj.readyState === 4) {
                     clearTimeout(timeout);
                 }
                 if (xobj.readyState == 4 && xobj.status == "200") {
                     callback(xobj.responseText);
-                }else if(xobj.readyState == 4 && xobj.status != "200"){
+                } else if (xobj.readyState == 4 && xobj.status != "200") {
                     _this.loadConfigWithJSONP(xobj.status);
                 }
             };
@@ -1183,32 +1181,32 @@ ch.tam.addnexusRender = (function () {
         },
 
 
-        loadConfigWithJSONP: function(status){
+        loadConfigWithJSONP: function (status) {
 
             var script = document.createElement('script');
             script.type = 'text/javascript';
             script.async = true;
-            script.src = this.settings.scriptBase + '/' + this.options.identifier + '/' +this.options.jsonpUrl;
+            script.src = this.settings.scriptBase + '/' + this.options.identifier + '/' + this.options.jsonpUrl;
             document.getElementsByTagName('head')[0].appendChild(script);
 
 
             this.logger("Config could not be loaded. Load config with jsonp");
             this.logglyLog({
-                type : "info",
-                message : "config.json could not loaded fallback to jsonp",
-                status : status
+                type: "info",
+                message: "config.json could not loaded fallback to jsonp",
+                status: status
             }, true);
 
         },
 
 
-        addLoggly: function(){
+        addLoggly: function () {
 
-            if(this.options.logging === "false" && !this.options.debug){
+            if (this.options.logging === "false" && !this.options.debug) {
                 return;
             }
             // sampling 5% if not in sampling group disable loggly logging
-            if(Math.random() > this.options.sampling.main && !this.options.debug){
+            if (Math.random() > this.options.sampling.main && !this.options.debug) {
                 this.logger("logging disabled");
                 this.options.logging = "false";
                 return;
@@ -1223,17 +1221,18 @@ ch.tam.addnexusRender = (function () {
             document.getElementsByTagName('head')[0].appendChild(script);
 
             window._LTracker.push(
-                {'logglyKey': 'b0e65e43-6b7e-42e8-b0e5-a7323592ec04',
-                'sendConsoleErrors' : false,
-                'tag' : 'loggly-jslogger'
+                {
+                    'logglyKey': 'b0e65e43-6b7e-42e8-b0e5-a7323592ec04',
+                    'sendConsoleErrors': false,
+                    'tag': 'loggly-jslogger'
                 });
         },
 
-        logglyLog: function(data, forceLog){
-            if(data.error){
+        logglyLog: function (data, forceLog) {
+            if (data.error) {
                 console.error(data.message);
             }
-            if(this.options.logging === "false"){
+            if (this.options.logging === "false") {
                 return;
             }
 
@@ -1241,8 +1240,8 @@ ch.tam.addnexusRender = (function () {
             // with this param once set you can log all events in this session from now on
             this.forceSession = this.forceSession ? true : forceLog;
             // log the first occurrence as the normal event and all following as type followup to do better analysis
-            if(this.forceSession){
-                if(this.followUp){
+            if (this.forceSession) {
+                if (this.followUp) {
                     data.type = "followup";
                 }
                 this.followUp = true;
@@ -1250,12 +1249,26 @@ ch.tam.addnexusRender = (function () {
 
 
             //extra sampling for log types when not in debug mode
-            if(!this.options.debug && !this.forceSession){
-                switch(data.type){
-                    case "info" : if(Math.random() > this.options.sampling.info){return} break;
-                    case "warning" : if(Math.random() > this.options.sampling.warning){return} break;
-                    case "error" : if(Math.random() > this.options.sampling.error){return} break;
-                    default : this.logger("loggly no type defined"); return;
+            if (!this.options.debug && !this.forceSession) {
+                switch (data.type) {
+                    case "info" :
+                        if (Math.random() > this.options.sampling.info) {
+                            return
+                        }
+                        break;
+                    case "warning" :
+                        if (Math.random() > this.options.sampling.warning) {
+                            return
+                        }
+                        break;
+                    case "error" :
+                        if (Math.random() > this.options.sampling.error) {
+                            return
+                        }
+                        break;
+                    default :
+                        this.logger("loggly no type defined");
+                        return;
                 }
             }
 
@@ -1272,8 +1285,8 @@ ch.tam.addnexusRender = (function () {
             data.version = this.options.version;
             data.environment = this.options.environment;
 
-            var customer  = this.options.identifier.split('_');
-            data.customer = customer[customer.length-1].replace('.','');
+            var customer = this.options.identifier.split('_');
+            data.customer = customer[customer.length - 1].replace('.', '');
 
             window._LTracker.push(data);
         },
@@ -1281,35 +1294,36 @@ ch.tam.addnexusRender = (function () {
         addAppNexusLib: function () {
 
             //check if we can access the parent ast.js
-            try{
-                if(top && top.apntag){
+            try {
+                if (top && top.apntag) {
                     window.apntag = top.apntag;
                     this.useTopAst = true;
                     this.logger("use top AST.js");
                 }
-            }catch(e){ }
+            } catch (e) {
+            }
 
 
             window.apntag = window.apntag || {};
             //create a queue on the apntag object
             apntag.anq = apntag.anq || [];
-                if(!this.useTopAst){
-                    //load ast.js - async
-                    (function () {
-                        var d = document, scr = d.createElement('script'), pro = d.location.protocol,
-                            tar = d.getElementsByTagName("head")[0];
-                        scr.type = 'text/javascript';
-                        scr.async = true;
-                        scr.src = ((pro === 'https:') ? 'https' : 'http') + '://acdn.adnxs.com/ast/ast.js';
-                        if (!apntag.l) {
-                            apntag.l = true;
-                            tar.insertBefore(scr, tar.firstChild);
-                        }
-                    })();
-                }
+            if (!this.useTopAst) {
+                //load ast.js - async
+                (function () {
+                    var d = document, scr = d.createElement('script'), pro = d.location.protocol,
+                        tar = d.getElementsByTagName("head")[0];
+                    scr.type = 'text/javascript';
+                    scr.async = true;
+                    scr.src = ((pro === 'https:') ? 'https' : 'http') + '://acdn.adnxs.com/ast/ast.js';
+                    if (!apntag.l) {
+                        apntag.l = true;
+                        tar.insertBefore(scr, tar.firstChild);
+                    }
+                })();
+            }
         },
 
-        addMRAID: function(){
+        addMRAID: function () {
             this.logger("appending mraid.js to head");
             var head = document.getElementsByTagName('head').item(0),
                 js = document.createElement('script'),
@@ -1320,7 +1334,7 @@ ch.tam.addnexusRender = (function () {
         },
 
         // This function is called with the build css in production mode
-        prepareStyle : function (type, css) {
+        prepareStyle: function (type, css) {
             var head = document.head || document.getElementsByTagName('head')[0];
             var style = document.createElement('style');
             style.type = 'text/css';
@@ -1342,31 +1356,31 @@ ch.tam.addnexusRender = (function () {
             this.logs.push(arguments);
 
             if (this.options && this.options.debug) {
-                var t = this.lastTs ?  new Date().getTime() - this.lastTs : undefined;
-                this.totalTime = this.totalTime !== undefined ? this.totalTime+t : 0;
+                var t = this.lastTs ? new Date().getTime() - this.lastTs : undefined;
+                this.totalTime = this.totalTime !== undefined ? this.totalTime + t : 0;
                 console.log(Array.prototype.slice.call(arguments), t !== undefined ? t + "/" + this.totalTime + "ms" : 0 + "/" + this.totalTime + "ms");
             }
-            this.lastTs =  new Date().getTime();
+            this.lastTs = new Date().getTime();
         },
 
         //merge two objects
         merge: function (obj1, obj2) {
             var obj3 = {};
             for (var attrname in obj1) {
-                if(obj1.hasOwnProperty(attrname)){
+                if (obj1.hasOwnProperty(attrname)) {
                     obj3[attrname] = obj1[attrname];
                 }
 
             }
             for (var attrname2 in obj2) {
-                if(obj2.hasOwnProperty(attrname2)) {
+                if (obj2.hasOwnProperty(attrname2)) {
                     obj3[attrname2] = obj2[attrname2];
                 }
             }
             return obj3;
         },
 
-        inIframe : function(){
+        inIframe: function () {
             try {
                 return window.self !== window.top;
             } catch (e) {
@@ -1375,20 +1389,20 @@ ch.tam.addnexusRender = (function () {
         },
 
 
-        generateIdfa : function(){
-            return this.getRandomString(8) + "-" + this.getRandomString(4)+ "-" + this.getRandomString(4)+ "-" + this.getRandomString(4) + "-" + this.getRandomString(12);
+        generateIdfa: function () {
+            return this.getRandomString(8) + "-" + this.getRandomString(4) + "-" + this.getRandomString(4) + "-" + this.getRandomString(4) + "-" + this.getRandomString(12);
         },
 
-        generateAaid : function(){
-            return this.getRandomString(8) + "-" + this.getRandomString(4)+ "-" + this.getRandomString(4)+ "-" + this.getRandomString(4) + "-" + this.getRandomString(12);
+        generateAaid: function () {
+            return this.getRandomString(8) + "-" + this.getRandomString(4) + "-" + this.getRandomString(4) + "-" + this.getRandomString(4) + "-" + this.getRandomString(12);
         },
 
-        getRandomString: function(length){
-                var text = "";
-                var possible = "abcdef0123456789";
-                for( var i=0; i < length; i++ )
-                    text += possible.charAt(Math.floor(Math.random() * possible.length));
-                return text;
+        getRandomString: function (length) {
+            var text = "";
+            var possible = "abcdef0123456789";
+            for (var i = 0; i < length; i++)
+                text += possible.charAt(Math.floor(Math.random() * possible.length));
+            return text;
         },
 
 
@@ -1405,15 +1419,15 @@ ch.tam.addnexusRender = (function () {
             }
             catch (e) {
                 this.logglyLog({
-                    tag : "error",
+                    tag: "error",
                     message: "hash parsing failed"
                 })
             }
             return {};
         },
 
-        showLogs: function(){
-            for(var i=0; i<this.logs.length; i++){
+        showLogs: function () {
+            for (var i = 0; i < this.logs.length; i++) {
                 console.log(this.logs[i]);
             }
         }
