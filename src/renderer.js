@@ -790,7 +790,8 @@ ch.tam.addnexusRender = (function () {
                 description: data.native.body.substring(0, 90),  // LIMIT characters DASB-756
                 href: data.native.clickUrl,
                 impression: '',
-                id: data.id,
+                //id: data.id,
+                id: data.targetId,
                 moreInTxt: this.options.moreInTxt ? moreBtn : '',
                 moreOutTxt: !this.options.moreInTxt ? moreBtn : '',
                 sponsored: data.native.sponsoredBy || ''
@@ -830,7 +831,7 @@ ch.tam.addnexusRender = (function () {
                         impressionTracker[i] = impressionTracker[i].replace("&test=1", "");
                     }
 
-                    this.logger("adding impression", data.id);
+                    this.logger("adding impression", data.targetId);
                     obj.impression += this.tmpl(this.options.trackingPixel, {
                         imgSrc: impressionTracker[i],
                         trackingPixelClass: this.options.trackingPixelClass
@@ -919,7 +920,7 @@ ch.tam.addnexusRender = (function () {
                         if (this.dnt) {
                             continue;
                         }
-                        this.addClickTracking(ad.loadedAds[i].id, ad.loadedAds[i].native.clickTrackers[j]);
+                        this.addClickTracking(ad.loadedAds[i].targetId, ad.loadedAds[i].native.clickTrackers[j]);
                     }
                 }
             }

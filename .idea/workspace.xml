@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/ppn_sb_rectangle1_DE_annabelle/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="751">
-              <caret line="55" column="46" lean-forward="false" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
+            <state relative-caret-position="315">
+              <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
               <folding>
                 <marker date="1532505914695" expanded="true" signature="968:981" ph="{...}" />
                 <marker date="1532505914695" expanded="true" signature="2078:2113" ph="{...}" />
@@ -61,14 +61,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="renderer.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="renderer.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/renderer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1395">
-              <caret line="93" column="25" lean-forward="false" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
+            <state relative-caret-position="255">
+              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
               <folding>
-                <marker date="1532510636703" expanded="true" signature="1500:1512" ph="..." />
-                <marker date="1532510636703" expanded="true" signature="51664:51681" ph="{...}" />
+                <marker date="1533882113722" expanded="true" signature="1500:1512" ph="..." />
+                <marker date="1533882113722" expanded="true" signature="51713:51730" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -128,12 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>logo</find>
-      <find>.ppn_sb_wideboard3_DE_schweizerfamilie .adimage</find>
-      <find>DE_fuw</find>
-      <find>.ppn_sb_rectangle1_DE_chweizerfamilie .title</find>
-      <find>ppn_sb_halfpage2_DE_schweizerfamilie</find>
-      <find>title</find>
       <find>adimage</find>
       <find>ppn_sb_rectangle1_DE_annabelle</find>
       <find>ppn_sb_wideboard3_FR_bilan</find>
@@ -158,6 +152,12 @@
       <find>prepareTags</find>
       <find>loadJSON</find>
       <find>dummy</find>
+      <find>getTargetingFromMap</find>
+      <find>adAvailable</find>
+      <find>render()</find>
+      <find>.id</find>
+      <find>data\.id</find>
+      <find>\.id</find>
     </findStrings>
     <replaceStrings>
       <replace>fullwidth1_FR_tdg</replace>
@@ -241,8 +241,8 @@
         <option value="$PROJECT_DIR$/pages/ppn_sb_mobilehalfpage4_DE_20min/style.css" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_mobilehalfpage4_FR_20min/style.css" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_13.json" />
-        <option value="$PROJECT_DIR$/src/renderer.js" />
         <option value="$PROJECT_DIR$/pages/usedFormats.txt" />
+        <option value="$PROJECT_DIR$/src/renderer.js" />
       </list>
     </option>
   </component>
@@ -265,7 +265,8 @@
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="133" />
+    <option name="y" value="24" />
     <option name="width" value="2560" />
     <option name="height" value="1334" />
   </component>
@@ -358,6 +359,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -432,8 +435,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -727,12 +728,14 @@
       <workItem from="1531725652352" duration="2444000" />
       <workItem from="1531741743289" duration="1180000" />
       <workItem from="1532508354057" duration="1931000" />
-      <workItem from="1532510699837" duration="643000" />
+      <workItem from="1532510699837" duration="663000" />
+      <workItem from="1532611559102" duration="58000" />
+      <workItem from="1533881188744" duration="3145000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="954057000" />
+    <option name="totallyTimeSpent" value="957280000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -744,11 +747,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1334" extended-state="6" />
+    <frame x="133" y="24" width="2560" height="1334" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21088165" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21405877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -909,7 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1091,6 +1093,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pages/usedFormats.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_rectangle1_DE_annabelle/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding>
+            <marker date="1532505914695" expanded="true" signature="968:981" ph="{...}" />
+            <marker date="1532505914695" expanded="true" signature="2078:2113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grunt/tasks/optimizeFolderList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1101,30 +1121,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="93" column="25" lean-forward="false" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
+        <state relative-caret-position="255">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
           <folding>
-            <marker date="1532510636703" expanded="true" signature="1500:1512" ph="..." />
-            <marker date="1532510636703" expanded="true" signature="51664:51681" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/usedFormats.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_rectangle1_DE_annabelle/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="55" column="46" lean-forward="false" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
-          <folding>
-            <marker date="1532505914695" expanded="true" signature="968:981" ph="{...}" />
-            <marker date="1532505914695" expanded="true" signature="2078:2113" ph="{...}" />
+            <marker date="1533882113722" expanded="true" signature="1500:1512" ph="..." />
+            <marker date="1533882113722" expanded="true" signature="51713:51730" ph="{...}" />
           </folding>
         </state>
       </provider>
