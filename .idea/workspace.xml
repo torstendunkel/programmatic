@@ -21,21 +21,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="usedFormats.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/usedFormats.txt">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_wideboard3_FR_ricardo/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="28" />
+            <state relative-caret-position="459">
+              <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_wideboard3_FR_ricardo/style.css">
+        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_ricardo/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+            <state relative-caret-position="444">
+              <caret line="75" column="19" lean-forward="true" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -52,7 +52,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ppn_sb_rectangle1_DE_annabelle</find>
       <find>ppn_sb_wideboard3_FR_bilan</find>
       <find>generate_test_page</find>
       <find>build</find>
@@ -82,9 +81,9 @@
       <find>data\.id</find>
       <find>\.id</find>
       <find>ppn_sb_wideboard3_DE_ricardo</find>
+      <find>ppn_sb_halfpage2_DE_ricardo</find>
     </findStrings>
     <replaceStrings>
-      <replace>v_ga_monsterboard2_FR_20min</replace>
       <replace>v_ga_monsterboard1_DE_20min</replace>
       <replace>v_ga_monsterboard1_FR_20min</replace>
       <replace>ppn_sb_mobilehalfpage2_FR_20min</replace>
@@ -114,6 +113,7 @@
       <replace>DE_fuw</replace>
       <replace>DE_schweizerfamilie</replace>
       <replace>ppn_sb_wideboard3_FR_ricardo</replace>
+      <replace>ppn_sb_halfpage2_FR_ricardo</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_mobilerectangle1_DE_derbund</dir>
@@ -168,6 +168,7 @@
         <option value="$PROJECT_DIR$/src/renderer.js" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_wideboard3_FR_ricardo/style.css" />
         <option value="$PROJECT_DIR$/pages/usedFormats.txt" />
+        <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_ricardo/style.css" />
       </list>
     </option>
   </component>
@@ -284,6 +285,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,26 +302,13 @@
               <item name="programmatic" type="b2602c69:ProjectViewProjectNode" />
               <item name="programmatic" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="ppn_sb_wideboard3_DE_ricardo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programmatic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programmatic" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="ppn_sb_wideboard3_FR_ricardo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programmatic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programmatic" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="tan_sb_mobilefullwidth1Ad_20min" type="462c0819:PsiDirectoryNode" />
+              <item name="ppn_sb_halfpage2_FR_ricardo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,19 +333,19 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\projects\programmatic\pages\" />
-      <recent name="C:\projects\programmatic\build\" />
-      <recent name="$PROJECT_DIR$/pages/h_ga_monsterboard2GR_DE_20min" />
-      <recent name="$PROJECT_DIR$/pages" />
-      <recent name="$PROJECT_DIR$/test" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\silva\Documents\GitHub\programmatic\pages" />
       <recent name="$USER_HOME$/Desktop" />
       <recent name="C:\projects\programmatic\pages\ppn_sb_halfpage2_DE_schweizerfamilie" />
       <recent name="C:\projects\programmatic\pages\ppn_sb_wideboard3_DE_schweizerfamilie" />
       <recent name="C:\projects\programmatic\pages\ppn_sb_rectangle1_DE_fuw" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects\programmatic\pages\" />
+      <recent name="C:\projects\programmatic\build\" />
+      <recent name="$PROJECT_DIR$/pages/h_ga_monsterboard2GR_DE_20min" />
+      <recent name="$PROJECT_DIR$/pages" />
+      <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -616,12 +605,13 @@
       <workItem from="1532611559102" duration="58000" />
       <workItem from="1533881188744" duration="3145000" />
       <workItem from="1534341834722" duration="877000" />
-      <workItem from="1534404762715" duration="720000" />
+      <workItem from="1534404762715" duration="760000" />
+      <workItem from="1534405545999" duration="513000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="958877000" />
+    <option name="totallyTimeSpent" value="959430000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -637,7 +627,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21581876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21740858" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -685,13 +675,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/preview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7275">
-          <caret line="485" column="54" lean-forward="false" selection-start-line="485" selection-start-column="54" selection-end-line="485" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/ppn_sb_wideboard3_DE_annabelle/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
@@ -959,15 +942,23 @@
     <entry file="file://$PROJECT_DIR$/pages/usedFormats.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="28" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/ppn_sb_wideboard3_FR_ricardo/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        <state relative-caret-position="459">
+          <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_ricardo/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="75" column="19" lean-forward="true" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
           <folding />
         </state>
       </provider>
