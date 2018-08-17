@@ -21,21 +21,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_wideboard3_FR_ricardo/style.css">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_tutti_karte/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+            <state relative-caret-position="0">
+              <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_ricardo/style.css">
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_tutti_karte/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="75" column="19" lean-forward="true" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_tutti_karte/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="811">
+              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usedFormats.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/usedFormats.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -167,8 +187,10 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_13.json" />
         <option value="$PROJECT_DIR$/src/renderer.js" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_wideboard3_FR_ricardo/style.css" />
-        <option value="$PROJECT_DIR$/pages/usedFormats.txt" />
         <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_ricardo/style.css" />
+        <option value="$PROJECT_DIR$/pages/fullwidth1_DE_tutti_karte/config.json" />
+        <option value="$PROJECT_DIR$/pages/usedFormats.txt" />
+        <option value="$PROJECT_DIR$/pages/fullwidth1_DE_tutti_karte/style.css" />
       </list>
     </option>
   </component>
@@ -190,7 +212,7 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
@@ -285,6 +307,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -302,13 +325,30 @@
               <item name="programmatic" type="b2602c69:ProjectViewProjectNode" />
               <item name="programmatic" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="fullwidth1_DE_tutti" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="programmatic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="programmatic" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="fullwidth1_DE_tutti_karte" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="programmatic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="programmatic" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="ppn_sb_halfpage2_FR_ricardo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="programmatic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="programmatic" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="v_ga_monsterboard2_FR_20min" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -333,19 +373,19 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\silva\Documents\GitHub\programmatic\pages" />
-      <recent name="$USER_HOME$/Desktop" />
-      <recent name="C:\projects\programmatic\pages\ppn_sb_halfpage2_DE_schweizerfamilie" />
-      <recent name="C:\projects\programmatic\pages\ppn_sb_wideboard3_DE_schweizerfamilie" />
-      <recent name="C:\projects\programmatic\pages\ppn_sb_rectangle1_DE_fuw" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\projects\programmatic\pages\" />
       <recent name="C:\projects\programmatic\build\" />
       <recent name="$PROJECT_DIR$/pages/h_ga_monsterboard2GR_DE_20min" />
       <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\silva\Documents\GitHub\programmatic\pages" />
+      <recent name="$USER_HOME$/Desktop" />
+      <recent name="C:\projects\programmatic\pages\ppn_sb_halfpage2_DE_schweizerfamilie" />
+      <recent name="C:\projects\programmatic\pages\ppn_sb_wideboard3_DE_schweizerfamilie" />
+      <recent name="C:\projects\programmatic\pages\ppn_sb_rectangle1_DE_fuw" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -606,12 +646,14 @@
       <workItem from="1533881188744" duration="3145000" />
       <workItem from="1534341834722" duration="877000" />
       <workItem from="1534404762715" duration="760000" />
-      <workItem from="1534405545999" duration="513000" />
+      <workItem from="1534405545999" duration="1170000" />
+      <workItem from="1534411655068" duration="4673000" />
+      <workItem from="1534489522906" duration="3347000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="959430000" />
+    <option name="totallyTimeSpent" value="968107000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -623,11 +665,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21740858" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22058824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -675,28 +717,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_wideboard3_DE_annabelle/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="48" column="1" lean-forward="false" selection-start-line="48" selection-start-column="1" selection-end-line="49" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_DE_annabelle/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="78" column="10" lean-forward="false" selection-start-line="78" selection-start-column="10" selection-end-line="78" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_DE_annabelle/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/ppn_sb_rectangle1_DE_annabelle/index.html" />
     <entry file="file://$PROJECT_DIR$/build/ppn_sb_rectangle1_DE_annabelle/style.css" />
     <entry file="file://$PROJECT_DIR$/pages/ppn_sb_rectangle1_DE_annabelle/style.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -939,26 +959,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/usedFormats.txt">
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_ricardo/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="80">
+          <caret line="99" column="14" lean-forward="true" selection-start-line="99" selection-start-column="14" selection-end-line="99" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/ppn_sb_wideboard3_FR_ricardo/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state relative-caret-position="17">
           <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/v_ga_monsterboard2_FR_20min/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="15" lean-forward="true" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_ricardo/style.css">
+    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_tutti_karte/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="75" column="19" lean-forward="true" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
+        <state relative-caret-position="0">
+          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/usedFormats.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_tutti_karte/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="811">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_tutti_karte/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
