@@ -114,7 +114,7 @@ a:hover {
 	}
 }
 
-@media (min-width: 480px) {
+@media (min-width: 800px) {
 	.wrapper {
 		padding: .75rem;
 		height: 10rem;
@@ -124,17 +124,17 @@ a:hover {
 
 	.image-ratio {
 		-webkit-box-flex: 0;
-		-ms-flex: 0 0 11.25rem;
-		flex: 0 0 11.25rem
+		-ms-flex: 0 0 14.63rem;
+		flex:0 0 14.63rem;
 	}
 
 	body,
 	html {
-		height : 185px;
+		height : 10em;
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 799px) {
 	.wrapper {
 		margin-bottom: 1rem;
 		border-bottom: 1px solid #e5e5e5
@@ -143,6 +143,12 @@ a:hover {
 	body,
 	html {
 		height : 134px;
+	}
+
+	.image-ratio {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 11rem;
+		flex:0 0 11rem;
 	}
 
 }

@@ -1,4 +1,4 @@
-.idea
+.idea/*
 node_modules
 build
 temp
@@ -7,3 +7,4 @@ s3key.json
 .ftppass
 npm-debug.log
 .idea/workspace.xml
+.DS_Store

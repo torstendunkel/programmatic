@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecada909-ba54-4aca-bdc5-42610f8039de" name="Default" comment="" />
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <ignored path="$PROJECT_DIR$/.idea/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="ecada909-ba54-4aca-bdc5-42610f8039de" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/fullwidth1_DE_tutti/style.css" afterPath="$PROJECT_DIR$/pages/fullwidth1_DE_tutti/style.css" />
+    </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
-  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="programmatic" />
   </component>
@@ -31,11 +28,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_tutti_karte/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="135">
               <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_tutti/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="130" column="9" lean-forward="false" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gruntfile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-192">
+              <caret line="255" column="27" lean-forward="false" selection-start-line="255" selection-start-column="27" selection-end-line="255" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -44,8 +81,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_tutti_karte/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="811">
-              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state relative-caret-position="945">
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -55,7 +92,7 @@
         <entry file="file://$PROJECT_DIR$/pages/usedFormats.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -63,231 +100,23 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="tsconfig.json" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>ppn_sb_wideboard3_FR_bilan</find>
-      <find>generate_test_page</find>
-      <find>build</find>
-      <find>preview</find>
-      <find>content</find>
-      <find>wideboard3</find>
-      <find>ppn_sb_wideboard3_DE_fuw</find>
-      <find>fuw</find>
-      <find>.title</find>
-      <find>.text</find>
-      <find>.url</find>
-      <find>span.url</find>
-      <find>totmconnec</find>
-      <find>useMRAID</find>
-      <find>inIframe</find>
-      <find>forcedFallback</find>
-      <find>thirdtry</find>
-      <find>fallback</find>
-      <find>forcecr</find>
-      <find>prepareTags</find>
-      <find>loadJSON</find>
-      <find>dummy</find>
-      <find>getTargetingFromMap</find>
-      <find>adAvailable</find>
-      <find>render()</find>
-      <find>.id</find>
-      <find>data\.id</find>
-      <find>\.id</find>
-      <find>ppn_sb_wideboard3_DE_ricardo</find>
-      <find>ppn_sb_halfpage2_DE_ricardo</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>v_ga_monsterboard1_DE_20min</replace>
-      <replace>v_ga_monsterboard1_FR_20min</replace>
-      <replace>ppn_sb_mobilehalfpage2_FR_20min</replace>
-      <replace>v_ga_monsterboardBL2_DE_20min</replace>
-      <replace>v_ga_monsterboardGR2_DE_20min</replace>
-      <replace>h_ga_monsterboard2BL_DE_20min</replace>
-      <replace>h_ga_monsterboard2GR_DE_20min</replace>
-      <replace>v_ga_monsterboard1GR_DE_20min</replace>
-      <replace>v_ga_monsterboard1BL_DE_20min</replace>
-      <replace>v_monsterboard2_FR_20min</replace>
-      <replace>h_ga_monsterboard2_FR_20min</replace>
-      <replace>h_monsterboard2_FR_20min</replace>
-      <replace>v_ga_monsterboardBL2_FR_20min</replace>
-      <replace>v_ga_monsterboardGR2_FR_20min</replace>
-      <replace>h_ga_monsterboard2GR_FR_20min</replace>
-      <replace>h_ga_monsterboard2BL_FR_20min</replace>
-      <replace>v_ga_monsterboard1BL_FR_20min</replace>
-      <replace>v_ga_monsterboard1GR_FR_20min</replace>
-      <replace>v_gray_monsterboard1_FR_20min</replace>
-      <replace>Publicité</replace>
-      <replace>\&quot;</replace>
-      <replace>'</replace>
-      <replace>https://d1rkf0bq85yx06.cloudfront.net/images/more.gif</replace>
-      <replace>_annabelle</replace>
-      <replace>DE_annabelle</replace>
-      <replace>FR_femina</replace>
-      <replace>DE_fuw</replace>
-      <replace>DE_schweizerfamilie</replace>
-      <replace>ppn_sb_wideboard3_FR_ricardo</replace>
-      <replace>ppn_sb_halfpage2_FR_ricardo</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_mobilerectangle1_DE_derbund</dir>
-      <dir>C:\Users\anej\Documents\GitHub\programmatic\pages</dir>
-      <dir>C:\Users\anej\Documents\GitHub\programmatic\pages\ppn_sb_spezialfooter6_DE_20min</dir>
-      <dir>C:\Users\anej\Documents\GitHub\programmatic</dir>
-      <dir>$PROJECT_DIR$/build/ppn_sb_leaderboard3_DE_immostreet</dir>
-      <dir>$PROJECT_DIR$</dir>
-      <dir>$PROJECT_DIR$/pages</dir>
-      <dir>C:\projects\programmatic\grunt</dir>
-      <dir>C:\projects\programmatic\coverage</dir>
-      <dir>C:\projects\programmatic</dir>
-    </dirStrings>
-  </component>
-  <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build/ppn_sb_wideboard3_DE_femina/index.html" />
-        <option value="$PROJECT_DIR$/build/ppn_sb_wideboard3_DE_femina/starter.js" />
-        <option value="$PROJECT_DIR$/build/ppn_sb_rectangle1_FR_femina/index.html" />
-        <option value="$PROJECT_DIR$/build/ppn_sb_rectangle1_FR_femina/starter.js" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_wideboard3_DE_fuw/style.css" />
-        <option value="$PROJECT_DIR$/build/ppn_sb_wideboard3_DE_fuw/index.html" />
-        <option value="$PROJECT_DIR$/build/ppn_sb_wideboard3_DE_fuw/starter.js" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage2_DE_fuw/style.css" />
-        <option value="$PROJECT_DIR$/build/ppn_sb_halfpage2_DE_fuw/starter.js" />
-        <option value="$PROJECT_DIR$/build/ppn_sb_halfpage2_DE_fuw/index.html" />
-        <option value="$PROJECT_DIR$/build/ppn_sb_rectangle1_DE_fuw/starter.js" />
-        <option value="$PROJECT_DIR$/build/ppn_sb_rectangle1_DE_fuw/index.html" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/s3key.json" />
-        <option value="$PROJECT_DIR$/build/preview.html" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_wideboard3_DE_schweizerfamilie/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage2_DE_schweizerfamilie/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_wideboard3_DE_schweizerfamilie/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage2_DE_schweizerfamilie/style.css" />
-        <option value="$PROJECT_DIR$/grunt/tasks/generate_test_page.js" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_wideboard3_DE_annabelle/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage2_DE_annabelle/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage2_DE_annabelle/config.json" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_femina/style.css" />
-        <option value="$PROJECT_DIR$/grunt/tasks/optimizeFolderList.js" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_rectangle1_DE_20min/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_rectangle1_DE_fuw/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilehalfpage4_DE_20min/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_mobilehalfpage4_FR_20min/style.css" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_13.json" />
-        <option value="$PROJECT_DIR$/src/renderer.js" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_wideboard3_FR_ricardo/style.css" />
-        <option value="$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_ricardo/style.css" />
-        <option value="$PROJECT_DIR$/pages/fullwidth1_DE_tutti_karte/config.json" />
-        <option value="$PROJECT_DIR$/pages/usedFormats.txt" />
-        <option value="$PROJECT_DIR$/pages/fullwidth1_DE_tutti_karte/style.css" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
-  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1400" />
-    <option name="height" value="860" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Assignment issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Bitwise operation issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Code quality toolsJavaScript</id>
-          </State>
-          <State>
-            <id>Code style issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Control flow issuesJavaScript</id>
-          </State>
-          <State>
-            <id>DOM issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Data flow issuesJavaScript</id>
-          </State>
-          <State>
-            <id>ECMAScript 6 migration aidsJavaScript</id>
-          </State>
-          <State>
-            <id>Error handlingJavaScript</id>
-          </State>
-          <State>
-            <id>Flow type checkerJavaScript</id>
-          </State>
-          <State>
-            <id>GeneralJavaScript</id>
-          </State>
-          <State>
-            <id>JavaScript</id>
-          </State>
-          <State>
-            <id>JavaScript function metricsJavaScript</id>
-          </State>
-          <State>
-            <id>JavaScript validity issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Naming conventionsJavaScript</id>
-          </State>
-          <State>
-            <id>Node.jsJavaScript</id>
-          </State>
-          <State>
-            <id>Potentially confusing code constructsJavaScript</id>
-          </State>
-          <State>
-            <id>Probable bugsJavaScript</id>
-          </State>
-          <State>
-            <id>TypeScript</id>
-          </State>
-          <State>
-            <id>Unit testingJavaScript</id>
-          </State>
-        </expanded-state>
-      </profile-state>
-    </entry>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="2165" />
+    <option name="height" value="1113" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -307,86 +136,55 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <expand>
-            <path>
-              <item name="programmatic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programmatic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programmatic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programmatic" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programmatic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programmatic" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="fullwidth1_DE_tutti" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programmatic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programmatic" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="fullwidth1_DE_tutti_karte" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programmatic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programmatic" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="ppn_sb_halfpage2_FR_ricardo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programmatic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programmatic" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="v_ga_monsterboard2_FR_20min" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="programmatic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fullwidth1_DE_tutti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="JSON&#10;HTML&#10;JavaScript" />
-    <property name="editor.config.accepted" value="true" />
-    <property name="js-jscs-nodeInterpreter" value="H:\dev\node\node.exe" />
-    <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.prettier" value="true" />
-    <property name="node.js.path.for.package.prettier" value="project" />
-    <property name="node.js.selected.package.prettier" value="" />
-    <property name="nodejs_interpreter_path" value="node" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\projects\programmatic\pages\" />
-      <recent name="C:\projects\programmatic\build\" />
-      <recent name="$PROJECT_DIR$/pages/h_ga_monsterboard2GR_DE_20min" />
-      <recent name="$PROJECT_DIR$/pages" />
-      <recent name="$PROJECT_DIR$/test" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\silva\Documents\GitHub\programmatic\pages" />
-      <recent name="$USER_HOME$/Desktop" />
-      <recent name="C:\projects\programmatic\pages\ppn_sb_halfpage2_DE_schweizerfamilie" />
-      <recent name="C:\projects\programmatic\pages\ppn_sb_wideboard3_DE_schweizerfamilie" />
-      <recent name="C:\projects\programmatic\pages\ppn_sb_rectangle1_DE_fuw" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -400,285 +198,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <method />
-    </configuration>
-    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
-      <method />
-    </configuration>
-    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" value="" />
-      <option name="executablePath" />
-      <option name="filePath" />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory />
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui />
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-    </configuration>
-  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="ecada909-ba54-4aca-bdc5-42610f8039de" name="Default" comment="" />
-      <created>1484726012890</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1484726012890</updated>
-      <workItem from="1484726014589" duration="6346000" />
-      <workItem from="1484733231897" duration="36490000" />
-      <workItem from="1484838359451" duration="12177000" />
-      <workItem from="1484907580010" duration="602000" />
-      <workItem from="1484908189065" duration="3087000" />
-      <workItem from="1484915007061" duration="205000" />
-      <workItem from="1484915217684" duration="12037000" />
-      <workItem from="1485164763268" duration="942000" />
-      <workItem from="1485165723707" duration="47395000" />
-      <workItem from="1485338016733" duration="25376000" />
-      <workItem from="1485517110265" duration="43054000" />
-      <workItem from="1485863639292" duration="170747000" />
-      <workItem from="1487064054346" duration="81000" />
-      <workItem from="1487064197366" duration="51039000" />
-      <workItem from="1487245913979" duration="34152000" />
-      <workItem from="1487339228960" duration="2037000" />
-      <workItem from="1487342887505" duration="9148000" />
-      <workItem from="1487437343209" duration="49820000" />
-      <workItem from="1487836727744" duration="151000" />
-      <workItem from="1487837648380" duration="416000" />
-      <workItem from="1487923782835" duration="835000" />
-      <workItem from="1488196547027" duration="3735000" />
-      <workItem from="1488527721837" duration="5193000" />
-      <workItem from="1488791878043" duration="9979000" />
-      <workItem from="1488877908386" duration="6310000" />
-      <workItem from="1488959422611" duration="1453000" />
-      <workItem from="1489053558389" duration="4631000" />
-      <workItem from="1489389493912" duration="7231000" />
-      <workItem from="1489480590826" duration="4823000" />
-      <workItem from="1489561644619" duration="610000" />
-      <workItem from="1489654434309" duration="1003000" />
-      <workItem from="1489735592086" duration="598000" />
-      <workItem from="1490000373339" duration="3437000" />
-      <workItem from="1490167031559" duration="13929000" />
-      <workItem from="1490339181441" duration="27000" />
-      <workItem from="1491223673539" duration="4391000" />
-      <workItem from="1491372437099" duration="1292000" />
-      <workItem from="1491459603089" duration="2982000" />
-      <workItem from="1491478951878" duration="1210000" />
-      <workItem from="1492672884581" duration="15426000" />
-      <workItem from="1493205284549" duration="13025000" />
-      <workItem from="1493792329042" duration="41627000" />
-      <workItem from="1494851329776" duration="13967000" />
-      <workItem from="1498812747057" duration="832000" />
-      <workItem from="1499080151760" duration="891000" />
-      <workItem from="1499084239602" duration="1991000" />
-      <workItem from="1499088230615" duration="978000" />
-      <workItem from="1499151618222" duration="295000" />
-      <workItem from="1499176862120" duration="7554000" />
-      <workItem from="1499349341251" duration="1117000" />
-      <workItem from="1499862169862" duration="37000" />
-      <workItem from="1499862245394" duration="1413000" />
-      <workItem from="1499863750015" duration="995000" />
-      <workItem from="1499928879058" duration="1458000" />
-      <workItem from="1499935047654" duration="1592000" />
-      <workItem from="1500271594736" duration="9598000" />
-      <workItem from="1500358466037" duration="534000" />
-      <workItem from="1500391580635" duration="167000" />
-      <workItem from="1500444782178" duration="489000" />
-      <workItem from="1500553857620" duration="481000" />
-      <workItem from="1500895935434" duration="2430000" />
-      <workItem from="1501054228639" duration="1125000" />
-      <workItem from="1501160513389" duration="1350000" />
-      <workItem from="1501242261973" duration="2693000" />
-      <workItem from="1501488438997" duration="955000" />
-      <workItem from="1501656475966" duration="290000" />
-      <workItem from="1501658249022" duration="1003000" />
-      <workItem from="1501675828434" duration="398000" />
-      <workItem from="1501676858393" duration="2035000" />
-      <workItem from="1501682418884" duration="2461000" />
-      <workItem from="1501764203324" duration="2943000" />
-      <workItem from="1501771099516" duration="15360000" />
-      <workItem from="1502702233779" duration="2513000" />
-      <workItem from="1502712302265" duration="9000" />
-      <workItem from="1502715263328" duration="1681000" />
-      <workItem from="1502889629321" duration="848000" />
-      <workItem from="1502894257893" duration="2184000" />
-      <workItem from="1504189132500" duration="2597000" />
-      <workItem from="1504273142948" duration="2095000" />
-      <workItem from="1504593384814" duration="741000" />
-      <workItem from="1504768588330" duration="4412000" />
-      <workItem from="1504789655641" duration="1861000" />
-      <workItem from="1505381011481" duration="4430000" />
-      <workItem from="1505464555319" duration="2618000" />
-      <workItem from="1505478092720" duration="739000" />
-      <workItem from="1505487654549" duration="5083000" />
-      <workItem from="1505821014015" duration="680000" />
-      <workItem from="1505894917402" duration="361000" />
-      <workItem from="1505977673268" duration="293000" />
-      <workItem from="1505997288775" duration="2716000" />
-      <workItem from="1506085506938" duration="1039000" />
-      <workItem from="1506349772373" duration="1547000" />
-      <workItem from="1506524599370" duration="83000" />
-      <workItem from="1506598443376" duration="673000" />
-      <workItem from="1506927284045" duration="433000" />
-      <workItem from="1507556919872" duration="6884000" />
-      <workItem from="1507637731478" duration="3490000" />
-      <workItem from="1507806430511" duration="9134000" />
-      <workItem from="1508225563046" duration="1529000" />
-      <workItem from="1508306517508" duration="1192000" />
-      <workItem from="1508319741011" duration="1015000" />
-      <workItem from="1508336148458" duration="19229000" />
-      <workItem from="1509377106535" duration="4123000" />
-      <workItem from="1509458506018" duration="515000" />
-      <workItem from="1510038113332" duration="5443000" />
-      <workItem from="1510218057233" duration="321000" />
-      <workItem from="1510303197412" duration="3708000" />
-      <workItem from="1510660424440" duration="1096000" />
-      <workItem from="1511439111489" duration="5106000" />
-      <workItem from="1511962288044" duration="2584000" />
-      <workItem from="1512041899599" duration="3638000" />
-      <workItem from="1512112146986" duration="4208000" />
-      <workItem from="1512118599992" duration="678000" />
-      <workItem from="1512127942605" duration="3698000" />
-      <workItem from="1512633562742" duration="741000" />
-      <workItem from="1513000839137" duration="1204000" />
-      <workItem from="1513152544021" duration="3176000" />
-      <workItem from="1513174649251" duration="7364000" />
-      <workItem from="1513279150158" duration="2258000" />
-      <workItem from="1513334424566" duration="5309000" />
-      <workItem from="1515056132778" duration="517000" />
-      <workItem from="1515067239734" duration="954000" />
-      <workItem from="1515594266917" duration="384000" />
-      <workItem from="1515675582960" duration="235000" />
-      <workItem from="1516354558871" duration="147000" />
-      <workItem from="1516693894714" duration="1670000" />
-      <workItem from="1516866371121" duration="673000" />
-      <workItem from="1519726101295" duration="279000" />
-      <workItem from="1519817543405" duration="48000" />
-      <workItem from="1519817595230" duration="1095000" />
-      <workItem from="1519909149749" duration="470000" />
-      <workItem from="1522222678214" duration="4847000" />
-      <workItem from="1522927623854" duration="12083000" />
-      <workItem from="1523059401667" duration="1256000" />
-      <workItem from="1523307918352" duration="2814000" />
-      <workItem from="1523952881168" duration="961000" />
-      <workItem from="1523962981957" duration="2115000" />
-      <workItem from="1524741738758" duration="2159000" />
-      <workItem from="1525271895682" duration="2618000" />
-      <workItem from="1525778685353" duration="390000" />
-      <workItem from="1526633594758" duration="1075000" />
-      <workItem from="1529315446073" duration="12480000" />
-      <workItem from="1529391985937" duration="7145000" />
-      <workItem from="1529402653908" duration="7010000" />
-      <workItem from="1529414802841" duration="40000" />
-      <workItem from="1529414857306" duration="3553000" />
-      <workItem from="1529566555244" duration="1507000" />
-      <workItem from="1529568267809" duration="72000" />
-      <workItem from="1529568355820" duration="5332000" />
-      <workItem from="1529577096340" duration="422000" />
-      <workItem from="1529577535354" duration="5816000" />
-      <workItem from="1529934937677" duration="1009000" />
-      <workItem from="1530023707177" duration="496000" />
-      <workItem from="1530079579453" duration="57000" />
-      <workItem from="1530079668278" duration="174000" />
-      <workItem from="1530079790713" duration="600000" />
-      <workItem from="1530273313752" duration="2764000" />
-      <workItem from="1531306209802" duration="28000" />
-      <workItem from="1531725652352" duration="2444000" />
-      <workItem from="1531741743289" duration="1180000" />
-      <workItem from="1532508354057" duration="1931000" />
-      <workItem from="1532510699837" duration="663000" />
-      <workItem from="1532611559102" duration="58000" />
-      <workItem from="1533881188744" duration="3145000" />
-      <workItem from="1534341834722" duration="877000" />
-      <workItem from="1534404762715" duration="760000" />
-      <workItem from="1534405545999" duration="1170000" />
-      <workItem from="1534411655068" duration="4673000" />
-      <workItem from="1534489522906" duration="3347000" />
-    </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="968107000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="26000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="7" />
+    <frame x="0" y="23" width="2165" height="1113" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22058824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14319359" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930756" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930756" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30671936" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2859941" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SFDX" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -688,27 +230,12 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34062928" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Log Manager" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
-      <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
-      </list>
-    </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -717,21 +244,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/ppn_sb_rectangle1_DE_annabelle/style.css" />
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_rectangle1_DE_annabelle/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="46" lean-forward="false" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_rectangle1_FR_femina/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="12" lean-forward="false" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_femina/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
@@ -917,13 +429,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="255" column="27" lean-forward="false" selection-start-line="255" selection-start-column="27" selection-end-line="255" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/ppn_sb_rectangle1_DE_annabelle/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -952,32 +457,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_wideboard3_FR_ricardo/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_ricardo/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="99" column="14" lean-forward="true" selection-start-line="99" selection-start-column="14" selection-end-line="99" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_wideboard3_FR_ricardo/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_wideboard3_FR_ricardo/config.json" />
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_halfpage2_FR_ricardo/style.css" />
+    <entry file="file://$PROJECT_DIR$/pages/ppn_sb_wideboard3_FR_ricardo/style.css" />
     <entry file="file://$PROJECT_DIR$/pages/v_ga_monsterboard2_FR_20min/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="24" column="15" lean-forward="true" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -992,41 +478,58 @@
     <entry file="file://$PROJECT_DIR$/pages/usedFormats.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_tutti_karte/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="811">
-          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="945">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_tutti_karte/config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="135">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192">
+          <caret line="255" column="27" lean-forward="false" selection-start-line="255" selection-start-column="27" selection-end-line="255" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/fullwidth1_DE_tutti/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="130" column="9" lean-forward="false" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
