@@ -9,7 +9,6 @@ html, body {
     height: 600px;
     overflow: hidden;
     background: #F5F5F5;
-    padding-top: 4px;
     position: relative;
 }
 .ppn_sb_mobilehalfpage4_DE_20min .singlebox {
@@ -21,6 +20,7 @@ html, body {
 .ppn_sb_mobilehalfpage4_DE_20min .title {
     cursor: pointer;
     padding: 20px 10px;
+    padding-bottom: 5px;
     width: 280px;
     text-align: center;
 }
@@ -34,7 +34,7 @@ html, body {
     text-decoration: underline;
 }
 .ppn_sb_mobilehalfpage4_DE_20min .text {
-    height: 85px;
+    height: 100px;
     overflow: hidden;
     text-decoration: none;
     width: 130px;

@@ -10,7 +10,6 @@ html, body {
     height: 600px;
     overflow: hidden;
     background: #F5F5F5;
-    padding-top: 4px;
     position: relative;
 }
 .ppn_sb_mobilehalfpage4_FR_20min .singlebox {
@@ -23,6 +22,7 @@ html, body {
     cursor: pointer;
     padding: 20px 10px;
     width: 280px;
+    padding-bottom: 5px;
     text-align: center;
 }
 .ppn_sb_mobilehalfpage4_FR_20min .title a:link, .ppn_sb_mobilehalfpage4_FR_20min .title a:visited, .ppn_sb_mobilehalfpage4_FR_20min .title a:active {
@@ -35,7 +35,7 @@ html, body {
     text-decoration: underline;
 }
 .ppn_sb_mobilehalfpage4_FR_20min .text {
-    height: 85px;
+    height: 100px;
     overflow: hidden;
     text-decoration: none;
     width: 130px;

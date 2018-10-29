@@ -1329,7 +1329,8 @@ ch.tam.addnexusRender = (function () {
                         tar = d.getElementsByTagName("head")[0];
                     scr.type = 'text/javascript';
                     scr.async = true;
-                    scr.src = ((pro === 'https:') ? 'https' : 'http') + '://acdn.adnxs.com/ast/ast.js';
+                    //scr.src = ((pro === 'https:') ? 'https' : 'http') + '://acdn.adnxs.com/ast/ast.js';
+                    scr.src = ((pro === 'https:') ? 'https' : 'http') + '://d1rkf0bq85yx06.cloudfront.net/anprebid/src/oldAst.js';
                     if (!apntag.l) {
                         apntag.l = true;
                         tar.insertBefore(scr, tar.firstChild);
