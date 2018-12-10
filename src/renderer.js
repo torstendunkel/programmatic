@@ -786,7 +786,7 @@ ch.tam.addnexusRender = (function () {
 
             var obj = {
                 title: data.native.title.substring(0, 25), // LIMIT characters DASB-756
-                img: data.native.image.url,
+                img: data.native.image ? data.native.image.url : '',
                 description: data.native.body.substring(0, 90),  // LIMIT characters DASB-756
                 href: data.native.clickUrl,
                 impression: '',
@@ -797,13 +797,15 @@ ch.tam.addnexusRender = (function () {
                 sponsored: data.native.sponsoredBy || ''
             };
 
+
             // logging only
             this.adDataLog.push({
-                title: obj.title,
-                description: obj.description,
+                title: data.native.title,
+                description: data.native.body,
                 img: obj.img,
                 href: obj.href,
-                creative: data.creativeId
+                creative: data.creativeId,
+                exceedSpecs : data.native.body && data.native.body.length > 90 || data.native.title && data.native.title.length > 25
             });
 
 
