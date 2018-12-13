@@ -266,7 +266,25 @@ ch.tam.addnexusRender = (function () {
                     allowSmallerSizes: true,
                     sizes: [[1, 1]],
                     targetId: prefix + i,
-                    prebid: true
+                    prebid: true,
+
+                    native : {
+                        title: {
+                            required: true
+                        },
+                        body: {
+                            required: true
+                        },
+                        image: {
+                            required: true
+                        },
+                        sponsoredBy: {
+                            required: false
+                        },
+                        cta: {
+                            required: false
+                        }
+                    }
                 };
 
 
