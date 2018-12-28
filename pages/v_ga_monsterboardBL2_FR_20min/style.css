@@ -56,9 +56,11 @@ body{
 .v_ga_monsterboardBL2_FR_20min .image .adimage{
   position: absolute;
   top: 0;
-  left: 8px;
+  left: 0px;
   height: 100%;
-  width: auto; 
+  width: auto;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 .v_ga_monsterboardBL2_FR_20min .caption,
 .v_ga_monsterboardBL2_FR_20min .title,

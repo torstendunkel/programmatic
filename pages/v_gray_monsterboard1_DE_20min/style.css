@@ -57,9 +57,11 @@ body{
 .v_gray_monsterboard1_DE_20min .image .adimage{
   position: absolute;
   top: 0;
-  left: 15px;
+  left: 0px;
   height: 100%;
-  width: auto; 
+  width: auto;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 .v_gray_monsterboard1_DE_20min .caption,
 .v_gray_monsterboard1_DE_20min .title,

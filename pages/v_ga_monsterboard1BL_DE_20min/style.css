@@ -53,13 +53,23 @@ body{
   -webkit-filter: blur(3px);
   filter: blur(3px);
 }
+
 .v_ga_monsterboard1BL_DE_20min .image .adimage{
   position: absolute;
   top: 0;
-  left: 15px;
-  height: 100%;
-  width: auto; 
+  left: 0;
+  height: 230px;
+  width: 100%;
+  margin: 0 50%;
+  transform: translateX(-50%);
 }
+.v_ga_monsterboard1BL_DE_20min .image .adimage img {
+  height: 230px;
+  width : auto;
+}
+
+
+
 .v_ga_monsterboard1BL_DE_20min .caption,
 .v_ga_monsterboard1BL_DE_20min .title,
 .v_ga_monsterboard1BL_DE_20min .text {

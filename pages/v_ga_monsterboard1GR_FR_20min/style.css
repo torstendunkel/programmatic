@@ -56,9 +56,15 @@ body{
 .v_ga_monsterboard1GR_FR_20min .image .adimage{
   position: absolute;
   top: 0;
-  left: 15px;
-  height: 100%;
-  width: auto; 
+  left: 0;
+  height: 230px;
+  width: 100%;
+  margin: 0 50%;
+  transform: translateX(-50%);
+}
+.v_ga_monsterboard1GR_FR_20min .image .adimage img {
+  height: 230px;
+  width : auto;
 }
 .v_ga_monsterboard1GR_FR_20min .caption,
 .v_ga_monsterboard1GR_FR_20min .title,
