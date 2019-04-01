@@ -379,7 +379,7 @@ ch.tam.addnexusRender = (function () {
             // dfp puts every targetingkey inside an array. So we remove it from there
             for (var key in keywords) {
                 if (typeof keywords[key] !== "string" && typeof keywords[key] === "object") {
-                    if (keywords[key][0]) {
+                    if (keywords[key].length === 1) {
                         keywords[key] = keywords[key][0];
                     }
                 }
