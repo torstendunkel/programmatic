@@ -126,6 +126,9 @@ module.exports = function(grunt) {
                     bucket: 'media.das.tamedia.ch',
                     differential: true, // Only uploads the files that have changed
                     displayChangesOnly : true,
+                    params: {
+                        ContentEncoding: 'gzip' // applies to all the files!
+                    }
                 },
                 files: [
                     {expand: true, cwd: 'build/', src: ['**'], dest: 'anprebid/build/'}
@@ -137,7 +140,7 @@ module.exports = function(grunt) {
                     differential: true, // Only uploads the files that have changed
                     displayChangesOnly : true,
                     params: {
-                        //ContentEncoding: 'gzip' // applies to all the files!
+                        //ContentEncoding: 'gzip' // no gzip on stage
                     }
                 },
                 files: [
@@ -197,7 +200,30 @@ module.exports = function(grunt) {
                     debounceDelay: 250
                 }
             }
-        }
+        },
+
+        compress: {
+            files: {
+                options: {
+                    mode: 'gzip'
+                },
+                expand: true,
+                cwd: 'build/',
+                src: ['**/*'],
+                dest: 'build/'
+            },
+            libs : {
+                options: {
+                    mode: 'gzip'
+                },
+                expand: true,
+                cwd: 'src/',
+                src: ['oldAst.js'],
+                dest: 'build/'
+            }
+        },
+
+
     });
 
     // Load the plugin that provides the "uglify" task.
@@ -288,6 +314,7 @@ module.exports = function(grunt) {
         'clean:build',
         'build',
         'generate_test_page:build',
+        'compress:files',
         'aws_s3:deploy',
         'cloudfront:prod',
         'clean:temp'
@@ -305,7 +332,7 @@ module.exports = function(grunt) {
         'clean:temp'
     ]);
 
-    //upload pages to ftp (for preview)
+
   grunt.registerTask('dev', [
     'set_env:dev',
     'clean:temp',

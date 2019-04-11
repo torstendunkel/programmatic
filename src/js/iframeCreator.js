@@ -1,8 +1,8 @@
-
+    //use this to signal inApp
     var hash = '';
     if(document.currentScript){
         hash = document.currentScript.src.split('#');
-        hash = hash.length>1 ? '#' + hash[1] : '';
+        hash = hash.length>1 ? hash[1]+'&useOldAst=1' : '#useOldAst=1';
     }
 
     var iframeSrc = "%%IFRAMESRC%%" + hash;

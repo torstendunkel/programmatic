@@ -3,6 +3,13 @@ var adRenderer;
 // fallback if the ad is running locally create an iframe for it
 if(document.location.href.indexOf('file://') !== -1){
     var iframeSrc = document.currentScript.src.replace('.js','.html').replace('fromHTML=1','');
+
+    if(iframeSrc.indexOf('#')!== -1){
+        iframeSrc+='&useOldAst=1'
+    }else{
+        iframeSrc+='#useOldAst=1'
+    }
+
     var iframe = document.createElement("iframe");
     iframe.width = "100%";
     iframe.height = "100%";

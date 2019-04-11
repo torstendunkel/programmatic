@@ -1342,6 +1342,9 @@ ch.tam.addnexusRender = (function () {
             window.apntag = window.apntag || {};
             //create a queue on the apntag object
             apntag.anq = apntag.anq || [];
+
+            var _this = this;
+
             if (!this.useTopAst) {
                 //load ast.js - async
                 (function () {
@@ -1349,8 +1352,12 @@ ch.tam.addnexusRender = (function () {
                         tar = d.getElementsByTagName("head")[0];
                     scr.type = 'text/javascript';
                     scr.async = true;
-                    //scr.src = ((pro === 'https:') ? 'https' : 'http') + '://acdn.adnxs.com/ast/ast.js';
-                    scr.src = ((pro === 'https:') ? 'https' : 'http') + '://d1rkf0bq85yx06.cloudfront.net/anprebid/src/oldAst.js';
+                    if(_this.options.useOldAst){
+                        scr.src = ((pro === 'https:') ? 'https' : 'http') + '://d1rkf0bq85yx06.cloudfront.net/anprebid/src/oldAst.js';
+                    }else{
+                        scr.src = ((pro === 'https:') ? 'https' : 'http') + '://acdn.adnxs.com/ast/ast.js';
+                    }
+
                     if (!apntag.l) {
                         apntag.l = true;
                         tar.insertBefore(scr, tar.firstChild);
