@@ -10,7 +10,6 @@ html, body {
     overflow: hidden;
     width: 300px;
     background: #F5F5F5;
-    padding-top: 4px;
     position: relative;
 }
 .ppn_sb_rectangle1_DE_20min .singlebox {
@@ -86,4 +85,9 @@ html, body {
     text-align: center;
     color: white;
     text-decoration: none;
+}
+
+
+.GoogleActiveViewElement{
+    position: absolute;
 }

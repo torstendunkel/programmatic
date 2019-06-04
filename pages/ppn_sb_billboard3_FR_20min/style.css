@@ -121,3 +121,8 @@
     color: white;
     text-decoration: none;
 }
+
+
+.GoogleActiveViewElement{
+    position: absolute;
+}
