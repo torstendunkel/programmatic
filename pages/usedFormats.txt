@@ -1,2 +1,1 @@
-ppn_sb_billboard3_DE_20min
-ppn_sb_billboard3_FR_20min
+juicead1_ios_text_DE_20min
