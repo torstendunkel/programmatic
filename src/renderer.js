@@ -88,22 +88,20 @@ ch.tam.addnexusRender = (function () {
                 }
 
                 // load dummy data for development
-                if(_this.options.demo){
-                    _this.loadJSON('../../dummy.json', function(data){
-                        var data  = JSON.parse(data);
+                if (_this.options.demo) {
+                    _this.loadJSON('../../dummy.json', function (data) {
+                        var data = JSON.parse(data);
                         data.identifier = _this.options.identifier;
                         _this.render(data);
                     });
                     _this.loadStyle();
-                }else{
+                } else {
                     apntag.anq.push(function () {
                         _this.prepareTags();
                     });
                     _this.checkForMRAID();
                     _this.addLoggly();
                 }
-
-
 
 
             });
@@ -268,7 +266,7 @@ ch.tam.addnexusRender = (function () {
                     targetId: prefix + i,
                     prebid: true,
 
-                    native : {
+                    native: {
                         title: {
                             required: true
                         },
@@ -481,7 +479,7 @@ ch.tam.addnexusRender = (function () {
                     this.ads[bucket].complete = true;
                 }
                 //also allow some "main" ads to render even if not ads are loaded (needs to be defined in the config.json)
-                else if ((this.ads[bucket].numads - this.ads[bucket].noBid ) > 0) {
+                else if ((this.ads[bucket].numads - this.ads[bucket].noBid) > 0) {
                     var adsAvailable = this.ads[bucket].numads - this.ads[bucket].noBid;
                     this.ads[bucket].complete = this.checkLayoutSwitch(bucket, adsAvailable);
                 }
@@ -665,10 +663,11 @@ ch.tam.addnexusRender = (function () {
 
             var forceAds = {
                 de: [],
-                fr: [],
+                fr: ["64423481", "64423485", "64423489"],
                 it: [],
                 en: []
             };
+
             window.anConfigAd = {};
             this.getForcedAds = function () {
                 var ads = forceAds[this.options.lang];
@@ -823,7 +822,7 @@ ch.tam.addnexusRender = (function () {
                 img: obj.img,
                 href: obj.href,
                 creative: data.creativeId,
-                exceedSpecs : data.native.body && data.native.body.length > 90 || data.native.title && data.native.title.length > 25
+                exceedSpecs: data.native.body && data.native.body.length > 90 || data.native.title && data.native.title.length > 25
             });
 
 
@@ -1067,7 +1066,7 @@ ch.tam.addnexusRender = (function () {
              }
              }
              */
-            if(this.useMRAID || this.inIframe()) {
+            if (this.useMRAID || this.inIframe()) {
                 var totmConnect = document.createElement('script');
                 totmConnect.src = "https://tdn.da-services.ch/libs/totmConnect.js";
                 document.body.appendChild(totmConnect);
@@ -1352,9 +1351,9 @@ ch.tam.addnexusRender = (function () {
                         tar = d.getElementsByTagName("head")[0];
                     scr.type = 'text/javascript';
                     scr.async = true;
-                    if(_this.options.useOldAst){
+                    if (_this.options.useOldAst) {
                         scr.src = ((pro === 'https:') ? 'https' : 'http') + '://d1rkf0bq85yx06.cloudfront.net/anprebid/src/oldAst.js';
-                    }else{
+                    } else {
                         scr.src = ((pro === 'https:') ? 'https' : 'http') + '://acdn.adnxs.com/ast/ast.js';
                     }
 
