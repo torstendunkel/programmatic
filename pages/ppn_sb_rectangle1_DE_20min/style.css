@@ -62,12 +62,26 @@ html, body {
 }
 .ppn_sb_rectangle1_DE_20min .adimage {
     border-width: 0;
-    padding-right: 18px;
 }
 .ppn_sb_rectangle1_DE_20min img.adimage {
-    width: 300px;
+    max-width: 300px;
     height: 169px;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
+
+.ppn_sb_rectangle1_DE_20min .singlebox .bgImage {
+    width: 294px;
+    height: 163px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+
 .ppn_sb_rectangle1_DE_20min .ppncaption {
     display: none;
 }
