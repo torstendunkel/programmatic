@@ -662,7 +662,7 @@ ch.tam.addnexusRender = (function () {
             this.ads = {};
 
             var forceAds = {
-                de: [],
+                de: ["63342611", "63342512", "63340022", "62786656"],
                 fr: ["64423481", "64423485", "64423489"],
                 it: [],
                 en: []
