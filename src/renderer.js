@@ -131,16 +131,12 @@ ch.tam.addnexusRender = (function () {
                     _this.logger("AST not loaded. Try to load again");
                     _this.checkAstLoaded();
 
-                }
-
-                else if (_this.astFallbackTriggered && apntag.loaded) {
+                } else if (_this.astFallbackTriggered && apntag.loaded) {
                     _this.logglyLog({
                         type: "warning",
                         message: "AST loaded with second try."
                     }, true);
-                }
-
-                else if (_this.astFallbackTriggered) {
+                } else if (_this.astFallbackTriggered) {
                     _this.logglyLog({
                         type: "warning",
                         message: "AST adblocked."
@@ -599,8 +595,7 @@ ch.tam.addnexusRender = (function () {
                 } else if (sencond_preferredAd) {
                     bestAd = sencond_preferredAd;
                     this.logger("2nd preferred Ad available. Ignore CPM Comparision");
-                }
-                else {
+                } else {
                     this.logger("preferred and 2nd preferred Ad not available use challenge ads instead");
                 }
 
@@ -1458,8 +1453,7 @@ ch.tam.addnexusRender = (function () {
                     this.hash = decodeURIComponent(temp[1]);
                     return JSON.parse('{"' + this.hash.replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"') + '"}');
                 }
-            }
-            catch (e) {
+            } catch (e) {
                 this.logglyLog({
                     tag: "error",
                     message: "hash parsing failed"
@@ -1467,7 +1461,6 @@ ch.tam.addnexusRender = (function () {
             }
             return {};
         },
-
         showLogs: function () {
             for (var i = 0; i < this.logs.length; i++) {
                 console.log(this.logs[i]);

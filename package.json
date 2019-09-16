@@ -40,6 +40,7 @@
     "time-grunt": "^1.4.0"
   },
   "dependencies": {
+    "consent-string": "^1.5.1",
     "node-minizip": "^0.3.0"
   }
 }
