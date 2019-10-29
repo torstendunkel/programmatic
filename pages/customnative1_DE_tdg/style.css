@@ -1,0 +1,297 @@
+html, body, a{
+    text-decoration: none;
+    margin:0;
+    padding: 0;
+    font-family: BentonConSansBold, Arial, Helvetica, sans-serif;
+}
+#container{
+    margin: 0 auto;
+    position: relative;
+}
+#image img {
+    display: block;
+}
+#bodyText{
+    color: #000000;
+    font-size: 16px;
+}
+/* Mobile */
+@media screen and (max-width: 969px) {
+    #container {
+        width: 320px;
+        height: 416px;
+    }
+    #pos1 img{
+        width: 100%;
+    }
+    #pos1{
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #pos2{
+        height: 189px;
+    }
+    #bodyText{
+        padding: 5px 15px 15px;
+        height: 52px;
+        overflow: hidden;
+    }
+    #bodyText span{
+        font-family: fakt-regular,Arial,sans-serif;
+    }
+    #headline {
+        background-color: #E6E6E6;
+        height: 27px;
+        width: 320px;
+        font-family: 'Playfair Display', sans-serif;
+        display: flex;
+    }
+    #advertising{
+        width: 25%;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        background-color: #143f91;
+        color: #F8F1FF;
+        padding-top: 5px;
+        padding-bottom: 7px;
+        font-size: 16px;
+    }
+
+
+    #headlineText{
+
+        color: #143f91;
+        width: 320px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        line-height: 17px;
+        border-bottom: 2px solid;
+        border-color:#143f91;
+    }
+    #headlineText span{
+        font-size: 16px;
+        padding-left: 10%;
+    }
+
+    #titleText{
+        position: relative;
+        font-family: 'Playfair Display', sans-serif;
+        width: 320px;
+        height:66px;
+        font-size: 18px;
+        color: #F8F1FF;
+        background: #143f91;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    #titleText:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: inherit;
+        transform-origin: top left;
+        -ms-transform: skew(-30deg, 0deg);
+        -webkit-transform: skew(-30deg, 0deg);
+        transform: skew(0deg, -2.3deg);
+    }
+
+    #titleText2{
+        position: absolute;
+        z-index: 2;
+        padding-left: 15px;
+
+        padding-right: 15px;
+    }
+    #cta{
+        position: absolute;
+        background-color: #143f91;
+        color: #F8F1FF;
+        font-size: 16px;
+        border-radius: 8px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        top: 90%;
+        left: 15px;
+        font-family: fakt-regular,Arial,sans-serif;
+    }
+    #cta a{
+        color:white;
+    }
+}
+/* Desktop */
+@media screen and (min-width: 970px) {
+    #container {
+        width: 950px;
+        height: 250px;
+    }
+    #pos2{
+        float: left;
+        width: 436px;
+        height: 250px;
+    }
+
+    #pos2 img{
+        width: 485px;
+    }
+
+    #pos1{
+        float:right;
+        width: 514px;
+        height: 250px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    #headline{
+        font-family: 'Playfair Display', sans-serif;
+    }
+    #bodyText{
+        padding-left: 60px;
+        height: 64px;
+        overflow: hidden;
+
+    }
+    #bodyText span{
+
+        font-family: fakt-regular,Arial,sans-serif;
+    }
+    #advertising{
+        position: absolute;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        background-color: #143f91;
+        color: #F8F1FF;
+        padding-top: 5px;
+        padding-bottom: 7px;
+        font-size: 16px;
+
+    }
+
+    #headlineText{
+        position: absolute;
+        color: #143f91;
+        padding-left: 11% !important;
+        padding-right: 10px !important;
+    }
+    #headlineText span{
+        font-size: 16px;
+
+    }
+    #titleText{
+
+        position: relative;
+        bottom: 5px;
+        width: 516px;
+        height:75px;
+        font-size: 20px;
+        color: #F8F1FF;
+        background: #143f91;
+        display: inline-flex;
+        align-items: center;
+        font-family: 'Playfair Display', sans-serif;
+    }
+
+    #titleText:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: inherit;
+        transform-origin: top left;
+        -ms-transform: skew(-30deg, 0deg);
+        -webkit-transform: skew(-30deg, 0deg);
+        transform: skew(0deg, -1.3deg);
+    }
+
+    #titleText span{
+        position: absolute;
+        z-index: 2;
+        padding-left: 60px;
+
+        padding-right: 10px;
+    }
+
+    .text{
+        padding: 50px 20px 30px 0px;
+    }
+
+    #cta{
+        left: 60px;
+        position: absolute;
+        background-color: #143f91;
+        color: #F8F1FF;
+        font-size: 16px;
+        border-radius: 8px;
+        padding-top: 5px;
+        padding-bottom:5px;
+        padding-left:15px;
+        padding-right: 15px;
+        bottom: 6%;
+    }
+    #cta a{
+        color: white;
+    }
+}
+@font-face {
+    font-family: "fakt-regular";
+    src: url('https://fonts.das.tamedia.ch/fakt-regular.woff2') format('woff2'),
+    url('https://fonts.das.tamedia.ch/fakt-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: auto;
+}
+
+@font-face {
+    font-family: "fakt-bold";
+    src: url('https://fonts.das.tamedia.ch/fakt-bold.woff2') format('woff2'),
+    url('https://fonts.das.tamedia.ch/fakt-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "aachen-bold";
+    src: url('https://fonts.das.tamedia.ch/aachen-bold.woff2') format('woff2'),
+    url('https://fonts.das.tamedia.ch/aachen-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "droid-serif";
+    src: url('https://fonts.das.tamedia.ch/droid-serif.woff2') format('woff2'),
+    url('https://fonts.das.tamedia.ch/droid-serif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: auto;
+}
+
+@font-face {
+    font-family: "twentyicons";
+    src: url('https://fonts.das.tamedia.ch/twentyicons.woff2') format('woff2'),
+    url('https://fonts.das.tamedia.ch/twentyicons.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: geometricPrecision;
+}
+@font-face {
+    font-family: "BentonConSansBold";
+    src: url('https://fonts.das.tamedia.ch/benton.woff') format('woff')
+}
+@font-face {
+    font-family: "Playfair Display";
+    src: url("//s3-eu-west-1.amazonaws.com/templates.das.tamedia.ch/01_universal/carousel_ad/style/fonts/PlayfairDisplay-Regular.woff") format("woff")
+}
