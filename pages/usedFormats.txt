@@ -1,2 +1,3 @@
-ppn_sb_monsterboard4_IT_tio
-ppn_sb_monsterboard3_IT_tio
+fullwidth1_DE_20min
+ppn_sb_mobilerectangle1_DE_20min
+ppn_sb_mobilerectangle1_DE_basler
