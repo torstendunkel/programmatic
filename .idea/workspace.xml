@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ecada909-ba54-4aca-bdc5-42610f8039de" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/Gruntfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_20min/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_20min/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_20min/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ppn_sb_billboard3_DE_20min/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_20min/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_20min/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_20min/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_DE_20min/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_20min/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_20min/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_20min/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_20min/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_lematin/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ppn_sb_mobilerectangle1_FR_lematin/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_DE_20min/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_DE_20min/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_DE_20min/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ppn_sb_rectangle1_DE_20min/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/usedFormats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pages/usedFormats.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/preview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/gb_native1_IT_universal/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/gb_native1_IT_universal/config.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
