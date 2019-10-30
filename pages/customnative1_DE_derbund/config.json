@@ -1,0 +1,7 @@
+{
+  "showMore": true,
+  "moreInTxt": false,
+  "moreOutTxt" : "",
+  "moreBtn": "<div id=\"cta\"><a target=\"_blank\" href=\"{{href}}\">{{more}}</a></div>",
+  "wrapper": "<div class=\"{{identifier}}\">{{content}}\"</div>",
+  "template": "<a href=\"{{href}}\" target=\"_blank\" id=\"{{id}}\" data-href=\"{{href}}\"><div id=\"container\"><div id=\"headline\"><div id=\"advertising\"><span>{{adMarker}}</span></div><div id=\"headlineText\"><span></span></div></div><div id=\"pos1\" style=\"background-image:url({{img}})\"><div id=\"image\"><img></div></div><div id=\"pos2\" style=\"background-color:#fafafa\"><div class=\"text\"><div id=\"titleText\"><span id=\"titleText2\">{{title}}</span></div><div id=\"bodyText\"><span>{{description}}</span></div>{{moreOutTxt}}</div></div></div>{{impression}}</a> \n"}
