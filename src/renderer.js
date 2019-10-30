@@ -39,6 +39,8 @@ ch.tam.addnexusRender = (function () {
         showMore: false,
         logging: "true", // logging via loggly
         moreInTxt: false,
+        imageMinifyUrl : 'https://imagemin.da-services.ch/uplad/',
+        imageMinifyOptions : 'w_320',
         moreBtn: '<{{moreNode}} class="url"><a target="_blank" href="{{href}}">{{more}}</a></{{moreNode}}>',
         trackingPixel: '<img class="{{trackingPixelClass}}" src="{{imgSrc}}" width="0" height="0" style="display:none"/>',
         wrapper: '<div class="{{identifier}}"><div class="ppncaption">Werbung</div><div id="ppninnerbox" class="ppninnerbox">{{content}}</div><div class="tnlogo"><a href="https://goo.gl/gJLreW" target="_blank">{{admarker}}</a></div>',
@@ -757,7 +759,8 @@ ch.tam.addnexusRender = (function () {
             for (var i = 0; i < ad.loadedAds.length; i++) {
                 data.content += this.renderNativeAd(ad.loadedAds[i]);
             }
-            this.appendToBody(this.tmpl(this.options.wrapper, data));
+
+            var renderedAd = this.appendToBody(this.tmpl(this.options.wrapper, data));
 
             // just to be safe ;) Necessary for IE in challenge mode load event is fired twice..
             this.isRendered = true;
@@ -790,11 +793,57 @@ ch.tam.addnexusRender = (function () {
             document.documentElement.setAttribute("lang", this.options.lang);
 
             this.addResizeTrigger();
+
+            this.addImageErrorHandler(renderedAd);
+
+        },
+
+
+        addImageErrorHandler: function(ad){
+            var imgs = ad.querySelectorAll('.adimage');
+            for(var i=0; i<imgs.length; i++){
+                imgs[i].onerror = this.imageErrorHandler.bind(this,imgs[i]);
+            }
+        },
+
+        imageErrorHandler: function(img){
+          if(img){
+              var orig = this.findOrigImage(img);
+              if(orig){
+                  var oldSrc = img.getAttribute('src');
+                  img.setAttribute('src',orig);
+
+                  this.logglyLog({
+                      type: "error",
+                      message : "minifying failed",
+                      src : oldSrc
+                  })
+              }else{
+                  this.logglyLog({
+                      type: "error",
+                      message : "no orig image found"
+                  })
+              }
+          }
+        },
+
+        findOrigImage: function(img){
+            var i=0;
+            var node = img;
+            while(i<10){
+                if(node.getAttribute('data-image-orig')){
+                    return node.getAttribute('data-image-orig');
+                }else{
+                    node = node.parentElement;
+                }
+                i+=1;
+            }
         },
 
         renderNativeAd: function (data) {
 
             var moreBtn = this.renderMoreBtn(data.native.clickUrl);
+
 
             var obj = {
                 title: data.native.title.substring(0, 25), // LIMIT characters DASB-756
@@ -808,6 +857,8 @@ ch.tam.addnexusRender = (function () {
                 moreOutTxt: !this.options.moreInTxt ? moreBtn : '',
                 sponsored: data.native.sponsoredBy || ''
             };
+
+            obj = this.generateMinifyImages(obj);
 
 
             // logging only
@@ -854,11 +905,19 @@ ch.tam.addnexusRender = (function () {
             }
 
             // add the creative id
-            this.options.template = this.options.template.replace(/<div/, '<div data-creative-id="' + data.creativeId + '"');
+            this.options.template = this.options.template.replace(/<div/, '<div data-creative-id="' + data.creativeId + '" data-image-orig="'+obj.imgOrig+'"');
+            var renderedAd = this.tmpl(this.options.template, obj);
 
-            return this.tmpl(this.options.template, obj);
+            return renderedAd;
         },
 
+        generateMinifyImages: function(obj){
+            if(this.options.imageMinifyUrl){
+                obj.imgOrig  = obj.img;
+                obj.img  = this.options.imageMinifyUrl + this.options.imageMinifyOptions + '/' + obj.img;
+            }
+            return obj;
+        },
 
         // this function adds data custom data defined in the options/hash/config to the render obj
         addCustomFields: function (renderObj, dataObj) {
@@ -1131,7 +1190,9 @@ ch.tam.addnexusRender = (function () {
 
         appendToBody: function (content) {
             //check where to render
-            document.body.appendChild(this.createDomNodeFromHTML(content)[0]);
+            var domNode = this.createDomNodeFromHTML(content)[0];
+            document.body.appendChild(domNode);
+            return domNode;
 
         },
         executeScript: function (script) {
