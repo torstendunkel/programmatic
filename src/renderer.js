@@ -39,7 +39,7 @@ ch.tam.addnexusRender = (function () {
         showMore: false,
         logging: "true", // logging via loggly
         moreInTxt: false,
-        imageMinifyUrl : 'https://imagemin.da-services.ch/uplad/',
+        imageMinifyUrl : 'https://imagemin.da-services.ch/upload/',
         imageMinifyOptions : 'w_320',
         moreBtn: '<{{moreNode}} class="url"><a target="_blank" href="{{href}}">{{more}}</a></{{moreNode}}>',
         trackingPixel: '<img class="{{trackingPixelClass}}" src="{{imgSrc}}" width="0" height="0" style="display:none"/>',
@@ -802,16 +802,28 @@ ch.tam.addnexusRender = (function () {
         addImageErrorHandler: function(ad){
             var imgs = ad.querySelectorAll('.adimage');
             for(var i=0; i<imgs.length; i++){
-                imgs[i].onerror = this.imageErrorHandler.bind(this,imgs[i]);
+                if(imgs[i].nodeName.toLocaleLowerCase() === 'img'){
+                    imgs[i].onerror = this.imageErrorHandler.bind(this,imgs[i]);
+                }else if(imgs[i].style.backgroundImage !== ''){
+                    var hiddenImg = new Image();
+                    hiddenImg.src = imgs[i].style.backgroundImage.slice(4, -1).replace(/"/g, "");
+                    hiddenImg.onerror = this.imageErrorHandler.bind(this,imgs[i],true);
+                }
             }
         },
 
-        imageErrorHandler: function(img){
+        imageErrorHandler: function(img, bgImage){
           if(img){
               var orig = this.findOrigImage(img);
               if(orig){
-                  var oldSrc = img.getAttribute('src');
-                  img.setAttribute('src',orig);
+                  if(bgImage){
+                      var oldSrc = img.style.backgroundImage;
+                      img.style.backgroundImage = 'url("'+orig+'")';
+                  }else{
+                      var oldSrc = img.getAttribute('src');
+                      img.setAttribute('src',orig);
+                  }
+
 
                   this.logglyLog({
                       type: "error",
