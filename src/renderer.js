@@ -39,8 +39,8 @@ ch.tam.addnexusRender = (function () {
         showMore: false,
         logging: "true", // logging via loggly
         moreInTxt: false,
-        imageMinifyUrl : 'https://imagemin.da-services.ch/upload/',
-        imageMinifyOptions : 'w_320',
+        imageMinifyUrl : 'https://imagemin.da-services.ch/?img=',
+        imageMinifyOptions : '&width=320',
         moreBtn: '<{{moreNode}} class="url"><a target="_blank" href="{{href}}">{{more}}</a></{{moreNode}}>',
         trackingPixel: '<img class="{{trackingPixelClass}}" src="{{imgSrc}}" width="0" height="0" style="display:none"/>',
         wrapper: '<div class="{{identifier}}"><div class="ppncaption">Werbung</div><div id="ppninnerbox" class="ppninnerbox">{{content}}</div><div class="tnlogo"><a href="https://goo.gl/gJLreW" target="_blank">{{admarker}}</a></div>',
@@ -803,7 +803,7 @@ ch.tam.addnexusRender = (function () {
             var imgs = ad.querySelectorAll('.adimage');
             for(var i=0; i<imgs.length; i++){
                 if(imgs[i].nodeName.toLocaleLowerCase() === 'img'){
-                    imgs[i].onerror = this.imageErrorHandler.bind(this,imgs[i]);
+                    imgs[i].onerror = this.imageErrorHandler.bind(this,imgs[i],false);
                 }else if(imgs[i].style.backgroundImage !== ''){
                     var hiddenImg = new Image();
                     hiddenImg.src = imgs[i].style.backgroundImage.slice(4, -1).replace(/"/g, "");
@@ -828,12 +828,14 @@ ch.tam.addnexusRender = (function () {
                   this.logglyLog({
                       type: "error",
                       message : "minifying failed",
-                      src : oldSrc
+                      src : oldSrc,
+                      bgImage : bgImage
                   })
               }else{
                   this.logglyLog({
                       type: "error",
-                      message : "no orig image found"
+                      message : "no orig image found",
+                      bgImage : bgImage
                   })
               }
           }
@@ -917,7 +919,7 @@ ch.tam.addnexusRender = (function () {
             }
 
             // add the creative id
-            this.options.template = this.options.template.replace(/<div/, '<div data-creative-id="' + data.creativeId + '" data-image-orig="'+obj.imgOrig+'"');
+            this.options.template = this.options.template.replace(/<div/, '<div data-creative-id="' + data.creativeId + '" data-image-orig="'+ (obj.imgOrig || '') +'"');
             var renderedAd = this.tmpl(this.options.template, obj);
 
             return renderedAd;
@@ -926,7 +928,7 @@ ch.tam.addnexusRender = (function () {
         generateMinifyImages: function(obj){
             if(this.options.imageMinifyUrl){
                 obj.imgOrig  = obj.img;
-                obj.img  = this.options.imageMinifyUrl + this.options.imageMinifyOptions + '/' + obj.img;
+                obj.img  = this.options.imageMinifyUrl + encodeURIComponent(obj.img) + this.options.imageMinifyOptions;
             }
             return obj;
         },
