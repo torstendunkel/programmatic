@@ -2,5 +2,8 @@
   "numads" : 3,
   "tagid" : 9518829,
   "member" : 3646,
-  "template": "<div class='singlebox bottom left right' id='{{id}}' data-href='{{href}}'><a target='_blank' href='{{href}}'> <img class='bgImage' alt='Werbung' src='{{img}}'/><img class='adimage' alt='Werbung' src='{{img}}'/></a><div class='title'> <a target='_blank' href='{{href}}'>{{title}}</a></div><div class='text'><a target='_blank' href='{{href}}'>{{description}} </a>{{moreInTxt}}</div>{{moreOutTxt}}{{impression}}</div>"
+  "template": "<div class='singlebox bottom left right' id='{{id}}' data-href='{{href}}'><a target='_blank' href='{{href}}'> <img class='bgImage' alt='Werbung' src='{{img}}'/><img class='adimage' alt='Werbung' src='{{img}}'/></a><div class='title'> <a target='_blank' href='{{href}}'>{{title}}</a></div><div class='text'><a target='_blank' href='{{href}}'>{{description}} </a>{{moreInTxt}}</div>{{moreOutTxt}}{{impression}}</div>",
+  "fallBackLayout" : {
+    "1" : "customnative1_DE_20min"
+  }
 }
