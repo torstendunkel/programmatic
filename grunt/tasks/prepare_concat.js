@@ -8,7 +8,7 @@ module.exports = function(grunt) {
             if(folderJSON[i].depth === 3){
                 var dir = folderJSON[i].location;
                 var dest = dir.replace('temp/','');
-                pages_concat['build/'+ dest + '/' + 'index.js'] = [dir+'/config.js', 'temp/renderer.js', 'temp/starter.js',dir+'/style.js'];
+                pages_concat['build/'+ dest + '/' + 'index.js'] = [dir+'/config.js', 'temp/renderer.js', 'temp/starter.js',dir+'/style.js', 'temp/placementMapping.js'];
             }
         }
         grunt.config.set("pages_concat", pages_concat);

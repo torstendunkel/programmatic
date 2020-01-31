@@ -20,7 +20,8 @@ module.exports = function(grunt) {
                 files : {
                     'temp/renderer.js' : ['src/renderer.js'],
                     'temp/starter.js' : ['src/starter.js'],
-                    'temp/myAst.js' : ['src/myAst.js']
+                    'temp/myAst.js' : ['src/myAst.js'],
+                    'temp/placementMapping.js' : ['src/placementMapping.js']
                 }
             }
         },

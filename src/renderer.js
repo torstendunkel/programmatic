@@ -266,10 +266,12 @@ ch.tam.addnexusRender = (function () {
 
                     native: {
                         title: {
-                            required: true
+                            required: true,
+                            max_length: this.options.maxTitleLength ? parseInt(this.options.maxTitleLength) : undefined
                         },
                         body: {
-                            required: true
+                            required: true,
+                            max_length: this.options.maxBodyLength ? parseInt(this.options.maxBodyLength) : undefined
                         },
                         image: {
                             required: true
@@ -299,11 +301,13 @@ ch.tam.addnexusRender = (function () {
                         });
                     }
 
+                    /*
                     this.logglyLog({
                         type: "info",
                         message: "merging anConfigAd",
                         adconfig: window.anConfigAd
                     });
+                    */
 
 
                 } else if (this.options.supplyType) {
@@ -643,6 +647,13 @@ ch.tam.addnexusRender = (function () {
 
             this.options.challenge = this.options.challenge ? this.options.challenge.join(",") : this.options.challenge;
             this.options.ctagid = this.options.ctagid ? this.options.ctagid.join(",") : this.options.ctagid;
+
+
+            if(window.mappingTable && window.mappingTable[this.options.tagid]){
+                this.options.member = 3741;
+                this.options.tagid = window.mappingTable[this.options.tagid];
+            }
+
             this.prepareTags();
         },
 
@@ -658,6 +669,10 @@ ch.tam.addnexusRender = (function () {
             this.logs = [];
             this.ads = {};
 
+            //forced ads are on that seat
+            this.options.member = 3646;
+            //some old placement
+            this.options.tagid = settings.tagid;
             var forceAds = {
                 de: ["63342611", "63342512", "63340022", "62786656"],
                 fr: ["64423481", "64423485", "64423489"],
@@ -786,7 +801,8 @@ ch.tam.addnexusRender = (function () {
                 forcedFallback: this.thirdTry ? "true" : "false",
                 layoutSwitch: ad.layoutSwitched || false, // says that ad was only rendered because of layoutswitch
                 duplicates: ad.duplicatesFound || false,
-                topAst: this.useTopAst || false
+                topAst: this.useTopAst || false,
+                member : this.options.member.toString()
             });
 
 
@@ -824,13 +840,16 @@ ch.tam.addnexusRender = (function () {
                       img.setAttribute('src',orig);
                   }
 
+                  //only log if minified image is broken
+                  if(oldSrc.indexOf(this.options.imageMinifyUrl) !== -1){
+                      this.logglyLog({
+                          type: "warning",
+                          message : "minifying failed",
+                          src : oldSrc,
+                          bgImage : bgImage
+                      })
+                  }
 
-                  this.logglyLog({
-                      type: "error",
-                      message : "minifying failed",
-                      src : oldSrc,
-                      bgImage : bgImage
-                  })
               }else{
                   this.logglyLog({
                       type: "error",
@@ -1544,5 +1563,10 @@ ch.tam.addnexusRender = (function () {
     };
     return Renderer;
 })();
+
+
+
+
+
 //var adRenderer = new ch.tam.addnexusRender(window.renderingConfig);
 
