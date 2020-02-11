@@ -27,7 +27,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="SCSS&#10;SASS&#10;HTML" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="HTML" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="nodejs_interpreter_path" value="node" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -85,6 +85,8 @@
       <workItem from="1565957003976" duration="4540000" />
       <workItem from="1566200208612" duration="682000" />
       <workItem from="1566560332751" duration="4000" />
+      <workItem from="1574927874985" duration="632000" />
+      <workItem from="1581411819184" duration="1073000" />
     </task>
     <servers />
   </component>
