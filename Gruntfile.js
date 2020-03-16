@@ -261,7 +261,7 @@ module.exports = function(grunt) {
     grunt.registerTask('build',[
         'copy:pages',   // copies all folders below /pages to /temp
         'folder_list',   //generates a json for the folders in /temp
-        'optimizeFolderList',
+        //'optimizeFolderList',
         'uglify:renderer', //uglifies the renderer.js
         'prepare_CSS_to_JS', //creates the files' array for css_to_js task
         'css_to_js:pages',
