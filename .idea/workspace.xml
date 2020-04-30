@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ecada909-ba54-4aca-bdc5-42610f8039de" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/gb_native1_IT_universal/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/gb_native1_IT_universal/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/usedFormats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pages/usedFormats.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/index_.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index_.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +26,7 @@
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="SCSS&#10;SASS&#10;HTML" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript 1.5&#10;SCSS&#10;SASS&#10;HTML" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="HTML" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
@@ -87,6 +89,12 @@
       <workItem from="1566560332751" duration="4000" />
       <workItem from="1574927874985" duration="632000" />
       <workItem from="1581411819184" duration="1073000" />
+      <workItem from="1584711067666" duration="994000" />
+      <workItem from="1584948530900" duration="704000" />
+      <workItem from="1584951372737" duration="275000" />
+      <workItem from="1584961086919" duration="445000" />
+      <workItem from="1584967283129" duration="313000" />
+      <workItem from="1585033771380" duration="344000" />
     </task>
     <servers />
   </component>
