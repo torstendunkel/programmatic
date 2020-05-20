@@ -1,0 +1,212 @@
+
+@font-face {
+    font-family: Baton Turbo;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.das.tamedia.ch/BatonTurboWeb-Regular.woff) format("woff2"),url(https://fonts.das.tamedia.ch/BatonTurboWeb-Regular.woff2) format("woff")
+}
+
+@font-face {
+    font-family: Baton Turbo;
+    font-style: normal;
+    font-weight: 600;
+    src: url(https://fonts.das.tamedia.ch/BatonTurboWeb-Medium.woff) format("woff2"),url(https://fonts.das.tamedia.ch/BatonTurboWeb-Medium.woff2) format("woff")
+}
+
+@font-face {
+    font-family: Baton Turbo hvy ;
+    font-style: normal;
+    font-weight: 900;
+    src: url(https://fonts.das.tamedia.ch/BatonTurboWeb-Heavy.woff) format("woff2"),url(https://fonts.das.tamedia.ch/BatonTurboWeb-Heavy.woff2) format("woff")
+}
+
+
+body,html{
+    background: rgba(68,144,197,1);
+    margin:0;
+}
+
+.ppn_sb_billboard3_DE_20min {
+    width: 750px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border: none;
+}
+
+.ppn_sb_billboard3_DE_20min .ppninnerbox {
+    width: 750px;
+    height: 250px;
+    border: none;
+    overflow: hidden;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ppn_sb_billboard3_DE_20min .singlebox {
+    width: 244px;
+    height: 250px;
+    margin-right: 9px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    background: white;
+    float: left;
+    border: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ppn_sb_billboard3_DE_20min .singlebox:nth-child(3) {
+    border-right: none;
+    margin-right: 0px;
+}
+
+.ppn_sb_billboard3_DE_20min .title {
+    display: block;
+    margin: 0;
+    padding: 6px 8px 2px 6px;
+    max-height: 64px;
+    overflow: hidden;
+    border: none;
+    text-align: left;
+    float: none;
+    width: 230px;
+    color: #000000;
+    font-family: "Baton Turbo Hvy";
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: -0.25px;
+    line-height: 19px;
+}
+
+.ppn_sb_billboard3_DE_20min .title a:link,
+.ppn_sb_billboard3_DE_20min .title a:visited,
+.ppn_sb_billboard3_DE_20min .title a:active{
+    text-decoration: none;
+    color: #222;
+}
+
+.ppn_sb_billboard3_DE_20min .title a:hover{
+    text-decoration: underline;
+}
+
+.ppn_sb_billboard3_DE_20min .text {
+
+
+    padding: 0px 8px 0px 6px;
+    max-height: 60px;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: left;
+    height: 72px;
+    width: 230px;
+    color: #1A1A1A;
+    font-family: BatonTurbo;
+    font-size: 12px;
+    letter-spacing: 0.07px;
+    line-height: 13px;
+
+}
+
+.ppn_sb_billboard3_DE_20min .text a:link, .ppn_sb_billboard3_DE_20min .text a:visited, .ppn_sb_billboard3_DE_20min .text a:hover, .ppn_sb_billboard3_DE_20min .text a:active, .ppn_sb_billboard3_DE_20min .text a:hover  {
+    text-decoration: none;
+    color: black;
+}
+
+.ppn_sb_billboard3_DE_20min .text span.url,
+.ppn_sb_billboard3_DE_20min .url a,
+.ppn_sb_billboard3_DE_20min .url a:link,
+.ppn_sb_billboard3_DE_20min .url a:visited,
+.ppn_sb_billboard3_DE_20min .url a:hover,
+.ppn_sb_billboard3_DE_20min .url a:active,
+.ppn_sb_billboard3_DE_20min .url a:hover{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 10px;
+    bottom: 10px;
+    overflow: hidden;
+    background: url('https://d1rkf0bq85yx06.cloudfront.net/images/more.gif') left top no-repeat;
+}
+
+.ppn_sb_billboard3_DE_20min .singlebox > a {
+    width: 244px;
+    height: 117px;
+    display: block;
+}
+
+.ppn_sb_billboard3_DE_20min .singlebox .bgImage {
+    width: 244px;
+    height: 115px;
+    display: block;
+    position: absolute;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.ppn_sb_billboard3_DE_20min .adimage {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+
+    height: 117px;
+    width: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-right: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+}
+
+.ppn_sb_billboard3_DE_20min .ppncaption {
+    display: none;
+}
+
+.ppn_sb_billboard3_DE_20min .tnlogo{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 10px;
+}
+
+.ppn_sb_billboard3_DE_20min .tnlogo > a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #333333;
+    padding: 3px 5px;
+
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.ppn_sb_billboard3_DE_20min .rectangle-5 {
+    height: 18px;
+    width: 244px;
+    background-color: rgba(68,144,197,0.6);
+    top: 99px;
+    position: absolute;
+}
+.ppn_sb_billboard3_DE_20min .rectangle-5  span{
+    text-decoration: none;
+    color: white;
+    font-family: "Baton Turbo Hvy";
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0.17px;
+
+    padding-left: 6px;
+    position: absolute;
+    padding-top: 1px;
+}
+
+.GoogleActiveViewElement{
+    position: absolute;
+}
+
+
