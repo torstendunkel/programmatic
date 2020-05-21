@@ -1,0 +1,98 @@
+html, body, a{
+    text-decoration: none;
+    margin:0;
+    padding: 0;
+    color: black;
+}
+
+@font-face {
+    font-family: Baton Turbo;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.das.tamedia.ch/BatonTurboWeb-Regular.woff) format("woff2"),url(https://fonts.das.tamedia.ch/BatonTurboWeb-Regular.woff2) format("woff")
+}
+
+@font-face {
+    font-family: Baton Turbo;
+    font-style: normal;
+    font-weight: 600;
+    src: url(https://fonts.das.tamedia.ch/BatonTurboWeb-Medium.woff) format("woff2"),url(https://fonts.das.tamedia.ch/BatonTurboWeb-Medium.woff2) format("woff")
+}
+
+@font-face {
+    font-family: Baton Turbo hvy ;
+    font-style: normal;
+    font-weight: 900;
+    src: url(https://fonts.das.tamedia.ch/BatonTurboWeb-Heavy.woff) format("woff2"),url(https://fonts.das.tamedia.ch/BatonTurboWeb-Heavy.woff2) format("woff")
+}
+
+#container {
+    width: 320px;
+    height: 416px;
+    border: 1px solid #DFE6F0;
+    background-color: #FFFFFF;
+}
+
+
+#pos1{
+    width: 100%;
+    height: 215px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.anzeige{
+    height: 20px;
+    width: 320px;
+    background-color: #4490C5;
+    top: 195px;
+    position: absolute;
+}
+
+.anzeige span{
+    text-decoration: none;
+    color: white;
+    font-family: "Baton Turbo Hvy";
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0.17px;
+    padding-left: 10px;
+    position: absolute;
+    padding-top: 1px;
+}
+
+
+#pos2{
+    height: 201px;
+}
+
+pos2 a{
+    color: black;
+}
+
+.title {
+    padding: 5px 10px 10px;
+    overflow: hidden;
+    max-height: 69px;
+    width: 299px;
+    color: #1A1A1A;
+    font-family: "Baton Turbo hvy";
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: -0.49px;
+    line-height: 27px;
+}
+
+.text {
+    padding: 5px 10px 5px;
+    overflow: hidden;
+    height: 88px;
+    width: 300px;
+    color: #1A1A1A;
+    font-family: BatonTurbo;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    line-height: 17px;
+}
+
