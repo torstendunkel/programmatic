@@ -240,7 +240,6 @@ body,html{
 
     .new_billboard3_DE_20min .text {
 
-
         padding: 0px 8px 0px 6px;
         max-height: 60px;
         overflow: hidden;
@@ -254,9 +253,7 @@ body,html{
         letter-spacing: 0.07px;
         line-height: 13px;
 
-
     }
-
 
     .new_billboard3_DE_20min .text a:link, .new_billboard3_DE_20min .text a:visited, .new_billboard3_DE_20min .text a:hover, .new_billboard3_DE_20min .text a:active, .new_billboard3_DE_20min .text a:hover {
         text-decoration: none;
@@ -298,7 +295,6 @@ body,html{
         position: relative;
         display: inline-block;
         padding: 0;
-
         height: 150px;
         width: auto;
         margin-left: 50%;
@@ -306,6 +302,7 @@ body,html{
         border-right: 1px solid #FFFFFF;
         border-left: 1px solid #FFFFFF;
     }
+
     .new_billboard3_DE_20min .rectangle-5 {
         height: 18px;
         width: 100%;
@@ -313,8 +310,8 @@ body,html{
         top: 132px;
         position: absolute;
     }
-
 }
+
 /*Large*/
 @media screen and (min-width: 995px) and (max-width: 1160px) {
 
@@ -351,8 +348,6 @@ body,html{
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
     }
-
-
 
     .new_billboard3_DE_20min .title {
         display: block;
@@ -395,7 +390,6 @@ body,html{
         font-size: 11px;
         letter-spacing: 0.07px;
         line-height: 13px;
-
     }
 
     .new_billboard3_DE_20min .text a:link, .new_billboard3_DE_20min .text a:visited, .new_billboard3_DE_20min .text a:hover, .new_billboard3_DE_20min .text a:active, .new_billboard3_DE_20min .text a:hover {
@@ -438,7 +432,6 @@ body,html{
         position: relative;
         display: inline-block;
         padding: 0;
-
         height: 180px;
         width: auto;
         margin-left: 50%;
@@ -461,8 +454,6 @@ body,html{
     margin-right: 0px;
 }
 
-
-
 .new_billboard3_DE_20min .ppncaption {
     display: none;
 }
@@ -470,9 +461,6 @@ body,html{
 .new_billboard3_DE_20min .tnlogo {
     display: none;
 }
-
-
-
 
 .new_billboard3_DE_20min .rectangle-5 span {
     text-decoration: none;
