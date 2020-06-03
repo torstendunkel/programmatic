@@ -30,7 +30,7 @@ body{
 	height: 100%;
 	overflow: hidden;
 }
-.new_fullwidth1_DE_20min {
+.new_fullwidth1_FR_20min {
 	margin-top: 5px;
 	padding: 0;
 	border: none;
@@ -38,19 +38,19 @@ body{
 	height: 157px;
 	overflow: hidden;
 	background-color: #FFFFFF;
-  	font-family: 'Roboto Condensed', Arial, sans-serif;
+	font-family: 'Roboto Condensed', Arial, sans-serif;
 }
-.new_fullwidth1_DE_20min .ppncaption{
+.new_fullwidth1_FR_20min .ppncaption{
 	display: none;
 }
-.new_fullwidth1_DE_20min .ppninnerbox {
+.new_fullwidth1_FR_20min .ppninnerbox {
 	margin: 0;
 	padding: 0;
 	border: none;
 	width: 100%;
-  	height: 157px;
+	height: 157px;
 }
-.new_fullwidth1_DE_20min .ppninnerbox .singlebox {
+.new_fullwidth1_FR_20min .ppninnerbox .singlebox {
 	position: relative;
 	display: flex;
 	display: -webkit-flex;
@@ -62,7 +62,7 @@ body{
 	width: 100%;
 	height: 100%;
 }
-.new_fullwidth1_DE_20min .ppninnerbox .singlebox > a{
+.new_fullwidth1_FR_20min .ppninnerbox .singlebox > a{
 	position: absolute;
 	display: inline-block;
 	width: 100%;
@@ -70,7 +70,7 @@ body{
 	text-decoration: none;
 	border: none;
 }
-.new_fullwidth1_DE_20min .ppninnerbox .singlebox .bgImage {
+.new_fullwidth1_FR_20min .ppninnerbox .singlebox .bgImage {
 	width: 46%;
 	height: 157px;
 	float: left;
@@ -79,7 +79,7 @@ body{
 	-webkit-filter: blur(3px);
 	filter: blur(3px);
 }
-.new_fullwidth1_DE_20min .ppninnerbox .singlebox .adImage {
+.new_fullwidth1_FR_20min .ppninnerbox .singlebox .adImage {
 	border-right: 1px solid #FFFFFF;
 	border-left: 1px solid #FFFFFF;
 	position: absolute;
@@ -94,7 +94,7 @@ body{
 	margin: 0;
 	padding: 0;
 }
-.new_fullwidth1_DE_20min .ppninnerbox .singlebox .image {
+.new_fullwidth1_FR_20min .ppninnerbox .singlebox .image {
 
 	margin: 0;
 	padding: 0;
@@ -104,21 +104,21 @@ body{
 	overflow: hidden;
 	float: left;
 }
-.new_fullwidth1_DE_20min .ppninnerbox .singlebox .text_content {
+.new_fullwidth1_FR_20min .ppninnerbox .singlebox .text_content {
 	border: none;
 	width: 53%;
 	box-sizing: border-box;
 	overflow: hidden;
 	float: left;
 }
-.new_fullwidth1_DE_20min .ppninnerbox .singlebox .text_content .title{
+.new_fullwidth1_FR_20min .ppninnerbox .singlebox .text_content .title{
 	max-height: 70px;
 	color: black;
 	margin-top: 24px;
 	margin-right: 5px;
 	margin-left: 5px;
 }
-.new_fullwidth1_DE_20min .ppninnerbox .singlebox .text_content .title > a {
+.new_fullwidth1_FR_20min .ppninnerbox .singlebox .text_content .title > a {
 	border: none;
 	text-align: left;
 	text-decoration: none;
@@ -134,12 +134,12 @@ body{
 	letter-spacing: -0.36px;
 	line-height: 18px;
 }
-.new_fullwidth1_DE_20min .ppninnerbox .singlebox .text_content .text{
+.new_fullwidth1_FR_20min .ppninnerbox .singlebox .text_content .text{
 	margin-left: 5px;
 	margin-right: 5px;
 	max-height: 74px;
 }
-.new_fullwidth1_DE_20min .ppninnerbox .singlebox .text_content .text > a {
+.new_fullwidth1_FR_20min .ppninnerbox .singlebox .text_content .text > a {
 
 	border: none;
 	font-weight: 400;
@@ -155,16 +155,16 @@ body{
 	letter-spacing: 0.07px;
 	line-height: 14px;
 }
-.new_fullwidth1_DE_20min .tnlogo {
+.new_fullwidth1_FR_20min .tnlogo {
 	display: none;
 }
-.new_fullwidth1_DE_20min .headline {
+.new_fullwidth1_FR_20min .headline {
 	height: 20px;
 	width: 53%;
 	background-color: #4490C5;
 	position: absolute;
 }
-.new_fullwidth1_DE_20min .headline span{
+.new_fullwidth1_FR_20min .headline span{
 	font-size: 11px;
 	margin-left: 5px;
 	font-family: "Baton Turbo Hvy";

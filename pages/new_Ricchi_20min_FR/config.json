@@ -3,5 +3,5 @@
   "showMore" : false,
   "moreInTxt" : false,
   "imageMinifyOptions" : "&width=514",
-  "template": "<a href=\"{{href}}\" target=\"_blank\" id=\"{{id}}\" data-href=\"{{href}}\"><div id=\"container\"><div id=\"pos1\" style=\"background-image: url({{img}})\"><div class=\"anzeige\"><span>ANZEIGE</span></div></div><div id=\"pos2\"><div class='title' href='{{href}}><a target='_blank'>{{title}}</a></div><div class='text' href='{{href}}><a target='_blank'>{{description}}</a></div></div></div>{{impression}}</a>\n\n"
+  "template": "<a href=\"{{href}}\" target=\"_blank\" id=\"{{id}}\" data-href=\"{{href}}\"><div id=\"container\"><div id=\"pos1\" style=\"background-image: url({{img}})\"><div class=\"anzeige\"><span>ANNONCE</span></div></div><div id=\"pos2\"><div class='title' ><a target='_blank' href='{{href}}'>{{title}}</a></div><div class='text' ><a target='_blank' href='{{href}}'>{{description}}</a></div></div></div>{{impression}}</a>\n\n"
 }

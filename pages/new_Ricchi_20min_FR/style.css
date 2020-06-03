@@ -25,6 +25,33 @@ html, body, a{
     font-weight: 900;
     src: url(https://fonts.das.tamedia.ch/BatonTurboWeb-Heavy.woff) format("woff2"),url(https://fonts.das.tamedia.ch/BatonTurboWeb-Heavy.woff2) format("woff")
 }
+
+body{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 320px;
+    height: 416px;
+    overflow: hidden;
+}
+.new_Ricchi_20min_FR  {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 320px;
+    height: 416px;
+    overflow: hidden;
+}
+.new_Ricchi_20min_FR .ppncaption{
+    display: none;
+}
+.new_Ricchi_20min_FR .ppninnerbox {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 320px;
+    height: 100%;
+}
 .ppncaption{
     display: none;
 }
@@ -38,7 +65,6 @@ html, body, a{
     border: 1px solid #DFE6F0;
     background-color: #FFFFFF;
 }
-
 
 #pos1{
     width: 100%;
@@ -91,12 +117,12 @@ pos2 a{
 }
 
 .text {
-    padding: 5px 10px 5px;
+    padding: 0px 10px 5px;
     overflow: hidden;
     height: 88px;
     width: 300px;
     color: #1A1A1A;
-    font-family: BatonTurbo;
+    font-family: "Baton Turbo";
     font-size: 16px;
     letter-spacing: 0.1px;
     line-height: 17px;

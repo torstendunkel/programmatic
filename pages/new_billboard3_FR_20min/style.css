@@ -28,8 +28,8 @@ body,html{
 @media screen and (max-width: 750px) {
 
 
-    .new_billboard3_DE_20min {
-        width: 750px;
+    .new_billboard3_FR_20min {
+        width: 728px;
         height: 250px;
         overflow: hidden;
         position: relative;
@@ -37,8 +37,8 @@ body,html{
         border: none;
     }
 
-    .new_billboard3_DE_20min .ppninnerbox {
-        width: 750px;
+    .new_billboard3_FR_20min .ppninnerbox {
+        width: 728px;
         height: 250px;
         border: none;
         overflow: hidden;
@@ -47,10 +47,10 @@ body,html{
         box-sizing: border-box;
     }
 
-    .new_billboard3_DE_20min .singlebox {
-        width: 244px;
+    .new_billboard3_FR_20min .singlebox {
+        width: 236px;
         height: 250px;
-        margin-right: 9px;
+        margin-right: 10px;
         padding: 0;
         overflow: hidden;
         position: relative;
@@ -64,7 +64,7 @@ body,html{
 
 
 
-    .new_billboard3_DE_20min .title {
+    .new_billboard3_FR_20min .title {
         display: block;
         margin: 0;
         padding: 6px 8px 2px 6px;
@@ -73,7 +73,7 @@ body,html{
         border: none;
         text-align: left;
         float: none;
-        width: 230px;
+        width: 228px;
         color: #000000;
         font-family: "Baton Turbo Hvy";
         font-size: 16px;
@@ -83,19 +83,19 @@ body,html{
         max-height: 38px;
     }
 
-    .new_billboard3_DE_20min .title a:link,
-    .new_billboard3_DE_20min .title a:visited,
-    .new_billboard3_DE_20min .title a:active {
+
+    .new_billboard3_FR_20min .title a:link,
+    .new_billboard3_FR_20min .title a:visited,
+    .new_billboard3_FR_20min .title a:active {
         text-decoration: none;
         color: #222;
     }
 
-    .new_billboard3_DE_20min .title a:hover {
+    .new_billboard3_FR_20min .title a:hover {
         text-decoration: underline;
     }
 
-    .new_billboard3_DE_20min .text {
-
+    .new_billboard3_FR_20min .text {
 
         padding: 0px 8px 0px 6px;
         max-height: 60px;
@@ -103,27 +103,27 @@ body,html{
         text-decoration: none;
         text-align: left;
         height: 72px;
-        width: 230px;
+        width: 228px;
         color: #1A1A1A;
-        font-family: "Baton Turbo Hvy";
+        font-family: "Baton Turbo", sans-serif;
         font-size: 12px;
         letter-spacing: 0.07px;
         line-height: 13px;
 
     }
 
-    .new_billboard3_DE_20min .text a:link, .new_billboard3_DE_20min .text a:visited, .new_billboard3_DE_20min .text a:hover, .new_billboard3_DE_20min .text a:active, .new_billboard3_DE_20min .text a:hover {
+    .new_billboard3_FR_20min .text a:link, .new_billboard3_FR_20min .text a:visited, .new_billboard3_FR_20min .text a:hover, .new_billboard3_FR_20min .text a:active, .new_billboard3_FR_20min .text a:hover {
         text-decoration: none;
         color: black;
     }
 
-    .new_billboard3_DE_20min .text span.url,
-    .new_billboard3_DE_20min .url a,
-    .new_billboard3_DE_20min .url a:link,
-    .new_billboard3_DE_20min .url a:visited,
-    .new_billboard3_DE_20min .url a:hover,
-    .new_billboard3_DE_20min .url a:active,
-    .new_billboard3_DE_20min .url a:hover {
+    .new_billboard3_FR_20min .text span.url,
+    .new_billboard3_FR_20min .url a,
+    .new_billboard3_FR_20min .url a:link,
+    .new_billboard3_FR_20min .url a:visited,
+    .new_billboard3_FR_20min .url a:hover,
+    .new_billboard3_FR_20min .url a:active,
+    .new_billboard3_FR_20min .url a:hover {
         position: absolute;
         width: 15px;
         height: 15px;
@@ -133,14 +133,14 @@ body,html{
         background: url('https://d1rkf0bq85yx06.cloudfront.net/images/more.gif') left top no-repeat;
     }
 
-    .new_billboard3_DE_20min .singlebox > a {
+    .new_billboard3_FR_20min .singlebox > a {
         width: 244px;
         height: 117px;
         display: block;
     }
 
-    .new_billboard3_DE_20min .singlebox .bgImage {
-        width: 244px;
+    .new_billboard3_FR_20min .singlebox .bgImage {
+        width: 238px;
         height: 115px;
         display: block;
         position: absolute;
@@ -148,11 +148,10 @@ body,html{
         filter: blur(3px);
     }
 
-    .new_billboard3_DE_20min .adimage {
+    .new_billboard3_FR_20min .adimage {
         position: relative;
         display: inline-block;
         padding: 0;
-
         height: 117px;
         width: auto;
         margin-left: 50%;
@@ -161,9 +160,9 @@ body,html{
         border-left: 1px solid #FFFFFF;
     }
 
-    .new_billboard3_DE_20min .rectangle-5 {
+    .new_billboard3_FR_20min .rectangle-5 {
         height: 18px;
-        width: 244px;
+        width: 238px;
         background-color: rgba(68, 144, 197, 0.6);
         top: 99px;
         position: absolute;
@@ -173,7 +172,7 @@ body,html{
 /*Medium*/
 @media screen and (min-width: 751px) and (max-width: 994px) {
 
-    .new_billboard3_DE_20min {
+    .new_billboard3_FR_20min {
         width: 994px;
         height: 250px;
         overflow: hidden;
@@ -182,7 +181,7 @@ body,html{
         border: none;
     }
 
-    .new_billboard3_DE_20min .ppninnerbox {
+    .new_billboard3_FR_20min .ppninnerbox {
         width: 994px;
         height: 250px;
         border: none;
@@ -192,10 +191,10 @@ body,html{
         box-sizing: border-box;
     }
 
-    .new_billboard3_DE_20min .singlebox {
-        width: 310px;
+    .new_billboard3_FR_20min .singlebox {
+        width: 318px;
         height: 250px;
-        margin-right: 22px;
+        margin-right: 10px;
         padding: 0;
         overflow: hidden;
         position: relative;
@@ -209,7 +208,7 @@ body,html{
 
 
 
-    .new_billboard3_DE_20min .title {
+    .new_billboard3_FR_20min .title {
         display: block;
         margin: 0;
         padding: 6px 8px 2px 6px;
@@ -218,7 +217,7 @@ body,html{
         border: none;
         text-align: left;
         float: none;
-        width: 230px;
+        width: 300px;
         color: #000000;
         font-family: "Baton Turbo Hvy";
         font-size: 16px;
@@ -227,18 +226,19 @@ body,html{
         line-height: 19px;
     }
 
-    .new_billboard3_DE_20min .title a:link,
-    .new_billboard3_DE_20min .title a:visited,
-    .new_billboard3_DE_20min .title a:active {
+    .new_billboard3_FR_20min .title a:link,
+    .new_billboard3_FR_20min .title a:visited,
+    .new_billboard3_FR_20min .title a:active {
         text-decoration: none;
         color: #222;
     }
 
-    .new_billboard3_DE_20min .title a:hover {
+    .new_billboard3_FR_20min .title a:hover {
         text-decoration: underline;
     }
 
-    .new_billboard3_DE_20min .text {
+    .new_billboard3_FR_20min .text {
+
 
         padding: 0px 8px 0px 6px;
         max-height: 60px;
@@ -246,27 +246,29 @@ body,html{
         text-decoration: none;
         text-align: left;
         height: 72px;
-        width: 230px;
+        width: 304px;
         color: #1A1A1A;
         font-family: "Baton Turbo", sans-serif;
         font-size: 12px;
         letter-spacing: 0.07px;
         line-height: 13px;
 
+
     }
 
-    .new_billboard3_DE_20min .text a:link, .new_billboard3_DE_20min .text a:visited, .new_billboard3_DE_20min .text a:hover, .new_billboard3_DE_20min .text a:active, .new_billboard3_DE_20min .text a:hover {
+
+    .new_billboard3_FR_20min .text a:link, .new_billboard3_FR_20min .text a:visited, .new_billboard3_FR_20min .text a:hover, .new_billboard3_FR_20min .text a:active, .new_billboard3_FR_20min .text a:hover {
         text-decoration: none;
         color: black;
     }
 
-    .new_billboard3_DE_20min .text span.url,
-    .new_billboard3_DE_20min .url a,
-    .new_billboard3_DE_20min .url a:link,
-    .new_billboard3_DE_20min .url a:visited,
-    .new_billboard3_DE_20min .url a:hover,
-    .new_billboard3_DE_20min .url a:active,
-    .new_billboard3_DE_20min .url a:hover {
+    .new_billboard3_FR_20min .text span.url,
+    .new_billboard3_FR_20min .url a,
+    .new_billboard3_FR_20min .url a:link,
+    .new_billboard3_FR_20min .url a:visited,
+    .new_billboard3_FR_20min .url a:hover,
+    .new_billboard3_FR_20min .url a:active,
+    .new_billboard3_FR_20min .url a:hover {
         position: absolute;
         width: 15px;
         height: 15px;
@@ -276,14 +278,14 @@ body,html{
         background: url('https://d1rkf0bq85yx06.cloudfront.net/images/more.gif') left top no-repeat;
     }
 
-    .new_billboard3_DE_20min .singlebox > a {
+    .new_billboard3_FR_20min .singlebox > a {
         width: 310px;
         height: 150px;
         display: block;
     }
 
-    .new_billboard3_DE_20min .singlebox .bgImage {
-        width: 310px;
+    .new_billboard3_FR_20min .singlebox .bgImage {
+        width: 320px;
         height: 148px;
         display: block;
         position: absolute;
@@ -291,10 +293,11 @@ body,html{
         filter: blur(3px);
     }
 
-    .new_billboard3_DE_20min .adimage {
+    .new_billboard3_FR_20min .adimage {
         position: relative;
         display: inline-block;
         padding: 0;
+
         height: 150px;
         width: auto;
         margin-left: 50%;
@@ -302,20 +305,19 @@ body,html{
         border-right: 1px solid #FFFFFF;
         border-left: 1px solid #FFFFFF;
     }
-
-    .new_billboard3_DE_20min .rectangle-5 {
+    .new_billboard3_FR_20min .rectangle-5 {
         height: 18px;
         width: 100%;
         background-color: rgba(68, 144, 197, 0.6);
         top: 132px;
         position: absolute;
     }
-}
 
+}
 /*Large*/
 @media screen and (min-width: 995px) and (max-width: 1160px) {
 
-    .new_billboard3_DE_20min {
+    .new_billboard3_FR_20min {
         width: 1160px;
         height: 250px;
         overflow: hidden;
@@ -324,7 +326,7 @@ body,html{
         border: none;
     }
 
-    .new_billboard3_DE_20min .ppninnerbox {
+    .new_billboard3_FR_20min .ppninnerbox {
         width: 1160px;
         height: 250px;
         border: none;
@@ -334,7 +336,7 @@ body,html{
         box-sizing: border-box;
     }
 
-    .new_billboard3_DE_20min .singlebox {
+    .new_billboard3_FR_20min .singlebox {
         width: 373px;
         height: 250px;
         margin-right: 20.5px;
@@ -349,14 +351,16 @@ body,html{
         box-sizing: border-box;
     }
 
-    .new_billboard3_DE_20min .title {
+
+
+    .new_billboard3_FR_20min .title {
         display: block;
         padding: 2px 8px 2px 6px;
         max-height: 34px;
         overflow: hidden;
         border: none;
         text-align: left;
-        width: 373px;
+        width: 359px;
         color: #000000;
         font-family: "Baton Turbo Hvy";
         font-size: 15px;
@@ -366,44 +370,45 @@ body,html{
         max-height: 18px;
     }
 
-    .new_billboard3_DE_20min .title a:link,
-    .new_billboard3_DE_20min .title a:visited,
-    .new_billboard3_DE_20min .title a:active {
+    .new_billboard3_FR_20min .title a:link,
+    .new_billboard3_FR_20min .title a:visited,
+    .new_billboard3_FR_20min .title a:active {
         text-decoration: none;
         color: #222;
     }
 
-    .new_billboard3_DE_20min .title a:hover {
+    .new_billboard3_FR_20min .title a:hover {
         text-decoration: underline;
     }
 
-    .new_billboard3_DE_20min .text {
+    .new_billboard3_FR_20min .text {
 
         padding: 0px 8px 0px 6px;
         overflow: hidden;
         text-decoration: none;
         text-align: left;
         height: 46px;
-        width: 373px;
+        width: 359px;
         color: #1A1A1A;
         font-family: "Baton Turbo", sans-serif;
         font-size: 11px;
         letter-spacing: 0.07px;
         line-height: 13px;
+
     }
 
-    .new_billboard3_DE_20min .text a:link, .new_billboard3_DE_20min .text a:visited, .new_billboard3_DE_20min .text a:hover, .new_billboard3_DE_20min .text a:active, .new_billboard3_DE_20min .text a:hover {
+    .new_billboard3_FR_20min .text a:link, .new_billboard3_FR_20min .text a:visited, .new_billboard3_FR_20min .text a:hover, .new_billboard3_FR_20min .text a:active, .new_billboard3_FR_20min .text a:hover {
         text-decoration: none;
         color: black;
     }
 
-    .new_billboard3_DE_20min .text span.url,
-    .new_billboard3_DE_20min .url a,
-    .new_billboard3_DE_20min .url a:link,
-    .new_billboard3_DE_20min .url a:visited,
-    .new_billboard3_DE_20min .url a:hover,
-    .new_billboard3_DE_20min .url a:active,
-    .new_billboard3_DE_20min .url a:hover {
+    .new_billboard3_FR_20min .text span.url,
+    .new_billboard3_FR_20min .url a,
+    .new_billboard3_FR_20min .url a:link,
+    .new_billboard3_FR_20min .url a:visited,
+    .new_billboard3_FR_20min .url a:hover,
+    .new_billboard3_FR_20min .url a:active,
+    .new_billboard3_FR_20min .url a:hover {
         position: absolute;
         width: 15px;
         height: 15px;
@@ -413,14 +418,14 @@ body,html{
         background: url('https://d1rkf0bq85yx06.cloudfront.net/images/more.gif') left top no-repeat;
     }
 
-    .new_billboard3_DE_20min .singlebox > a {
+    .new_billboard3_FR_20min .singlebox > a {
         width: 373px;
         height: 180px;
         display: block;
     }
 
-    .new_billboard3_DE_20min .singlebox .bgImage {
-        width: 371px;
+    .new_billboard3_FR_20min .singlebox .bgImage {
+        width: 373px;
         height: 178px;
         display: block;
         position: absolute;
@@ -428,10 +433,11 @@ body,html{
         filter: blur(3px);
     }
 
-    .new_billboard3_DE_20min .adimage {
+    .new_billboard3_FR_20min .adimage {
         position: relative;
         display: inline-block;
         padding: 0;
+
         height: 180px;
         width: auto;
         margin-left: 50%;
@@ -440,7 +446,7 @@ body,html{
         border-left: 1px solid #FFFFFF;
     }
 
-    .new_billboard3_DE_20min .rectangle-5 {
+    .new_billboard3_FR_20min .rectangle-5 {
         height: 19px;
         width: 100%;
         background-color: rgba(68, 144, 197, 0.6);
@@ -449,20 +455,25 @@ body,html{
     }
 }
 
-.new_billboard3_DE_20min .singlebox:nth-child(3) {
+.new_billboard3_FR_20min .singlebox:nth-child(3) {
     border-right: none;
     margin-right: 0px;
 }
 
-.new_billboard3_DE_20min .ppncaption {
+
+
+.new_billboard3_FR_20min .ppncaption {
     display: none;
 }
 
-.new_billboard3_DE_20min .tnlogo {
+.new_billboard3_FR_20min .tnlogo {
     display: none;
 }
 
-.new_billboard3_DE_20min .rectangle-5 span {
+
+
+
+.new_billboard3_FR_20min .rectangle-5 span {
     text-decoration: none;
     color: white;
     font-family: "Baton Turbo Hvy";
