@@ -20,13 +20,11 @@
     src: url(https://fonts.das.tamedia.ch/BatonTurboWeb-Heavy.woff) format("woff2"),url(https://fonts.das.tamedia.ch/BatonTurboWeb-Heavy.woff2) format("woff")
 }
 
-
 body,html{
     margin:0;
 }
 /*Small*/
 @media screen and (max-width: 750px) {
-
 
     .new_billboard3_DE_20min {
         width: 728px;
@@ -67,7 +65,7 @@ body,html{
     .new_billboard3_DE_20min .title {
         display: block;
         margin: 0;
-        padding: 6px 8px 2px 6px;
+        padding: 21px 8px 2px 6px;
         max-height: 64px;
         overflow: hidden;
         border: none;
@@ -135,13 +133,13 @@ body,html{
 
     .new_billboard3_DE_20min .singlebox > a {
         width: 244px;
-        height: 117px;
+        height: 127px;
         display: block;
     }
 
     .new_billboard3_DE_20min .singlebox .bgImage {
         width: 238px;
-        height: 115px;
+        height: 129px;
         display: block;
         position: absolute;
         -webkit-filter: blur(3px);
@@ -152,9 +150,9 @@ body,html{
         position: relative;
         display: inline-block;
         padding: 0;
-        height: 117px;
+        height: 127px;
         width: auto;
-        margin-left: 50%;
+        margin-left: 48.6%;
         transform: translateX(-50%);
         border-right: 1px solid #FFFFFF;
         border-left: 1px solid #FFFFFF;
@@ -163,8 +161,8 @@ body,html{
     .new_billboard3_DE_20min .rectangle-5 {
         height: 18px;
         width: 238px;
-        background-color: rgba(68, 144, 197, 0.6);
-        top: 99px;
+        background-color: #4490C5;
+        top: 127px;
         position: absolute;
     }
 
@@ -174,7 +172,7 @@ body,html{
 
     .new_billboard3_DE_20min {
         width: 994px;
-        height: 250px;
+        height: 275px;
         overflow: hidden;
         position: relative;
         cursor: pointer;
@@ -183,7 +181,7 @@ body,html{
 
     .new_billboard3_DE_20min .ppninnerbox {
         width: 994px;
-        height: 250px;
+        height: 275px;
         border: none;
         overflow: hidden;
         -moz-box-sizing: border-box;
@@ -193,7 +191,7 @@ body,html{
 
     .new_billboard3_DE_20min .singlebox {
         width: 318px;
-        height: 250px;
+        height: 275px;
         margin-right: 10px;
         padding: 0;
         overflow: hidden;
@@ -211,8 +209,8 @@ body,html{
     .new_billboard3_DE_20min .title {
         display: block;
         margin: 0;
-        padding: 6px 8px 2px 6px;
-        max-height: 64px;
+        padding: 22px 8px 1px 6px;
+        max-height: 39px;
         overflow: hidden;
         border: none;
         text-align: left;
@@ -241,7 +239,7 @@ body,html{
 
 
         padding: 0px 8px 0px 6px;
-        max-height: 60px;
+        max-height: 39px;
         overflow: hidden;
         text-decoration: none;
         text-align: left;
@@ -279,14 +277,14 @@ body,html{
     }
 
     .new_billboard3_DE_20min .singlebox > a {
-        width: 310px;
-        height: 150px;
+        width: 320px;
+        height: 167px;
         display: block;
     }
 
     .new_billboard3_DE_20min .singlebox .bgImage {
         width: 320px;
-        height: 148px;
+        height: 169px;
         display: block;
         position: absolute;
         -webkit-filter: blur(3px);
@@ -297,10 +295,9 @@ body,html{
         position: relative;
         display: inline-block;
         padding: 0;
-
-        height: 150px;
+        height: 165px;
         width: auto;
-        margin-left: 50%;
+        margin-left: 49.7%;
         transform: translateX(-50%);
         border-right: 1px solid #FFFFFF;
         border-left: 1px solid #FFFFFF;
@@ -308,8 +305,8 @@ body,html{
     .new_billboard3_DE_20min .rectangle-5 {
         height: 18px;
         width: 100%;
-        background-color: rgba(68, 144, 197, 0.6);
-        top: 132px;
+        background-color: #4490C5;
+        top: 167px;
         position: absolute;
     }
 
@@ -319,7 +316,7 @@ body,html{
 
     .new_billboard3_DE_20min {
         width: 1160px;
-        height: 250px;
+        height: 290px;
         overflow: hidden;
         position: relative;
         cursor: pointer;
@@ -328,7 +325,7 @@ body,html{
 
     .new_billboard3_DE_20min .ppninnerbox {
         width: 1160px;
-        height: 250px;
+        height: 290px;
         border: none;
         overflow: hidden;
         -moz-box-sizing: border-box;
@@ -338,7 +335,7 @@ body,html{
 
     .new_billboard3_DE_20min .singlebox {
         width: 373px;
-        height: 250px;
+        height: 290px;
         margin-right: 20.5px;
         padding: 0;
         overflow: hidden;
@@ -351,11 +348,9 @@ body,html{
         box-sizing: border-box;
     }
 
-
-
     .new_billboard3_DE_20min .title {
         display: block;
-        padding: 2px 8px 2px 6px;
+        padding: 24px 8px 2px 6px;
         max-height: 34px;
         overflow: hidden;
         border: none;
@@ -420,13 +415,13 @@ body,html{
 
     .new_billboard3_DE_20min .singlebox > a {
         width: 373px;
-        height: 180px;
+        height: 196px;
         display: block;
     }
 
     .new_billboard3_DE_20min .singlebox .bgImage {
         width: 373px;
-        height: 178px;
+        height: 198px;
         display: block;
         position: absolute;
         -webkit-filter: blur(3px);
@@ -437,8 +432,7 @@ body,html{
         position: relative;
         display: inline-block;
         padding: 0;
-
-        height: 180px;
+        height: 196px;
         width: auto;
         margin-left: 50%;
         transform: translateX(-50%);
@@ -449,8 +443,8 @@ body,html{
     .new_billboard3_DE_20min .rectangle-5 {
         height: 19px;
         width: 100%;
-        background-color: rgba(68, 144, 197, 0.6);
-        top: 161px;
+        background-color: #4490C5;
+        top: 196px;
         position: absolute;
     }
 }
@@ -460,8 +454,6 @@ body,html{
     margin-right: 0px;
 }
 
-
-
 .new_billboard3_DE_20min .ppncaption {
     display: none;
 }
@@ -469,9 +461,6 @@ body,html{
 .new_billboard3_DE_20min .tnlogo {
     display: none;
 }
-
-
-
 
 .new_billboard3_DE_20min .rectangle-5 span {
     text-decoration: none;

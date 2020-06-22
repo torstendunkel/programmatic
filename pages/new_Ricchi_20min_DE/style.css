@@ -78,7 +78,7 @@ body{
     height: 20px;
     width: 320px;
     background-color: #4490C5;
-    top: 195px;
+    top: 215px;
     position: absolute;
 }
 
@@ -104,7 +104,7 @@ pos2 a{
 }
 
 .title {
-    padding: 5px 10px 5px;
+    padding: 25px 10px 5px;
     overflow: hidden;
     max-height: 69px;
     width: 299px;

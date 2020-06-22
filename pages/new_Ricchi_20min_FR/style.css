@@ -34,7 +34,7 @@ body{
     height: 416px;
     overflow: hidden;
 }
-.new_Ricchi_20min_FR  {
+.new_Ricchi_20min_FR {
     margin: 0;
     padding: 0;
     border: none;
@@ -42,10 +42,10 @@ body{
     height: 416px;
     overflow: hidden;
 }
-.new_Ricchi_20min_FR .ppncaption{
+.new_Ricchi_20min_FR.ppncaption{
     display: none;
 }
-.new_Ricchi_20min_FR .ppninnerbox {
+.new_Ricchi_20min_FR.ppninnerbox {
     margin: 0;
     padding: 0;
     border: none;
@@ -78,7 +78,7 @@ body{
     height: 20px;
     width: 320px;
     background-color: #4490C5;
-    top: 195px;
+    top: 215px;
     position: absolute;
 }
 
@@ -104,7 +104,7 @@ pos2 a{
 }
 
 .title {
-    padding: 5px 10px 5px;
+    padding: 25px 10px 5px;
     overflow: hidden;
     max-height: 69px;
     width: 299px;
