@@ -1,6 +1,1 @@
-new_billboard3_DE_20min
-new_billboard3_FR_20min
-new_fullwidth1_DE_20min
-new_fullwidth1_FR_20min
-new_Ricchi_20min_DE
-new_Ricchi_20min_FR
+new_rectangle_DE_20min
