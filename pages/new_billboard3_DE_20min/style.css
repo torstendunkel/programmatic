@@ -312,7 +312,7 @@ body,html{
 
 }
 /*Large*/
-@media screen and (min-width: 995px) and (max-width: 1160px) {
+@media screen and (min-width: 995px){
 
     .new_billboard3_DE_20min {
         width: 1160px;

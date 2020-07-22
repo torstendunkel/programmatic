@@ -15,6 +15,8 @@ ch.tam.addnexusRender = (function () {
         tagid: 9518829, // fallback variables
         jsonUrl: 'config.json',
         jsonpUrl: 'config_jsonp.js',
+        maxTitleCharacters : 25,
+        maxTextlength: 90,
         idPrefix: 'main',
         adMarker: {
             de: 'Anzeige',
@@ -771,7 +773,8 @@ ch.tam.addnexusRender = (function () {
 
             this.adDataLog = [];
 
-            for (var i = 0; i < ad.loadedAds.length; i++) {
+           // for (var i = 0; i < ad.loadedAds.length; i++) {
+            for (var i = 0; i < this.options.numads && i < ad.loadedAds.length; i++) {
                 data.content += this.renderNativeAd(ad.loadedAds[i]);
             }
 
@@ -879,9 +882,9 @@ ch.tam.addnexusRender = (function () {
 
 
             var obj = {
-                title: data.native.title.substring(0, 25), // LIMIT characters DASB-756
+                title: data.native.title.substring(0, this.options.maxTitleCharacters), // LIMIT characters DASB-756
                 img: data.native.image ? data.native.image.url : '',
-                description: data.native.body.substring(0, 90),  // LIMIT characters DASB-756
+                description: data.native.body.substring(0, this.options.maxTextLength),  // LIMIT characters DASB-756
                 href: data.native.clickUrl,
                 impression: '',
                 //id: data.id,

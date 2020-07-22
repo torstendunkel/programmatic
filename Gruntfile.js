@@ -43,8 +43,6 @@ module.exports = function(grunt) {
                     {expand: true, cwd:"src", src: ['*.js'], dest: 'temp/'}
 
                 ]
-
-
             },
 
             renderer_to_pages: {
@@ -62,7 +60,6 @@ module.exports = function(grunt) {
 
                 files : [
                     {expand: true, cwd:"pages", src: ['**'], dest: 'temp/'}
-
                 ]
             },
             images : {
