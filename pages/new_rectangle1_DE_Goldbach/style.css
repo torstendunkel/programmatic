@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;600;700&display=swap');
+
 body,html{
     margin:0;
 }
@@ -11,28 +13,9 @@ body{
     overflow: hidden;
 }
 
-@font-face {
-    font-family: Baton Turbo;
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.das.tamedia.ch/BatonTurboWeb-Regular.woff) format("woff2"),url(https://fonts.das.tamedia.ch/BatonTurboWeb-Regular.woff2) format("woff")
-}
 
-@font-face {
-    font-family: Baton Turbo;
-    font-style: normal;
-    font-weight: 600;
-    src: url(https://fonts.das.tamedia.ch/BatonTurboWeb-Medium.woff) format("woff2"),url(https://fonts.das.tamedia.ch/BatonTurboWeb-Medium.woff2) format("woff")
-}
 
-@font-face {
-    font-family: Baton Turbo hvy ;
-    font-style: normal;
-    font-weight: 900;
-    src: url(https://fonts.das.tamedia.ch/BatonTurboWeb-Heavy.woff) format("woff2"),url(https://fonts.das.tamedia.ch/BatonTurboWeb-Heavy.woff2) format("woff")
-}
-
-.new_rectangle_DE_20min {
+.new_rectangle1_DE_Goldbach {
     width: 300px;
     height: 265px;
     overflow: hidden;
@@ -41,7 +24,7 @@ body{
     border: none;
 }
 
-.new_rectangle_DE_20min .ppninnerbox {
+.new_rectangle1_DE_Goldbach .ppninnerbox {
     width: 300px;
     height: 265px;
     border: none;
@@ -51,7 +34,7 @@ body{
     box-sizing: border-box;
 }
 
-.new_rectangle_DE_20min .singlebox {
+.new_rectangle1_DE_Goldbach .singlebox {
     width: 300px;
     height: 265px;
     padding: 0;
@@ -64,7 +47,7 @@ body{
     box-sizing: border-box;
 }
 
-.new_rectangle_DE_20min .title {
+.new_rectangle1_DE_Goldbach .title {
     display: block;
     padding: 22px 0px 0.5px 6px;
     overflow: hidden;
@@ -72,26 +55,26 @@ body{
     text-align: left;
     width: 294px;
     color: #000000;
-    font-family: "Baton Turbo Hvy";
+    font-family: 'Hind', sans-serif;
     font-size: 15px;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: -0.23px;
     line-height: 18px;
     max-height: 34px;
 }
 
-.new_rectangle_DE_20min .title a:link,
-.new_rectangle_DE_20min .title a:visited,
-.new_rectangle_DE_20min .title a:active {
+.new_rectangle1_DE_Goldbach .title a:link,
+.new_rectangle1_DE_Goldbach .title a:visited,
+.new_rectangle1_DE_Goldbach .title a:active {
     text-decoration: none;
     color: #222;
 }
 
-.new_rectangle_DE_20min .title a:hover {
+.new_rectangle1_DE_Goldbach .title a:hover {
     text-decoration: underline;
 }
 
-.new_rectangle_DE_20min .text {
+.new_rectangle1_DE_Goldbach .text {
 
     padding: 0px 8px 0px 6px;
     overflow: hidden;
@@ -100,25 +83,26 @@ body{
     height: 46px;
 
     color: #1A1A1A;
-    font-family: "Baton Turbo", sans-serif;
+    font-family: 'Hind', sans-serif;
+    font-weight: 100;
     font-size: 11px;
     letter-spacing: 0.07px;
     line-height: 13px;
 
 }
 
-.new_rectangle_DE_20min .text a:link, .new_rectangle_DE_20min .text a:visited, .new_rectangle_DE_20min .text a:hover, .new_rectangle_DE_20min .text a:active, .new_rectangle_DE_20min .text a:hover {
+.new_rectangle1_DE_Goldbach .text a:link, .new_rectangle1_DE_Goldbach .text a:visited, .new_rectangle1_DE_Goldbach .text a:hover, .new_rectangle1_DE_Goldbach .text a:active, .new_rectangle1_DE_Goldbach .text a:hover {
     text-decoration: none;
     color: black;
 }
 
-.new_rectangle_DE_20min .text span.url,
-.new_rectangle_DE_20min .url a,
-.new_rectangle_DE_20min .url a:link,
-.new_rectangle_DE_20min .url a:visited,
-.new_rectangle_DE_20min .url a:hover,
-.new_rectangle_DE_20min .url a:active,
-.new_rectangle_DE_20min .url a:hover {
+.new_rectangle1_DE_Goldbach .text span.url,
+.new_rectangle1_DE_Goldbach .url a,
+.new_rectangle1_DE_Goldbach .url a:link,
+.new_rectangle1_DE_Goldbach .url a:visited,
+.new_rectangle1_DE_Goldbach .url a:hover,
+.new_rectangle1_DE_Goldbach .url a:active,
+.new_rectangle1_DE_Goldbach .url a:hover {
     position: absolute;
     width: 15px;
     height: 15px;
@@ -128,13 +112,13 @@ body{
     background: url('https://d1rkf0bq85yx06.cloudfront.net/images/more.gif') left top no-repeat;
 }
 
-.new_rectangle_DE_20min .singlebox > a {
+.new_rectangle1_DE_Goldbach .singlebox > a {
     width: 300px;
     height: 157px;
     display: block;
 }
 
-.new_rectangle_DE_20min .singlebox .bgImage {
+.new_rectangle1_DE_Goldbach .singlebox .bgImage {
     width: 300px;
     height: 157px;
     display: block;
@@ -143,7 +127,7 @@ body{
     filter: blur(3px);
 }
 
-.new_rectangle_DE_20min .adimage {
+.new_rectangle1_DE_Goldbach .adimage {
     position: relative;
     display: inline-block;
     padding: 0;
@@ -155,29 +139,29 @@ body{
     border-left: 1px solid #FFFFFF;
 }
 
-.new_rectangle_DE_20min .rectangle-5 {
+.new_rectangle1_DE_Goldbach .rectangle-5 {
     height: 19px;
     width: 100%;
-    background-color: #4490C5;
+    background-color: #D6DBDF;
     top: 157px;
     position: absolute;
     text-transform: uppercase;
 }
 
-.new_rectangle_DE_20min .ppncaption {
+.new_rectangle1_DE_Goldbach .ppncaption {
     display: none;
 }
 
-.new_rectangle_DE_20min .tnlogo {
+.new_rectangle1_DE_Goldbach .tnlogo {
     display: none;
 }
 
-.new_rectangle_DE_20min .rectangle-5 span {
+.new_rectangle1_DE_Goldbach .rectangle-5 span {
     text-decoration: none;
     color: white;
-    font-family: "Baton Turbo Hvy";
+    font-family: 'Hind', sans-serif;
+    font-weight: 600;
     font-size: 14px;
-    font-weight: 900;
     letter-spacing: 0.17px;
     padding-left: 6px;
     position: absolute;

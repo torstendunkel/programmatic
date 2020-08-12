@@ -2,7 +2,6 @@
   "numads" : 1,
   "showMore" : false,
   "moreInTxt" : false,
-  "imageMinifyOptions" : "&width=514",
   "maxTitleCharacters": 35,
-  "template": "<a href=\"{{href}}\" target=\"_blank\" id=\"{{id}}\" data-href=\"{{href}}\"><div id=\"container\"><div id=\"pos1\" style=\"background-image: url({{img}})\"><div class=\"anzeige\"><span>ANNONCE</span></div></div><div id=\"pos2\"><div class='title' ><a target='_blank' href='{{href}}'>{{title}}</a></div><div class='text' ><a target='_blank' href='{{href}}'>{{description}}</a></div></div></div>{{impression}}</a>\n\n"
+  "template": "<div class='singlebox bottom left right' id='{{id}}' data-href='{{href}}'><a target='_blank' href='{{href}}'><img class='bgImage'  src='{{img}}'/><img class='adimage'  src='{{img}}'/></a><div class=\"rectangle-5\"><span>ANNONCE</span></div><div class='title'><a target='_blank' href='{{href}}'>{{title}}</a></div><div class='text'><a target='_blank' href='{{href}}'>{{description}}</a>{{moreInTxt}}</div>{{impression}}</div>"
 }

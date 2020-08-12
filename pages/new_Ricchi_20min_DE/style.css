@@ -1,9 +1,15 @@
-html, body, a{
-    text-decoration: none;
+body,html{
     margin:0;
-    padding: 0;
-    color: black;
 }
+
+body{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    max-height: 416px;
+    width: 100%;
+}
+
 
 @font-face {
     font-family: Baton Turbo;
@@ -26,105 +32,159 @@ html, body, a{
     src: url(https://fonts.das.tamedia.ch/BatonTurboWeb-Heavy.woff) format("woff2"),url(https://fonts.das.tamedia.ch/BatonTurboWeb-Heavy.woff2) format("woff")
 }
 
-body{
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    width: 320px;
-    height: 416px;
-    overflow: hidden;
-}
-.new_Ricchi_20min_DE  {
-    margin: 0;
-    padding: 0;
-    border: none;
-    width: 320px;
-    height: 416px;
-    overflow: hidden;
-}
-.new_Ricchi_20min_DE .ppncaption{
-    display: none;
-}
-.new_Ricchi_20min_DE .ppninnerbox {
-    margin: 0;
-    padding: 0;
-    border: none;
-    width: 320px;
-    height: 100%;
-}
-.ppncaption{
-    display: none;
-}
-.tnlogo{
-    display: none;
-}
-
-#container {
-    width: 320px;
-    height: 416px;
-    border: 1px solid #DFE6F0;
-    background-color: #FFFFFF;
-}
-
-#pos1{
+.new_Ricchi_20min_DE {
     width: 100%;
-    height: 215px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    max-height: 416px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+
+    background-color: white;
 }
 
-.anzeige{
-    height: 20px;
-    width: 320px;
-    background-color: #4490C5;
-    top: 215px;
+.new_Ricchi_20min_DE .ppninnerbox {
+    width: 100%;
+    border: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-height: 416px;
+}
+
+.new_Ricchi_20min_DE .singlebox {
+    width: 100%;
+    max-height: 430px;
+    padding: 0;
+
+    position: relative;
+    background: white;
+    border: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.new_Ricchi_20min_DE .title {
+    display: block;
+    padding: 5px 4px 4px 6px;
+    overflow: hidden;
+    border: none;
+    text-align: left;
+    width: 98%;
+    color: #000000;
+    font-family: "Baton Turbo", sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: -0.23px;
+    line-height: 18px;
+    max-height: 34px;
+}
+
+.new_Ricchi_20min_DE .title a:link,
+.new_Ricchi_20min_DE .title a:visited,
+.new_Ricchi_20min_DE .title a:active {
+    text-decoration: none;
+    color: #222;
+}
+
+.new_Ricchi_20min_DE .title a:hover {
+    text-decoration: underline;
+}
+
+.new_Ricchi_20min_DE .text {
+
+    padding: 0px 8px 0px 6px;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: left;
+    height: 46px;
+    width: 100%;
+    color: #1A1A1A;
+    font-family: "Baton Turbo", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.07px;
+    line-height: 13px;
+
+}
+
+.new_Ricchi_20min_DE .text a:link, .new_Ricchi_20min_DE .text a:visited, .new_Ricchi_20min_DE .text a:hover, .new_Ricchi_20min_DE .text a:active, .new_Ricchi_20min_DE .text a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.new_Ricchi_20min_DE .text span.url,
+.new_Ricchi_20min_DE .url a,
+.new_Ricchi_20min_DE .url a:link,
+.new_Ricchi_20min_DE .url a:visited,
+.new_Ricchi_20min_DE .url a:hover,
+.new_Ricchi_20min_DE .url a:active,
+.new_Ricchi_20min_DE .url a:hover {
     position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 10px;
+    bottom: 10px;
+    overflow: hidden;
+    background: url('https://d1rkf0bq85yx06.cloudfront.net/images/more.gif') left top no-repeat;
 }
 
-.anzeige span{
+.new_Ricchi_20min_DE .singlebox > a {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    max-height: 240px;
+
+}
+
+.new_Ricchi_20min_DE .singlebox .bgImage {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    -webkit-filter: blur(3px);
+    filter: blur(2px);
+}
+
+.new_Ricchi_20min_DE .adimage {
+    position: relative;
+    display: inherit;
+    padding: 0;
+    max-height: 240px;
+    width: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-right: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+}
+
+.new_Ricchi_20min_DE .rectangle-5 {
+    height: 19px;
+    width: 100%;
+    background-color: #4490C5;
+    position: relative;
+}
+
+.new_Ricchi_20min_DE .ppncaption {
+    display: none;
+}
+
+.new_Ricchi_20min_DE .tnlogo {
+    display: none;
+}
+
+.new_Ricchi_20min_DE .rectangle-5 span {
     text-decoration: none;
     color: white;
     font-family: "Baton Turbo Hvy";
     font-size: 14px;
     font-weight: 900;
     letter-spacing: 0.17px;
-    padding-left: 10px;
+    padding-left: 6px;
     position: absolute;
     padding-top: 1px;
 }
 
-
-#pos2{
-    height: 201px;
+.GoogleActiveViewElement {
+    position: absolute;
 }
-
-pos2 a{
-    color: black;
-}
-
-.title {
-    padding: 25px 10px 5px;
-    overflow: hidden;
-    max-height: 69px;
-    width: 299px;
-    color: #1A1A1A;
-    font-family: "Baton Turbo hvy";
-    font-size: 22px;
-    font-weight: 900;
-    letter-spacing: -0.49px;
-    line-height: 27px;
-}
-
-.text {
-    padding: 0px 10px 5px;
-    overflow: hidden;
-    height: 88px;
-    width: 300px;
-    color: #1A1A1A;
-    font-family: "Baton Turbo";
-    font-size: 16px;
-    letter-spacing: 0.1px;
-    line-height: 17px;
-}
-
