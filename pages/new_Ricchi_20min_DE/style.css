@@ -66,11 +66,11 @@ body{
 
 .new_Ricchi_20min_DE .title {
     display: block;
-    padding: 5px 4px 4px 6px;
+    padding: 5px 10px 3px;
     overflow: hidden;
     border: none;
     text-align: left;
-    width: 98%;
+    width: 96%;
     color: #000000;
     font-family: "Baton Turbo", sans-serif;
     font-size: 15px;
@@ -93,12 +93,11 @@ body{
 
 .new_Ricchi_20min_DE .text {
 
-    padding: 0px 8px 0px 6px;
+    padding: 3px 10px 16px;
     overflow: hidden;
     text-decoration: none;
     text-align: left;
-    height: 46px;
-    width: 100%;
+    width: 96%;
     color: #1A1A1A;
     font-family: "Baton Turbo", sans-serif;
     font-size: 11px;
@@ -139,11 +138,11 @@ body{
 
 .new_Ricchi_20min_DE .singlebox .bgImage {
     width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    -webkit-filter: blur(3px);
-    filter: blur(2px);
+height: 100%;
+display: block;
+position: absolute;
+-webkit-filter: blur(3px);
+filter: blur(2px);
 }
 
 .new_Ricchi_20min_DE .adimage {
@@ -180,7 +179,7 @@ body{
     font-size: 14px;
     font-weight: 900;
     letter-spacing: 0.17px;
-    padding-left: 6px;
+    padding-left: 10px;
     position: absolute;
     padding-top: 1px;
 }
