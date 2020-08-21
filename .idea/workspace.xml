@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecada909-ba54-4aca-bdc5-42610f8039de" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/new_rectangle_FR_20min/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/new_rectangle_FR_20min/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/billboard3_FR_Goldbach/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/billboard3_FR_Goldbach/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/Gruntfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grunt/tasks/generate_indexHTML.js" beforeDir="false" afterPath="$PROJECT_DIR$/grunt/tasks/generate_indexHTML.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/new_Ricchi_20min_DE/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/new_Ricchi_20min_DE/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/new_Ricchi_20min_FR/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/new_Ricchi_20min_FR/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/new_billboard3_DE_20min/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/new_billboard3_DE_20min/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/new_billboard3_DE_20min/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/new_billboard3_DE_20min/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/new_billboard3_FR_20min/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/new_billboard3_FR_20min/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/new_billboard3_FR_20min/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/new_billboard3_FR_20min/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/new_fullwidth1_DE_20min/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/new_fullwidth1_DE_20min/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/new_fullwidth1_FR_20min/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/new_fullwidth1_FR_20min/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/new_rectangle_DE_20min/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/new_rectangle_DE_20min/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/usedFormats.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pages/usedFormats.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +118,8 @@
       <workItem from="1594709933049" duration="3810000" />
       <workItem from="1594801904293" duration="7170000" />
       <workItem from="1594885586696" duration="1217000" />
+      <workItem from="1597671604422" duration="641000" />
+      <workItem from="1597735534466" duration="1420000" />
     </task>
     <servers />
   </component>

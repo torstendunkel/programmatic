@@ -1,1 +1,2 @@
-new_rectangle_DE_20min
+billboard3_FR_Goldbach
+billboard3_DE_Goldbach
